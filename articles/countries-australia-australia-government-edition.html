@@ -2644,26 +2644,59 @@ The government faced a dilemma between crisis management (which required spendin
         }
         window.toggleFeedback = toggleFeedback;
 
+        var FEEDBACK_API = window.ADMIN_API_URL || '';
         function submitFeedback(e) {
             e.preventDefault();
-            const form = document.getElementById('feedbackForm');
-            const type = form.querySelector('input[name="type"]:checked');
-            const msg = document.getElementById('feedbackMsg').value;
-            const email = document.getElementById('feedbackEmail').value;
-            const pageUrl = window.location.href;
-            const subject = encodeURIComponent('[AI 2030 Report] ' + (type ? type.value : 'Feedback') + ': ' + document.title.split(' - ')[0]);
-            const body = encodeURIComponent(
-                'Type: ' + (type ? type.value : 'N/A') + '\n' +
-                'Page: ' + pageUrl + '\n' +
-                'From: ' + (email || 'Anonymous') + '\n\n' +
-                'Message:\n' + msg
-            );
+            var form = document.getElementById('feedbackForm');
+            var type = form.querySelector('input[name="type"]:checked');
+            var msg = document.getElementById('feedbackMsg').value;
+            var email = document.getElementById('feedbackEmail').value;
+            var pageUrl = window.location.href;
+            var feedbackType = type ? type.value : 'other';
+
+            if (FEEDBACK_API) {
+                var btn = form.querySelector('.feedback-submit');
+                if (btn) btn.textContent = 'Sending...';
+                fetch(FEEDBACK_API, {
+                    method: 'POST',
+                    headers: {'Content-Type': 'text/plain'},
+                    body: JSON.stringify({
+                        action: 'submit_feedback',
+                        page_url: pageUrl,
+                        feedback_type: feedbackType,
+                        message: msg,
+                        user_email: email
+                    })
+                }).then(function(r) { return r.json(); }).then(function(data) {
+                    if (btn) btn.textContent = 'Send Feedback';
+                    form.style.display = 'none';
+                    document.getElementById('feedbackSuccess').style.display = 'block';
+                    setTimeout(function() {
+                        document.getElementById('feedbackPanel').classList.remove('open');
+                        setTimeout(function() {
+                            form.style.display = '';
+                            form.reset();
+                            document.getElementById('feedbackSuccess').style.display = 'none';
+                        }, 300);
+                    }, 2000);
+                }).catch(function() {
+                    if (btn) btn.textContent = 'Send Feedback';
+                    fallbackMailto(feedbackType, msg, email, pageUrl);
+                });
+            } else {
+                fallbackMailto(feedbackType, msg, email, pageUrl);
+            }
+        }
+        function fallbackMailto(type, msg, email, pageUrl) {
+            var subject = encodeURIComponent('[AI 2030 Report] ' + type + ': ' + document.title.split(' - ')[0]);
+            var body = encodeURIComponent('Type: ' + type + '\nPage: ' + pageUrl + '\nFrom: ' + (email || 'Anonymous') + '\n\nMessage:\n' + msg);
             window.location.href = 'mailto:narenbizymoms@gmail.com?subject=' + subject + '&body=' + body;
+            var form = document.getElementById('feedbackForm');
             form.style.display = 'none';
             document.getElementById('feedbackSuccess').style.display = 'block';
-            setTimeout(() => {
+            setTimeout(function() {
                 document.getElementById('feedbackPanel').classList.remove('open');
-                setTimeout(() => {
+                setTimeout(function() {
                     form.style.display = '';
                     form.reset();
                     document.getElementById('feedbackSuccess').style.display = 'none';
