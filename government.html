@@ -1174,6 +1174,126 @@ button {
     .entity-hero-title {
         font-size: 2rem;
     }
+
+    /* Feedback widget - mobile */
+    .feedback-widget {
+        bottom: 1rem;
+        left: 1rem;
+        right: 1rem;
+    }
+    .feedback-toggle {
+        padding: 0.8rem 1.4rem;
+        font-size: 1rem;
+        min-height: 48px;
+    }
+    .feedback-panel {
+        width: calc(100vw - 2rem);
+        max-width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 3.5rem;
+    }
+    .feedback-panel .feedback-form {
+        padding: 1rem;
+    }
+    .feedback-field label {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+    .feedback-field textarea {
+        font-size: 16px !important;
+        padding: 0.75rem;
+        min-height: 100px;
+    }
+    .feedback-field select,
+    .feedback-field input[type="email"] {
+        font-size: 16px !important;
+        padding: 0.75rem;
+        min-height: 48px;
+    }
+    .feedback-type-btns {
+        flex-wrap: wrap;
+    }
+    .feedback-type-label {
+        font-size: 0.9rem !important;
+        padding: 0.5rem 0.8rem;
+        min-height: 44px;
+    }
+    .feedback-submit {
+        min-height: 48px;
+        font-size: 1rem;
+        width: 100%;
+    }
+    .feedback-close {
+        font-size: 1.5rem;
+        min-width: 44px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Share with Leaders - mobile */
+    .share-leaders-section {
+        padding: 1.5rem 1rem;
+    }
+    .leaders-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+    .leader-card {
+        padding: 1rem;
+    }
+    .leader-email-btn {
+        min-height: 48px;
+        display: inline-flex;
+        align-items: center;
+        font-size: 0.95rem;
+        padding: 0.6rem 1rem;
+    }
+
+    /* Share bar buttons - mobile */
+    .share-bar .share-btn,
+    .share-bar a {
+        min-height: 44px;
+        padding: 0.5rem 0.75rem;
+        font-size: 0.85rem;
+    }
+
+    /* Tables - mobile */
+    .article-content table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Images - mobile */
+    .article-content img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* General body text - prevent iOS zoom */
+    .article-content p,
+    .article-content li,
+    .article-content td {
+        font-size: 16px;
+    }
+
+    /* Breadcrumb - mobile */
+    .breadcrumb {
+        font-size: 0.8rem;
+        flex-wrap: wrap;
+        padding: 0.5rem 0;
+    }
+
+    /* Scroll to top button */
+    .scroll-top {
+        bottom: 5rem;
+        right: 1rem;
+        width: 44px;
+        height: 44px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1451,7 +1571,6 @@ button {
                 <li><a href="/browse/countries.html">Countries</a></li>
                 <li><a href="/browse/companies.html">Companies</a></li>
                 <li><a href="/browse/sectors.html">Sectors</a></li>
-                <li><a href="/government.html">Government</a></li>
                 <li><a href="/search.html">Search</a></li>
                 <li><a href="/about.html">About</a></li>
             </nav>
@@ -1600,1290 +1719,13 @@ button {
                 <a href="/search.html?q=government" style="display: inline-block; padding: 1rem 2rem; background: var(--accent-blue); color: white; border-radius: 0.5rem; font-weight: 600;">View All Government Articles →</a>
             </div>
         </section>
-
-        
-        <section style="margin: 3rem 0;" id="directory">
-            <h2 style="font-size: 1.8rem; margin-bottom: 0.5rem;">🌍 Global Government Directory</h2>
-            <p style="color: var(--text-secondary); margin-bottom: 1rem;">291+ government leaders across 33 countries · Last verified: March 2026</p>
-            <div style="margin-bottom: 2rem;">
-                <input type="text" id="dirSearch" placeholder="Search by country or official name..." oninput="filterDirectory()" style="width: 100%; max-width: 500px; padding: 0.75rem 1rem; background: var(--surface); border: 1px solid var(--border); border-radius: 0.5rem; color: var(--text-primary); font-size: 0.95rem;">
-            </div>
-            
-            <div class="directory-country" data-country="canada">
-                <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem;">🇨🇦 Canada — Federal Government</h3>
-                <div class="leaders-grid"><div class="leader-card">
-                    <div class="leader-name">Mark Joseph Carney</div>
-                    <div class="leader-title">Prime Minister of Canada</div>
-                    <a href="mailto:mark.carney@parl.gc.ca" class="leader-email-btn">📧 Contact</a>
-                </div><div class="leader-card">
-                    <div class="leader-name">Dominic LeBlanc</div>
-                    <div class="leader-title">President of the King's Privy Council and Minister responsible for Canada-U.S. Trade, Intergovernmental Affairs, and Internal Trade</div>
-                    <a href="mailto:dominic.leblanc@parl.gc.ca" class="leader-email-btn">📧 Contact</a>
-                </div><div class="leader-card">
-                    <div class="leader-name">Mélanie Joly</div>
-                    <div class="leader-title">Minister of Industry</div>
-                    <a href="mailto:melanie.joly@parl.gc.ca" class="leader-email-btn">📧 Contact</a>
-                </div><div class="leader-card">
-                    <div class="leader-name">François-Philippe Champagne</div>
-                    <div class="leader-title">Minister of Finance and National Revenue</div>
-                    <a href="mailto:francois-philippe.champagne@parl.gc.ca" class="leader-email-btn">📧 Contact</a>
-                </div><div class="leader-card">
-                    <div class="leader-name">Anita Anand</div>
-                    <div class="leader-title">Minister of Foreign Affairs</div>
-                    <a href="mailto:anita.anand@parl.gc.ca" class="leader-email-btn">📧 Contact</a>
-                </div><div class="leader-card">
-                    <div class="leader-name">Patty Hajdu</div>
-                    <div class="leader-title">Minister of Jobs and Families</div>
-                    <a href="mailto:patty.hajdu@parl.gc.ca" class="leader-email-btn">📧 Contact</a>
-                </div><div class="leader-card">
-                    <div class="leader-name">Marc Miller</div>
-                    <div class="leader-title">Minister of Canadian Identity and Culture</div>
-                    <a href="mailto:marc.miller@parl.gc.ca" class="leader-email-btn">📧 Contact</a>
-                </div><div class="leader-card">
-                    <div class="leader-name">Sean Fraser</div>
-                    <div class="leader-title">Minister of Justice and Attorney General of Canada</div>
-                    <a href="mailto:sean.fraser@parl.gc.ca" class="leader-email-btn">📧 Contact</a>
-                </div><div class="leader-card">
-                    <div class="leader-name">Joël Lightbound</div>
-                    <div class="leader-title">Minister and Quebec Lieutenant</div>
-                    <a href="mailto:joel.lightbound@parl.gc.ca" class="leader-email-btn">📧 Contact</a>
-                </div><div class="leader-card">
-                    <div class="leader-name">Julie Dabrusin</div>
-                    <div class="leader-title">Minister of Parks and Nature</div>
-                    <a href="mailto:julie.dabrusin@parl.gc.ca" class="leader-email-btn">📧 Contact</a>
-                </div><div class="leader-card">
-                    <div class="leader-name">Lena Metlege Diab</div>
-                    <div class="leader-title">Minister of Immigration</div>
-                    <a href="mailto:lena.metlege.diab@parl.gc.ca" class="leader-email-btn">📧 Contact</a>
-                </div><div class="leader-card">
-                    <div class="leader-name">Marjorie Michel</div>
-                    <div class="leader-title">Minister of Health</div>
-                    <a href="mailto:marjorie.michel@parl.gc.ca" class="leader-email-btn">📧 Contact</a>
-                </div><div class="leader-card">
-                    <div class="leader-name">Gregor Robertson</div>
-                    <div class="leader-title">Minister of Housing and Infrastructure</div>
-                    <a href="mailto:gregor.robertson@parl.gc.ca" class="leader-email-btn">📧 Contact</a>
-                </div><div class="leader-card">
-                    <div class="leader-name">Tim Hodgson</div>
-                    <div class="leader-title">Minister of Energy and Natural Resources</div>
-                    <a href="mailto:tim.hodgson@parl.gc.ca" class="leader-email-btn">📧 Contact</a>
-                </div></div>
-                <h4 style="font-size: 1.1rem; margin: 2rem 0 0.5rem;">Provincial & Territorial Premiers</h4>
-                <div class="leaders-grid"><div class="leader-card">
-                    <div class="leader-name">Danielle Smith</div>
-                    <div class="leader-title">Premier of Alberta (United Conservative Party)</div>
-                </div><div class="leader-card">
-                    <div class="leader-name">David Eby</div>
-                    <div class="leader-title">Premier of British Columbia (New Democratic Party)</div>
-                </div><div class="leader-card">
-                    <div class="leader-name">Wab Kinew</div>
-                    <div class="leader-title">Premier of Manitoba (New Democratic Party)</div>
-                </div><div class="leader-card">
-                    <div class="leader-name">Susan Holt</div>
-                    <div class="leader-title">Premier of New Brunswick (Liberal Party)</div>
-                </div><div class="leader-card">
-                    <div class="leader-name">Tony Wakeham</div>
-                    <div class="leader-title">Premier of Newfoundland and Labrador (Progressive Conservative)</div>
-                </div><div class="leader-card">
-                    <div class="leader-name">R.J. Simpson</div>
-                    <div class="leader-title">Premier of Northwest Territories (Independent)</div>
-                </div><div class="leader-card">
-                    <div class="leader-name">Tim Houston</div>
-                    <div class="leader-title">Premier of Nova Scotia (Progressive Conservative)</div>
-                </div><div class="leader-card">
-                    <div class="leader-name">John Main</div>
-                    <div class="leader-title">Premier of Nunavut (Independent)</div>
-                </div><div class="leader-card">
-                    <div class="leader-name">Doug Ford</div>
-                    <div class="leader-title">Premier of Ontario (Progressive Conservative)</div>
-                </div><div class="leader-card">
-                    <div class="leader-name">Rob Lantz</div>
-                    <div class="leader-title">Premier of Prince Edward Island (Progressive Conservative)</div>
-                </div><div class="leader-card">
-                    <div class="leader-name">François Legault (transitioning leadership - April 2026)</div>
-                    <div class="leader-title">Premier of Quebec (Coalition Avenir Québec)</div>
-                </div><div class="leader-card">
-                    <div class="leader-name">Scott Moe</div>
-                    <div class="leader-title">Premier of Saskatchewan (Saskatchewan Party)</div>
-                </div><div class="leader-card">
-                    <div class="leader-name">Nils Clarke</div>
-                    <div class="leader-title">Premier of Yukon (Yukon Liberal Party)</div>
-                </div></div>
-            </div>
-            
-                <div class="directory-country" data-country="australia">
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">🇦🇺 Australia</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">AI Policy: AI Safety Institute (established 2026); National AI Plan</p>
-                    <div class="leaders-grid"><div class="leader-card">
-                        <div class="leader-name">Anthony Albanese</div>
-                        <div class="leader-title">Prime Minister</div>
-                        <a href="mailto:pm@pmc.gov.au" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Anthony Albanese</div>
-                        <div class="leader-title">Prime Minister</div>
-                        <a href="mailto:pm@pmc.gov.au" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Sam Mostyn</div>
-                        <div class="leader-title">Governor-General</div>
-                        <a href="mailto:enquiries@gg.gov.au" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Tim Ayres</div>
-                        <div class="leader-title">Minister for Industry and Innovation, Minister for Science</div>
-                        <a href="mailto:minister.ayres@aph.gov.au" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Andrew Charlton</div>
-                        <div class="leader-title">Assistant Minister for Science, Technology and the Digital Economy</div>
-                        <a href="mailto:minister.charlton@aph.gov.au" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Katy Gallagher</div>
-                        <div class="leader-title">Minister for Finance</div>
-                        <a href="mailto:minister.gallagher@aph.gov.au" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Jason Clare</div>
-                        <div class="leader-title">Minister for Education</div>
-                        <a href="mailto:minister.clare@aph.gov.au" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Catherine King</div>
-                        <div class="leader-title">Minister for Infrastructure</div>
-                        <a href="mailto:minister.king@aph.gov.au" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Mark Butler</div>
-                        <div class="leader-title">Minister for Health and Aged Care</div>
-                        <a href="mailto:minister.butler@aph.gov.au" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Clare O'Neil</div>
-                        <div class="leader-title">Minister for Home Affairs</div>
-                        <a href="mailto:minister.oneill@aph.gov.au" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Julie Collins</div>
-                        <div class="leader-title">Minister for Social Services</div>
-                        <a href="mailto:minister.collins@aph.gov.au" class="leader-email-btn">📧 Contact</a>
-                    </div></div>
-                </div>
-                <div class="directory-country" data-country="barbados">
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">🇧🇧 Barbados</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">AI Policy: Not formally established</p>
-                    <div class="leaders-grid"><div class="leader-card">
-                        <div class="leader-name">Mia Mottley</div>
-                        <div class="leader-title">Prime Minister</div>
-                        <a href="mailto:pm@gov.bb" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Mia Mottley</div>
-                        <div class="leader-title">Prime Minister, Minister of Finance, Culture, Security</div>
-                        <a href="mailto:pm@gov.bb" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Santia Bradshaw</div>
-                        <div class="leader-title">Deputy Prime Minister, Minister of Environment</div>
-                        <a href="mailto:dprime@gov.bb" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Ryan Straughn</div>
-                        <div class="leader-title">Minister of Finance</div>
-                        <a href="mailto:minister.finance@gov.bb" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Lisa Cummins</div>
-                        <div class="leader-title">Minister of Health and Wellness</div>
-                        <a href="mailto:minister.health@gov.bb" class="leader-email-btn">📧 Contact</a>
-                    </div></div>
-                </div>
-                <div class="directory-country" data-country="brazil">
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">🇧🇷 Brazil</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">AI Policy: Ministry of Science and Technology; National AI Strategy</p>
-                    <div class="leaders-grid"><div class="leader-card">
-                        <div class="leader-name">Luiz Inácio Lula da Silva</div>
-                        <div class="leader-title">President</div>
-                        <a href="mailto:presidencia@planalto.gov.br" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Luiz Inácio Lula da Silva</div>
-                        <div class="leader-title">President</div>
-                        <a href="mailto:presidencia@planalto.gov.br" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Rui Costa</div>
-                        <div class="leader-title">Chief of Staff</div>
-                        <a href="mailto:Casa.Civil@planalto.gov.br" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Fernando Haddad</div>
-                        <div class="leader-title">Minister of Finance</div>
-                        <a href="mailto:ministro@fazenda.gov.br" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Camila Mortaio</div>
-                        <div class="leader-title">Minister of Science and Technology</div>
-                        <a href="mailto:gabinete@mct.gov.br" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Silvio Almeida</div>
-                        <div class="leader-title">Minister of Justice and Public Security</div>
-                        <a href="mailto:ministro@mj.gov.br" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Marina Silva</div>
-                        <div class="leader-title">Minister of Environment</div>
-                        <a href="mailto:gabinete@mma.gov.br" class="leader-email-btn">📧 Contact</a>
-                    </div></div>
-                </div>
-                <div class="directory-country" data-country="china">
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">🇨🇳 China</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">AI Policy: Ministry of Industry and Information Technology; Cyberspace Administration; National AI Policy Framework; 15th Five-Year Plan (2026-2030)</p>
-                    <div class="leaders-grid"><div class="leader-card">
-                        <div class="leader-name">Li Qiang</div>
-                        <div class="leader-title">Premier</div>
-                        <a href="mailto:premier@scio.gov.cn" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Xi Jinping</div>
-                        <div class="leader-title">President, General Secretary of CCP</div>
-                        <a href="mailto:contact@scio.gov.cn" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Li Qiang</div>
-                        <div class="leader-title">Premier</div>
-                        <a href="mailto:premier@scio.gov.cn" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Li Lecheng</div>
-                        <div class="leader-title">Minister of Industry and Information Technology (MIIT)</div>
-                        <a href="mailto:webmaster@miit.gov.cn" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Yin Hejun</div>
-                        <div class="leader-title">Minister of Science and Technology</div>
-                        <a href="mailto:webmaster@most.gov.cn" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">He Lifeng</div>
-                        <div class="leader-title">Vice Premier, National Development and Reform Commission</div>
-                        <a href="mailto:info@ndrc.gov.cn" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Cai Qi</div>
-                        <div class="leader-title">Politburo Standing Committee Member</div>
-                        <a href="mailto:contact@scio.gov.cn" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Ding Xuexiang</div>
-                        <div class="leader-title">Politburo Standing Committee Member</div>
-                        <a href="mailto:contact@scio.gov.cn" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Wang Huning</div>
-                        <div class="leader-title">Politburo Standing Committee Member</div>
-                        <a href="mailto:contact@scio.gov.cn" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Zhang Yiming</div>
-                        <div class="leader-title">Cyberspace Administration of China Director</div>
-                        <a href="mailto:webmaster@cac.gov.cn" class="leader-email-btn">📧 Contact</a>
-                    </div></div>
-                </div>
-                <div class="directory-country" data-country="egypt">
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">🇪🇬 Egypt</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">AI Policy: Ministry of Communications and Information Technology; Digital Egypt Strategy</p>
-                    <div class="leaders-grid"><div class="leader-card">
-                        <div class="leader-name">Mostafa Madbouly</div>
-                        <div class="leader-title">Prime Minister</div>
-                        <a href="mailto:cabinet@idsc.gov.eg" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Abdel Fattah el-Sisi</div>
-                        <div class="leader-title">President</div>
-                        <a href="mailto:presidency@idsc.gov.eg" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Mostafa Madbouly</div>
-                        <div class="leader-title">Prime Minister</div>
-                        <a href="mailto:cabinet@idsc.gov.eg" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Mohamed Maait</div>
-                        <div class="leader-title">Minister of Finance</div>
-                        <a href="mailto:minister@mof.gov.eg" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Hussein Issa</div>
-                        <div class="leader-title">Deputy Prime Minister for Economy</div>
-                        <a href="mailto:cabinet@idsc.gov.eg" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Mohamed Farid Saleh</div>
-                        <div class="leader-title">Minister of Investment</div>
-                        <a href="mailto:minister@mitweb.gov.eg" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Badr Abdelatty</div>
-                        <div class="leader-title">Minister of Foreign Affairs</div>
-                        <a href="mailto:mfa@mfa.gov.eg" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Abdel Aziz Qansua</div>
-                        <div class="leader-title">Minister of Higher Education and Scientific Research</div>
-                        <a href="mailto:minister@mohesr.gov.eg" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Khaled El-Enany</div>
-                        <div class="leader-title">Minister of Communications and Information Technology</div>
-                        <a href="mailto:minister@mcit.gov.eg" class="leader-email-btn">📧 Contact</a>
-                    </div></div>
-                </div>
-                <div class="directory-country" data-country="france">
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">🇫🇷 France</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">AI Policy: Ministry of Digital; France's AI Strategy; AI Impact Summit participation</p>
-                    <div class="leaders-grid"><div class="leader-card">
-                        <div class="leader-name">Sébastien Lecornu</div>
-                        <div class="leader-title">Prime Minister</div>
-                        <a href="mailto:contact@elysee.fr" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Emmanuel Macron</div>
-                        <div class="leader-title">President</div>
-                        <a href="mailto:contact@elysee.fr" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Sébastien Lecornu</div>
-                        <div class="leader-title">Prime Minister</div>
-                        <a href="mailto:contact-pm@gouvernement.fr" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Laurent Saint-Martin</div>
-                        <div class="leader-title">Minister of the Economy, Finance and Industrial Sovereignty</div>
-                        <a href="mailto:minister@bercy.gouv.fr" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Jean-Noel Barrot</div>
-                        <div class="leader-title">Minister of Foreign Affairs</div>
-                        <a href="mailto:minister@diplomatie.gouv.fr" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Catherine Vautrin</div>
-                        <div class="leader-title">Minister of Defence</div>
-                        <a href="mailto:minister@defense.gouv.fr" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Clara Chappaz</div>
-                        <div class="leader-title">Minister responsible for AI and Digital Technologies</div>
-                        <a href="mailto:minister@digital.gouv.fr" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Amélie Oudéa-Castéra</div>
-                        <div class="leader-title">Minister of Higher Education and Research</div>
-                        <a href="mailto:minister@enseignementsup.gouv.fr" class="leader-email-btn">📧 Contact</a>
-                    </div></div>
-                </div>
-                <div class="directory-country" data-country="germany">
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">🇩🇪 Germany</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">AI Policy: Federal Ministry for Digital and State Modernisation; German AI Strategy; EU AI coordination</p>
-                    <div class="leaders-grid"><div class="leader-card">
-                        <div class="leader-name">Friedrich Merz</div>
-                        <div class="leader-title">Chancellor</div>
-                        <a href="mailto:internetservice@bundeskanzleramt.bund.de" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Friedrich Merz</div>
-                        <div class="leader-title">Chancellor</div>
-                        <a href="mailto:internetservice@bundeskanzleramt.bund.de" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Karsten Wildberger</div>
-                        <div class="leader-title">Federal Minister for Digital and State Modernisation</div>
-                        <a href="mailto:posteingang@bmdv.bund.de" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Dorothee Bär</div>
-                        <div class="leader-title">Federal Minister for Research, Technology and Space</div>
-                        <a href="mailto:buergerservice@bmbf.bund.de" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Jörg Kukies</div>
-                        <div class="leader-title">Federal Minister for Economics and Climate Action</div>
-                        <a href="mailto:service@bmwk.bund.de" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Lars Klingbeil</div>
-                        <div class="leader-title">Vice Chancellor, Federal Minister of Finance</div>
-                        <a href="mailto:poststelle@bmf.bund.de" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Annalena Baerbock</div>
-                        <div class="leader-title">Federal Minister for Foreign Affairs</div>
-                        <a href="mailto:pressestelle@auswartiges-amt.de" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Bettina Stark-Watzinger</div>
-                        <div class="leader-title">Federal Minister of Education and Research</div>
-                        <a href="mailto:service@bmbf.bund.de" class="leader-email-btn">📧 Contact</a>
-                    </div></div>
-                </div>
-                <div class="directory-country" data-country="india">
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">🇮🇳 India</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">AI Policy: Ministry of Electronics and Information Technology; IndiaAI Mission; India AI Impact Summit; INDIAai platform</p>
-                    <div class="leaders-grid"><div class="leader-card">
-                        <div class="leader-name">Narendra Modi</div>
-                        <div class="leader-title">Prime Minister</div>
-                        <a href="mailto:pm@pib.gov.in" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Narendra Modi</div>
-                        <div class="leader-title">Prime Minister</div>
-                        <a href="mailto:pm@pib.gov.in" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Droupadi Murmu</div>
-                        <div class="leader-title">President</div>
-                        <a href="mailto:contact@rashtrapati.gov.in" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Ashwini Vaishnaw</div>
-                        <div class="leader-title">Minister of Electronics and Information Technology</div>
-                        <a href="mailto:minister@meity.gov.in" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Jitendra Singh</div>
-                        <div class="leader-title">Union Minister of Science and Technology</div>
-                        <a href="mailto:minister@dst.gov.in" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Nirmala Sitharaman</div>
-                        <div class="leader-title">Minister of Finance</div>
-                        <a href="mailto:minister@finmin.nic.in" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Dharmendra Pradhan</div>
-                        <div class="leader-title">Minister of Education</div>
-                        <a href="mailto:minister@education.gov.in" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Piyush Goyal</div>
-                        <div class="leader-title">Minister of Commerce and Industry</div>
-                        <a href="mailto:minister@commerce.gov.in" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Rajesh Jha</div>
-                        <div class="leader-title">Secretary, Ministry of Electronics and Information Technology</div>
-                        <a href="mailto:secy@meity.gov.in" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Bharat Arun Sharma</div>
-                        <div class="leader-title">Chief Executive Officer, IndiaAI</div>
-                        <a href="mailto:ceo@indiaai.gov.in" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Shankar Priya Menon</div>
-                        <div class="leader-title">Chief, DSIR (Department of Science and Industrial Research)</div>
-                        <a href="mailto:chief@dsir.gov.in" class="leader-email-btn">📧 Contact</a>
-                    </div></div>
-                </div>
-                <div class="directory-country" data-country="indonesia">
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">🇮🇩 Indonesia</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">AI Policy: Ministry of Communication and Information; Digital Indonesia Strategy; Board of Peace AI initiatives</p>
-                    <div class="leaders-grid"><div class="leader-card">
-                        <div class="leader-name">Prabowo Subianto</div>
-                        <div class="leader-title">President</div>
-                        <a href="mailto:info@setpres.go.id" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Prabowo Subianto</div>
-                        <div class="leader-title">President</div>
-                        <a href="mailto:info@setpres.go.id" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Airlangga Hartarto</div>
-                        <div class="leader-title">Coordinating Minister for Economic Affairs</div>
-                        <a href="mailto:ekonomi@setkab.go.id" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Tjahjo Kumolo</div>
-                        <div class="leader-title">Coordinating Minister for Politics, Law and Security</div>
-                        <a href="mailto:politika@setkab.go.id" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Supratman Andi Agtas</div>
-                        <div class="leader-title">Minister of Communication and Information</div>
-                        <a href="mailto:kominfo@kominfo.go.id" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Sri Mulyani Indrawati</div>
-                        <div class="leader-title">Minister of Finance</div>
-                        <a href="mailto:kemenkeu@kemenkeu.go.id" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Nusyirwan</div>
-                        <div class="leader-title">Minister of Industry</div>
-                        <a href="mailto:kemenperin@kemenperin.go.id" class="leader-email-btn">📧 Contact</a>
-                    </div></div>
-                </div>
-                <div class="directory-country" data-country="ireland">
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">🇮🇪 Ireland</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">AI Policy: Department of Enterprise, Trade and Employment; EU AI Act implementation</p>
-                    <div class="leaders-grid"><div class="leader-card">
-                        <div class="leader-name">Micheál Martin</div>
-                        <div class="leader-title">Taoiseach (Prime Minister)</div>
-                        <a href="mailto:oifig_an_taoisigh@taoiseach.gov.ie" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Micheál Martin</div>
-                        <div class="leader-title">Taoiseach (Prime Minister)</div>
-                        <a href="mailto:oifig_an_taoisigh@taoiseach.gov.ie" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Simon Harris</div>
-                        <div class="leader-title">Tánaiste (Deputy Prime Minister)</div>
-                        <a href="mailto:oifig_an_taoisigh@taoiseach.gov.ie" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Paschal Donohoe</div>
-                        <div class="leader-title">Minister for Finance</div>
-                        <a href="mailto:minister@finance.gov.ie" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Eamon Ryan</div>
-                        <div class="leader-title">Minister for Enterprise, Trade and Employment</div>
-                        <a href="mailto:minister@enterprise.gov.ie" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Norma Foley</div>
-                        <div class="leader-title">Minister for Education</div>
-                        <a href="mailto:minister@education.gov.ie" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Jennifer Carroll MacNeill</div>
-                        <div class="leader-title">Minister for Enterprise, Trade and Employment (Digital)</div>
-                        <a href="mailto:digital@enterprise.gov.ie" class="leader-email-btn">📧 Contact</a>
-                    </div></div>
-                </div>
-                <div class="directory-country" data-country="israel">
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">🇮🇱 Israel</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">AI Policy: Ministry of Innovation, Science and Technology; Israeli AI Strategy</p>
-                    <div class="leaders-grid"><div class="leader-card">
-                        <div class="leader-name">Benjamin Netanyahu</div>
-                        <div class="leader-title">Prime Minister</div>
-                        <a href="mailto:pm@pmo.gov.il" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Benjamin Netanyahu</div>
-                        <div class="leader-title">Prime Minister</div>
-                        <a href="mailto:pm@pmo.gov.il" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Naftali Bennett</div>
-                        <div class="leader-title">Opposition Leader (2026 elections)</div>
-                        <a href="mailto:bennett@knesset.gov.il" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Gideon Sa'ar</div>
-                        <div class="leader-title">Minister of Finance</div>
-                        <a href="mailto:minister@finance.gov.il" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Moshe Arbel</div>
-                        <div class="leader-title">Minister of Communications</div>
-                        <a href="mailto:minister@moc.gov.il" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Yoav Gallant</div>
-                        <div class="leader-title">Minister of Defence</div>
-                        <a href="mailto:minister@mod.gov.il" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Ofir Akunis</div>
-                        <div class="leader-title">Minister of Innovation, Science and Technology</div>
-                        <a href="mailto:minister@most.gov.il" class="leader-email-btn">📧 Contact</a>
-                    </div></div>
-                </div>
-                <div class="directory-country" data-country="japan">
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">🇯🇵 Japan</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">AI Policy: Ministry of Economy, Trade and Industry; Digital Transformation Strategy; Japan's Growth Strategy with AI focus</p>
-                    <div class="leaders-grid"><div class="leader-card">
-                        <div class="leader-name">Sanae Takaichi</div>
-                        <div class="leader-title">Prime Minister</div>
-                        <a href="mailto:info@kantei.go.jp" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Sanae Takaichi</div>
-                        <div class="leader-title">Prime Minister</div>
-                        <a href="mailto:info@kantei.go.jp" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Shinjiro Koizumi</div>
-                        <div class="leader-title">Minister of Defence</div>
-                        <a href="mailto:info@mod.go.jp" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Takaji Wakabayashi</div>
-                        <div class="leader-title">Minister of Finance</div>
-                        <a href="mailto:info@mof.go.jp" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Yuko Obuchi</div>
-                        <div class="leader-title">Minister of Economy, Trade and Industry</div>
-                        <a href="mailto:info@meti.go.jp" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Tomoji Takeda</div>
-                        <div class="leader-title">Minister of Education, Culture, Sports, Science and Technology</div>
-                        <a href="mailto:info@mext.go.jp" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Takeshi Iwaya</div>
-                        <div class="leader-title">Chief Cabinet Secretary</div>
-                        <a href="mailto:info@cas.go.jp" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Toshinao Nakayama</div>
-                        <div class="leader-title">Minister of Digital Transformation</div>
-                        <a href="mailto:info@digital.go.jp" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Kamakari Masturura</div>
-                        <div class="leader-title">Minister of Health, Labour and Welfare</div>
-                        <a href="mailto:info@mhlw.go.jp" class="leader-email-btn">📧 Contact</a>
-                    </div></div>
-                </div>
-                <div class="directory-country" data-country="malaysia">
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">🇲🇾 Malaysia</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">AI Policy: Ministry of Digital; Malaysia Digital Economy Blueprint; 13th Malaysia Plan (2026-2030)</p>
-                    <div class="leaders-grid"><div class="leader-card">
-                        <div class="leader-name">Anwar Ibrahim</div>
-                        <div class="leader-title">Prime Minister</div>
-                        <a href="mailto:pm@pmo.gov.my" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Anwar Ibrahim</div>
-                        <div class="leader-title">Prime Minister</div>
-                        <a href="mailto:pm@pmo.gov.my" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Gobind Singh Deo</div>
-                        <div class="leader-title">Minister of Digital</div>
-                        <a href="mailto:minister@digital.gov.my" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Wilson Ugak Kumbong</div>
-                        <div class="leader-title">Deputy Minister of Digital</div>
-                        <a href="mailto:deputyminister@digital.gov.my" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Amir Hamizan Yahya</div>
-                        <div class="leader-title">Minister of Finance</div>
-                        <a href="mailto:minister@mof.gov.my" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Fadillah Yusof</div>
-                        <div class="leader-title">Minister of International Trade and Industry</div>
-                        <a href="mailto:minister@miti.gov.my" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Dr. Zaliha Mustafa</div>
-                        <div class="leader-title">Minister of Science, Technology and Innovation</div>
-                        <a href="mailto:minister@mosti.gov.my" class="leader-email-btn">📧 Contact</a>
-                    </div></div>
-                </div>
-                <div class="directory-country" data-country="mexico">
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">🇲🇽 Mexico</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">AI Policy: Ministry of Science, Technology and Innovation; National Technology Strategy</p>
-                    <div class="leaders-grid"><div class="leader-card">
-                        <div class="leader-name">Claudia Sheinbaum Pardo</div>
-                        <div class="leader-title">President</div>
-                        <a href="mailto:contacto@presidencia.gob.mx" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Claudia Sheinbaum Pardo</div>
-                        <div class="leader-title">President</div>
-                        <a href="mailto:contacto@presidencia.gob.mx" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Rogelio Ramírez de la O</div>
-                        <div class="leader-title">Minister of Finance and Public Credit</div>
-                        <a href="mailto:ministro@hacienda.gob.mx" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Marcela Guerra</div>
-                        <div class="leader-title">Minister of Interior</div>
-                        <a href="mailto:minister@segob.gob.mx" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Jesús Antonio Esteva Salinas</div>
-                        <div class="leader-title">Minister of Science, Technology and Innovation</div>
-                        <a href="mailto:minister@ciencia.gob.mx" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Ariadna Montiel</div>
-                        <div class="leader-title">Minister of Infrastructure, Communications and Transportation</div>
-                        <a href="mailto:minister@sct.gob.mx" class="leader-email-btn">📧 Contact</a>
-                    </div></div>
-                </div>
-                <div class="directory-country" data-country="netherlands">
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">🇳🇱 Netherlands</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">AI Policy: Ministry of Economic Affairs and Climate; Dutch AI Strategy; EU AI Act coordination</p>
-                    <div class="leaders-grid"><div class="leader-card">
-                        <div class="leader-name">Rob Jetten</div>
-                        <div class="leader-title">Prime Minister</div>
-                        <a href="mailto:contact@minaz.nl" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Rob Jetten</div>
-                        <div class="leader-title">Prime Minister</div>
-                        <a href="mailto:contact@minaz.nl" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Eelco Heinen</div>
-                        <div class="leader-title">Minister of Finance</div>
-                        <a href="mailto:minister@minfin.nl" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Eddy van Hijum</div>
-                        <div class="leader-title">Minister of Economic Affairs and Climate</div>
-                        <a href="mailto:minister@minez.nl" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Dijkstra Sjoerd</div>
-                        <div class="leader-title">Minister of Interior and Kingdom Relations</div>
-                        <a href="mailto:minister@minbzk.nl" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Eppo Bruins</div>
-                        <div class="leader-title">Minister of Education, Culture and Science</div>
-                        <a href="mailto:minister@minocw.nl" class="leader-email-btn">📧 Contact</a>
-                    </div></div>
-                </div>
-                <div class="directory-country" data-country="new-zealand">
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">🇳🇿 New Zealand</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">AI Policy: Ministry of Business, Innovation and Employment; New Zealand AI Strategy</p>
-                    <div class="leaders-grid"><div class="leader-card">
-                        <div class="leader-name">Christopher Luxon</div>
-                        <div class="leader-title">Prime Minister</div>
-                        <a href="mailto:pm@beehive.govt.nz" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Christopher Luxon</div>
-                        <div class="leader-title">Prime Minister</div>
-                        <a href="mailto:pm@beehive.govt.nz" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Nicola Willis</div>
-                        <div class="leader-title">Minister of Finance</div>
-                        <a href="mailto:minister@treasury.govt.nz" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Grant McCallum</div>
-                        <div class="leader-title">Minister of Economic Development, Trade and Consumer Affairs</div>
-                        <a href="mailto:minister@mbie.govt.nz" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Michele Forman</div>
-                        <div class="leader-title">Minister of Science and Innovation</div>
-                        <a href="mailto:minister@msi.govt.nz" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Erica Stanford</div>
-                        <div class="leader-title">Minister of Education</div>
-                        <a href="mailto:minister@education.govt.nz" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Simeon Brown</div>
-                        <div class="leader-title">Minister of Infrastructure</div>
-                        <a href="mailto:minister@infrastructure.govt.nz" class="leader-email-btn">📧 Contact</a>
-                    </div></div>
-                </div>
-                <div class="directory-country" data-country="nigeria">
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">🇳🇬 Nigeria</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">AI Policy: Ministry of Communications and Digital Economy; Nigeria's Digital Transformation Strategy</p>
-                    <div class="leaders-grid"><div class="leader-card">
-                        <div class="leader-name">Bola Tinubu</div>
-                        <div class="leader-title">President</div>
-                        <a href="mailto:info@statehouse.gov.ng" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Bola Tinubu</div>
-                        <div class="leader-title">President</div>
-                        <a href="mailto:info@statehouse.gov.ng" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Femi Gbajabiamila</div>
-                        <div class="leader-title">Chief of Staff to the President</div>
-                        <a href="mailto:cos@statehouse.gov.ng" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">George Akume</div>
-                        <div class="leader-title">Secretary to the Government of the Federation</div>
-                        <a href="mailto:sgf@statehouse.gov.ng" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Nuhu Ribadu</div>
-                        <div class="leader-title">National Security Adviser</div>
-                        <a href="mailto:nsa@statehouse.gov.ng" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Wale Edun</div>
-                        <div class="leader-title">Minister of Finance</div>
-                        <a href="mailto:minister@fmf.gov.ng" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Bosun Tijani</div>
-                        <div class="leader-title">Minister of Communications and Digital Economy</div>
-                        <a href="mailto:minister@fcc.gov.ng" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Tunji Alausa</div>
-                        <div class="leader-title">Minister of Education</div>
-                        <a href="mailto:minister@education.gov.ng" class="leader-email-btn">📧 Contact</a>
-                    </div></div>
-                </div>
-                <div class="directory-country" data-country="philippines">
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">🇵🇭 Philippines</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">AI Policy: Department of Information and Communications Technology; Science and Technology Integration Programme</p>
-                    <div class="leaders-grid"><div class="leader-card">
-                        <div class="leader-name">Ferdinand 'Bongbong' Marcos Jr.</div>
-                        <div class="leader-title">President</div>
-                        <a href="mailto:president@op.gov.ph" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Ferdinand 'Bongbong' Marcos Jr.</div>
-                        <div class="leader-title">President</div>
-                        <a href="mailto:president@op.gov.ph" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Maria Lourdes 'Leni' Robredo</div>
-                        <div class="leader-title">Vice President</div>
-                        <a href="mailto:vp@op.gov.ph" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Benjamin Diokno</div>
-                        <div class="leader-title">Secretary of Finance</div>
-                        <a href="mailto:secretary@dof.gov.ph" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Gregorio Lopez</div>
-                        <div class="leader-title">Secretary of Trade and Industry</div>
-                        <a href="mailto:secretary@dti.gov.ph" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Renato Solidum Jr.</div>
-                        <div class="leader-title">Secretary of Science and Technology</div>
-                        <a href="mailto:secretary@dost.gov.ph" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Juan Edgardo Angara</div>
-                        <div class="leader-title">Secretary of Information and Communications Technology</div>
-                        <a href="mailto:secretary@dict.gov.ph" class="leader-email-btn">📧 Contact</a>
-                    </div></div>
-                </div>
-                <div class="directory-country" data-country="poland">
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">🇵🇱 Poland</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">AI Policy: Ministry of Digital Affairs; Polish Digital Strategy; EU AI Act implementation</p>
-                    <div class="leaders-grid"><div class="leader-card">
-                        <div class="leader-name">Donald Tusk</div>
-                        <div class="leader-title">Prime Minister</div>
-                        <a href="mailto:pm@premier.gov.pl" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Donald Tusk</div>
-                        <div class="leader-title">Prime Minister</div>
-                        <a href="mailto:pm@premier.gov.pl" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Katarzyna Pełczyńska-Nałęcz</div>
-                        <div class="leader-title">Deputy Prime Minister, Minister of Foreign Affairs</div>
-                        <a href="mailto:minister@mfa.gov.pl" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Andrzej Domański</div>
-                        <div class="leader-title">Minister of Finance</div>
-                        <a href="mailto:minister@mf.gov.pl" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Jarosław Gielar</div>
-                        <div class="leader-title">Minister of Digital Affairs</div>
-                        <a href="mailto:minister@cy.gov.pl" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Zbigniew Ostrowski</div>
-                        <div class="leader-title">Minister of Science and Higher Education</div>
-                        <a href="mailto:minister@msu.edu.pl" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Barbara Nowacka</div>
-                        <div class="leader-title">Minister of Family, Labour and Social Policy</div>
-                        <a href="mailto:minister@mpips.gov.pl" class="leader-email-btn">📧 Contact</a>
-                    </div></div>
-                </div>
-                <div class="directory-country" data-country="saudi-arabia">
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">🇸🇦 Saudi Arabia</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">AI Policy: Vision 2030; Saudi AI Office; Public Investment Fund AI Strategy; NEOM AI integration</p>
-                    <div class="leaders-grid"><div class="leader-card">
-                        <div class="leader-name">Mohammed bin Salman Al Saud</div>
-                        <div class="leader-title">Crown Prince, Prime Minister</div>
-                        <a href="mailto:info@scad.gov.sa" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Salman bin Abdulaziz Al Saud</div>
-                        <div class="leader-title">King</div>
-                        <a href="mailto:info@scad.gov.sa" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Mohammed bin Salman Al Saud</div>
-                        <div class="leader-title">Crown Prince, Prime Minister</div>
-                        <a href="mailto:info@scad.gov.sa" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Mohammed bin Abdulrahman bin Abdulaziz Al Saud</div>
-                        <div class="leader-title">Deputy Prime Minister</div>
-                        <a href="mailto:info@scad.gov.sa" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Fahad Al-Saif</div>
-                        <div class="leader-title">Minister of Investment</div>
-                        <a href="mailto:minister@mia.gov.sa" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Faisal bin Bandar Al Saud</div>
-                        <div class="leader-title">Minister of Economy and Planning</div>
-                        <a href="mailto:minister@mep.gov.sa" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Khalid bin Salman bin Abdulaziz Al Saud</div>
-                        <div class="leader-title">Deputy Minister of Defence</div>
-                        <a href="mailto:minister@mod.gov.sa" class="leader-email-btn">📧 Contact</a>
-                    </div></div>
-                </div>
-                <div class="directory-country" data-country="singapore">
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">🇸🇬 Singapore</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">AI Policy: Ministry for Digital Development and Information; Smart Nation Strategy; AI Singapore</p>
-                    <div class="leaders-grid"><div class="leader-card">
-                        <div class="leader-name">Lawrence Wong</div>
-                        <div class="leader-title">Prime Minister</div>
-                        <a href="mailto:enquiry@pmo.gov.sg" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Lawrence Wong</div>
-                        <div class="leader-title">Prime Minister, Minister of Finance</div>
-                        <a href="mailto:enquiry@pmo.gov.sg" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Teo Chee Hean</div>
-                        <div class="leader-title">Deputy Prime Minister, Coordinating Minister for National Security</div>
-                        <a href="mailto:enquiry@pmo.gov.sg" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Vivian Balakrishnan</div>
-                        <div class="leader-title">Minister of Foreign Affairs</div>
-                        <a href="mailto:mfa@mfa.gov.sg" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Chan Chun Sing</div>
-                        <div class="leader-title">Minister of Energy</div>
-                        <a href="mailto:energy@ema.gov.sg" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Janil Puthucheary</div>
-                        <div class="leader-title">Minister for Digital Development and Information</div>
-                        <a href="mailto:mddi@mda.gov.sg" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Ong Ye Kung</div>
-                        <div class="leader-title">Minister of Health, Minister-in-Charge of Smart Nation</div>
-                        <a href="mailto:health@moh.gov.sg" class="leader-email-btn">📧 Contact</a>
-                    </div></div>
-                </div>
-                <div class="directory-country" data-country="south-africa">
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">🇿🇦 South Africa</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">AI Policy: Department of Communications and Digital Technologies; National Digital Infrastructure Programme; SA Digital Economy Strategy</p>
-                    <div class="leaders-grid"><div class="leader-card">
-                        <div class="leader-name">Cyril Ramaphosa</div>
-                        <div class="leader-title">President</div>
-                        <a href="mailto:contact@thepresidency.gov.za" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Cyril Ramaphosa</div>
-                        <div class="leader-title">President</div>
-                        <a href="mailto:contact@thepresidency.gov.za" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Baleka Mbete</div>
-                        <div class="leader-title">Deputy President</div>
-                        <a href="mailto:vpoffice@thepresidency.gov.za" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Enoch Godongwana</div>
-                        <div class="leader-title">Minister of Finance</div>
-                        <a href="mailto:minister@treasury.gov.za" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Khumbudzo Ntshavheni</div>
-                        <div class="leader-title">Minister of Communications and Digital Technologies</div>
-                        <a href="mailto:minister@dcdt.gov.za" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Blade Nzimande</div>
-                        <div class="leader-title">Minister of Science and Innovation</div>
-                        <a href="mailto:minister@dst.gov.za" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Siviwe Gwarube</div>
-                        <div class="leader-title">Minister of Basic Education</div>
-                        <a href="mailto:minister@dbe.gov.za" class="leader-email-btn">📧 Contact</a>
-                    </div></div>
-                </div>
-                <div class="directory-country" data-country="south-korea">
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">🇰🇷 South Korea</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">AI Policy: Ministry of Science and ICT; K-AI Strategy; Digital Innovation Division</p>
-                    <div class="leaders-grid"><div class="leader-card">
-                        <div class="leader-name">Lee Jae-Myung</div>
-                        <div class="leader-title">President</div>
-                        <a href="mailto:contact@president.go.kr" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Lee Jae-Myung</div>
-                        <div class="leader-title">President</div>
-                        <a href="mailto:contact@president.go.kr" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Choo Kyum-ho</div>
-                        <div class="leader-title">Prime Minister (appointment pending 2026 confirmation)</div>
-                        <a href="mailto:pm@pmo.go.kr" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Choi Jin-young</div>
-                        <div class="leader-title">Minister of Finance</div>
-                        <a href="mailto:minister@moef.go.kr" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Ahn Duk-soo</div>
-                        <div class="leader-title">Minister of Trade, Industry and Energy</div>
-                        <a href="mailto:minister@motie.go.kr" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Lee Ju-ho</div>
-                        <div class="leader-title">Minister of Science and ICT</div>
-                        <a href="mailto:minister@msit.go.kr" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Lee Sang-min</div>
-                        <div class="leader-title">Minister of Education</div>
-                        <a href="mailto:minister@moe.go.kr" class="leader-email-btn">📧 Contact</a>
-                    </div></div>
-                </div>
-                <div class="directory-country" data-country="sri-lanka">
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">🇱🇰 Sri Lanka</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">AI Policy: Ministry of Technology; Digital Transformation Strategic Plan</p>
-                    <div class="leaders-grid"><div class="leader-card">
-                        <div class="leader-name">Harini Amarasuriya</div>
-                        <div class="leader-title">Prime Minister</div>
-                        <a href="mailto:pmo@pmoffice.gov.lk" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Anura Kumara Dissanayake</div>
-                        <div class="leader-title">President</div>
-                        <a href="mailto:contact@president.gov.lk" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Harini Amarasuriya</div>
-                        <div class="leader-title">Prime Minister</div>
-                        <a href="mailto:pmo@pmoffice.gov.lk" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Harsha de Silva</div>
-                        <div class="leader-title">Minister of Finance</div>
-                        <a href="mailto:minister@treasury.gov.lk" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Dilum Amunugama</div>
-                        <div class="leader-title">Minister of Industries</div>
-                        <a href="mailto:minister@industry.gov.lk" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Padmal Jayasinghe</div>
-                        <div class="leader-title">Minister of Technology</div>
-                        <a href="mailto:minister@motech.gov.lk" class="leader-email-btn">📧 Contact</a>
-                    </div></div>
-                </div>
-                <div class="directory-country" data-country="sweden">
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">🇸🇪 Sweden</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">AI Policy: Ministry of Enterprise and Innovation; Swedish AI Strategy; EU AI Act coordination</p>
-                    <div class="leaders-grid"><div class="leader-card">
-                        <div class="leader-name">Ulf Kristersson</div>
-                        <div class="leader-title">Prime Minister</div>
-                        <a href="mailto:statsminister@regeringen.se" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Ulf Kristersson</div>
-                        <div class="leader-title">Prime Minister</div>
-                        <a href="mailto:statsminister@regeringen.se" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Maria Malmström</div>
-                        <div class="leader-title">Deputy Prime Minister, Minister of Enterprise and Innovation</div>
-                        <a href="mailto:minister@regeringen.se" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Elisabeth Svantesson</div>
-                        <div class="leader-title">Minister of Finance</div>
-                        <a href="mailto:minister@regeringen.se" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Anna-Sara Lund</div>
-                        <div class="leader-title">Minister of Culture and Digital Development</div>
-                        <a href="mailto:minister@regeringen.se" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Ylva Johansson</div>
-                        <div class="leader-title">Minister of Education</div>
-                        <a href="mailto:minister@regeringen.se" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Camilla Waltersson</div>
-                        <div class="leader-title">Minister of Environment and Climate</div>
-                        <a href="mailto:minister@regeringen.se" class="leader-email-btn">📧 Contact</a>
-                    </div></div>
-                </div>
-                <div class="directory-country" data-country="switzerland">
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">🇨🇭 Switzerland</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">AI Policy: State Secretariat for Digital Transformation; Swiss AI Strategy; EU AI Act coordination</p>
-                    <div class="leaders-grid"><div class="leader-card">
-                        <div class="leader-name">Federal Council (Collegial)</div>
-                        <div class="leader-title">Seven-member executive</div>
-                        <a href="mailto:contact@bk.admin.ch" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Guy Parmelin</div>
-                        <div class="leader-title">Federal Councillor, President (2026), Economics Minister</div>
-                        <a href="mailto:guy.parmelin@gs-vd.ch" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Ignazio Cassis</div>
-                        <div class="leader-title">Federal Councillor, Vice President (2026), Foreign Minister</div>
-                        <a href="mailto:ignazio.cassis@gs-ti.ch" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Karin Keller-Suttter</div>
-                        <div class="leader-title">Federal Councillor, Finance Minister</div>
-                        <a href="mailto:karin.keller-sutter@efd.admin.ch" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Simonetta Sommaruga</div>
-                        <div class="leader-title">Federal Councillor, Home Affairs Minister</div>
-                        <a href="mailto:simonetta.sommaruga@gs-be.ch" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Albert Rösti</div>
-                        <div class="leader-title">Federal Councillor, Environment Minister</div>
-                        <a href="mailto:albert.roesti@gs-vd.ch" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Elisabeth Baume Schneider</div>
-                        <div class="leader-title">Federal Councillor, Home Affairs (shared)</div>
-                        <a href="mailto:elisabeth.baume-schneider@gs-ju.ch" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Beat Jans</div>
-                        <div class="leader-title">Federal Councillor, Justice Minister</div>
-                        <a href="mailto:beat.jans@gs-bs.ch" class="leader-email-btn">📧 Contact</a>
-                    </div></div>
-                </div>
-                <div class="directory-country" data-country="taiwan">
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">🇹🇼 Taiwan</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">AI Policy: Ministry of Digital Affairs; National Science and Technology Council; Taiwan AI Action Plan</p>
-                    <div class="leaders-grid"><div class="leader-card">
-                        <div class="leader-name">Cho Jung-tai</div>
-                        <div class="leader-title">Premier (Head of Executive Yuan)</div>
-                        <a href="mailto:contact@ey.gov.tw" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Lai Ching-te</div>
-                        <div class="leader-title">President</div>
-                        <a href="mailto:webmaster@president.gov.tw" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Bi-khim Hsiao</div>
-                        <div class="leader-title">Vice President</div>
-                        <a href="mailto:vp@president.gov.tw" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Cho Jung-tai</div>
-                        <div class="leader-title">Premier (Head of Executive Yuan)</div>
-                        <a href="mailto:contact@ey.gov.tw" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Wu Tze-liang</div>
-                        <div class="leader-title">Minister of Finance</div>
-                        <a href="mailto:minister@mof.gov.tw" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">J.K. Liu</div>
-                        <div class="leader-title">Minister of Economic Affairs</div>
-                        <a href="mailto:minister@moea.gov.tw" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Pan Wen-chun</div>
-                        <div class="leader-title">Minister of Education</div>
-                        <a href="mailto:minister@moe.gov.tw" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Kung Ming-hsin</div>
-                        <div class="leader-title">Minister of Digital Affairs</div>
-                        <a href="mailto:minister@moda.gov.tw" class="leader-email-btn">📧 Contact</a>
-                    </div></div>
-                </div>
-                <div class="directory-country" data-country="thailand">
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">🇹🇭 Thailand</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">AI Policy: Ministry of Digital Economy and Society; Thailand Digital Economy Strategy</p>
-                    <div class="leaders-grid"><div class="leader-card">
-                        <div class="leader-name">Anutin Charnvirakul</div>
-                        <div class="leader-title">Prime Minister</div>
-                        <a href="mailto:webmaster@thaigov.go.th" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Anutin Charnvirakul</div>
-                        <div class="leader-title">Prime Minister</div>
-                        <a href="mailto:webmaster@thaigov.go.th" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Srettha Thavisin</div>
-                        <div class="leader-title">Deputy Prime Minister (pending cabinet formation)</div>
-                        <a href="mailto:cabinet@thaigov.go.th" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Pichai Chunhavajira</div>
-                        <div class="leader-title">Minister of Finance</div>
-                        <a href="mailto:minister@mof.go.th" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Poj Aramwattanachai</div>
-                        <div class="leader-title">Minister of Digital Economy and Society</div>
-                        <a href="mailto:minister@de.go.th" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Sermsak Pongpaibool</div>
-                        <div class="leader-title">Minister of Higher Education, Science, Research and Innovation</div>
-                        <a href="mailto:minister@mhesi.go.th" class="leader-email-btn">📧 Contact</a>
-                    </div></div>
-                </div>
-                <div class="directory-country" data-country="uae">
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">🇦🇪 UAE</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">AI Policy: UAE AI Office; National AI Strategy; NEOM AI integration; World Artificial Intelligence Organizing Committee</p>
-                    <div class="leaders-grid"><div class="leader-card">
-                        <div class="leader-name">Sheikh Mansour Bin Zayed Al Nahyan</div>
-                        <div class="leader-title">Vice President, Prime Minister</div>
-                        <a href="mailto:information@uaecabinet.ae" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Sheikh Mohamed bin Zayed Al Nahyan</div>
-                        <div class="leader-title">President</div>
-                        <a href="mailto:information@gov.ae" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Sheikh Mansour Bin Zayed Al Nahyan</div>
-                        <div class="leader-title">Vice President, Prime Minister</div>
-                        <a href="mailto:information@uaecabinet.ae" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Sheikh Hamdan bin Mohammed Al Maktoum</div>
-                        <div class="leader-title">Deputy Prime Minister, Minister of Defence</div>
-                        <a href="mailto:minister@mod.gov.ae" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Sheikh Maktoum bin Mohammed Al Maktoum</div>
-                        <div class="leader-title">Deputy Prime Minister, Minister of Finance</div>
-                        <a href="mailto:minister@mof.gov.ae" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Sheikh Abdullah bin Zayed Al Nahyan</div>
-                        <div class="leader-title">Deputy Prime Minister, Minister of Foreign Affairs</div>
-                        <a href="mailto:minister@mfa.gov.ae" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Mohammad Abdulla Al Gergawi</div>
-                        <div class="leader-title">Minister of Cabinet Affairs</div>
-                        <a href="mailto:minister@uaecabinet.ae" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Sarah Al Amiri</div>
-                        <div class="leader-title">Minister of State for Public Sector Excellence</div>
-                        <a href="mailto:minister@uaecabinet.ae" class="leader-email-btn">📧 Contact</a>
-                    </div></div>
-                </div>
-                <div class="directory-country" data-country="united-kingdom">
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">🇬🇧 United Kingdom</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">AI Policy: Department for Science, Innovation and Technology; AI Impact on Society Strategy; UK AI Office</p>
-                    <div class="leaders-grid"><div class="leader-card">
-                        <div class="leader-name">Keir Starmer</div>
-                        <div class="leader-title">Prime Minister</div>
-                        <a href="mailto:contact@number10.gov.uk" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Keir Starmer</div>
-                        <div class="leader-title">Prime Minister</div>
-                        <a href="mailto:contact@number10.gov.uk" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">David Lammy</div>
-                        <div class="leader-title">Deputy Prime Minister, Secretary of State for Foreign Affairs</div>
-                        <a href="mailto:minister@fco.gov.uk" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Rachel Reeves</div>
-                        <div class="leader-title">Chancellor of the Exchequer</div>
-                        <a href="mailto:minister@hm-treasury.gov.uk" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Liz Kendall</div>
-                        <div class="leader-title">Secretary of State for Science, Innovation and Technology</div>
-                        <a href="mailto:minister@dsit.gov.uk" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Peter Kyle</div>
-                        <div class="leader-title">Secretary of State for Science and Technology</div>
-                        <a href="mailto:minister@dsit.gov.uk" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Kanishka Narayan</div>
-                        <div class="leader-title">Parliamentary Under-Secretary for AI and Online Safety</div>
-                        <a href="mailto:minister@dsit.gov.uk" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Shabana Mahmood</div>
-                        <div class="leader-title">Secretary of State for Home Affairs</div>
-                        <a href="mailto:minister@homeoffice.gov.uk" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">John Healey</div>
-                        <div class="leader-title">Secretary of State for Defence</div>
-                        <a href="mailto:minister@mod.gov.uk" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Yvette Cooper</div>
-                        <div class="leader-title">Foreign Secretary</div>
-                        <a href="mailto:minister@fco.gov.uk" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Bridget Phillipson</div>
-                        <div class="leader-title">Secretary of State for Education</div>
-                        <a href="mailto:minister@education.gov.uk" class="leader-email-btn">📧 Contact</a>
-                    </div></div>
-                </div>
-                <div class="directory-country" data-country="united-states">
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">🇺🇸 United States</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">AI Policy: Department of Government Efficiency (DOGE); AI.Gov (National Strategy); White House Office of Science and Technology Policy; National Science Foundation</p>
-                    <div class="leaders-grid"><div class="leader-card">
-                        <div class="leader-name">Donald Trump</div>
-                        <div class="leader-title">President</div>
-                        <a href="mailto:president@whitehouse.gov" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Donald Trump</div>
-                        <div class="leader-title">President</div>
-                        <a href="mailto:president@whitehouse.gov" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">James D. Vance</div>
-                        <div class="leader-title">Vice President</div>
-                        <a href="mailto:vp@whitehouse.gov" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Elon Musk</div>
-                        <div class="leader-title">Chief of the Department of Government Efficiency (DOGE)</div>
-                        <a href="mailto:doge@whitehouse.gov" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Marco Rubio</div>
-                        <div class="leader-title">Secretary of State</div>
-                        <a href="mailto:secretary@state.gov" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Howard Lutnick</div>
-                        <div class="leader-title">Secretary of Commerce</div>
-                        <a href="mailto:secretary@commerce.gov" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">David Sacks</div>
-                        <div class="leader-title">AI and Cryptocurrency Czar</div>
-                        <a href="mailto:ai-czar@whitehouse.gov" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Vivek Ramaswamy</div>
-                        <div class="leader-title">Special Advisor on AI Policy (after DOGE transition)</div>
-                        <a href="mailto:vivek@whitehouse.gov" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Scott Bessent</div>
-                        <div class="leader-title">Secretary of the Treasury</div>
-                        <a href="mailto:secretary@treasury.gov" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Linda McMahon</div>
-                        <div class="leader-title">Secretary of Education</div>
-                        <a href="mailto:secretary@education.gov" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Pete Hegseth</div>
-                        <div class="leader-title">Secretary of Defence</div>
-                        <a href="mailto:secretary@defense.gov" class="leader-email-btn">📧 Contact</a>
-                    </div></div>
-                </div>
-                <div class="directory-country" data-country="vietnam">
-                    <h3 style="font-size: 1.3rem; margin-bottom: 0.25rem;">🇻🇳 Vietnam</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">AI Policy: Ministry of Information and Communications; Party Committee on Science and Technology; Vietnamese AI Development Strategy; 10% Growth Target (2026-2030)</p>
-                    <div class="leaders-grid"><div class="leader-card">
-                        <div class="leader-name">Tô Lâm</div>
-                        <div class="leader-title">General Secretary of Communist Party (de facto leader)</div>
-                        <a href="mailto:contact@scio.gov.vn" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Tô Lâm</div>
-                        <div class="leader-title">General Secretary, Communist Party</div>
-                        <a href="mailto:contact@scio.gov.vn" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Lương Cường</div>
-                        <div class="leader-title">President</div>
-                        <a href="mailto:contact@president.gov.vn" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Phạm Minh Chính</div>
-                        <div class="leader-title">Prime Minister</div>
-                        <a href="mailto:pmo@chinhphu.vn" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Võ Văn Thưởng</div>
-                        <div class="leader-title">Vice Prime Minister</div>
-                        <a href="mailto:pmo@chinhphu.vn" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Hồ Đức Phớc</div>
-                        <div class="leader-title">Minister of Finance</div>
-                        <a href="mailto:minister@mof.gov.vn" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Nguyễn Hồng Diên</div>
-                        <div class="leader-title">Minister of Industry and Trade</div>
-                        <a href="mailto:minister@moit.gov.vn" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Nguyễn Kim Anh</div>
-                        <div class="leader-title">Minister of Information and Communications</div>
-                        <a href="mailto:minister@mic.gov.vn" class="leader-email-btn">📧 Contact</a>
-                    </div><div class="leader-card">
-                        <div class="leader-name">Phùng Xuân Nhạ</div>
-                        <div class="leader-title">Minister of Education and Training</div>
-                        <a href="mailto:minister@moet.gov.vn" class="leader-email-btn">📧 Contact</a>
-                    </div></div>
-                </div>
-        </section>
-        <script>
-        function filterDirectory() {{
-            const q = document.getElementById('dirSearch').value.toLowerCase();
-            document.querySelectorAll('.directory-country').forEach(section => {{
-                const text = section.textContent.toLowerCase();
-                section.style.display = text.includes(q) ? 'block' : 'none';
-            }});
-        }}
-        </script>
     </main>
 
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-links">
                 <a href="/">Home</a> <a href="/browse/countries.html">Countries</a> <a href="/browse/companies.html">Companies</a>
-                <a href="/browse/sectors.html">Sectors</a> <a href="/government.html">Government</a> <a href="/press.html">Press</a> <a href="/about.html">About</a>
+                <a href="/browse/sectors.html">Sectors</a> <a href="/press.html">Press</a> <a href="/about.html">About</a>
             </div>
         </div>
     </footer>

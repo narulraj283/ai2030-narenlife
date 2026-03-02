@@ -1203,6 +1203,126 @@ button {
     .entity-hero-title {
         font-size: 2rem;
     }
+
+    /* Feedback widget - mobile */
+    .feedback-widget {
+        bottom: 1rem;
+        left: 1rem;
+        right: 1rem;
+    }
+    .feedback-toggle {
+        padding: 0.8rem 1.4rem;
+        font-size: 1rem;
+        min-height: 48px;
+    }
+    .feedback-panel {
+        width: calc(100vw - 2rem);
+        max-width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 3.5rem;
+    }
+    .feedback-panel .feedback-form {
+        padding: 1rem;
+    }
+    .feedback-field label {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+    .feedback-field textarea {
+        font-size: 16px !important;
+        padding: 0.75rem;
+        min-height: 100px;
+    }
+    .feedback-field select,
+    .feedback-field input[type="email"] {
+        font-size: 16px !important;
+        padding: 0.75rem;
+        min-height: 48px;
+    }
+    .feedback-type-btns {
+        flex-wrap: wrap;
+    }
+    .feedback-type-label {
+        font-size: 0.9rem !important;
+        padding: 0.5rem 0.8rem;
+        min-height: 44px;
+    }
+    .feedback-submit {
+        min-height: 48px;
+        font-size: 1rem;
+        width: 100%;
+    }
+    .feedback-close {
+        font-size: 1.5rem;
+        min-width: 44px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Share with Leaders - mobile */
+    .share-leaders-section {
+        padding: 1.5rem 1rem;
+    }
+    .leaders-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+    .leader-card {
+        padding: 1rem;
+    }
+    .leader-email-btn {
+        min-height: 48px;
+        display: inline-flex;
+        align-items: center;
+        font-size: 0.95rem;
+        padding: 0.6rem 1rem;
+    }
+
+    /* Share bar buttons - mobile */
+    .share-bar .share-btn,
+    .share-bar a {
+        min-height: 44px;
+        padding: 0.5rem 0.75rem;
+        font-size: 0.85rem;
+    }
+
+    /* Tables - mobile */
+    .article-content table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Images - mobile */
+    .article-content img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* General body text - prevent iOS zoom */
+    .article-content p,
+    .article-content li,
+    .article-content td {
+        font-size: 16px;
+    }
+
+    /* Breadcrumb - mobile */
+    .breadcrumb {
+        font-size: 0.8rem;
+        flex-wrap: wrap;
+        padding: 0.5rem 0;
+    }
+
+    /* Scroll to top button */
+    .scroll-top {
+        bottom: 5rem;
+        right: 1rem;
+        width: 44px;
+        height: 44px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1483,7 +1603,6 @@ button {
                 <li><a href="/browse/countries.html">Countries</a></li>
                 <li><a href="/browse/companies.html">Companies</a></li>
                 <li><a href="/browse/sectors.html">Sectors</a></li>
-                <li><a href="/government.html">Government</a></li>
                 <li><a href="/search.html">Search</a></li>
                 <li><a href="/about.html">About</a></li>
             </nav>
@@ -2221,7 +2340,6 @@ In 2024-2025, BAM's leadership authorized:<br />
                 <a href="/browse/countries.html">Countries</a>
                 <a href="/browse/companies.html">Companies</a>
                 <a href="/browse/sectors.html">Sectors</a>
-                <a href="/government.html">Government</a>
                 <a href="/press.html">Press</a>
                 <a href="/about.html">About</a>
             </div>
