@@ -1816,25 +1816,31 @@
         async function loadDashboard() {
             try {
                 const data = await api('get_dashboard');
-                renderStatCards();
-                renderRecentFeedback(data.recent_feedback);
-                renderTopArticles(data.top_articles);
-                renderBottomArticles(data.bottom_articles);
+                renderStatCards(data);
+                renderRecentFeedback(data.recent_feedback || []);
+                renderTopArticles(data.top_articles || []);
+                renderBottomArticles(data.bottom_articles || []);
             } catch (error) {
                 console.error('Load dashboard error:', error);
             }
         }
 
-        function renderStatCards() {
-            const stats = [
-                { label: 'New Feedback', value: state.feedback.filter(f => f.status === 'new').length },
-                { label: 'Actions Due Today', value: state.actions.filter(a => {
+        function renderStatCards(data) {
+            const totalViews = (data && data.total_views_7d) ? Number(data.total_views_7d).toLocaleString() : '0';
+            const newFeedback = (data && data.new_feedback_count) ? data.new_feedback_count : state.feedback.filter(f => f.status === 'new').length;
+            const actionsDue = (data && data.actions_due_today !== undefined) ? data.actions_due_today : state.actions.filter(a => {
                     const dueDate = new Date(a.due_date);
                     const today = new Date();
                     return dueDate.toDateString() === today.toDateString();
-                }).length },
-                { label: '7-Day Views', value: '3,240' },
-                { label: 'Site Health Score', value: '94%' }
+                }).length;
+            // Calculate health score from content performance data
+            const healthScore = (data && data.top_articles && data.top_articles.length > 0) ?
+                Math.round(data.top_articles.reduce((sum, a) => sum + (parseFloat(a.engagement_rate) || 0), 0) / data.top_articles.length) + '%' : '--';
+            const stats = [
+                { label: 'New Feedback', value: newFeedback },
+                { label: 'Actions Due Today', value: actionsDue },
+                { label: '7-Day Views', value: totalViews },
+                { label: 'Site Health Score', value: healthScore }
             ];
 
             const grid = document.getElementById('statGrid');
@@ -1850,11 +1856,11 @@
             const body = document.getElementById('recentFeedbackBody');
             body.innerHTML = items.slice(0, 5).map(item => `
                 <tr>
-                    <td><span class="badge ${getBadgeClass(item.status)}">${item.status}</span></td>
-                    <td>${item.type}</td>
-                    <td class="truncate">${item.message}</td>
-                    <td>${new Date(item.date).toLocaleDateString()}</td>
-                    <td><button class="btn btn-secondary btn-sm" onclick="viewFeedbackDetail(${item.id})">View</button></td>
+                    <td><span class="badge ${getBadgeClass(item.status || 'new')}">${item.status || 'new'}</span></td>
+                    <td>${item.type || '--'}</td>
+                    <td class="truncate">${item.message || ''}</td>
+                    <td>${item.created_at ? new Date(item.created_at).toLocaleDateString() : (item.date ? new Date(item.date).toLocaleDateString() : '--')}</td>
+                    <td><button class="btn btn-secondary btn-sm" onclick="viewFeedbackDetail('${item.feedback_id || item.id}')">View</button></td>
                 </tr>
             `).join('');
         }
@@ -1875,7 +1881,7 @@
                 <tr>
                     <td class="truncate">${item.title}</td>
                     <td>${item.views.toLocaleString()}</td>
-                    <td>${Math.floor(Math.random() * 100)}%</td>
+                    <td>${item.engagement_rate || '--'}</td>
                 </tr>
             `).join('');
         }
