@@ -877,6 +877,70 @@ button {
     display: flex;
 }
 
+/* Share with Leaders Section */
+.share-leaders-section {{
+    margin-top: 3rem;
+    padding: 2rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+}}
+.share-leaders-section h3 {{
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+    color: var(--text-primary);
+}}
+.share-leaders-subtitle {{
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}}
+.leaders-grid {{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+}}
+.leader-card {{
+    padding: 1rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    transition: all 0.2s ease;
+}}
+.leader-card:hover {{
+    border-color: var(--accent-blue);
+    transform: translateY(-2px);
+}}
+.leader-name {{
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}}
+.leader-title {{
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+}}
+.leader-email-btn {{
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    background: var(--accent-blue);
+    color: white !important;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: background 0.2s;
+}}
+.leader-email-btn:hover {{
+    background: var(--accent-purple);
+}}
+.share-leaders-note {{
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}}
+
 /* Feedback Widget */
 .feedback-widget {
     position: fixed;
@@ -1631,6 +1695,58 @@ Significant education inequality had emerged. Wealthy children received 5-10x mo
         </article>
 
         <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); text-align: center;"><a href="/browse/countries/egypt.html" style="display: inline-block; padding: 1rem 2rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 0.5rem; color: var(--text-primary); font-weight: 600; transition: all 0.2s ease;">← All Egypt Articles</a></div>
+        
+        <div class="share-leaders-section">
+            <h3>📨 Share This Report with Decision-Makers</h3>
+            <p class="share-leaders-subtitle">Forward this intelligence to the leaders who need to see it</p>
+            <div class="leaders-grid">
+                
+            <div class="leader-card">
+                <div class="leader-name">Mostafa Madbouly</div>
+                <div class="leader-title">Prime Minister</div>
+                <a href="mailto:cabinet@idsc.gov.eg?subject=AI%20Disruption%20Forecast%20%E2%80%94%20Egypt%202030%20Intelligence%20Report&body=Dear%20Prime%20Minister%20Mostafa%20Madbouly%2C%0A%0AI%27m%20sharing%20this%20AI%20preparedness%20intelligence%20report%20that%20I%20believe%20is%20relevant%20to%20your%20portfolio.%20It%20covers%20projected%20AI%20disruption%20impacts%20through%202030%20with%20specific%20analysis%20for%20Egypt.%0A%0Ahttps%3A//ai2030report.com/articles/countries-egypt-egypt-parent-edition.html%0A%0AThe%20full%20report%20covers%2034%20countries%2C%20141%20companies%2C%20and%2020%20sectors%20at%20ai2030report.com" class="leader-email-btn">📧 Email This Report</a>
+            </div>
+            
+            <div class="leader-card">
+                <div class="leader-name">Abdel Fattah el-Sisi</div>
+                <div class="leader-title">President</div>
+                <a href="mailto:presidency@idsc.gov.eg?subject=AI%20Disruption%20Forecast%20%E2%80%94%20Egypt%202030%20Intelligence%20Report&body=Dear%20President%20Abdel%20Fattah%20el-Sisi%2C%0A%0AI%27m%20sharing%20this%20AI%20preparedness%20intelligence%20report%20that%20I%20believe%20is%20relevant%20to%20your%20portfolio.%20It%20covers%20projected%20AI%20disruption%20impacts%20through%202030%20with%20specific%20analysis%20for%20Egypt.%0A%0Ahttps%3A//ai2030report.com/articles/countries-egypt-egypt-parent-edition.html%0A%0AThe%20full%20report%20covers%2034%20countries%2C%20141%20companies%2C%20and%2020%20sectors%20at%20ai2030report.com" class="leader-email-btn">📧 Email This Report</a>
+            </div>
+            
+            <div class="leader-card">
+                <div class="leader-name">Mohamed Maait</div>
+                <div class="leader-title">Minister of Finance</div>
+                <a href="mailto:minister@mof.gov.eg?subject=AI%20Disruption%20Forecast%20%E2%80%94%20Egypt%202030%20Intelligence%20Report&body=Dear%20Minister%20of%20Finance%20Mohamed%20Maait%2C%0A%0AI%27m%20sharing%20this%20AI%20preparedness%20intelligence%20report%20that%20I%20believe%20is%20relevant%20to%20your%20portfolio.%20It%20covers%20projected%20AI%20disruption%20impacts%20through%202030%20with%20specific%20analysis%20for%20Egypt.%0A%0Ahttps%3A//ai2030report.com/articles/countries-egypt-egypt-parent-edition.html%0A%0AThe%20full%20report%20covers%2034%20countries%2C%20141%20companies%2C%20and%2020%20sectors%20at%20ai2030report.com" class="leader-email-btn">📧 Email This Report</a>
+            </div>
+            
+            <div class="leader-card">
+                <div class="leader-name">Hussein Issa</div>
+                <div class="leader-title">Deputy Prime Minister for Economy</div>
+                <a href="mailto:cabinet@idsc.gov.eg?subject=AI%20Disruption%20Forecast%20%E2%80%94%20Egypt%202030%20Intelligence%20Report&body=Dear%20Deputy%20Prime%20Minister%20for%20Economy%20Hussein%20Issa%2C%0A%0AI%27m%20sharing%20this%20AI%20preparedness%20intelligence%20report%20that%20I%20believe%20is%20relevant%20to%20your%20portfolio.%20It%20covers%20projected%20AI%20disruption%20impacts%20through%202030%20with%20specific%20analysis%20for%20Egypt.%0A%0Ahttps%3A//ai2030report.com/articles/countries-egypt-egypt-parent-edition.html%0A%0AThe%20full%20report%20covers%2034%20countries%2C%20141%20companies%2C%20and%2020%20sectors%20at%20ai2030report.com" class="leader-email-btn">📧 Email This Report</a>
+            </div>
+            
+            <div class="leader-card">
+                <div class="leader-name">Mohamed Farid Saleh</div>
+                <div class="leader-title">Minister of Investment</div>
+                <a href="mailto:minister@mitweb.gov.eg?subject=AI%20Disruption%20Forecast%20%E2%80%94%20Egypt%202030%20Intelligence%20Report&body=Dear%20Minister%20of%20Investment%20Mohamed%20Farid%20Saleh%2C%0A%0AI%27m%20sharing%20this%20AI%20preparedness%20intelligence%20report%20that%20I%20believe%20is%20relevant%20to%20your%20portfolio.%20It%20covers%20projected%20AI%20disruption%20impacts%20through%202030%20with%20specific%20analysis%20for%20Egypt.%0A%0Ahttps%3A//ai2030report.com/articles/countries-egypt-egypt-parent-edition.html%0A%0AThe%20full%20report%20covers%2034%20countries%2C%20141%20companies%2C%20and%2020%20sectors%20at%20ai2030report.com" class="leader-email-btn">📧 Email This Report</a>
+            </div>
+            
+            <div class="leader-card">
+                <div class="leader-name">Badr Abdelatty</div>
+                <div class="leader-title">Minister of Foreign Affairs</div>
+                <a href="mailto:mfa@mfa.gov.eg?subject=AI%20Disruption%20Forecast%20%E2%80%94%20Egypt%202030%20Intelligence%20Report&body=Dear%20Minister%20of%20Foreign%20Affairs%20Badr%20Abdelatty%2C%0A%0AI%27m%20sharing%20this%20AI%20preparedness%20intelligence%20report%20that%20I%20believe%20is%20relevant%20to%20your%20portfolio.%20It%20covers%20projected%20AI%20disruption%20impacts%20through%202030%20with%20specific%20analysis%20for%20Egypt.%0A%0Ahttps%3A//ai2030report.com/articles/countries-egypt-egypt-parent-edition.html%0A%0AThe%20full%20report%20covers%2034%20countries%2C%20141%20companies%2C%20and%2020%20sectors%20at%20ai2030report.com" class="leader-email-btn">📧 Email This Report</a>
+            </div>
+            
+            <div class="leader-card">
+                <div class="leader-name">Abdel Aziz Qansua</div>
+                <div class="leader-title">Minister of Higher Education and Scientific Research</div>
+                <a href="mailto:minister@mohesr.gov.eg?subject=AI%20Disruption%20Forecast%20%E2%80%94%20Egypt%202030%20Intelligence%20Report&body=Dear%20Minister%20of%20Higher%20Education%20and%20Scientific%20Research%20Abdel%20Aziz%20Qansua%2C%0A%0AI%27m%20sharing%20this%20AI%20preparedness%20intelligence%20report%20that%20I%20believe%20is%20relevant%20to%20your%20portfolio.%20It%20covers%20projected%20AI%20disruption%20impacts%20through%202030%20with%20specific%20analysis%20for%20Egypt.%0A%0Ahttps%3A//ai2030report.com/articles/countries-egypt-egypt-parent-edition.html%0A%0AThe%20full%20report%20covers%2034%20countries%2C%20141%20companies%2C%20and%2020%20sectors%20at%20ai2030report.com" class="leader-email-btn">📧 Email This Report</a>
+            </div>
+            
+            </div>
+            <p class="share-leaders-note">Last verified: March 2026 · <a href="/government.html">Full Government Directory →</a></p>
+        </div>
+        
         
         <div class="more-in-category">
             <h3>More in Countries</h3>

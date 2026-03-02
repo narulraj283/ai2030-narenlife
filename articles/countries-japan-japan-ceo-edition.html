@@ -877,6 +877,70 @@ button {
     display: flex;
 }
 
+/* Share with Leaders Section */
+.share-leaders-section {{
+    margin-top: 3rem;
+    padding: 2rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+}}
+.share-leaders-section h3 {{
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+    color: var(--text-primary);
+}}
+.share-leaders-subtitle {{
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}}
+.leaders-grid {{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+}}
+.leader-card {{
+    padding: 1rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    transition: all 0.2s ease;
+}}
+.leader-card:hover {{
+    border-color: var(--accent-blue);
+    transform: translateY(-2px);
+}}
+.leader-name {{
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}}
+.leader-title {{
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+}}
+.leader-email-btn {{
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    background: var(--accent-blue);
+    color: white !important;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: background 0.2s;
+}}
+.leader-email-btn:hover {{
+    background: var(--accent-purple);
+}}
+.share-leaders-note {{
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}}
+
 /* Feedback Widget */
 .feedback-widget {
     position: fixed;
@@ -2076,6 +2140,58 @@ button {
         </article>
 
         <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); text-align: center;"><a href="/browse/countries/japan.html" style="display: inline-block; padding: 1rem 2rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 0.5rem; color: var(--text-primary); font-weight: 600; transition: all 0.2s ease;">← All Japan Articles</a></div>
+        
+        <div class="share-leaders-section">
+            <h3>📨 Share This Report with Decision-Makers</h3>
+            <p class="share-leaders-subtitle">Forward this intelligence to the leaders who need to see it</p>
+            <div class="leaders-grid">
+                
+            <div class="leader-card">
+                <div class="leader-name">Sanae Takaichi</div>
+                <div class="leader-title">Prime Minister</div>
+                <a href="mailto:info@kantei.go.jp?subject=AI%20Disruption%20Forecast%20%E2%80%94%20Japan%202030%20Intelligence%20Report&body=Dear%20Prime%20Minister%20Sanae%20Takaichi%2C%0A%0AI%27m%20sharing%20this%20AI%20preparedness%20intelligence%20report%20that%20I%20believe%20is%20relevant%20to%20your%20portfolio.%20It%20covers%20projected%20AI%20disruption%20impacts%20through%202030%20with%20specific%20analysis%20for%20Japan.%0A%0Ahttps%3A//ai2030report.com/articles/countries-japan-japan-ceo-edition.html%0A%0AThe%20full%20report%20covers%2034%20countries%2C%20141%20companies%2C%20and%2020%20sectors%20at%20ai2030report.com" class="leader-email-btn">📧 Email This Report</a>
+            </div>
+            
+            <div class="leader-card">
+                <div class="leader-name">Shinjiro Koizumi</div>
+                <div class="leader-title">Minister of Defence</div>
+                <a href="mailto:info@mod.go.jp?subject=AI%20Disruption%20Forecast%20%E2%80%94%20Japan%202030%20Intelligence%20Report&body=Dear%20Minister%20of%20Defence%20Shinjiro%20Koizumi%2C%0A%0AI%27m%20sharing%20this%20AI%20preparedness%20intelligence%20report%20that%20I%20believe%20is%20relevant%20to%20your%20portfolio.%20It%20covers%20projected%20AI%20disruption%20impacts%20through%202030%20with%20specific%20analysis%20for%20Japan.%0A%0Ahttps%3A//ai2030report.com/articles/countries-japan-japan-ceo-edition.html%0A%0AThe%20full%20report%20covers%2034%20countries%2C%20141%20companies%2C%20and%2020%20sectors%20at%20ai2030report.com" class="leader-email-btn">📧 Email This Report</a>
+            </div>
+            
+            <div class="leader-card">
+                <div class="leader-name">Takaji Wakabayashi</div>
+                <div class="leader-title">Minister of Finance</div>
+                <a href="mailto:info@mof.go.jp?subject=AI%20Disruption%20Forecast%20%E2%80%94%20Japan%202030%20Intelligence%20Report&body=Dear%20Minister%20of%20Finance%20Takaji%20Wakabayashi%2C%0A%0AI%27m%20sharing%20this%20AI%20preparedness%20intelligence%20report%20that%20I%20believe%20is%20relevant%20to%20your%20portfolio.%20It%20covers%20projected%20AI%20disruption%20impacts%20through%202030%20with%20specific%20analysis%20for%20Japan.%0A%0Ahttps%3A//ai2030report.com/articles/countries-japan-japan-ceo-edition.html%0A%0AThe%20full%20report%20covers%2034%20countries%2C%20141%20companies%2C%20and%2020%20sectors%20at%20ai2030report.com" class="leader-email-btn">📧 Email This Report</a>
+            </div>
+            
+            <div class="leader-card">
+                <div class="leader-name">Yuko Obuchi</div>
+                <div class="leader-title">Minister of Economy, Trade and Industry</div>
+                <a href="mailto:info@meti.go.jp?subject=AI%20Disruption%20Forecast%20%E2%80%94%20Japan%202030%20Intelligence%20Report&body=Dear%20Minister%20of%20Economy%2C%20Trade%20and%20Industry%20Yuko%20Obuchi%2C%0A%0AI%27m%20sharing%20this%20AI%20preparedness%20intelligence%20report%20that%20I%20believe%20is%20relevant%20to%20your%20portfolio.%20It%20covers%20projected%20AI%20disruption%20impacts%20through%202030%20with%20specific%20analysis%20for%20Japan.%0A%0Ahttps%3A//ai2030report.com/articles/countries-japan-japan-ceo-edition.html%0A%0AThe%20full%20report%20covers%2034%20countries%2C%20141%20companies%2C%20and%2020%20sectors%20at%20ai2030report.com" class="leader-email-btn">📧 Email This Report</a>
+            </div>
+            
+            <div class="leader-card">
+                <div class="leader-name">Tomoji Takeda</div>
+                <div class="leader-title">Minister of Education, Culture, Sports, Science and Technology</div>
+                <a href="mailto:info@mext.go.jp?subject=AI%20Disruption%20Forecast%20%E2%80%94%20Japan%202030%20Intelligence%20Report&body=Dear%20Minister%20of%20Education%2C%20Culture%2C%20Sports%2C%20Science%20and%20Technology%20Tomoji%20Takeda%2C%0A%0AI%27m%20sharing%20this%20AI%20preparedness%20intelligence%20report%20that%20I%20believe%20is%20relevant%20to%20your%20portfolio.%20It%20covers%20projected%20AI%20disruption%20impacts%20through%202030%20with%20specific%20analysis%20for%20Japan.%0A%0Ahttps%3A//ai2030report.com/articles/countries-japan-japan-ceo-edition.html%0A%0AThe%20full%20report%20covers%2034%20countries%2C%20141%20companies%2C%20and%2020%20sectors%20at%20ai2030report.com" class="leader-email-btn">📧 Email This Report</a>
+            </div>
+            
+            <div class="leader-card">
+                <div class="leader-name">Takeshi Iwaya</div>
+                <div class="leader-title">Chief Cabinet Secretary</div>
+                <a href="mailto:info@cas.go.jp?subject=AI%20Disruption%20Forecast%20%E2%80%94%20Japan%202030%20Intelligence%20Report&body=Dear%20Chief%20Cabinet%20Secretary%20Takeshi%20Iwaya%2C%0A%0AI%27m%20sharing%20this%20AI%20preparedness%20intelligence%20report%20that%20I%20believe%20is%20relevant%20to%20your%20portfolio.%20It%20covers%20projected%20AI%20disruption%20impacts%20through%202030%20with%20specific%20analysis%20for%20Japan.%0A%0Ahttps%3A//ai2030report.com/articles/countries-japan-japan-ceo-edition.html%0A%0AThe%20full%20report%20covers%2034%20countries%2C%20141%20companies%2C%20and%2020%20sectors%20at%20ai2030report.com" class="leader-email-btn">📧 Email This Report</a>
+            </div>
+            
+            <div class="leader-card">
+                <div class="leader-name">Toshinao Nakayama</div>
+                <div class="leader-title">Minister of Digital Transformation</div>
+                <a href="mailto:info@digital.go.jp?subject=AI%20Disruption%20Forecast%20%E2%80%94%20Japan%202030%20Intelligence%20Report&body=Dear%20Minister%20of%20Digital%20Transformation%20Toshinao%20Nakayama%2C%0A%0AI%27m%20sharing%20this%20AI%20preparedness%20intelligence%20report%20that%20I%20believe%20is%20relevant%20to%20your%20portfolio.%20It%20covers%20projected%20AI%20disruption%20impacts%20through%202030%20with%20specific%20analysis%20for%20Japan.%0A%0Ahttps%3A//ai2030report.com/articles/countries-japan-japan-ceo-edition.html%0A%0AThe%20full%20report%20covers%2034%20countries%2C%20141%20companies%2C%20and%2020%20sectors%20at%20ai2030report.com" class="leader-email-btn">📧 Email This Report</a>
+            </div>
+            
+            </div>
+            <p class="share-leaders-note">Last verified: March 2026 · <a href="/government.html">Full Government Directory →</a></p>
+        </div>
+        
         
         <div class="more-in-category">
             <h3>More in Countries</h3>

@@ -877,6 +877,70 @@ button {
     display: flex;
 }
 
+/* Share with Leaders Section */
+.share-leaders-section {{
+    margin-top: 3rem;
+    padding: 2rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+}}
+.share-leaders-section h3 {{
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+    color: var(--text-primary);
+}}
+.share-leaders-subtitle {{
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}}
+.leaders-grid {{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+}}
+.leader-card {{
+    padding: 1rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    transition: all 0.2s ease;
+}}
+.leader-card:hover {{
+    border-color: var(--accent-blue);
+    transform: translateY(-2px);
+}}
+.leader-name {{
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}}
+.leader-title {{
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+}}
+.leader-email-btn {{
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    background: var(--accent-blue);
+    color: white !important;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: background 0.2s;
+}}
+.leader-email-btn:hover {{
+    background: var(--accent-purple);
+}}
+.share-leaders-note {{
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}}
+
 /* Feedback Widget */
 .feedback-widget {
     position: fixed;
@@ -1755,6 +1819,7 @@ button {
             </div>
         </article>
 
+        
         
         
 
