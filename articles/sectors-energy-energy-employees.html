@@ -1583,6 +1583,113 @@ button {
         font-size: 0.9rem;
     }
 }
+
+/* Email Capture Bar */
+.email-capture {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 2rem 1.5rem;
+    margin: 3rem auto 0;
+    max-width: 700px;
+    text-align: center;
+}
+.email-capture h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.email-capture p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+.email-capture-form {
+    display: flex;
+    gap: 0.5rem;
+    max-width: 480px;
+    margin: 0 auto;
+}
+.email-capture-form input[type="email"] {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--border);
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-size: 0.95rem;
+}
+.email-capture-form input[type="email"]::placeholder {
+    color: var(--text-muted);
+}
+.email-capture-form button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    background: var(--gradient-1);
+    color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: opacity 0.2s;
+}
+.email-capture-form button:hover {
+    opacity: 0.9;
+}
+.email-capture-success {
+    display: none;
+    color: var(--accent-green);
+    font-weight: 600;
+    padding: 0.75rem;
+}
+@media (max-width: 600px) {
+    .email-capture-form {
+        flex-direction: column;
+    }
+}
+
+/* Social Share Buttons */
+.social-share-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1.25rem 0;
+    margin: 2rem 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    flex-wrap: wrap;
+}
+.social-share-bar span {
+    font-weight: 600;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-right: 0.25rem;
+}
+.share-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.2s, transform 0.2s;
+    color: white;
+}
+.share-btn:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+    color: white;
+}
+.share-btn.linkedin { background: #0077b5; }
+.share-btn.twitter { background: #1d9bf0; }
+.share-btn.whatsapp { background: #25d366; }
+.share-btn.copy-link { background: var(--bg-card); color: var(--text-primary); border: 1px solid var(--border); }
 </style>
     <!-- GA4 Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-S9Z93KZ2Z2"></script>
@@ -2296,6 +2403,62 @@ button {
             }, 2000);
         }
         window.submitFeedback = submitFeedback;
+    </script>
+
+    <script>
+    function handleEmailCapture(e) {
+        e.preventDefault();
+        var email = document.getElementById('captureEmail').value;
+        if (!email) return;
+        // Store subscriber (sends to Google Sheets via Apps Script)
+        var API_URL = 'https://script.google.com/macros/s/AKfycbx8HEMtoBG4lLeNMYB92kXUhMBx7n9YQ-67QJ6TtDrJnvIx08Q_Xx3FBkjOd0MXsuaFmQ/exec';
+        fetch(API_URL, {
+            method: 'POST',
+            headers: {'Content-Type': 'text/plain'},
+            body: JSON.stringify({action: 'subscribe', email: email, page: window.location.pathname})
+        }).catch(function(){});
+        // Show success regardless (don't block on API)
+        document.getElementById('emailCaptureForm').style.display = 'none';
+        document.getElementById('captureSuccess').style.display = 'block';
+        // Also store in localStorage to not show again
+        try { localStorage.setItem('ai2030_subscribed', '1'); } catch(e) {}
+    }
+    // Hide capture if already subscribed
+    try {
+        if (localStorage.getItem('ai2030_subscribed')) {
+            var cap = document.getElementById('emailCapture');
+            if (cap) cap.style.display = 'none';
+        }
+    } catch(e) {}
+
+    function getShareText() {
+        var title = document.title.split(' | ')[0];
+        return title + ' — Free AI 2030 intelligence report: ' + window.location.href;
+    }
+    function shareLinkedIn(e) {
+        e.preventDefault();
+        var url = encodeURIComponent(window.location.href);
+        window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + url, '_blank', 'width=600,height=400');
+    }
+    function shareTwitter(e) {
+        e.preventDefault();
+        var text = encodeURIComponent(getShareText());
+        window.open('https://twitter.com/intent/tweet?text=' + text, '_blank', 'width=600,height=400');
+    }
+    function shareWhatsApp(e) {
+        e.preventDefault();
+        var text = encodeURIComponent(getShareText());
+        window.open('https://wa.me/?text=' + text, '_blank');
+    }
+    function copyShareLink(e) {
+        e.preventDefault();
+        var btn = e.currentTarget;
+        navigator.clipboard.writeText(window.location.href).then(function() {
+            btn.textContent = 'Copied!';
+            setTimeout(function() { btn.innerHTML = '🔗 Copy Link'; }, 2000);
+        });
+    }
+
     </script>
 </body>
 </html>

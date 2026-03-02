@@ -1554,6 +1554,74 @@ button {
         font-size: 0.9rem;
     }
 }
+
+/* Email Capture Bar */
+.email-capture {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 2rem 1.5rem;
+    margin: 3rem auto 0;
+    max-width: 700px;
+    text-align: center;
+}
+.email-capture h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.email-capture p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+.email-capture-form {
+    display: flex;
+    gap: 0.5rem;
+    max-width: 480px;
+    margin: 0 auto;
+}
+.email-capture-form input[type="email"] {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--border);
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-size: 0.95rem;
+}
+.email-capture-form input[type="email"]::placeholder {
+    color: var(--text-muted);
+}
+.email-capture-form button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    background: var(--gradient-1);
+    color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: opacity 0.2s;
+}
+.email-capture-form button:hover {
+    opacity: 0.9;
+}
+.email-capture-success {
+    display: none;
+    color: var(--accent-green);
+    font-weight: 600;
+    padding: 0.75rem;
+}
+@media (max-width: 600px) {
+    .email-capture-form {
+        flex-direction: column;
+    }
+}
 </style>
     <!-- GA4 Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-S9Z93KZ2Z2"></script>
@@ -1764,6 +1832,34 @@ button {
             if (href === '/' && path === '/') link.classList.add('nav-active');
             else if (href !== '/' && path.startsWith(href.replace('.html', ''))) link.classList.add('nav-active');
         });
+    </script>
+
+    <script>
+    function handleEmailCapture(e) {
+        e.preventDefault();
+        var email = document.getElementById('captureEmail').value;
+        if (!email) return;
+        // Store subscriber (sends to Google Sheets via Apps Script)
+        var API_URL = 'https://script.google.com/macros/s/AKfycbx8HEMtoBG4lLeNMYB92kXUhMBx7n9YQ-67QJ6TtDrJnvIx08Q_Xx3FBkjOd0MXsuaFmQ/exec';
+        fetch(API_URL, {
+            method: 'POST',
+            headers: {'Content-Type': 'text/plain'},
+            body: JSON.stringify({action: 'subscribe', email: email, page: window.location.pathname})
+        }).catch(function(){});
+        // Show success regardless (don't block on API)
+        document.getElementById('emailCaptureForm').style.display = 'none';
+        document.getElementById('captureSuccess').style.display = 'block';
+        // Also store in localStorage to not show again
+        try { localStorage.setItem('ai2030_subscribed', '1'); } catch(e) {}
+    }
+    // Hide capture if already subscribed
+    try {
+        if (localStorage.getItem('ai2030_subscribed')) {
+            var cap = document.getElementById('emailCapture');
+            if (cap) cap.style.display = 'none';
+        }
+    } catch(e) {}
+
     </script>
 </body>
 </html>
