@@ -425,6 +425,43 @@ button {
     background: var(--accent-purple);
 }
 
+/* Entity Landing Page */
+.entity-landing {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.entity-hero {
+    padding: 3rem 0 2rem 0;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 2rem;
+}
+
+.entity-hero-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.entity-hero-icon {
+    font-size: 4rem;
+}
+
+.entity-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.entity-hero p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
 /* Article Page */
 .article-page {
     max-width: 900px;
@@ -438,6 +475,7 @@ button {
     margin-bottom: 2rem;
     font-size: 0.9rem;
     color: var(--text-secondary);
+    flex-wrap: wrap;
 }
 
 .breadcrumb a {
@@ -453,7 +491,7 @@ button {
 }
 
 .article-header {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .article-meta-bar {
@@ -471,6 +509,119 @@ button {
     display: flex;
     gap: 0.75rem;
     align-items: center;
+}
+
+.entity-name-display {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+/* Sibling Navigation */
+.sibling-nav {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.sibling-nav-label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.sibling-pills {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.sibling-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem 1.2rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 2rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.sibling-pill a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.sibling-pill:hover {
+    border-color: var(--accent-blue);
+    color: var(--accent-blue);
+}
+
+.sibling-pill.active {
+    background: var(--accent-blue);
+    border-color: var(--accent-blue);
+    color: white;
+}
+
+.sibling-pill.active a {
+    color: white;
+}
+
+/* Share Bar */
+.share-bar {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.share-bar-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-right: 0.5rem;
+}
+
+.share-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 1.2rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 0.4rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.share-btn:hover {
+    background: var(--accent-blue);
+    border-color: var(--accent-blue);
+    color: white;
+}
+
+.share-btn.copied {
+    background: var(--accent-green);
+    border-color: var(--accent-green);
+    color: white;
 }
 
 .article-content {
@@ -578,25 +729,25 @@ button {
     color: var(--text-primary);
 }
 
-/* Related Articles */
-.related-articles {
+/* More in Category */
+.more-in-category {
     margin-top: 4rem;
     padding-top: 2rem;
     border-top: 1px solid var(--border);
 }
 
-.related-articles h3 {
+.more-in-category h3 {
     font-size: 1.5rem;
     margin-bottom: 2rem;
 }
 
-.related-grid {
+.more-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
-.related-card {
+.more-card {
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: 0.5rem;
@@ -604,24 +755,24 @@ button {
     transition: all 0.3s ease;
 }
 
-.related-card:hover {
+.more-card:hover {
     background: var(--bg-card-hover);
     border-color: var(--accent-blue);
 }
 
-.related-card h4 {
+.more-card h4 {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
     color: var(--text-primary);
 }
 
-.related-card p {
+.more-card p {
     font-size: 0.9rem;
     color: var(--text-secondary);
     margin-bottom: 1rem;
 }
 
-.related-card a {
+.more-card a {
     font-weight: 600;
 }
 
@@ -791,6 +942,25 @@ button {
         overflow-x: auto;
         padding-bottom: 1rem;
     }
+
+    .share-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sibling-pills {
+        overflow-x: auto;
+        padding-bottom: 0.5rem;
+    }
+
+    .entity-hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .entity-hero h1 {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -837,6 +1007,16 @@ button {
     .breadcrumb {
         font-size: 0.8rem;
     }
+
+    .sibling-pill {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    .share-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
+    }
 }
 </style>
 </head>
@@ -855,6 +1035,9 @@ button {
                 <li><a href="/browse/countries.html">Countries</a></li>
                 <li><a href="/browse/companies.html">Companies</a></li>
                 <li><a href="/browse/sectors.html">Sectors</a></li>
+                <li><a href="/browse/action-plans.html">Action Plans</a></li>
+                <li><a href="/browse/guides.html">Guides</a></li>
+                <li><a href="/browse/data.html">Data</a></li>
                 <li><a href="/about.html">About</a></li>
             </nav>
             <button class="nav-toggle" onclick="toggleNav()">
@@ -877,987 +1060,987 @@ button {
                 <div class="entity-icon">🏢</div>
                 <h3>ANZ Banking</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-australia-anz-banking-anz-ceo.html">View Articles →</a>
+                <a href="/browse/companies/anz-banking.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>ASML</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-europe-asml-asml-investor.html">View Articles →</a>
+                <a href="/browse/companies/asml.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Adobe</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-adobe-adobe-investor.html">View Articles →</a>
+                <a href="/browse/companies/adobe.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Agnico Eagle Mines</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-canada-agnico-eagle-mines-agnico-eagle-mines-ceo.html">View Articles →</a>
+                <a href="/browse/companies/agnico-eagle-mines.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Airbus</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-europe-airbus-airbus-employee.html">View Articles →</a>
+                <a href="/browse/companies/airbus.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Allianz</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-europe-allianz-investor-edition.html">View Articles →</a>
+                <a href="/browse/companies/allianz.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Alphabet</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-alphabet-alphabet-investor.html">View Articles →</a>
+                <a href="/browse/companies/alphabet.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Amazon</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-amazon-amazon-employee.html">View Articles →</a>
+                <a href="/browse/companies/amazon.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Anthropic</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-anthropic-anthropic-employee.html">View Articles →</a>
+                <a href="/browse/companies/anthropic.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Apple</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-apple-apple-ceo.html">View Articles →</a>
+                <a href="/browse/companies/apple.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>AstraZeneca</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-uk-astrazeneca-astrazeneca-employee.html">View Articles →</a>
+                <a href="/browse/companies/astrazeneca.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Axis Bank</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-india-axis-bank-investor-edition.html">View Articles →</a>
+                <a href="/browse/companies/axis-bank.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>BAE Systems</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-uk-bae-systems-investor-edition.html">View Articles →</a>
+                <a href="/browse/companies/bae-systems.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>BASF</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-europe-basf-investor-edition.html">View Articles →</a>
+                <a href="/browse/companies/basf.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>BHP Group</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-australia-bhp-group-bhp-ceo.html">View Articles →</a>
+                <a href="/browse/companies/bhp-group.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>BNP Paribas</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-europe-bnp-paribas-bnp-paribas-investor.html">View Articles →</a>
+                <a href="/browse/companies/bnp-paribas.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>BP</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-uk-bp-bp-ceo.html">View Articles →</a>
+                <a href="/browse/companies/bp.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Bajaj Finance</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-india-bajaj-finance-bajaj-investor.html">View Articles →</a>
+                <a href="/browse/companies/bajaj-finance.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Bank of Montreal</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-canada-bank-of-montreal-bank-of-montreal-employee.html">View Articles →</a>
+                <a href="/browse/companies/bank-of-montreal.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Bank of Nova Scotia</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-canada-bank-of-nova-scotia-scotiabank-investor.html">View Articles →</a>
+                <a href="/browse/companies/bank-of-nova-scotia.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Barclays</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-uk-barclays-barclays-investor.html">View Articles →</a>
+                <a href="/browse/companies/barclays.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Barrick Gold</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-canada-barrick-gold-barrick-gold-ceo.html">View Articles →</a>
+                <a href="/browse/companies/barrick-gold.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Berkshire Hathaway</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-berkshire-hathaway-berkshire-hathaway-ceo.html">View Articles →</a>
+                <a href="/browse/companies/berkshire-hathaway.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Bharti Airtel</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-india-bharti-airtel-bharti-ceo.html">View Articles →</a>
+                <a href="/browse/companies/bharti-airtel.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Bloom Energy</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-bloom-energy-bloom-energy-ceo.html">View Articles →</a>
+                <a href="/browse/companies/bloom-energy.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>British American Tobacco</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-uk-british-american-tobacco-investor-edition.html">View Articles →</a>
+                <a href="/browse/companies/british-american-tobacco.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Broadcom</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-broadcom-broadcom-employee.html">View Articles →</a>
+                <a href="/browse/companies/broadcom.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Brookfield</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-canada-brookfield-brookfield-employee.html">View Articles →</a>
+                <a href="/browse/companies/brookfield.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Brookfield Asset Management</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-canada-brookfield-asset-management-brookfield-asset-management-ceo.html">View Articles →</a>
+                <a href="/browse/companies/brookfield-asset-management.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>C3 AI</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-c3-ai-c3-ai-investor.html">View Articles →</a>
+                <a href="/browse/companies/c3-ai.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>CGI</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-canada-cgi-cgi-ceo.html">View Articles →</a>
+                <a href="/browse/companies/cgi.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>CIBC</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-canada-cibc-cibc-investor.html">View Articles →</a>
+                <a href="/browse/companies/cibc.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>CSL Limited</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-australia-csl-limited-csl-investor.html">View Articles →</a>
+                <a href="/browse/companies/csl-limited.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Canadian National Railway</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-canada-canadian-national-railway-canadian-national-railway-investor.html">View Articles →</a>
+                <a href="/browse/companies/canadian-national-railway.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Canadian Pacific</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-canada-canadian-pacific-canadian-pacific-ceo.html">View Articles →</a>
+                <a href="/browse/companies/canadian-pacific.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Caterpillar</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-caterpillar-caterpillar-employee.html">View Articles →</a>
+                <a href="/browse/companies/caterpillar.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Charles Schwab</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-charles-schwab-charlesschwab-investor.html">View Articles →</a>
+                <a href="/browse/companies/charles-schwab.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Coca-Cola</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-coca-cola-coca-cola-investor.html">View Articles →</a>
+                <a href="/browse/companies/coca-cola.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Cohere</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-canada-cohere-cohere-ceo.html">View Articles →</a>
+                <a href="/browse/companies/cohere.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Commonwealth Bank</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-australia-commonwealth-bank-cba-investor.html">View Articles →</a>
+                <a href="/browse/companies/commonwealth-bank.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Constellation Energy</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-constellation-energy-constellation-energy-ceo.html">View Articles →</a>
+                <a href="/browse/companies/constellation-energy.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Constellation Software</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-canada-constellation-software-constellationsoftware-employee.html">View Articles →</a>
+                <a href="/browse/companies/constellation-software.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Costco</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-costco-costco-employee.html">View Articles →</a>
+                <a href="/browse/companies/costco.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>CrowdStrike</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-crowdstrike-crowdstrike-ceo.html">View Articles →</a>
+                <a href="/browse/companies/crowdstrike.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>DataRobot</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-datarobot-investor-edition.html">View Articles →</a>
+                <a href="/browse/companies/datarobot.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Datadog</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-datadog-datadog-ceo.html">View Articles →</a>
+                <a href="/browse/companies/datadog.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Deere and Co</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-deere-and-co-deere-ceo.html">View Articles →</a>
+                <a href="/browse/companies/deere-and-co.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Dell</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-dell-dell-employee.html">View Articles →</a>
+                <a href="/browse/companies/dell.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Deutsche Telekom</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-europe-deutsche-telekom-deutsche-telekom-employee.html">View Articles →</a>
+                <a href="/browse/companies/deutsche-telekom.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Eli Lilly</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-eli-lilly-eli-lilly-investor.html">View Articles →</a>
+                <a href="/browse/companies/eli-lilly.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Enbridge</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-canada-enbridge-enbridge-ceo.html">View Articles →</a>
+                <a href="/browse/companies/enbridge.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Enel</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-europe-enel-investor-edition.html">View Articles →</a>
+                <a href="/browse/companies/enel.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>First Service</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-first-service-firstservice-investor.html">View Articles →</a>
+                <a href="/browse/companies/first-service.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Fortescue</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-australia-fortescue-fortescue-ceo.html">View Articles →</a>
+                <a href="/browse/companies/fortescue.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>GE Vernova</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-ge-vernova-ge-vernova-ceo.html">View Articles →</a>
+                <a href="/browse/companies/ge-vernova.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Genpact</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-genpact-genpact-employee.html">View Articles →</a>
+                <a href="/browse/companies/genpact.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>GlaxoSmithKline</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-uk-glaxosmithkline-investor-edition.html">View Articles →</a>
+                <a href="/browse/companies/glaxosmithkline.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Goodman Group</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-australia-goodman-group-goodman-employee.html">View Articles →</a>
+                <a href="/browse/companies/goodman-group.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Google DeepMind</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-uk-google-deepmind-investor-edition.html">View Articles →</a>
+                <a href="/browse/companies/google-deepmind.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>HCL Technologies</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-india-hcl-technologies-hcl-ceo.html">View Articles →</a>
+                <a href="/browse/companies/hcl-technologies.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>HDFC Bank</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-india-hdfc-bank-hdfc-ceo.html">View Articles →</a>
+                <a href="/browse/companies/hdfc-bank.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>HSBC</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-uk-hsbc-hsbc-ceo.html">View Articles →</a>
+                <a href="/browse/companies/hsbc.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Hermes</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-europe-hermes-hermes-employee.html">View Articles →</a>
+                <a href="/browse/companies/hermes.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Hindustan Unilever</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-india-hindustan-unilever-hul-investor.html">View Articles →</a>
+                <a href="/browse/companies/hindustan-unilever.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Home Depot</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-home-depot-home-depot-ceo.html">View Articles →</a>
+                <a href="/browse/companies/home-depot.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>ICICI Bank</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-india-icici-bank-icici-employee.html">View Articles →</a>
+                <a href="/browse/companies/icici-bank.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>ITC</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-india-itc-itc-investor.html">View Articles →</a>
+                <a href="/browse/companies/itc.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Iberdrola</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-europe-iberdrola-investor-edition.html">View Articles →</a>
+                <a href="/browse/companies/iberdrola.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Inflection AI</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-inflection-ai-investor-edition.html">View Articles →</a>
+                <a href="/browse/companies/inflection-ai.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Infosys</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-india-infosys-infosys-employee.html">View Articles →</a>
+                <a href="/browse/companies/infosys.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>JPMorgan Chase</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-jpmorgan-chase-jpmorgan-chase-ceo.html">View Articles →</a>
+                <a href="/browse/companies/jpmorgan-chase.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Johnson and Johnson</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-johnson-and-johnson-johnson-and-johnson-investor.html">View Articles →</a>
+                <a href="/browse/companies/johnson-and-johnson.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>KoBold Metals</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-kobold-metals-investor-edition.html">View Articles →</a>
+                <a href="/browse/companies/kobold-metals.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Kotak Mahindra Bank</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-india-kotak-mahindra-bank-investor-edition.html">View Articles →</a>
+                <a href="/browse/companies/kotak-mahindra-bank.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>LOreal</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-europe-loreal-loreal-employee.html">View Articles →</a>
+                <a href="/browse/companies/loreal.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>LVMH</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-europe-lvmh-lvmh-investor.html">View Articles →</a>
+                <a href="/browse/companies/lvmh.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Larsen and Toubro</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-india-larsen-and-toubro-lt-employee.html">View Articles →</a>
+                <a href="/browse/companies/larsen-and-toubro.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Lloyds Banking</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-uk-lloyds-banking-lloyds-investor.html">View Articles →</a>
+                <a href="/browse/companies/lloyds-banking.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>London Stock Exchange Group</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-uk-london-stock-exchange-group-investor-edition.html">View Articles →</a>
+                <a href="/browse/companies/london-stock-exchange-group.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>MSCI</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-msci-msci-employee.html">View Articles →</a>
+                <a href="/browse/companies/msci.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Macquarie Group</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-australia-macquarie-group-macquarie-investor.html">View Articles →</a>
+                <a href="/browse/companies/macquarie-group.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Mahindra</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-india-mahindra-investor-edition.html">View Articles →</a>
+                <a href="/browse/companies/mahindra.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Manulife</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-canada-manulife-manulife-investor.html">View Articles →</a>
+                <a href="/browse/companies/manulife.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Maruti Suzuki</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-india-maruti-suzuki-investor-edition.html">View Articles →</a>
+                <a href="/browse/companies/maruti-suzuki.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Mastercard</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-mastercard-mastercard-employee.html">View Articles →</a>
+                <a href="/browse/companies/mastercard.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Merck</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-merck-merck-employee.html">View Articles →</a>
+                <a href="/browse/companies/merck.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Meta</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-meta-meta-ceo.html">View Articles →</a>
+                <a href="/browse/companies/meta.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Microsoft</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-microsoft-microsoft-ceo.html">View Articles →</a>
+                <a href="/browse/companies/microsoft.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Mistral AI</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-europe-mistral-ai-mistral-ai-investor.html">View Articles →</a>
+                <a href="/browse/companies/mistral-ai.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>MongoDB</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-mongodb-mongodb-ceo.html">View Articles →</a>
+                <a href="/browse/companies/mongodb.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Moodys</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-moodys-moodys-investor.html">View Articles →</a>
+                <a href="/browse/companies/moodys.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>NTPC</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-india-ntpc-investor-edition.html">View Articles →</a>
+                <a href="/browse/companies/ntpc.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>NVIDIA</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-nvidia-nvidia-ceo.html">View Articles →</a>
+                <a href="/browse/companies/nvidia.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>NatWest</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-uk-natwest-investor-edition.html">View Articles →</a>
+                <a href="/browse/companies/natwest.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>National Australia Bank</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-australia-national-australia-bank-nab-employee.html">View Articles →</a>
+                <a href="/browse/companies/national-australia-bank.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>National Grid</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-uk-national-grid-national-grid-investor.html">View Articles →</a>
+                <a href="/browse/companies/national-grid.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Netflix</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-netflix-netflix-ceo.html">View Articles →</a>
+                <a href="/browse/companies/netflix.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>NextEra Energy</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-nextera-energy-nextera-energy-ceo.html">View Articles →</a>
+                <a href="/browse/companies/nextera-energy.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Novo Nordisk</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-europe-novo-nordisk-novo-nordisk-employee.html">View Articles →</a>
+                <a href="/browse/companies/novo-nordisk.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Open Text</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-canada-open-text-opentext-employee.html">View Articles →</a>
+                <a href="/browse/companies/open-text.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>OpenAI</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-openai-openai-ceo.html">View Articles →</a>
+                <a href="/browse/companies/openai.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Oracle</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-oracle-oracle-employee.html">View Articles →</a>
+                <a href="/browse/companies/oracle.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Palantir</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-palantir-palantir-investor.html">View Articles →</a>
+                <a href="/browse/companies/palantir.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Prosus</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-europe-prosus-investor-edition.html">View Articles →</a>
+                <a href="/browse/companies/prosus.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>RELX</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-uk-relx-investor-edition.html">View Articles →</a>
+                <a href="/browse/companies/relx.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Reliance Industries</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-india-reliance-industries-reliance-investor.html">View Articles →</a>
+                <a href="/browse/companies/reliance-industries.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Rio Tinto</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-uk-rio-tinto-investor-edition.html">View Articles →</a>
+                <a href="/browse/companies/rio-tinto.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Roche</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-europe-roche-roche-employee.html">View Articles →</a>
+                <a href="/browse/companies/roche.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Rolls-Royce</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-uk-rolls-royce-investor-edition.html">View Articles →</a>
+                <a href="/browse/companies/rolls-royce.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Royal Bank</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-canada-royal-bank-rbc-employee.html">View Articles →</a>
+                <a href="/browse/companies/royal-bank.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>SAP</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-europe-sap-sap-employee.html">View Articles →</a>
+                <a href="/browse/companies/sap.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Salesforce</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-salesforce-salesforce-employee.html">View Articles →</a>
+                <a href="/browse/companies/salesforce.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Sanofi</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-europe-sanofi-sanofi-investor.html">View Articles →</a>
+                <a href="/browse/companies/sanofi.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Schneider Electric</h3>
                 <p>6 articles</p>
-                <a href="/articles/companies-europe-schneider-electric-investor-edition.html">View Articles →</a>
+                <a href="/browse/companies/schneider-electric.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>ServiceNow</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-servicenow-investor-edition.html">View Articles →</a>
+                <a href="/browse/companies/servicenow.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Shell</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-uk-shell-shell-investor.html">View Articles →</a>
+                <a href="/browse/companies/shell.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Sherwin Williams</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-sherwin-williams-sherwinwilliams-employee.html">View Articles →</a>
+                <a href="/browse/companies/sherwin-williams.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Shopify</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-canada-shopify-shopify-employee.html">View Articles →</a>
+                <a href="/browse/companies/shopify.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Siemens</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-europe-siemens-siemens-employee.html">View Articles →</a>
+                <a href="/browse/companies/siemens.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Snowflake</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-snowflake-snowflake-employee.html">View Articles →</a>
+                <a href="/browse/companies/snowflake.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>State Bank of India</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-india-state-bank-of-india-sbi-ceo.html">View Articles →</a>
+                <a href="/browse/companies/state-bank-of-india.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Sun Pharma</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-india-sun-pharma-sunpharma-ceo.html">View Articles →</a>
+                <a href="/browse/companies/sun-pharma.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Suncor Energy</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-canada-suncor-energy-suncor-energy-investor.html">View Articles →</a>
+                <a href="/browse/companies/suncor-energy.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>TC Energy</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-canada-tc-energy-tcenergy-investor.html">View Articles →</a>
+                <a href="/browse/companies/tc-energy.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>TCS</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-india-tcs-tcs-ceo.html">View Articles →</a>
+                <a href="/browse/companies/tcs.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Telstra</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-australia-telstra-telstra-employee.html">View Articles →</a>
+                <a href="/browse/companies/telstra.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Tesla</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-tesla-tesla-ceo.html">View Articles →</a>
+                <a href="/browse/companies/tesla.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Thomson Reuters</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-canada-thomson-reuters-thomson-reuters-employee.html">View Articles →</a>
+                <a href="/browse/companies/thomson-reuters.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Toronto-Dominion Bank</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-canada-toronto-dominion-bank-toronto-dominion-bank-investor.html">View Articles →</a>
+                <a href="/browse/companies/toronto-dominion-bank.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>TotalEnergies</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-europe-totalenergies-totalenergies-ceo.html">View Articles →</a>
+                <a href="/browse/companies/totalenergies.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Transurban</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-australia-transurban-investor-edition.html">View Articles →</a>
+                <a href="/browse/companies/transurban.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Unilever</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-uk-unilever-investor-edition.html">View Articles →</a>
+                <a href="/browse/companies/unilever.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>UnitedHealth</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-unitedhealth-unitedhealth-employee.html">View Articles →</a>
+                <a href="/browse/companies/unitedhealth.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Visa</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-visa-visa-ceo.html">View Articles →</a>
+                <a href="/browse/companies/visa.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Vistra</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-vistra-vistra-investor.html">View Articles →</a>
+                <a href="/browse/companies/vistra.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Walmart</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-walmart-walmart-ceo.html">View Articles →</a>
+                <a href="/browse/companies/walmart.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Wesfarmers</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-australia-wesfarmers-wesfarmers-employee.html">View Articles →</a>
+                <a href="/browse/companies/wesfarmers.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Wipro</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-india-wipro-wipro-ceo.html">View Articles →</a>
+                <a href="/browse/companies/wipro.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Woodside Energy</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-australia-woodside-energy-woodside-ceo.html">View Articles →</a>
+                <a href="/browse/companies/woodside-energy.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>Woolworths Group</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-australia-woolworths-group-woolworths-investor.html">View Articles →</a>
+                <a href="/browse/companies/woolworths-group.html">View All →</a>
             </div>
             
             <div class="entity-card">
                 <div class="entity-icon">🏢</div>
                 <h3>xAI</h3>
                 <p>3 articles</p>
-                <a href="/articles/companies-us-xai-xai-ceo.html">View Articles →</a>
+                <a href="/browse/companies/xai.html">View All →</a>
             </div>
             
         </div>
@@ -1870,10 +2053,13 @@ button {
             </div>
             <div class="footer-links">
                 <a href="/">Home</a>
-                <a href="/about.html">About</a>
                 <a href="/browse/countries.html">Countries</a>
                 <a href="/browse/companies.html">Companies</a>
                 <a href="/browse/sectors.html">Sectors</a>
+                <a href="/browse/action-plans.html">Action Plans</a>
+                <a href="/browse/guides.html">Guides</a>
+                <a href="/browse/data.html">Data</a>
+                <a href="/about.html">About</a>
             </div>
         </div>
     </footer>

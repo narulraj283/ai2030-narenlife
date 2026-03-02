@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Numbers — AI Disruption by the Data - The 2030 Intelligence Report</title>
-    <meta name="description" content="**FROM:** The 2030 Report">
+    <meta name="description" content="FROM: The 2030 Report">
     <meta property="og:title" content="The Numbers — AI Disruption by the Data">
-    <meta property="og:description" content="**FROM:** The 2030 Report">
+    <meta property="og:description" content="FROM: The 2030 Report">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://ai2030report.com/articles/dataandrankings-the-numbers.html">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="The Numbers — AI Disruption by the Data">
-    <meta name="twitter:description" content="**FROM:** The 2030 Report">
+    <meta name="twitter:description" content="FROM: The 2030 Report">
     <link rel="canonical" href="https://ai2030report.com/articles/dataandrankings-the-numbers.html">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": "The Numbers — AI Disruption by the Data",
-        "description": "**FROM:** The 2030 Report",
+        "description": "FROM: The 2030 Report",
         "url": "https://ai2030report.com/articles/dataandrankings-the-numbers.html",
         "author": {
             "@type": "Organization",
@@ -450,6 +450,43 @@ button {
     background: var(--accent-purple);
 }
 
+/* Entity Landing Page */
+.entity-landing {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.entity-hero {
+    padding: 3rem 0 2rem 0;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 2rem;
+}
+
+.entity-hero-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.entity-hero-icon {
+    font-size: 4rem;
+}
+
+.entity-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.entity-hero p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
 /* Article Page */
 .article-page {
     max-width: 900px;
@@ -463,6 +500,7 @@ button {
     margin-bottom: 2rem;
     font-size: 0.9rem;
     color: var(--text-secondary);
+    flex-wrap: wrap;
 }
 
 .breadcrumb a {
@@ -478,7 +516,7 @@ button {
 }
 
 .article-header {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .article-meta-bar {
@@ -496,6 +534,119 @@ button {
     display: flex;
     gap: 0.75rem;
     align-items: center;
+}
+
+.entity-name-display {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+/* Sibling Navigation */
+.sibling-nav {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.sibling-nav-label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.sibling-pills {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.sibling-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem 1.2rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 2rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.sibling-pill a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.sibling-pill:hover {
+    border-color: var(--accent-blue);
+    color: var(--accent-blue);
+}
+
+.sibling-pill.active {
+    background: var(--accent-blue);
+    border-color: var(--accent-blue);
+    color: white;
+}
+
+.sibling-pill.active a {
+    color: white;
+}
+
+/* Share Bar */
+.share-bar {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.share-bar-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-right: 0.5rem;
+}
+
+.share-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 1.2rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 0.4rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.share-btn:hover {
+    background: var(--accent-blue);
+    border-color: var(--accent-blue);
+    color: white;
+}
+
+.share-btn.copied {
+    background: var(--accent-green);
+    border-color: var(--accent-green);
+    color: white;
 }
 
 .article-content {
@@ -603,25 +754,25 @@ button {
     color: var(--text-primary);
 }
 
-/* Related Articles */
-.related-articles {
+/* More in Category */
+.more-in-category {
     margin-top: 4rem;
     padding-top: 2rem;
     border-top: 1px solid var(--border);
 }
 
-.related-articles h3 {
+.more-in-category h3 {
     font-size: 1.5rem;
     margin-bottom: 2rem;
 }
 
-.related-grid {
+.more-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
-.related-card {
+.more-card {
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: 0.5rem;
@@ -629,24 +780,24 @@ button {
     transition: all 0.3s ease;
 }
 
-.related-card:hover {
+.more-card:hover {
     background: var(--bg-card-hover);
     border-color: var(--accent-blue);
 }
 
-.related-card h4 {
+.more-card h4 {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
     color: var(--text-primary);
 }
 
-.related-card p {
+.more-card p {
     font-size: 0.9rem;
     color: var(--text-secondary);
     margin-bottom: 1rem;
 }
 
-.related-card a {
+.more-card a {
     font-weight: 600;
 }
 
@@ -816,6 +967,25 @@ button {
         overflow-x: auto;
         padding-bottom: 1rem;
     }
+
+    .share-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sibling-pills {
+        overflow-x: auto;
+        padding-bottom: 0.5rem;
+    }
+
+    .entity-hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .entity-hero h1 {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -862,6 +1032,16 @@ button {
     .breadcrumb {
         font-size: 0.8rem;
     }
+
+    .sibling-pill {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    .share-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
+    }
 }
 </style>
 </head>
@@ -880,6 +1060,9 @@ button {
                 <li><a href="/browse/countries.html">Countries</a></li>
                 <li><a href="/browse/companies.html">Companies</a></li>
                 <li><a href="/browse/sectors.html">Sectors</a></li>
+                <li><a href="/browse/action-plans.html">Action Plans</a></li>
+                <li><a href="/browse/guides.html">Guides</a></li>
+                <li><a href="/browse/data.html">Data</a></li>
                 <li><a href="/about.html">About</a></li>
             </nav>
             <button class="nav-toggle" onclick="toggleNav()">
@@ -903,6 +1086,20 @@ button {
                 </div>
                 <div class="read-time">⏱️ 12 min read</div>
             </div>
+
+            
+            
+        <div class="share-bar">
+            <span class="share-bar-label">Share:</span>
+            <button class="share-btn" onclick="copyLink()">Copy Link</button>
+            <button class="share-btn" onclick="shareOnTwitter()">X/Twitter</button>
+            <button class="share-btn" onclick="shareOnLinkedIn()">LinkedIn</button>
+            <button class="share-btn" onclick="shareOnFacebook()">Facebook</button>
+            <button class="share-btn" onclick="shareOnWhatsApp()">WhatsApp</button>
+            <button class="share-btn" onclick="shareViaEmail()">Email</button>
+        </div>
+        
+            
 
             <div class="article-content">
                 <h1>The Numbers — AI Disruption by the Data</h1>
@@ -1200,19 +1397,7 @@ button {
             </div>
         </article>
 
-        <div class="related-articles"><h3>Related Articles</h3><div class="related-grid">
-            <div class="related-card">
-                <h4>AI Readiness Scorecard Template</h4>
-                <p>**FROM:** The 2030 Report</p>
-                <a href="/articles/dataandrankings-ai-readiness-scorecard-template.html">Read more →</a>
-            </div>
-            
-            <div class="related-card">
-                <h4>Company AI Readiness Rankings — Methodology and Initial Rankings</h4>
-                <p>**FROM:** The 2030 Report</p>
-                <a href="/articles/dataandrankings-company-ai-readiness-rankings.html">Read more →</a>
-            </div>
-            </div></div>
+        
     </main>
 
     <footer class="site-footer">
@@ -1222,10 +1407,13 @@ button {
             </div>
             <div class="footer-links">
                 <a href="/">Home</a>
-                <a href="/about.html">About</a>
                 <a href="/browse/countries.html">Countries</a>
                 <a href="/browse/companies.html">Companies</a>
                 <a href="/browse/sectors.html">Sectors</a>
+                <a href="/browse/action-plans.html">Action Plans</a>
+                <a href="/browse/guides.html">Guides</a>
+                <a href="/browse/data.html">Data</a>
+                <a href="/about.html">About</a>
             </div>
             <div style="color: var(--text-muted); font-size: 0.85rem; margin-top: 1rem;">
                 &copy; 2030 Intelligence Report. All rights reserved.
@@ -1243,6 +1431,50 @@ button {
 
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            navigator.clipboard.writeText(url).then(() => {
+                const btn = event.target;
+                const originalText = btn.innerText;
+                btn.innerText = 'Copied!';
+                btn.classList.add('copied');
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                    btn.classList.remove('copied');
+                }, 2000);
+            });
+        }
+
+        function shareOnTwitter() {
+            const title = document.querySelector('.article-header').innerText.split('\n')[0];
+            const url = window.location.href;
+            const text = encodeURIComponent(title + ' ' + url);
+            window.open(`https://twitter.com/intent/tweet?text=${text}`, '_blank');
+        }
+
+        function shareOnLinkedIn() {
+            const url = window.location.href;
+            window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`, '_blank');
+        }
+
+        function shareOnFacebook() {
+            const url = window.location.href;
+            window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, '_blank');
+        }
+
+        function shareOnWhatsApp() {
+            const title = document.querySelector('.article-header').innerText.split('\n')[0];
+            const url = window.location.href;
+            const text = encodeURIComponent(title + ' ' + url);
+            window.open(`https://wa.me/?text=${text}`, '_blank');
+        }
+
+        function shareViaEmail() {
+            const title = document.querySelector('.article-header').innerText.split('\n')[0];
+            const url = window.location.href;
+            window.location.href = `mailto:?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(url)}`;
         }
 
         window.addEventListener('scroll', () => {

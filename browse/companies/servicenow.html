@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServiceNow - Companies - The 2030 Intelligence Report</title>
+    <meta name="description" content="AI disruption forecasts for ServiceNow from companies perspective">
+    <style>
+:root {
+    --bg-primary: #0a0a0f;
+    --bg-secondary: #111118;
+    --bg-card: #16161f;
+    --bg-card-hover: #1c1c28;
+    --border: #2a2a3a;
+    --text-primary: #e4e4ef;
+    --text-secondary: #9494a8;
+    --text-muted: #6b6b80;
+    --accent-blue: #3b82f6;
+    --accent-purple: #8b5cf6;
+    --accent-amber: #f59e0b;
+    --accent-green: #10b981;
+    --accent-red: #ef4444;
+    --accent-cyan: #06b6d4;
+    --gradient-1: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    letter-spacing: -0.3px;
+}
+
+a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--accent-purple);
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* Header */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(10, 10, 15, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.logo-mark {
+    width: 2rem;
+    height: 2rem;
+    background: var(--gradient-1);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+}
+
+.logo-text-main {
+    font-size: 1rem;
+}
+
+.logo-text-sub {
+    font-size: 0.65rem;
+    color: var(--text-secondary);
+    letter-spacing: 0.5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--text-primary);
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 0.5rem;
+}
+
+.nav-toggle span {
+    width: 1.5rem;
+    height: 2px;
+    background: var(--text-primary);
+    transition: all 0.3s ease;
+}
+
+/* Hero Section */
+.hero {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero .tagline {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+.hero-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    border-top: 1px solid var(--border);
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-top: 0.5rem;
+}
+
+/* Search and Filter */
+.search-container {
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.search-box {
+    width: 100%;
+    padding: 1rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    color: var(--text-primary);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.search-box::placeholder {
+    color: var(--text-muted);
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.filter-btn {
+    padding: 0.75rem 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--accent-blue);
+    border-color: var(--accent-blue);
+    color: white;
+}
+
+/* Article Grid */
+.article-grid {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.article-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.article-card:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--accent-blue);
+    transform: translateY(-2px);
+}
+
+.card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.card-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.35rem 0.75rem;
+    background: rgba(59, 130, 246, 0.15);
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge-countries {
+    background: rgba(59, 130, 246, 0.15);
+    color: #3b82f6;
+}
+
+.badge-companies {
+    background: rgba(139, 92, 246, 0.15);
+    color: #8b5cf6;
+}
+
+.badge-sectors {
+    background: rgba(245, 158, 11, 0.15);
+    color: #f59e0b;
+}
+
+.badge-actions {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+}
+
+.badge-guides {
+    background: rgba(6, 182, 212, 0.15);
+    color: #06b6d4;
+}
+
+.badge-data {
+    background: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+}
+
+.card-audience {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.35rem 0.75rem;
+    background: rgba(148, 148, 168, 0.15);
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+    flex-grow: 1;
+}
+
+.card-excerpt {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.read-time {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+/* Entity Cards (Browse Pages) */
+.entity-grid {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.entity-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.entity-card:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--accent-blue);
+    transform: translateY(-2px);
+}
+
+.entity-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.entity-card h3 {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.entity-card p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.entity-card a {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: var(--accent-blue);
+    color: white;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.entity-card a:hover {
+    background: var(--accent-purple);
+}
+
+/* Entity Landing Page */
+.entity-landing {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.entity-hero {
+    padding: 3rem 0 2rem 0;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 2rem;
+}
+
+.entity-hero-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.entity-hero-icon {
+    font-size: 4rem;
+}
+
+.entity-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.entity-hero p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+/* Article Page */
+.article-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.breadcrumb {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    flex-wrap: wrap;
+}
+
+.breadcrumb a {
+    color: var(--accent-blue);
+}
+
+.breadcrumb a:hover {
+    color: var(--accent-purple);
+}
+
+.breadcrumb span {
+    margin: 0 0.5rem;
+}
+
+.article-header {
+    margin-bottom: 2rem;
+}
+
+.article-meta-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.article-category {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.entity-name-display {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+/* Sibling Navigation */
+.sibling-nav {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.sibling-nav-label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.sibling-pills {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.sibling-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem 1.2rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 2rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.sibling-pill a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.sibling-pill:hover {
+    border-color: var(--accent-blue);
+    color: var(--accent-blue);
+}
+
+.sibling-pill.active {
+    background: var(--accent-blue);
+    border-color: var(--accent-blue);
+    color: white;
+}
+
+.sibling-pill.active a {
+    color: white;
+}
+
+/* Share Bar */
+.share-bar {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.share-bar-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-right: 0.5rem;
+}
+
+.share-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 1.2rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 0.4rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.share-btn:hover {
+    background: var(--accent-blue);
+    border-color: var(--accent-blue);
+    color: white;
+}
+
+.share-btn.copied {
+    background: var(--accent-green);
+    border-color: var(--accent-green);
+    color: white;
+}
+
+.article-content {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+}
+
+.article-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    margin-top: 2rem;
+}
+
+.article-content h1:first-child {
+    margin-top: 0;
+}
+
+.article-content h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.5rem;
+}
+
+.article-content h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.article-content p {
+    margin-bottom: 1.25rem;
+}
+
+.article-content ul,
+.article-content ol {
+    margin-left: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+.article-content li {
+    margin-bottom: 0.5rem;
+}
+
+.article-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.25rem;
+    border: 1px solid var(--border);
+}
+
+.article-content th {
+    background: var(--bg-secondary);
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    border: 1px solid var(--border);
+}
+
+.article-content td {
+    padding: 1rem;
+    border: 1px solid var(--border);
+}
+
+.article-content blockquote {
+    margin-left: 0;
+    padding-left: 1.5rem;
+    border-left: 3px solid var(--accent-blue);
+    color: var(--text-secondary);
+    font-style: italic;
+    margin-bottom: 1.25rem;
+}
+
+.article-content hr {
+    border: none;
+    height: 1px;
+    background: var(--border);
+    margin: 2rem 0;
+}
+
+.article-content code {
+    background: var(--bg-card);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-family: "Courier New", monospace;
+    font-size: 0.9em;
+    color: var(--accent-cyan);
+}
+
+.article-content pre {
+    background: var(--bg-card);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    margin-bottom: 1.25rem;
+    border: 1px solid var(--border);
+}
+
+.article-content pre code {
+    background: none;
+    padding: 0;
+    color: var(--text-primary);
+}
+
+/* More in Category */
+.more-in-category {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+}
+
+.more-in-category h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.more-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.more-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.more-card:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--accent-blue);
+}
+
+.more-card h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.more-card p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.more-card a {
+    font-weight: 600;
+}
+
+/* Footer */
+.site-footer {
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border);
+    padding: 3rem 2rem;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer-disclaimer {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.footer-links a {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    color: var(--text-primary);
+}
+
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 3rem;
+    height: 3rem;
+    background: var(--accent-blue);
+    border-radius: 50%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+    background: var(--accent-purple);
+    transform: translateY(-2px);
+}
+
+.back-to-top.visible {
+    display: flex;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 3rem 0;
+}
+
+.pagination a,
+.pagination span {
+    padding: 0.75rem 1rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 0.25rem;
+    color: var(--text-secondary);
+    transition: all 0.2s ease;
+}
+
+.pagination a:hover {
+    background: var(--accent-blue);
+    border-color: var(--accent-blue);
+    color: white;
+}
+
+.pagination span.current {
+    background: var(--accent-blue);
+    border-color: var(--accent-blue);
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-inner {
+        padding: 1rem;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        right: 0;
+        background: var(--bg-secondary);
+        flex-direction: column;
+        gap: 0;
+        border-bottom: 1px solid var(--border);
+        border-radius: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 1rem;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero .tagline {
+        font-size: 1rem;
+    }
+
+    .article-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem 2rem 1rem;
+    }
+
+    .entity-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem 2rem 1rem;
+    }
+
+    .article-page {
+        padding: 1rem;
+    }
+
+    .article-content h1 {
+        font-size: 1.75rem;
+    }
+
+    .article-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .article-meta-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-container {
+        padding: 0 1rem;
+    }
+
+    .filter-buttons {
+        overflow-x: auto;
+        padding-bottom: 1rem;
+    }
+
+    .share-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sibling-pills {
+        overflow-x: auto;
+        padding-bottom: 0.5rem;
+    }
+
+    .entity-hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .entity-hero h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-inner {
+        padding: 0.75rem;
+    }
+
+    .site-logo {
+        font-size: 1.2rem;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .article-grid {
+        gap: 1rem;
+    }
+
+    .article-content {
+        font-size: 1rem;
+    }
+
+    .article-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .article-content h2 {
+        font-size: 1.25rem;
+    }
+
+    .article-content h3 {
+        font-size: 1.1rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .breadcrumb {
+        font-size: 0.8rem;
+    }
+
+    .sibling-pill {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    .share-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
+    }
+}
+</style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="/" class="site-logo">
+                <div class="logo-mark">30</div>
+                <div class="logo-text">
+                    <div class="logo-text-main">2030</div>
+                    <div class="logo-text-sub">Report</div>
+                </div>
+            </a>
+            <nav class="nav-links">
+                <li><a href="/">Dashboard</a></li>
+                <li><a href="/browse/countries.html">Countries</a></li>
+                <li><a href="/browse/companies.html">Companies</a></li>
+                <li><a href="/browse/sectors.html">Sectors</a></li>
+                <li><a href="/browse/action-plans.html">Action Plans</a></li>
+                <li><a href="/browse/guides.html">Guides</a></li>
+                <li><a href="/browse/data.html">Data</a></li>
+                <li><a href="/about.html">About</a></li>
+            </nav>
+            <button class="nav-toggle" onclick="toggleNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="entity-landing">
+        <div class="breadcrumb" style="margin-top: 2rem; margin-bottom: 2rem;">
+            <a href="/">Home</a>
+            <span>/</span>
+            <a href="/browse/companies.html">Companies</a>
+            <span>/</span>
+            <span>ServiceNow</span>
+        </div>
+
+        <section class="entity-hero">
+            <div class="entity-hero-content">
+                <div class="entity-hero-icon">🏢</div>
+                <div>
+                    <h1 class="entity-hero">ServiceNow</h1>
+                    <p>All perspectives on AI disruption for ServiceNow</p>
+                </div>
+            </div>
+        </section>
+
+        
+            <section style="margin-bottom: 3rem;">
+                <h2 style="margin-bottom: 1.5rem; color: var(--text-primary);">CEO Perspective</h2>
+                <div class="article-grid" style="max-width: none; margin: 0; padding: 0;">
+                    
+                <div class="article-card" onclick="window.location.href='/articles/companies-us-servicenow-ceo-edition.html'">
+                    <div class="card-meta">
+                        <span class="card-badge badge-companies">🏢 Companies</span>
+                        <span class="card-audience">👤 CEO</span>
+                    </div>
+                    <h3 class="card-title">SERVICENOW: NAVIGATING THE INFLECTION FROM HYPERGROWTH TO MATURE SCALING</h3>
+                    <p class="card-excerpt">FROM: Executive Intelligence Unit</p>
+                    <div class="card-footer">
+                        <span class="read-time">⏱️ 14 min read</span>
+                    </div>
+                </div>
+                
+                </div>
+            </section>
+            
+            <section style="margin-bottom: 3rem;">
+                <h2 style="margin-bottom: 1.5rem; color: var(--text-primary);">Employee Perspective</h2>
+                <div class="article-grid" style="max-width: none; margin: 0; padding: 0;">
+                    
+                <div class="article-card" onclick="window.location.href='/articles/companies-us-servicenow-employee-edition.html'">
+                    <div class="card-meta">
+                        <span class="card-badge badge-companies">🏢 Companies</span>
+                        <span class="card-audience">👤 Employee</span>
+                    </div>
+                    <h3 class="card-title">SERVICENOW: CAREER DYNAMICS IN A MATURING GROWTH COMPANY</h3>
+                    <p class="card-excerpt">FROM: Human Resources & Career Development</p>
+                    <div class="card-footer">
+                        <span class="read-time">⏱️ 12 min read</span>
+                    </div>
+                </div>
+                
+                </div>
+            </section>
+            
+            <section style="margin-bottom: 3rem;">
+                <h2 style="margin-bottom: 1.5rem; color: var(--text-primary);">Investor Perspective</h2>
+                <div class="article-grid" style="max-width: none; margin: 0; padding: 0;">
+                    
+                <div class="article-card" onclick="window.location.href='/articles/companies-us-servicenow-investor-edition.html'">
+                    <div class="card-meta">
+                        <span class="card-badge badge-companies">🏢 Companies</span>
+                        <span class="card-audience">👤 Investor</span>
+                    </div>
+                    <h3 class="card-title">SERVICENOW: THE DECELERATION INFLECTION</h3>
+                    <p class="card-excerpt">FROM: Global Intelligence Unit, Investment Analysis Division</p>
+                    <div class="card-footer">
+                        <span class="read-time">⏱️ 25 min read</span>
+                    </div>
+                </div>
+                
+                </div>
+            </section>
+            
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-disclaimer">
+                <strong>Disclaimer:</strong> This report provides forecasts and analysis of AI disruption trends.
+            </div>
+            <div class="footer-links">
+                <a href="/">Home</a>
+                <a href="/browse/countries.html">Countries</a>
+                <a href="/browse/companies.html">Companies</a>
+                <a href="/browse/sectors.html">Sectors</a>
+                <a href="/browse/action-plans.html">Action Plans</a>
+                <a href="/browse/guides.html">Guides</a>
+                <a href="/browse/data.html">Data</a>
+                <a href="/about.html">About</a>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" onclick="scrollToTop()" title="Back to top">↑</button>
+
+    <script>
+        function toggleNav() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        window.addEventListener('scroll', () => {
+            const backToTop = document.querySelector('.back-to-top');
+            if (window.scrollY > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+    </script>
+</body>
+</html>
