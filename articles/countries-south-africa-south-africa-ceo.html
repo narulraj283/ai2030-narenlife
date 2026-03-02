@@ -2055,6 +2055,15 @@ button {
             </div>
         </article>
 
+        <div class="social-share-bar" id="socialShareBar">
+            <span>Share this report:</span>
+            <a class="share-btn linkedin" href="#" onclick="shareLinkedIn(event)" target="_blank" rel="noopener">in LinkedIn</a>
+            <a class="share-btn twitter" href="#" onclick="shareTwitter(event)" target="_blank" rel="noopener">𝕏 Post</a>
+            <a class="share-btn whatsapp" href="#" onclick="shareWhatsApp(event)" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="share-btn copy-link" href="#" onclick="copyShareLink(event)">🔗 Copy Link</a>
+        </div>
+
+
         <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); text-align: center;"><a href="/browse/countries/south-africa.html" style="display: inline-block; padding: 1rem 2rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 0.5rem; color: var(--text-primary); font-weight: 600; transition: all 0.2s ease;">← All South Africa Articles</a></div>
         
         <div class="share-leaders-section">
@@ -2185,6 +2194,17 @@ button {
         </div>
 
     </main>
+
+    
+    <div class="email-capture" id="emailCapture">
+        <h3>Get the AI 2030 Intelligence Brief</h3>
+        <p>Weekly insights on AI disruption across countries, companies &amp; sectors — delivered to your inbox.</p>
+        <form class="email-capture-form" id="emailCaptureForm" onsubmit="handleEmailCapture(event)">
+            <input type="email" placeholder="your@email.com" required id="captureEmail">
+            <button type="submit">Subscribe Free</button>
+        </form>
+        <div class="email-capture-success" id="captureSuccess">You're in! Check your inbox.</div>
+    </div>
 
     <footer class="site-footer">
         <div class="footer-content">

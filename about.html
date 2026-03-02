@@ -928,6 +928,17 @@ body {
             <p>These are scenario-planning exercises, not predictions. They are written as fictional retrospective memos to help readers visualize possible futures and make better decisions today. All data points, statistics, and projections are illustrative &mdash; they are not financial advice or statements of fact. The purpose is preparation, not prophecy.</p>
         </article>
     </main>
+    
+    <div class="email-capture" id="emailCapture">
+        <h3>Get the AI 2030 Intelligence Brief</h3>
+        <p>Weekly insights on AI disruption across countries, companies &amp; sectors — delivered to your inbox.</p>
+        <form class="email-capture-form" id="emailCaptureForm" onsubmit="handleEmailCapture(event)">
+            <input type="email" placeholder="your@email.com" required id="captureEmail">
+            <button type="submit">Subscribe Free</button>
+        </form>
+        <div class="email-capture-success" id="captureSuccess">You're in! Check your inbox.</div>
+    </div>
+
     <footer class="site-footer">
     <p>The 2030 Intelligence Report &mdash; Macro Intelligence Memos from the Future</p>
     <p class="disclaimer">
