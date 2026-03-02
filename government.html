@@ -1622,6 +1622,95 @@ button {
         flex-direction: column;
     }
 }
+
+/* === UX Overhaul v1 === */
+
+/* Improved Mobile Navigation */
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed !important;
+        top: 0 !important;
+        right: -100% !important;
+        width: 280px !important;
+        height: 100vh !important;
+        background: var(--bg-secondary) !important;
+        flex-direction: column !important;
+        padding: 5rem 2rem 2rem !important;
+        transition: right 0.3s ease !important;
+        z-index: 999 !important;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.3) !important;
+        border-left: 1px solid var(--border) !important;
+        display: flex !important;
+    }
+    .nav-links.active {
+        right: 0 !important;
+    }
+    .nav-links li {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .nav-links a {
+        display: block !important;
+        padding: 1rem 0 !important;
+        font-size: 1.1rem !important;
+        border-bottom: 1px solid var(--border) !important;
+    }
+    .nav-toggle {
+        display: flex !important;
+        flex-direction: column;
+        gap: 5px;
+        z-index: 1001;
+    }
+    .nav-toggle span {
+        display: block;
+        width: 24px;
+        height: 2px;
+        background: var(--text-primary);
+        transition: all 0.3s ease;
+    }
+    .mobile-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 998;
+    }
+    .mobile-overlay.active { display: block; }
+}
+
+/* Light Theme */
+html.light-theme {
+    --bg-primary: #f5f5f7;
+    --bg-secondary: #eeeef0;
+    --bg-card: #ffffff;
+    --bg-card-hover: #f0f0f2;
+    --border: #d1d5db;
+    --text-primary: #1a1a2e;
+    --text-secondary: #4a4a5e;
+    --text-muted: #6b7280;
+}
+html.light-theme .site-header {
+    background: rgba(245, 245, 247, 0.95) !important;
+}
+html.light-theme .article-toc {
+    background: var(--bg-secondary);
+}
+/* Theme Toggle Button */
+.theme-toggle {
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.4rem 0.6rem;
+    cursor: pointer;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    transition: all 0.2s ease;
+}
+.theme-toggle:hover { color: var(--text-primary); border-color: var(--text-muted); }
+
+/* ux-overhaul-v1 */
+
 </style>
     <!-- GA4 Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-S9Z93KZ2Z2"></script>
@@ -1635,7 +1724,7 @@ button {
                 <div class="logo-text"><div class="logo-text-main">2030</div><div class="logo-text-sub">Report</div></div>
             </a>
             <nav class="nav-links">
-                <li><a href="/">Dashboard</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="/browse/countries.html">Countries</a></li>
                 <li><a href="/browse/companies.html">Companies</a></li>
                 <li><a href="/browse/sectors.html">Sectors</a></li>
@@ -1791,7 +1880,7 @@ button {
 
     
     <div class="email-capture" id="emailCapture">
-        <h3>Get the AI 2030 Intelligence Brief</h3>
+        <h3>Join executives from 34 countries getting the AI 2030 Intelligence Brief</h3>
         <p>Weekly insights on AI disruption across countries, companies &amp; sectors — delivered to your inbox.</p>
         <form class="email-capture-form" id="emailCaptureForm" onsubmit="handleEmailCapture(event)">
             <input type="email" placeholder="your@email.com" required id="captureEmail">
@@ -1844,6 +1933,53 @@ button {
         }
     } catch(e) {}
 
-    </script>
+    
+    // === UX Overhaul v1 ===
+
+    // Improved Mobile Nav Toggle
+    function toggleNav() {
+        var nav = document.querySelector('.nav-links');
+        var overlay = document.getElementById('mobileOverlay');
+        if (!overlay) {
+            overlay = document.createElement('div');
+            overlay.className = 'mobile-overlay';
+            overlay.id = 'mobileOverlay';
+            overlay.onclick = function() { toggleNav(); };
+            document.body.appendChild(overlay);
+        }
+        nav.classList.toggle('active');
+        overlay.classList.toggle('active');
+    }
+
+    // Dark/Light Mode Toggle
+    (function() {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'light') document.documentElement.classList.add('light-theme');
+
+        // Insert toggle button in header
+        var headerInner = document.querySelector('.header-inner');
+        if (headerInner) {
+            var btn = document.createElement('button');
+            btn.className = 'theme-toggle';
+            btn.id = 'themeToggle';
+            btn.innerHTML = document.documentElement.classList.contains('light-theme') ? '🌙' : '☀️';
+            btn.title = 'Toggle light/dark mode';
+            btn.onclick = function() {
+                document.documentElement.classList.toggle('light-theme');
+                var isLight = document.documentElement.classList.contains('light-theme');
+                localStorage.setItem('theme', isLight ? 'light' : 'dark');
+                btn.innerHTML = isLight ? '🌙' : '☀️';
+            };
+            // Insert before nav-toggle button or at end
+            var navToggle = headerInner.querySelector('.nav-toggle');
+            if (navToggle) {
+                headerInner.insertBefore(btn, navToggle);
+            } else {
+                headerInner.appendChild(btn);
+            }
+        }
+    })();
+
+</script>
 </body>
 </html>

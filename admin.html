@@ -1635,11 +1635,25 @@
 
                 const result = await response.json();
                 if (result.success === false || result.error) {
-                    throw new Error(result.error || 'Request failed');
+                    const errMsg = result.error || 'Request failed';
+                    // If token is invalid/expired, force re-login
+                    if (errMsg.toLowerCase().includes('invalid token') || errMsg.toLowerCase().includes('unauthorized') || errMsg.toLowerCase().includes('token expired')) {
+                        localStorage.removeItem('adminToken');
+                        localStorage.removeItem('adminEmail');
+                        state.token = null;
+                        state.adminEmail = null;
+                        showLogin(true);
+                        showToast('Session expired. Please log in again.', 'error');
+                        return null;
+                    }
+                    throw new Error(errMsg);
                 }
 
                 return result;
             } catch (error) {
+                if (error.message && (error.message.toLowerCase().includes('invalid token') || error.message.toLowerCase().includes('session expired'))) {
+                    return null; // Already handled above
+                }
                 showToast(error.message, 'error');
                 throw error;
             }
@@ -1816,6 +1830,7 @@
         async function loadDashboard() {
             try {
                 const data = await api('get_dashboard');
+                if (!data) return; // Token expired, redirected to login
                 renderStatCards(data);
                 renderRecentFeedback(data.recent_feedback || []);
                 renderTopArticles(data.top_articles || []);
@@ -1904,6 +1919,7 @@
                 };
 
                 const result = await api('get_feedback', filters);
+                if (!result) return; // Token expired
                 state.feedback = result.items;
                 state.feedbackTotal = result.total;
                 renderFeedbackTable();
@@ -2060,6 +2076,7 @@
         async function loadAnalytics() {
             try {
                 const data = await api('get_analytics');
+                if (!data) return; // Token expired
                 state.analytics = data;
                 renderAnalyticsStats();
                 renderAnalyticsCharts();
@@ -2203,6 +2220,7 @@
         async function loadActions() {
             try {
                 const result = await api('get_actions');
+                if (!result) return; // Token expired
                 state.actions = result.items;
                 renderKanban();
             } catch (error) {
@@ -2337,6 +2355,7 @@
         async function loadSettings() {
             try {
                 const result = await api('get_settings');
+                if (!result) return; // Token expired
                 state.admins = result.admins;
                 state.advisors = result.advisors;
                 renderAdminsTable();
@@ -2406,7 +2425,7 @@
         // EVENT LISTENERS
         // ============================================
         document.addEventListener('DOMContentLoaded', () => {
-            // Check for saved token
+            // Check for saved token and validate it
             const savedToken = localStorage.getItem('adminToken');
             const savedEmail = localStorage.getItem('adminEmail');
             if (savedToken) {
@@ -2414,7 +2433,10 @@
                 state.adminEmail = savedEmail;
                 showLogin(false);
                 document.getElementById('userInfo').textContent = savedEmail;
-                loadDashboard();
+                // Validate token with a lightweight call - if expired, api() will redirect to login
+                loadDashboard().catch(() => {
+                    // Token was invalid, login screen shown by api()
+                });
             }
 
             // Login form

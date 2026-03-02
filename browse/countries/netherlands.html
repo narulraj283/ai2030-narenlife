@@ -1622,6 +1622,119 @@ button {
         flex-direction: column;
     }
 }
+
+/* === UX Overhaul v1 === */
+
+/* Improved Mobile Navigation */
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed !important;
+        top: 0 !important;
+        right: -100% !important;
+        width: 280px !important;
+        height: 100vh !important;
+        background: var(--bg-secondary) !important;
+        flex-direction: column !important;
+        padding: 5rem 2rem 2rem !important;
+        transition: right 0.3s ease !important;
+        z-index: 999 !important;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.3) !important;
+        border-left: 1px solid var(--border) !important;
+        display: flex !important;
+    }
+    .nav-links.active {
+        right: 0 !important;
+    }
+    .nav-links li {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .nav-links a {
+        display: block !important;
+        padding: 1rem 0 !important;
+        font-size: 1.1rem !important;
+        border-bottom: 1px solid var(--border) !important;
+    }
+    .nav-toggle {
+        display: flex !important;
+        flex-direction: column;
+        gap: 5px;
+        z-index: 1001;
+    }
+    .nav-toggle span {
+        display: block;
+        width: 24px;
+        height: 2px;
+        background: var(--text-primary);
+        transition: all 0.3s ease;
+    }
+    .mobile-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 998;
+    }
+    .mobile-overlay.active { display: block; }
+}
+
+/* Light Theme */
+html.light-theme {
+    --bg-primary: #f5f5f7;
+    --bg-secondary: #eeeef0;
+    --bg-card: #ffffff;
+    --bg-card-hover: #f0f0f2;
+    --border: #d1d5db;
+    --text-primary: #1a1a2e;
+    --text-secondary: #4a4a5e;
+    --text-muted: #6b7280;
+}
+html.light-theme .site-header {
+    background: rgba(245, 245, 247, 0.95) !important;
+}
+html.light-theme .article-toc {
+    background: var(--bg-secondary);
+}
+/* Theme Toggle Button */
+.theme-toggle {
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.4rem 0.6rem;
+    cursor: pointer;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    transition: all 0.2s ease;
+}
+.theme-toggle:hover { color: var(--text-primary); border-color: var(--text-muted); }
+
+/* Browse Page Share Buttons */
+.browse-share-bar {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+.browse-share-bar a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+.browse-share-bar .linkedin { background: #0077b5; color: #fff; }
+.browse-share-bar .twitter { background: #1a1a2e; color: #fff; border: 1px solid #333; }
+.browse-share-bar .whatsapp { background: #25d366; color: #fff; }
+.browse-share-bar .copy-link { background: var(--bg-card); color: var(--text-secondary); border: 1px solid var(--border); }
+.browse-share-bar a:hover { opacity: 0.85; transform: translateY(-1px); }
+
+/* ux-overhaul-v1 */
+
 </style>
     <!-- GA4 Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-S9Z93KZ2Z2"></script>
@@ -1638,7 +1751,7 @@ button {
                 </div>
             </a>
             <nav class="nav-links">
-                <li><a href="/">Dashboard</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="/browse/countries.html">Countries</a></li>
                 <li><a href="/browse/companies.html">Companies</a></li>
                 <li><a href="/browse/sectors.html">Sectors</a></li>
@@ -1671,6 +1784,13 @@ button {
                 </div>
             </div>
         </section>
+            <div class="browse-share-bar" id="browseShareBar">
+                <a class="linkedin" href="#" onclick="event.preventDefault(); window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(window.location.href), '_blank')">in LinkedIn</a>
+                <a class="twitter" href="#" onclick="event.preventDefault(); window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(window.location.href) + '&text=' + encodeURIComponent(document.title), '_blank')">𝕏 Post</a>
+                <a class="whatsapp" href="#" onclick="event.preventDefault(); window.open('https://wa.me/?text=' + encodeURIComponent(document.title + ' ' + window.location.href), '_blank')">WhatsApp</a>
+                <a class="copy-link" href="#" onclick="event.preventDefault(); navigator.clipboard.writeText(window.location.href); this.textContent='Copied!'; setTimeout(()=>this.textContent='🔗 Copy Link', 2000)">🔗 Copy Link</a>
+            </div>
+
 
         
             <section style="margin-bottom: 3rem;">
@@ -1682,7 +1802,7 @@ button {
                         <span class="card-badge badge-countries">🌍 Countries</span>
                         <span class="card-audience">👤 Blue-Collar Worker</span>
                     </div>
-                    <h3 class="card-title">MEMO FROM THE FUTURE</h3>
+                    <h3 class="card-title">Netherlands — Blue Collar Worker</h3>
                     <p class="card-excerpt">Date: June 30, 2030</p>
                     <div class="card-footer">
                         <span class="read-time">⏱️ 1 min read</span>
@@ -1739,7 +1859,7 @@ button {
                         <span class="card-badge badge-countries">🌍 Countries</span>
                         <span class="card-audience">👤 Educator</span>
                     </div>
-                    <h3 class="card-title">MEMO FROM THE FUTURE</h3>
+                    <h3 class="card-title">Netherlands — Educator</h3>
                     <p class="card-excerpt">Date: June 30, 2030</p>
                     <div class="card-footer">
                         <span class="read-time">⏱️ 1 min read</span>
@@ -1758,7 +1878,7 @@ button {
                         <span class="card-badge badge-countries">🌍 Countries</span>
                         <span class="card-audience">👤 Employee</span>
                     </div>
-                    <h3 class="card-title">MEMO FROM THE FUTURE</h3>
+                    <h3 class="card-title">Netherlands — Employee</h3>
                     <p class="card-excerpt">Date: June 30, 2030</p>
                     <div class="card-footer">
                         <span class="read-time">⏱️ 1 min read</span>
@@ -1815,7 +1935,7 @@ button {
                         <span class="card-badge badge-countries">🌍 Countries</span>
                         <span class="card-audience">👤 Parent</span>
                     </div>
-                    <h3 class="card-title">MEMO FROM THE FUTURE</h3>
+                    <h3 class="card-title">Netherlands — Parent</h3>
                     <p class="card-excerpt">Date: June 30, 2030</p>
                     <div class="card-footer">
                         <span class="read-time">⏱️ 1 min read</span>
@@ -1834,7 +1954,7 @@ button {
                         <span class="card-badge badge-countries">🌍 Countries</span>
                         <span class="card-audience">👤 Retiree</span>
                     </div>
-                    <h3 class="card-title">MEMO FROM THE FUTURE</h3>
+                    <h3 class="card-title">Netherlands — Retiree</h3>
                     <p class="card-excerpt">Date: June 30, 2030</p>
                     <div class="card-footer">
                         <span class="read-time">⏱️ 1 min read</span>
@@ -1853,7 +1973,7 @@ button {
                         <span class="card-badge badge-countries">🌍 Countries</span>
                         <span class="card-audience">👤 Small Business Owner</span>
                     </div>
-                    <h3 class="card-title">MEMO FROM THE FUTURE</h3>
+                    <h3 class="card-title">Netherlands — Small Business Owner</h3>
                     <p class="card-excerpt">Date: June 30, 2030</p>
                     <div class="card-footer">
                         <span class="read-time">⏱️ 1 min read</span>
@@ -1886,7 +2006,7 @@ button {
 
     
     <div class="email-capture" id="emailCapture">
-        <h3>Get the AI 2030 Intelligence Brief</h3>
+        <h3>Join executives from 34 countries getting the AI 2030 Intelligence Brief</h3>
         <p>Weekly insights on AI disruption across countries, companies &amp; sectors — delivered to your inbox.</p>
         <form class="email-capture-form" id="emailCaptureForm" onsubmit="handleEmailCapture(event)">
             <input type="email" placeholder="your@email.com" required id="captureEmail">
@@ -1966,6 +2086,53 @@ button {
         }
     } catch(e) {}
 
-    </script>
+    
+    // === UX Overhaul v1 ===
+
+    // Improved Mobile Nav Toggle
+    function toggleNav() {
+        var nav = document.querySelector('.nav-links');
+        var overlay = document.getElementById('mobileOverlay');
+        if (!overlay) {
+            overlay = document.createElement('div');
+            overlay.className = 'mobile-overlay';
+            overlay.id = 'mobileOverlay';
+            overlay.onclick = function() { toggleNav(); };
+            document.body.appendChild(overlay);
+        }
+        nav.classList.toggle('active');
+        overlay.classList.toggle('active');
+    }
+
+    // Dark/Light Mode Toggle
+    (function() {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'light') document.documentElement.classList.add('light-theme');
+
+        // Insert toggle button in header
+        var headerInner = document.querySelector('.header-inner');
+        if (headerInner) {
+            var btn = document.createElement('button');
+            btn.className = 'theme-toggle';
+            btn.id = 'themeToggle';
+            btn.innerHTML = document.documentElement.classList.contains('light-theme') ? '🌙' : '☀️';
+            btn.title = 'Toggle light/dark mode';
+            btn.onclick = function() {
+                document.documentElement.classList.toggle('light-theme');
+                var isLight = document.documentElement.classList.contains('light-theme');
+                localStorage.setItem('theme', isLight ? 'light' : 'dark');
+                btn.innerHTML = isLight ? '🌙' : '☀️';
+            };
+            // Insert before nav-toggle button or at end
+            var navToggle = headerInner.querySelector('.nav-toggle');
+            if (navToggle) {
+                headerInner.insertBefore(btn, navToggle);
+            } else {
+                headerInner.appendChild(btn);
+            }
+        }
+    })();
+
+</script>
 </body>
 </html>
