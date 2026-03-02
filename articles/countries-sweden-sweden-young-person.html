@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ENTITY: SWEDISH YOUTH COHORT ANALYSIS - The 2030 Intelligence Report</title>
+    <title>AI Disruption Forecast: Sweden — Young Person Perspective | The 2030 Intelligence Report</title>
     <meta name="description" content="FROM: The 2030 Report, Economic Intelligence Division">
     <meta property="og:title" content="ENTITY: SWEDISH YOUTH COHORT ANALYSIS">
     <meta property="og:description" content="FROM: The 2030 Report, Economic Intelligence Division">
@@ -1052,6 +1052,209 @@ button {
     .share-btn {
         padding: 0.6rem 1rem;
         font-size: 0.85rem;
+    }
+}
+
+/* PHASE D1: Newsletter CTA */
+.newsletter-cta {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    margin: 3rem 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.newsletter-cta h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.newsletter-cta p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.newsletter-cta form {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+.newsletter-cta input {
+    padding: 0.75rem 1rem;
+    background: var(--bg-primary);
+    border: 1px solid var(--border);
+    border-radius: 0.25rem;
+    color: var(--text-primary);
+    font-size: 1rem;
+}
+
+.newsletter-cta input::placeholder {
+    color: var(--text-muted);
+}
+
+.newsletter-cta button {
+    padding: 0.75rem 1.5rem;
+    background: var(--accent-blue);
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.newsletter-cta button:hover {
+    background: var(--accent-purple);
+}
+
+/* PHASE F1: Feedback bar */
+.feedback-bar {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem 0;
+    border-top: 1px solid var(--border);
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.feedback-bar a {
+    color: var(--text-secondary);
+    font-weight: 500;
+    transition: color 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.feedback-bar a:hover {
+    color: var(--accent-blue);
+}
+
+/* PHASE C1: Company view toggles */
+.view-toggle-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.view-toggle-btn {
+    padding: 0.75rem 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 0.25rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.view-toggle-btn.active {
+    background: var(--accent-blue);
+    color: white;
+    border-color: var(--accent-blue);
+}
+
+.view-toggle-btn:hover {
+    border-color: var(--accent-blue);
+    color: var(--text-primary);
+}
+
+.entity-view {
+    display: none;
+}
+
+.entity-view.active {
+    display: block;
+}
+
+.sector-group {
+    margin-bottom: 3rem;
+}
+
+.sector-group h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.country-group {
+    margin-bottom: 3rem;
+}
+
+.country-group h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+/* Related section for companies */
+.related-section {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin: 3rem 0;
+}
+
+.related-section h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+}
+
+.related-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.related-links a {
+    padding: 1rem;
+    background: var(--bg-primary);
+    border-radius: 0.25rem;
+    color: var(--accent-blue);
+    font-weight: 500;
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.related-links a:hover {
+    background: var(--bg-card-hover);
+    color: var(--accent-purple);
+}
+
+@media (max-width: 768px) {
+    .newsletter-cta {
+        padding: 1.5rem;
+    }
+
+    .feedback-bar {
+        gap: 1rem;
+    }
+
+    .view-toggle-buttons {
+        gap: 0.5rem;
+    }
+
+    .view-toggle-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
     }
 }
 </style>
