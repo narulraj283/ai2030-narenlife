@@ -1529,7 +1529,7 @@
         // ============================================
         // API CONFIGURATION
         // ============================================
-        const API_URL = 'YOUR_APPS_SCRIPT_URL_HERE'; // User will replace this after setup
+        const API_URL = 'https://script.google.com/macros/s/AKfycbx8HEMtoBG4lLeNMYB92kXUhMBx7n9YQ-67QJ6TtDrJnvIx08Q_Xx3FBkjOd0MXsuaFmQ/exec'; // User will replace this after setup
 
         // ============================================
         // STATE MANAGEMENT
@@ -1621,7 +1621,7 @@
         // API WRAPPER
         // ============================================
         async function api(action, data = {}) {
-            if (!API_URL || API_URL === 'YOUR_APPS_SCRIPT_URL_HERE') {
+            if (!API_URL || API_URL === 'https://script.google.com/macros/s/AKfycbx8HEMtoBG4lLeNMYB92kXUhMBx7n9YQ-67QJ6TtDrJnvIx08Q_Xx3FBkjOd0MXsuaFmQ/exec') {
                 // Demo mode
                 return demoMode(action, data);
             }
@@ -2652,7 +2652,7 @@
             });
 
             // Initialize with demo data if no API
-            if (!API_URL || API_URL === 'YOUR_APPS_SCRIPT_URL_HERE') {
+            if (!API_URL || API_URL === 'https://script.google.com/macros/s/AKfycbx8HEMtoBG4lLeNMYB92kXUhMBx7n9YQ-67QJ6TtDrJnvIx08Q_Xx3FBkjOd0MXsuaFmQ/exec') {
                 state.admins = demoData.admins;
                 state.advisors = demoData.advisors;
             }
