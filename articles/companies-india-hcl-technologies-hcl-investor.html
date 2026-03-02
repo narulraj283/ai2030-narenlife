@@ -30,6 +30,7 @@
         }
     }
     </script>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='20' width='100' height='100' fill='%233b82f6'/><text x='50' y='70' font-size='55' font-weight='700' text-anchor='middle' fill='white'>30</text></svg>">
     <style>
 :root {
     --bg-primary: #0a0a0f;
@@ -457,7 +458,7 @@ button {
     padding: 0 2rem;
 }
 
-.entity-hero {
+.entity-hero-section {
     padding: 3rem 0 2rem 0;
     border-bottom: 1px solid var(--border);
     margin-bottom: 2rem;
@@ -473,7 +474,7 @@ button {
     font-size: 4rem;
 }
 
-.entity-hero h1 {
+.entity-hero-title {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
     background: var(--gradient-1);
@@ -482,9 +483,19 @@ button {
     background-clip: text;
 }
 
-.entity-hero p {
+.entity-hero-section p {
     color: var(--text-secondary);
     font-size: 1.1rem;
+}
+
+/* Active nav item */
+.nav-links a.nav-active {
+    color: var(--accent-blue);
+}
+
+/* Clickable entity card */
+.entity-card {
+    cursor: pointer;
 }
 
 /* Article Page */
@@ -983,7 +994,7 @@ button {
         text-align: center;
     }
 
-    .entity-hero h1 {
+    .entity-hero-title {
         font-size: 2rem;
     }
 }
@@ -1091,12 +1102,12 @@ button {
             
         <div class="share-bar">
             <span class="share-bar-label">Share:</span>
-            <button class="share-btn" onclick="copyLink()">Copy Link</button>
-            <button class="share-btn" onclick="shareOnTwitter()">X/Twitter</button>
-            <button class="share-btn" onclick="shareOnLinkedIn()">LinkedIn</button>
-            <button class="share-btn" onclick="shareOnFacebook()">Facebook</button>
-            <button class="share-btn" onclick="shareOnWhatsApp()">WhatsApp</button>
-            <button class="share-btn" onclick="shareViaEmail()">Email</button>
+            <button class="share-btn" onclick="copyLink(event)">📋 Copy Link</button>
+            <button class="share-btn" onclick="shareOnTwitter()">𝕏 Twitter</button>
+            <button class="share-btn" onclick="shareOnLinkedIn()">💼 LinkedIn</button>
+            <button class="share-btn" onclick="shareOnFacebook()">📘 Facebook</button>
+            <button class="share-btn" onclick="shareOnWhatsApp()">💬 WhatsApp</button>
+            <button class="share-btn" onclick="shareViaEmail()">✉️ Email</button>
         </div>
         
             
@@ -1302,6 +1313,7 @@ If management executes successful pivot toward specialized infrastructure and AI
             </div>
         </article>
 
+        <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); text-align: center;"><a href="/browse/companies/hcl-technologies.html" style="display: inline-block; padding: 1rem 2rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 0.5rem; color: var(--text-primary); font-weight: 600; transition: all 0.2s ease;">← All HCL Technologies Articles</a></div>
         
         <div class="more-in-category">
             <h3>More in Companies</h3>
@@ -1323,6 +1335,24 @@ If management executes successful pivot toward specialized infrastructure and AI
                 <h4>ENTITY: APPLE INC.</h4>
                 <p>---</p>
                 <a href="/articles/companies-us-apple-apple-employee.html">Read more →</a>
+            </div>
+            
+            <div class="more-card">
+                <h4>ENTITY: THE HOME DEPOT INC.</h4>
+                <p>FROM: The 2030 Report</p>
+                <a href="/articles/companies-us-home-depot-home-depot-ceo.html">Read more →</a>
+            </div>
+            
+            <div class="more-card">
+                <h4>HOME DEPOT: WORKFORCE RESTRUCTURING IN HOUSING DOWNTURN</h4>
+                <p>FROM: The 2030 Report</p>
+                <a href="/articles/companies-us-home-depot-home-depot-employee.html">Read more →</a>
+            </div>
+            
+            <div class="more-card">
+                <h4>ENTITY: Home Depot, Inc. | Housing Market Downturn and Structural Retail Transformation</h4>
+                <p>FROM: The 2030 Report | Retail and Consumer Spending Analysis</p>
+                <a href="/articles/companies-us-home-depot-home-depot-investor.html">Read more →</a>
             </div>
             
             </div>
@@ -1358,17 +1388,24 @@ If management executes successful pivot toward specialized infrastructure and AI
             const navLinks = document.querySelector('.nav-links');
             navLinks.classList.toggle('active');
         }
+        // Highlight active nav item
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            const href = link.getAttribute('href');
+            const path = window.location.pathname;
+            if (href === '/' && path === '/') link.classList.add('nav-active');
+            else if (href !== '/' && path.startsWith(href.replace('.html', ''))) link.classList.add('nav-active');
+        });
 
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        function copyLink() {
+        function copyLink(e) {
             const url = window.location.href;
+            const btn = e.currentTarget;
             navigator.clipboard.writeText(url).then(() => {
-                const btn = event.target;
                 const originalText = btn.innerText;
-                btn.innerText = 'Copied!';
+                btn.innerText = '✓ Copied!';
                 btn.classList.add('copied');
                 setTimeout(() => {
                     btn.innerText = originalText;
@@ -1377,10 +1414,11 @@ If management executes successful pivot toward specialized infrastructure and AI
             });
         }
 
+        const pageTitle = document.title.split(' - ')[0];
+
         function shareOnTwitter() {
-            const title = document.querySelector('.article-header').innerText.split('\n')[0];
             const url = window.location.href;
-            const text = encodeURIComponent(title + ' ' + url);
+            const text = encodeURIComponent(pageTitle + ' — ' + url);
             window.open(`https://twitter.com/intent/tweet?text=${text}`, '_blank');
         }
 
@@ -1395,16 +1433,14 @@ If management executes successful pivot toward specialized infrastructure and AI
         }
 
         function shareOnWhatsApp() {
-            const title = document.querySelector('.article-header').innerText.split('\n')[0];
             const url = window.location.href;
-            const text = encodeURIComponent(title + ' ' + url);
+            const text = encodeURIComponent(pageTitle + ' — ' + url);
             window.open(`https://wa.me/?text=${text}`, '_blank');
         }
 
         function shareViaEmail() {
-            const title = document.querySelector('.article-header').innerText.split('\n')[0];
             const url = window.location.href;
-            window.location.href = `mailto:?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(url)}`;
+            window.location.href = `mailto:?subject=${encodeURIComponent(pageTitle)}&body=${encodeURIComponent('Check this out: ' + url)}`;
         }
 
         window.addEventListener('scroll', () => {

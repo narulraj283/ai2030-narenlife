@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Countries - The 2030 Intelligence Report</title>
     <meta name="description" content="Browse all countries from The 2030 Intelligence Report">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='20' width='100' height='100' fill='%233b82f6'/><text x='50' y='70' font-size='55' font-weight='700' text-anchor='middle' fill='white'>30</text></svg>">
     <style>
 :root {
     --bg-primary: #0a0a0f;
@@ -432,7 +433,7 @@ button {
     padding: 0 2rem;
 }
 
-.entity-hero {
+.entity-hero-section {
     padding: 3rem 0 2rem 0;
     border-bottom: 1px solid var(--border);
     margin-bottom: 2rem;
@@ -448,7 +449,7 @@ button {
     font-size: 4rem;
 }
 
-.entity-hero h1 {
+.entity-hero-title {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
     background: var(--gradient-1);
@@ -457,9 +458,19 @@ button {
     background-clip: text;
 }
 
-.entity-hero p {
+.entity-hero-section p {
     color: var(--text-secondary);
     font-size: 1.1rem;
+}
+
+/* Active nav item */
+.nav-links a.nav-active {
+    color: var(--accent-blue);
+}
+
+/* Clickable entity card */
+.entity-card {
+    cursor: pointer;
 }
 
 /* Article Page */
@@ -958,7 +969,7 @@ button {
         text-align: center;
     }
 
-    .entity-hero h1 {
+    .entity-hero-title {
         font-size: 2rem;
     }
 }
@@ -1056,252 +1067,252 @@ button {
 
         <div class="entity-grid">
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/australia.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>Australia</h3>
                 <p>11 articles</p>
                 <a href="/browse/countries/australia.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/barbados.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>Barbados</h3>
                 <p>11 articles</p>
                 <a href="/browse/countries/barbados.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/brazil.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>Brazil</h3>
                 <p>11 articles</p>
                 <a href="/browse/countries/brazil.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/canada.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>Canada</h3>
                 <p>11 articles</p>
                 <a href="/browse/countries/canada.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/china.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>China</h3>
                 <p>11 articles</p>
                 <a href="/browse/countries/china.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/egypt.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>Egypt</h3>
                 <p>11 articles</p>
                 <a href="/browse/countries/egypt.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/europe.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>Europe</h3>
                 <p>11 articles</p>
                 <a href="/browse/countries/europe.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/france.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>France</h3>
                 <p>11 articles</p>
                 <a href="/browse/countries/france.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/germany.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>Germany</h3>
                 <p>11 articles</p>
                 <a href="/browse/countries/germany.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/india.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>India</h3>
                 <p>11 articles</p>
                 <a href="/browse/countries/india.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/indonesia.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>Indonesia</h3>
                 <p>11 articles</p>
                 <a href="/browse/countries/indonesia.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/ireland.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>Ireland</h3>
                 <p>11 articles</p>
                 <a href="/browse/countries/ireland.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/israel.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>Israel</h3>
                 <p>11 articles</p>
                 <a href="/browse/countries/israel.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/japan.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>Japan</h3>
                 <p>11 articles</p>
                 <a href="/browse/countries/japan.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/malaysia.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>Malaysia</h3>
                 <p>11 articles</p>
                 <a href="/browse/countries/malaysia.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/mexico.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>Mexico</h3>
                 <p>11 articles</p>
                 <a href="/browse/countries/mexico.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/netherlands.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>Netherlands</h3>
                 <p>11 articles</p>
                 <a href="/browse/countries/netherlands.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/new-zealand.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>New Zealand</h3>
                 <p>5 articles</p>
                 <a href="/browse/countries/new-zealand.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/newzealand.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>NewZealand</h3>
                 <p>6 articles</p>
                 <a href="/browse/countries/newzealand.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/nigeria.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>Nigeria</h3>
                 <p>11 articles</p>
                 <a href="/browse/countries/nigeria.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/philippines.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>Philippines</h3>
                 <p>11 articles</p>
                 <a href="/browse/countries/philippines.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/poland.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>Poland</h3>
                 <p>11 articles</p>
                 <a href="/browse/countries/poland.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/saudi-arabia.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>Saudi Arabia</h3>
                 <p>11 articles</p>
                 <a href="/browse/countries/saudi-arabia.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/singapore.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>Singapore</h3>
                 <p>11 articles</p>
                 <a href="/browse/countries/singapore.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/south-africa.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>South Africa</h3>
                 <p>11 articles</p>
                 <a href="/browse/countries/south-africa.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/south-korea.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>South Korea</h3>
                 <p>11 articles</p>
                 <a href="/browse/countries/south-korea.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/sri-lanka.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>Sri Lanka</h3>
                 <p>5 articles</p>
                 <a href="/browse/countries/sri-lanka.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/srilanka.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>SriLanka</h3>
                 <p>6 articles</p>
                 <a href="/browse/countries/srilanka.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/sweden.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>Sweden</h3>
                 <p>11 articles</p>
                 <a href="/browse/countries/sweden.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/switzerland.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>Switzerland</h3>
                 <p>11 articles</p>
                 <a href="/browse/countries/switzerland.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/taiwan.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>Taiwan</h3>
                 <p>11 articles</p>
                 <a href="/browse/countries/taiwan.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/thailand.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>Thailand</h3>
                 <p>11 articles</p>
                 <a href="/browse/countries/thailand.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/uae.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>UAE</h3>
                 <p>11 articles</p>
                 <a href="/browse/countries/uae.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/uk.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>UK</h3>
                 <p>11 articles</p>
                 <a href="/browse/countries/uk.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/us.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>US</h3>
                 <p>11 articles</p>
                 <a href="/browse/countries/us.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/countries/vietnam.html'">
                 <div class="entity-icon">🌍</div>
                 <h3>Vietnam</h3>
                 <p>11 articles</p>
@@ -1334,6 +1345,13 @@ button {
             const navLinks = document.querySelector('.nav-links');
             navLinks.classList.toggle('active');
         }
+        // Highlight active nav item
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            const href = link.getAttribute('href');
+            const path = window.location.pathname;
+            if (href === '/' && path === '/') link.classList.add('nav-active');
+            else if (href !== '/' && path.startsWith(href.replace('.html', ''))) link.classList.add('nav-active');
+        });
     </script>
 </body>
 </html>

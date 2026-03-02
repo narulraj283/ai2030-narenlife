@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sectors - The 2030 Intelligence Report</title>
     <meta name="description" content="Browse all sectors from The 2030 Intelligence Report">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='20' width='100' height='100' fill='%233b82f6'/><text x='50' y='70' font-size='55' font-weight='700' text-anchor='middle' fill='white'>30</text></svg>">
     <style>
 :root {
     --bg-primary: #0a0a0f;
@@ -432,7 +433,7 @@ button {
     padding: 0 2rem;
 }
 
-.entity-hero {
+.entity-hero-section {
     padding: 3rem 0 2rem 0;
     border-bottom: 1px solid var(--border);
     margin-bottom: 2rem;
@@ -448,7 +449,7 @@ button {
     font-size: 4rem;
 }
 
-.entity-hero h1 {
+.entity-hero-title {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
     background: var(--gradient-1);
@@ -457,9 +458,19 @@ button {
     background-clip: text;
 }
 
-.entity-hero p {
+.entity-hero-section p {
     color: var(--text-secondary);
     font-size: 1.1rem;
+}
+
+/* Active nav item */
+.nav-links a.nav-active {
+    color: var(--accent-blue);
+}
+
+/* Clickable entity card */
+.entity-card {
+    cursor: pointer;
 }
 
 /* Article Page */
@@ -958,7 +969,7 @@ button {
         text-align: center;
     }
 
-    .entity-hero h1 {
+    .entity-hero-title {
         font-size: 2rem;
     }
 }
@@ -1056,140 +1067,140 @@ button {
 
         <div class="entity-grid">
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/sectors/aerospace-and-defense.html'">
                 <div class="entity-icon">📊</div>
                 <h3>Aerospace and Defense</h3>
                 <p>4 articles</p>
                 <a href="/browse/sectors/aerospace-and-defense.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/sectors/automotive.html'">
                 <div class="entity-icon">📊</div>
                 <h3>Automotive</h3>
                 <p>4 articles</p>
                 <a href="/browse/sectors/automotive.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/sectors/banking.html'">
                 <div class="entity-icon">📊</div>
                 <h3>Banking</h3>
                 <p>4 articles</p>
                 <a href="/browse/sectors/banking.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/sectors/communication-services.html'">
                 <div class="entity-icon">📊</div>
                 <h3>Communication Services</h3>
                 <p>4 articles</p>
                 <a href="/browse/sectors/communication-services.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/sectors/consumer-discretionary.html'">
                 <div class="entity-icon">📊</div>
                 <h3>Consumer Discretionary</h3>
                 <p>4 articles</p>
                 <a href="/browse/sectors/consumer-discretionary.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/sectors/consumer-staples.html'">
                 <div class="entity-icon">📊</div>
                 <h3>Consumer Staples</h3>
                 <p>4 articles</p>
                 <a href="/browse/sectors/consumer-staples.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/sectors/energy.html'">
                 <div class="entity-icon">📊</div>
                 <h3>Energy</h3>
                 <p>4 articles</p>
                 <a href="/browse/sectors/energy.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/sectors/financials.html'">
                 <div class="entity-icon">📊</div>
                 <h3>Financials</h3>
                 <p>4 articles</p>
                 <a href="/browse/sectors/financials.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/sectors/healthcare.html'">
                 <div class="entity-icon">📊</div>
                 <h3>Healthcare</h3>
                 <p>4 articles</p>
                 <a href="/browse/sectors/healthcare.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/sectors/industrials.html'">
                 <div class="entity-icon">📊</div>
                 <h3>Industrials</h3>
                 <p>4 articles</p>
                 <a href="/browse/sectors/industrials.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/sectors/insurance.html'">
                 <div class="entity-icon">📊</div>
                 <h3>Insurance</h3>
                 <p>4 articles</p>
                 <a href="/browse/sectors/insurance.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/sectors/materials.html'">
                 <div class="entity-icon">📊</div>
                 <h3>Materials</h3>
                 <p>4 articles</p>
                 <a href="/browse/sectors/materials.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/sectors/pharmaceuticals.html'">
                 <div class="entity-icon">📊</div>
                 <h3>Pharmaceuticals</h3>
                 <p>4 articles</p>
                 <a href="/browse/sectors/pharmaceuticals.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/sectors/real-estate.html'">
                 <div class="entity-icon">📊</div>
                 <h3>Real Estate</h3>
                 <p>4 articles</p>
                 <a href="/browse/sectors/real-estate.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/sectors/retail.html'">
                 <div class="entity-icon">📊</div>
                 <h3>Retail</h3>
                 <p>4 articles</p>
                 <a href="/browse/sectors/retail.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/sectors/semiconductors.html'">
                 <div class="entity-icon">📊</div>
                 <h3>Semiconductors</h3>
                 <p>4 articles</p>
                 <a href="/browse/sectors/semiconductors.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/sectors/software.html'">
                 <div class="entity-icon">📊</div>
                 <h3>Software</h3>
                 <p>4 articles</p>
                 <a href="/browse/sectors/software.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/sectors/technology.html'">
                 <div class="entity-icon">📊</div>
                 <h3>Technology</h3>
                 <p>4 articles</p>
                 <a href="/browse/sectors/technology.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/sectors/telecommunications.html'">
                 <div class="entity-icon">📊</div>
                 <h3>Telecommunications</h3>
                 <p>4 articles</p>
                 <a href="/browse/sectors/telecommunications.html">View All →</a>
             </div>
             
-            <div class="entity-card">
+            <div class="entity-card" onclick="window.location.href='/browse/sectors/utilities.html'">
                 <div class="entity-icon">📊</div>
                 <h3>Utilities</h3>
                 <p>4 articles</p>
@@ -1222,6 +1233,13 @@ button {
             const navLinks = document.querySelector('.nav-links');
             navLinks.classList.toggle('active');
         }
+        // Highlight active nav item
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            const href = link.getAttribute('href');
+            const path = window.location.pathname;
+            if (href === '/' && path === '/') link.classList.add('nav-active');
+            else if (href !== '/' && path.startsWith(href.replace('.html', ''))) link.classList.add('nav-active');
+        });
     </script>
 </body>
 </html>
