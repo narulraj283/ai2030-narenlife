@@ -9,9 +9,13 @@
     <meta property="og:description" content="FROM: The 2030 Report">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://ai2030report.com/articles/sectors-communication-services-communication-services-disruptor-founders.html">
+    <meta property="og:image" content="https://ai2030report.com/og/sectors-communication-services-communication-services-disruptor-founders.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="ENTITY: GLOBAL COMMUNICATION SERVICES SECTOR">
     <meta name="twitter:description" content="FROM: The 2030 Report">
+    <meta name="twitter:image" content="https://ai2030report.com/og/sectors-communication-services-communication-services-disruptor-founders.png">
     <link rel="canonical" href="https://ai2030report.com/articles/sectors-communication-services-communication-services-disruptor-founders.html">
     <script type="application/ld+json">
     {
@@ -873,6 +877,144 @@ button {
     display: flex;
 }
 
+/* Feedback Widget */
+.feedback-widget {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    z-index: 1000;
+}
+.feedback-toggle {
+    background: var(--accent-blue);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(59,130,246,0.4);
+    transition: all 0.3s ease;
+}
+.feedback-toggle:hover {
+    background: var(--accent-purple);
+    transform: translateY(-2px);
+}
+.feedback-panel {
+    display: none;
+    position: absolute;
+    bottom: 3.5rem;
+    left: 0;
+    width: 340px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+.feedback-panel.open {
+    display: block;
+    animation: feedbackSlideUp 0.25s ease;
+}
+@keyframes feedbackSlideUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.feedback-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.2rem;
+    border-bottom: 1px solid var(--border);
+}
+.feedback-header h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--text-primary);
+}
+.feedback-close {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0;
+}
+.feedback-form {
+    padding: 1rem 1.2rem;
+}
+.feedback-field {
+    margin-bottom: 0.8rem;
+}
+.feedback-field label {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+}
+.feedback-type-btns {
+    display: flex;
+    gap: 0.5rem;
+}
+.feedback-type-label {
+    display: flex !important;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.8rem !important;
+    color: var(--text-primary) !important;
+    cursor: pointer;
+    padding: 0.3rem 0.6rem;
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+}
+.feedback-type-label:has(input:checked) {
+    border-color: var(--accent-blue);
+    background: rgba(59,130,246,0.1);
+}
+.feedback-type-label input {
+    display: none;
+}
+.feedback-form textarea,
+.feedback-form input[type="email"] {
+    width: 100%;
+    padding: 0.5rem 0.7rem;
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    color: var(--text-primary);
+    font-size: 0.85rem;
+    font-family: inherit;
+    resize: vertical;
+    box-sizing: border-box;
+}
+.feedback-form textarea:focus,
+.feedback-form input[type="email"]:focus {
+    outline: none;
+    border-color: var(--accent-blue);
+}
+.feedback-submit {
+    width: 100%;
+    background: var(--accent-blue);
+    color: white;
+    border: none;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+.feedback-submit:hover {
+    background: var(--accent-purple);
+}
+.feedback-success {
+    padding: 2rem;
+    text-align: center;
+    color: var(--text-secondary);
+}
+
 /* Pagination */
 .pagination {
     display: flex;
@@ -1676,6 +1818,44 @@ Venture capital investors expected 10x+ returns within 7-10 year timeframe. Huma
             </div>
         </div>
         
+
+        <!-- Feedback Widget -->
+        <div class="feedback-widget" id="feedbackWidget">
+            <button class="feedback-toggle" onclick="toggleFeedback()" aria-label="Report an issue or send feedback">
+                💬 Feedback
+            </button>
+            <div class="feedback-panel" id="feedbackPanel">
+                <div class="feedback-header">
+                    <h3>Send Feedback</h3>
+                    <button class="feedback-close" onclick="toggleFeedback()">✕</button>
+                </div>
+                <form class="feedback-form" id="feedbackForm" onsubmit="submitFeedback(event)">
+                    <input type="hidden" name="page_url" id="feedbackPageUrl">
+                    <div class="feedback-field">
+                        <label>Type</label>
+                        <div class="feedback-type-btns">
+                            <label class="feedback-type-label"><input type="radio" name="type" value="Error" required> 🐛 Error</label>
+                            <label class="feedback-type-label"><input type="radio" name="type" value="Suggestion"> 💡 Suggestion</label>
+                            <label class="feedback-type-label"><input type="radio" name="type" value="Other"> 📝 Other</label>
+                        </div>
+                    </div>
+                    <div class="feedback-field">
+                        <label for="feedbackMsg">Message</label>
+                        <textarea id="feedbackMsg" name="message" rows="3" placeholder="Tell us what's wrong or how we can improve..." required></textarea>
+                    </div>
+                    <div class="feedback-field">
+                        <label for="feedbackEmail">Your Email (optional)</label>
+                        <input type="email" id="feedbackEmail" name="email" placeholder="your@email.com">
+                    </div>
+                    <button type="submit" class="feedback-submit">Send Feedback</button>
+                </form>
+                <div class="feedback-success" id="feedbackSuccess" style="display:none;">
+                    <div style="font-size:2rem;">✅</div>
+                    <p>Thank you! Your email client will open with the feedback.</p>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <footer class="site-footer">
@@ -1778,6 +1958,41 @@ Venture capital investors expected 10x+ returns within 7-10 year timeframe. Huma
                 }
             });
         });
+
+        // Feedback widget
+        document.getElementById('feedbackPageUrl').value = window.location.href;
+        function toggleFeedback() {
+            document.getElementById('feedbackPanel').classList.toggle('open');
+        }
+        window.toggleFeedback = toggleFeedback;
+
+        function submitFeedback(e) {
+            e.preventDefault();
+            const form = document.getElementById('feedbackForm');
+            const type = form.querySelector('input[name="type"]:checked');
+            const msg = document.getElementById('feedbackMsg').value;
+            const email = document.getElementById('feedbackEmail').value;
+            const pageUrl = window.location.href;
+            const subject = encodeURIComponent('[AI 2030 Report] ' + (type ? type.value : 'Feedback') + ': ' + document.title.split(' - ')[0]);
+            const body = encodeURIComponent(
+                'Type: ' + (type ? type.value : 'N/A') + '\n' +
+                'Page: ' + pageUrl + '\n' +
+                'From: ' + (email || 'Anonymous') + '\n\n' +
+                'Message:\n' + msg
+            );
+            window.location.href = 'mailto:narenbizymoms@gmail.com?subject=' + subject + '&body=' + body;
+            form.style.display = 'none';
+            document.getElementById('feedbackSuccess').style.display = 'block';
+            setTimeout(() => {
+                document.getElementById('feedbackPanel').classList.remove('open');
+                setTimeout(() => {
+                    form.style.display = '';
+                    form.reset();
+                    document.getElementById('feedbackSuccess').style.display = 'none';
+                }, 300);
+            }, 2000);
+        }
+        window.submitFeedback = submitFeedback;
     </script>
 </body>
 </html>
