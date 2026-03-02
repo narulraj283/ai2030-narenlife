@@ -1132,26 +1132,18 @@
 
             <div id="loginMessage"></div>
 
-            <!-- Step 1: Email -->
+            <!-- Login: Email + Password -->
             <div class="login-step active" id="loginStep1">
                 <div class="form-group">
                     <label class="form-label">Email Address</label>
                     <input type="email" class="form-input" id="loginEmail" placeholder="admin@example.com">
                 </div>
-                <button class="btn btn-primary" id="sendCodeBtn">
-                    <span>Send Code</span>
-                </button>
-            </div>
-
-            <!-- Step 2: OTP -->
-            <div class="login-step" id="loginStep2">
-                <div class="message message-info" id="codeMessage"></div>
                 <div class="form-group">
-                    <label class="form-label">Verification Code</label>
-                    <div class="otp-input-group" id="otpInputs"></div>
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-input" id="loginPassword" placeholder="Enter password">
                 </div>
-                <button class="btn btn-primary" id="verifyCodeBtn">
-                    <span>Verify Code</span>
+                <button class="btn btn-primary" id="loginBtn">
+                    <span>Sign In</span>
                 </button>
             </div>
         </div>
@@ -1621,8 +1613,8 @@
         // API WRAPPER
         // ============================================
         async function api(action, data = {}) {
-            if (!API_URL || API_URL === 'https://script.google.com/macros/s/AKfycbx8HEMtoBG4lLeNMYB92kXUhMBx7n9YQ-67QJ6TtDrJnvIx08Q_Xx3FBkjOd0MXsuaFmQ/exec') {
-                // Demo mode
+            if (!API_URL || API_URL === 'YOUR_APPS_SCRIPT_URL_HERE') {
+                // Demo mode - only when no real API URL is set
                 return demoMode(action, data);
             }
 
@@ -1643,11 +1635,11 @@
                 }
 
                 const result = await response.json();
-                if (result.error) {
-                    throw new Error(result.error);
+                if (result.success === false || result.error) {
+                    throw new Error(result.error || 'Request failed');
                 }
 
-                return result.data || result;
+                return result;
             } catch (error) {
                 showToast(error.message, 'error');
                 throw error;
@@ -1658,11 +1650,8 @@
             return new Promise(resolve => {
                 setTimeout(() => {
                     switch (action) {
-                        case 'send_otp':
-                            resolve({ sent: true, email: data.email });
-                            break;
-                        case 'verify_otp':
-                            resolve({ token: 'demo-token-' + Date.now(), email: data.email });
+                        case 'password_login':
+                            resolve({ success: true, token: 'demo-token-' + Date.now(), admin_data: { email: data.email, name: 'Demo Admin', role: 'owner', status: 'active' } });
                             break;
                         case 'get_dashboard':
                             resolve({
@@ -1744,81 +1733,38 @@
         // ============================================
         // AUTHENTICATION
         // ============================================
-        async function handleSendCode() {
+        async function handleLogin() {
             const email = document.getElementById('loginEmail').value.trim();
+            const password = document.getElementById('loginPassword').value;
+
             if (!email) {
                 showMessage('Please enter your email', 'error');
                 return;
             }
-
-            const btn = document.getElementById('sendCodeBtn');
-            btn.disabled = true;
-            btn.innerHTML = '<span class="spinner"></span>';
-
-            try {
-                await api('send_otp', { email });
-                state.currentEmail = email;
-                document.getElementById('loginStep1').classList.remove('active');
-                document.getElementById('loginStep2').classList.add('active');
-                document.getElementById('codeMessage').textContent = `Code sent to ${email}`;
-                renderOTPInputs();
-                showToast('Code sent successfully', 'success');
-            } catch (error) {
-                showMessage(error.message, 'error');
-            } finally {
-                btn.disabled = false;
-                btn.innerHTML = '<span>Send Code</span>';
-            }
-        }
-
-        async function handleVerifyCode() {
-            const code = Array.from(document.querySelectorAll('.otp-input')).map(i => i.value).join('');
-            if (code.length !== 6) {
-                showMessage('Please enter a valid 6-digit code', 'error');
+            if (!password) {
+                showMessage('Please enter your password', 'error');
                 return;
             }
 
-            const btn = document.getElementById('verifyCodeBtn');
+            const btn = document.getElementById('loginBtn');
             btn.disabled = true;
             btn.innerHTML = '<span class="spinner"></span>';
 
             try {
-                const result = await api('verify_otp', { email: state.currentEmail, code });
+                const result = await api('password_login', { email, password });
                 state.token = result.token;
-                state.adminEmail = result.email;
+                state.adminEmail = result.admin_data.email;
+                state.currentEmail = email;
                 localStorage.setItem('adminToken', state.token);
                 localStorage.setItem('adminEmail', state.adminEmail);
                 showLogin(false);
                 showToast('Logged in successfully', 'success');
                 loadDashboard();
             } catch (error) {
-                showMessage('Invalid code', 'error');
+                showMessage(error.message || 'Invalid credentials', 'error');
             } finally {
                 btn.disabled = false;
-                btn.innerHTML = '<span>Verify Code</span>';
-            }
-        }
-
-        function renderOTPInputs() {
-            const container = document.getElementById('otpInputs');
-            container.innerHTML = '';
-            for (let i = 0; i < 6; i++) {
-                const input = document.createElement('input');
-                input.type = 'text';
-                input.maxLength = '1';
-                input.className = 'form-input otp-input';
-                input.inputMode = 'numeric';
-                input.addEventListener('input', (e) => {
-                    if (e.target.value && i < 5) {
-                        document.querySelectorAll('.otp-input')[i + 1].focus();
-                    }
-                });
-                input.addEventListener('keydown', (e) => {
-                    if (e.key === 'Backspace' && !e.target.value && i > 0) {
-                        document.querySelectorAll('.otp-input')[i - 1].focus();
-                    }
-                });
-                container.appendChild(input);
+                btn.innerHTML = '<span>Sign In</span>';
             }
         }
 
@@ -2463,10 +2409,12 @@
             }
 
             // Login form
-            document.getElementById('sendCodeBtn').addEventListener('click', handleSendCode);
-            document.getElementById('verifyCodeBtn').addEventListener('click', handleVerifyCode);
+            document.getElementById('loginBtn').addEventListener('click', handleLogin);
             document.getElementById('loginEmail').addEventListener('keypress', (e) => {
-                if (e.key === 'Enter') handleSendCode();
+                if (e.key === 'Enter') document.getElementById('loginPassword').focus();
+            });
+            document.getElementById('loginPassword').addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') handleLogin();
             });
 
             // Navigation
