@@ -1833,9 +1833,13 @@
                     const today = new Date();
                     return dueDate.toDateString() === today.toDateString();
                 }).length;
-            // Calculate health score from content performance data
+            // Calculate health score from content performance data (Sheets stores 65% as 0.65)
             const healthScore = (data && data.top_articles && data.top_articles.length > 0) ?
-                Math.round(data.top_articles.reduce((sum, a) => sum + (parseFloat(a.engagement_rate) || 0), 0) / data.top_articles.length) + '%' : '--';
+                Math.round(data.top_articles.reduce((sum, a) => {
+                    let rate = parseFloat(a.engagement_rate) || 0;
+                    if (rate <= 1) rate = rate * 100; // Convert decimal to percentage
+                    return sum + rate;
+                }, 0) / data.top_articles.length) + '%' : '--';
             const stats = [
                 { label: 'New Feedback', value: newFeedback },
                 { label: 'Actions Due Today', value: actionsDue },
@@ -1881,7 +1885,7 @@
                 <tr>
                     <td class="truncate">${item.title}</td>
                     <td>${item.views.toLocaleString()}</td>
-                    <td>${item.engagement_rate || '--'}</td>
+                    <td>${item.engagement_rate ? (parseFloat(item.engagement_rate) <= 1 ? Math.round(parseFloat(item.engagement_rate) * 100) + '%' : item.engagement_rate) : '--'}</td>
                 </tr>
             `).join('');
         }
