@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <title>Chile - Countries - The 2030 Intelligence Report</title>
+    <meta name="description" content="AI disruption forecasts for Chile">
+    <style>
+:root {
+    --bg-primary: #0a0a0f;
+    --bg-secondary: #111118;
+    --bg-card: #16161f;
+    --bg-card-hover: #1c1c28;
+    --border: #2a2a3a;
+    --text-primary: #e4e4ef;
+    --text-secondary: #9494a8;
+    --text-muted: #6b6b80;
+    --accent-blue: #3b82f6;
+    --accent-purple: #8b5cf6;
+    --accent-amber: #f59e0b;
+    --accent-green: #10b981;
+    --accent-red: #ef4444;
+    --accent-cyan: #06b6d4;
+    --gradient-1: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+a {
+    color: var(--accent-blue);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent-purple);
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(10, 10, 15, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--accent-blue);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--text-secondary);
+}
+
+.nav-links a:hover {
+    color: var(--text-primary);
+}
+
+.entity-landing {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.entity-hero-section {
+    padding: 3rem 0 2rem 0;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 2rem;
+}
+
+.entity-hero-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.entity-hero-icon {
+    font-size: 4rem;
+}
+
+.entity-hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.entity-hero-section p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+.article-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.article-card:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--accent-blue);
+    transform: translateY(-2px);
+}
+
+.card-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.35rem 0.75rem;
+    background: rgba(59, 130, 246, 0.15);
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #3b82f6;
+}
+
+.badge-countries {
+    background: rgba(59, 130, 246, 0.15);
+    color: #3b82f6;
+}
+
+.card-audience {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.35rem 0.75rem;
+    background: rgba(148, 148, 168, 0.15);
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+}
+
+.card-excerpt {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.site-footer {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+    .entity-hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .article-card {
+        padding: 1rem;
+    }
+}
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="/" class="site-logo">📊 AI 2030 Report</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/browse/countries.html">Countries</a></li>
+                    <li><a href="/browse/companies.html">Companies</a></li>
+                    <li><a href="/about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="entity-landing">
+        <div style="display: flex; gap: 0.5rem; margin: 2rem 0 0 0; font-size: 0.9rem; color: var(--text-secondary);">
+            <a href="/">Home</a> / <a href="/browse/countries.html">Countries</a> / <span>Chile</span>
+        </div>
+
+        <section class="entity-hero-section">
+            <div class="entity-hero-content">
+                <div class="entity-hero-icon">🇨🇱</div>
+                <div>
+                    <h1 class="entity-hero-title">Chile</h1>
+                    <p>AI Disruption Forecasts from 11 Audience Perspectives</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div style="max-width: 900px;">
+                
+                <h2 style="margin-bottom: 1.5rem; color: var(--text-primary);">CEO Perspective</h2>
+                <div class="article-card" onclick="window.location.href='/articles/countries-chile-chile-ceo-edition.html'">
+                    <div style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem;">
+                        <span class="card-badge badge-countries">🌍 Countries</span>
+                        <span class="card-audience">👤 CEO</span>
+                    </div>
+                    <h3 class="card-title">Chile — CEO</h3>
+                    <p class="card-excerpt">C-Suite Executives, Board Members, and Business Leaders</p>
+                    <div class="card-footer">
+                        <span>22 min read</span>
+                        <span style="color: var(--accent-blue);">→</span>
+                    </div>
+                </div>
+                
+                <h2 style="margin-bottom: 1.5rem; color: var(--text-primary);">Employee Perspective</h2>
+                <div class="article-card" onclick="window.location.href='/articles/countries-chile-chile-employee-edition.html'">
+                    <div style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem;">
+                        <span class="card-badge badge-countries">🌍 Countries</span>
+                        <span class="card-audience">👤 Employee</span>
+                    </div>
+                    <h3 class="card-title">Chile — Employee</h3>
+                    <p class="card-excerpt">Corporate Employees and Knowledge Workers</p>
+                    <div class="card-footer">
+                        <span>22 min read</span>
+                        <span style="color: var(--accent-blue);">→</span>
+                    </div>
+                </div>
+                
+                <h2 style="margin-bottom: 1.5rem; color: var(--text-primary);">Investor Perspective</h2>
+                <div class="article-card" onclick="window.location.href='/articles/countries-chile-chile-investor-edition.html'">
+                    <div style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem;">
+                        <span class="card-badge badge-countries">🌍 Countries</span>
+                        <span class="card-audience">💰 Investor</span>
+                    </div>
+                    <h3 class="card-title">Chile — Investor</h3>
+                    <p class="card-excerpt">Investors, Fund Managers, and Portfolio Strategists</p>
+                    <div class="card-footer">
+                        <span>22 min read</span>
+                        <span style="color: var(--accent-blue);">→</span>
+                    </div>
+                </div>
+                
+                <h2 style="margin-bottom: 1.5rem; color: var(--text-primary);">Consumer Perspective</h2>
+                <div class="article-card" onclick="window.location.href='/articles/countries-chile-chile-consumer-edition.html'">
+                    <div style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem;">
+                        <span class="card-badge badge-countries">🌍 Countries</span>
+                        <span class="card-audience">👥 Consumer</span>
+                    </div>
+                    <h3 class="card-title">Chile — Consumer</h3>
+                    <p class="card-excerpt">Individual Consumers and Household Decision-Makers</p>
+                    <div class="card-footer">
+                        <span>22 min read</span>
+                        <span style="color: var(--accent-blue);">→</span>
+                    </div>
+                </div>
+                
+                <h2 style="margin-bottom: 1.5rem; color: var(--text-primary);">Government Perspective</h2>
+                <div class="article-card" onclick="window.location.href='/articles/countries-chile-chile-government-edition.html'">
+                    <div style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem;">
+                        <span class="card-badge badge-countries">🌍 Countries</span>
+                        <span class="card-audience">🏛️ Government</span>
+                    </div>
+                    <h3 class="card-title">Chile — Government</h3>
+                    <p class="card-excerpt">Policy Makers, Government Officials, and Regulators</p>
+                    <div class="card-footer">
+                        <span>22 min read</span>
+                        <span style="color: var(--accent-blue);">→</span>
+                    </div>
+                </div>
+                
+                <h2 style="margin-bottom: 1.5rem; color: var(--text-primary);">Parent Perspective</h2>
+                <div class="article-card" onclick="window.location.href='/articles/countries-chile-chile-parent-edition.html'">
+                    <div style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem;">
+                        <span class="card-badge badge-countries">🌍 Countries</span>
+                        <span class="card-audience">👨‍👩‍👧 Parent</span>
+                    </div>
+                    <h3 class="card-title">Chile — Parent</h3>
+                    <p class="card-excerpt">Parents and Family Decision-Makers</p>
+                    <div class="card-footer">
+                        <span>22 min read</span>
+                        <span style="color: var(--accent-blue);">→</span>
+                    </div>
+                </div>
+                
+                <h2 style="margin-bottom: 1.5rem; color: var(--text-primary);">Educator Perspective</h2>
+                <div class="article-card" onclick="window.location.href='/articles/countries-chile-chile-educator-edition.html'">
+                    <div style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem;">
+                        <span class="card-badge badge-countries">🌍 Countries</span>
+                        <span class="card-audience">🎓 Educator</span>
+                    </div>
+                    <h3 class="card-title">Chile — Educator</h3>
+                    <p class="card-excerpt">Teachers, Academics, and Educational Leaders</p>
+                    <div class="card-footer">
+                        <span>22 min read</span>
+                        <span style="color: var(--accent-blue);">→</span>
+                    </div>
+                </div>
+                
+                <h2 style="margin-bottom: 1.5rem; color: var(--text-primary);">Retiree Perspective</h2>
+                <div class="article-card" onclick="window.location.href='/articles/countries-chile-chile-retiree-edition.html'">
+                    <div style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem;">
+                        <span class="card-badge badge-countries">🌍 Countries</span>
+                        <span class="card-audience">🧓 Retiree</span>
+                    </div>
+                    <h3 class="card-title">Chile — Retiree</h3>
+                    <p class="card-excerpt">Retirees and Pensioners</p>
+                    <div class="card-footer">
+                        <span>22 min read</span>
+                        <span style="color: var(--accent-blue);">→</span>
+                    </div>
+                </div>
+                
+                <h2 style="margin-bottom: 1.5rem; color: var(--text-primary);">Young Person Perspective</h2>
+                <div class="article-card" onclick="window.location.href='/articles/countries-chile-chile-young-person-edition.html'">
+                    <div style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem;">
+                        <span class="card-badge badge-countries">🌍 Countries</span>
+                        <span class="card-audience">🎯 Young Person</span>
+                    </div>
+                    <h3 class="card-title">Chile — Young Person</h3>
+                    <p class="card-excerpt">Students, Recent Graduates, and Young Professionals</p>
+                    <div class="card-footer">
+                        <span>22 min read</span>
+                        <span style="color: var(--accent-blue);">→</span>
+                    </div>
+                </div>
+                
+                <h2 style="margin-bottom: 1.5rem; color: var(--text-primary);">Small Business Owner Perspective</h2>
+                <div class="article-card" onclick="window.location.href='/articles/countries-chile-chile-small-business-owner-edition.html'">
+                    <div style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem;">
+                        <span class="card-badge badge-countries">🌍 Countries</span>
+                        <span class="card-audience">🏢 Small Business Owner</span>
+                    </div>
+                    <h3 class="card-title">Chile — Small Business Owner</h3>
+                    <p class="card-excerpt">Entrepreneurs and Small Business Owners</p>
+                    <div class="card-footer">
+                        <span>22 min read</span>
+                        <span style="color: var(--accent-blue);">→</span>
+                    </div>
+                </div>
+                
+                <h2 style="margin-bottom: 1.5rem; color: var(--text-primary);">Blue-Collar Worker Perspective</h2>
+                <div class="article-card" onclick="window.location.href='/articles/countries-chile-chile-blue-collar-worker-edition.html'">
+                    <div style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem;">
+                        <span class="card-badge badge-countries">🌍 Countries</span>
+                        <span class="card-audience">🔧 Blue-Collar Worker</span>
+                    </div>
+                    <h3 class="card-title">Chile — Blue-Collar Worker</h3>
+                    <p class="card-excerpt">Tradespeople, Laborers, and Service Workers</p>
+                    <div class="card-footer">
+                        <span>22 min read</span>
+                        <span style="color: var(--accent-blue);">→</span>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2030 Intelligence Report. All rights reserved.</p>
+        <p style="margin-top: 1rem;"><a href="/">Home</a> | <a href="/browse/countries.html">Countries</a> | <a href="/about.html">About</a></p>
+    </footer>
+</body>
+</html>
