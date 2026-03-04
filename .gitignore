@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Generator scripts (keep in repo for reference but ignore cache)
+# *.py  -- keeping scripts for reproducibility
+
+# Build/QA reports
+AUDIT_SUMMARY.txt
+EXECUTION_SUMMARY.md
+FILES_GENERATED.txt
+GENERATION_REPORT.md
+NAVIGATION_STANDARDIZATION_REPORT.md
+QA_AUDIT_INDEX.txt
+QA_REPORT.md
+VALIDATION_SUMMARY.txt
+DEPLOY.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node
+node_modules/
