@@ -1976,6 +1976,16 @@ html.light-theme .article-toc {
     ]
 }
     </script>
+
+<style>
+.brief-download-btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.65rem 1.25rem;background:linear-gradient(135deg,#3b82f6,#6d28d9);color:#fff;border-radius:0.5rem;font-weight:600;font-size:0.9rem;text-decoration:none;transition:transform 0.2s,box-shadow 0.2s;box-shadow:0 2px 8px rgba(59,130,246,0.3)}
+.brief-download-btn:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(59,130,246,0.4);color:#fff}
+.brief-download-btn svg{width:18px;height:18px;fill:currentColor}
+.brief-download-bar{display:flex;align-items:center;gap:1rem;padding:1rem 1.5rem;margin:1rem auto 1.5rem;max-width:900px;background:rgba(59,130,246,0.08);border:1px solid rgba(59,130,246,0.2);border-radius:0.75rem;flex-wrap:wrap}
+.brief-download-bar p{margin:0;color:var(--text-secondary,#9494a8);font-size:0.9rem;flex:1}
+.brief-inline-link{display:inline-flex;align-items:center;gap:0.3rem;color:#3b82f6;font-weight:500;font-size:0.85rem;text-decoration:none}
+.brief-inline-link:hover{text-decoration:underline}
+</style>
 </head>
 <body>
     <header class="site-header">
@@ -2025,7 +2035,10 @@ html.light-theme .article-toc {
         </div>
         
 
-            <div class="article-content">
+            <div style="max-width:900px;margin:0.5rem auto;padding:0 1.5rem">
+<a href="/briefs/brief-us-us.pdf" target="_blank" class="brief-inline-link brief-download-link" data-country="us" data-source="company-ceo"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 16l-5-5h3V4h4v7h3l-5 5zm-7 2h14v2H5v-2z"/></svg> See how AI is reshaping United States — Download Country Brief (PDF)</a>
+</div>
+<div class="article-content">
                 <h1>SERVICENOW: NAVIGATING THE INFLECTION FROM HYPERGROWTH TO MATURE SCALING</h1>
 <h2 id="strategic-assessment-from-june-2030">Strategic Assessment from June 2030</h2>
 <p><strong>FROM:</strong> Executive Intelligence Unit<br />
@@ -2946,6 +2959,24 @@ Alternative scenario where ServiceNow invested $500M-800M more in AI/Copilot and
         });
     })();
 
+</script>
+
+<script>
+document.addEventListener('click', function(e) {
+  var link = e.target.closest('.brief-download-btn, .brief-download-link');
+  if (link) {
+    var country = link.getAttribute('data-country') || 'unknown';
+    var source = link.getAttribute('data-source') || 'unknown';
+    if (typeof gtag === 'function') {
+      gtag('event', 'pdf_brief_download', {
+        'event_category': 'engagement',
+        'event_label': country,
+        'download_source': source,
+        'value': 1
+      });
+    }
+  }
+});
 </script>
 </body>
 </html>
