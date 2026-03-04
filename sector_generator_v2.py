@@ -14,7 +14,7 @@ from datetime import datetime
 # Configuration
 ARTICLES_DIR = "/tmp/ai2030-repo/articles"
 RESEARCH_FILE = "/sessions/brave-adoring-gates/sector_research.md"
-BASE_URL = "https://ai2030.io"
+BASE_URL = "https://ai2030report.com"
 GA4_ID = "G-S9Z93KZ2Z2"
 ARTICLE_DATE = "2026-03-04"
 
