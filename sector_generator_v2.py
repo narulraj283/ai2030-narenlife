@@ -487,7 +487,7 @@ def get_html_wrapper(sector_name, h1, body_content, audience):
     # Breadcrumb
     breadcrumb = f"""<div class="breadcrumb">
         <a href="{BASE_URL}/">Home</a> &gt;
-        <a href="{BASE_URL}/sectors">Sectors</a> &gt;
+        <a href="{BASE_URL}/browse/sectors.html">Sectors</a> &gt;
         <span>{sector_display}</span>
     </div>"""
 
@@ -544,7 +544,7 @@ def get_html_wrapper(sector_name, h1, body_content, audience):
     # Footer
     footer = f"""<footer class="footer">
         <p>&copy; 2026 AI2030. This is speculative analysis exploring probable futures.</p>
-        <p><a href="{BASE_URL}">Home</a> &bull; <a href="{BASE_URL}/about">About</a> &bull; <a href="{BASE_URL}/contact">Contact</a></p>
+        <p><a href="{BASE_URL}">Home</a> &bull; <a href="{BASE_URL}/about.html">About</a></p>
     </footer>"""
 
     # Header nav
@@ -552,11 +552,10 @@ def get_html_wrapper(sector_name, h1, body_content, audience):
         <div class="nav-brand">AI2030</div>
         <ul class="nav-links">
             <li><a href="{BASE_URL}/">Home</a></li>
-            <li><a href="{BASE_URL}/countries">Countries</a></li>
-            <li><a href="{BASE_URL}/companies">Companies</a></li>
-            <li><a href="{BASE_URL}/sectors">Sectors</a></li>
-            <li><a href="{BASE_URL}/search">Search</a></li>
-            <li><a href="{BASE_URL}/about">About</a></li>
+            <li><a href="{BASE_URL}/browse/countries.html">Countries</a></li>
+            <li><a href="{BASE_URL}/browse/companies.html">Companies</a></li>
+            <li><a href="{BASE_URL}/browse/sectors.html">Sectors</a></li>
+            <li><a href="{BASE_URL}/about.html">About</a></li>
         </ul>
     </div>"""
 
