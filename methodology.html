@@ -10,7 +10,7 @@
     <meta name="description" content="Our methodology for the AI 2030 Intelligence Report. Learn how we generate scenario-based analysis for countries, companies, and sectors.">
     <link rel="canonical" href="https://ai2030report.com/methodology.html">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <style>
+    <style>.skip-link:focus{position:fixed!important;left:16px!important;top:16px!important;width:auto!important;height:auto!important;overflow:visible!important;}
 :root {
     --bg-primary: #0a0a0f;
     --bg-secondary: #111118;
@@ -462,6 +462,7 @@ html.light-theme .site-header {
     </script>
 </head>
 <body>
+<a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:999;padding:8px 16px;background:#0066cc;color:#fff;font-weight:600;text-decoration:none">Skip to content</a>
     <header class="site-header">
     <div class="header-inner">
         <a href="/" class="site-logo">
@@ -481,7 +482,7 @@ html.light-theme .site-header {
     </div>
 </header>
     <main class="article-page">
-        <article class="article-content" style="margin-top:2rem;">
+        <article class="article-content" style="margin-top:2rem;" id="main-content">
             <h1>Methodology</h1>
             <div class="article-meta-bar">
                 <span class="meta-chip" style="background:rgba(59,130,246,0.1);color:#60a5fa;">Data-Driven</span>
@@ -615,7 +616,7 @@ html.light-theme .site-header {
         designed to help leaders think about AI disruption. They are not predictions, financial advice,
         or statements of fact. All data points are illustrative projections for thought-experiment purposes only.
     </p>
-</footer>
+<p style="margin-top:0.5rem;font-size:0.85rem"><a href="/contact.html" style="color:#60a5fa">Contact</a> &bull; <a href="/privacy.html" style="color:#60a5fa">Privacy</a> &bull; <a href="/terms.html" style="color:#60a5fa">Terms</a></p></footer>
 <button class="back-to-top" aria-label="Back to top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8593;</button>
 <script>
 window.addEventListener('scroll', () => {
