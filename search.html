@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Search The 2030 Intelligence Report for AI disruption analysis across countries, sectors, and companies.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -1721,7 +1722,8 @@ html.light-theme .article-toc {
 
 /* ux-overhaul-v1 */
 
-</style>
+
+.skip-link:focus { position: fixed !important; left: 16px !important; top: 16px !important; width: auto !important; height: auto !important; overflow: visible !important; }</style>
     <!-- GA4 Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-S9Z93KZ2Z2"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-S9Z93KZ2Z2');</script>
@@ -1775,6 +1777,7 @@ html.light-theme .article-toc {
     </script>
 </head>
 <body>
+    <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:999;padding:8px 16px;background:#0066cc;color:#fff;font-weight:600;text-decoration:none;">Skip to content</a>
     <header class="site-header">
         <div class="header-inner">
             <a href="/" class="site-logo">
@@ -1798,7 +1801,7 @@ html.light-theme .article-toc {
         </div>
     </header>
 
-    <main style="max-width: 1400px; margin: 0 auto; padding: 2rem;">
+    <main style="max-width: 1400px; margin: 0 auto; padding: 2rem;" id="main-content">
         <h1 style="font-size: 2.5rem; margin-bottom: 2rem; background: var(--gradient-1); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Search the Report</h1>
         <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem;">
             <input type="text" id="searchInput" placeholder="Search articles..." style="flex: 1; min-width: 300px; padding: 1rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 0.5rem; color: var(--text-primary); font-size: 1rem;">

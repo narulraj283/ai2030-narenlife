@@ -966,7 +966,8 @@ html.light-theme .article-toc {
 
 /* ux-overhaul-v1 */
 
-</style>
+
+.skip-link:focus { position: fixed !important; left: 16px !important; top: 16px !important; width: auto !important; height: auto !important; overflow: visible !important; }</style>
     <meta property="og:title" content="About | The 2030 Intelligence Report">
     <meta property="og:description" content="About The 2030 Intelligence Report - fictional AI disruption scenario planning memos from June 2030.">
     <meta property="og:type" content="article">
@@ -1016,6 +1017,7 @@ html.light-theme .article-toc {
     </script>
 </head>
 <body>
+    <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:999;padding:8px 16px;background:#0066cc;color:#fff;font-weight:600;text-decoration:none;">Skip to content</a>
     <header class="site-header">
     <div class="header-inner">
         <a href="/" class="site-logo">
@@ -1035,7 +1037,7 @@ html.light-theme .article-toc {
     </div>
 </header>
     <main class="article-page">
-        <article class="article-content" style="margin-top:2rem;">
+        <article class="article-content" style="margin-top:2rem;" id="main-content">
             <h1>About The 2030 Intelligence Report</h1>
             <div class="article-meta-bar">
                 <span class="meta-chip" style="background:rgba(59,130,246,0.1);color:#60a5fa;">AI Preparedness</span>

@@ -1944,7 +1944,8 @@ html.light-theme .article-toc {
 
 /* ux-overhaul-v1 */
 
-</style>
+
+.skip-link:focus { position: fixed !important; left: 16px !important; top: 16px !important; width: auto !important; height: auto !important; overflow: visible !important; }</style>
     <!-- GA4 Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-S9Z93KZ2Z2"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-S9Z93KZ2Z2');</script>
@@ -1988,6 +1989,7 @@ html.light-theme .article-toc {
 </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:999;padding:8px 16px;background:#0066cc;color:#fff;font-weight:600;text-decoration:none;">Skip to content</a>
     <header class="site-header">
         <div class="header-inner">
             <a href="/" class="site-logo">
@@ -2017,7 +2019,7 @@ html.light-theme .article-toc {
             <a href="/">Home</a><span>/</span><a href="/browse/companies.html">Companies</a><span>/</span><a href="/browse/companies/cgi.html">CGI</a><span>/</span><span>CEO</span>
         </div>
 
-        <article class="article-header">
+        <article class="article-header" id="main-content">
             <div class="article-meta-bar">
                 <div class="article-category">
                     <span class="card-badge badge-companies">🏢 Companies</span>

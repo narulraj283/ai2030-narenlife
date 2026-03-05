@@ -1,0 +1,1685 @@
+================================================================================
+ACCESSIBILITY AND USABILITY AUDIT REPORT
+================================================================================
+Generated: 2026-03-05T01:09:56.704595
+Total pages audited: 26
+
+EXECUTIVE SUMMARY
+--------------------------------------------------------------------------------
+
+Issues found by category:
+  color_contrast: 21 page(s)
+  focus_indicators: 20 page(s)
+  form_labels: 20 page(s)
+  heading_hierarchy: 3 page(s)
+  link_text_quality: 26 page(s)
+  mobile_responsive: 26 page(s)
+  skip_nav_link: 26 page(s)
+  touch_targets: 26 page(s)
+
+================================================================================
+DETAILED PAGE AUDITS
+================================================================================
+
+HOMEPAGE
+Path: /tmp/ai2030-repo/index.html
+File Size: 446.58 KB
+--------------------------------------------------------------------------------
+
+[PASS] file_size_check
+
+[PASS] aria_landmarks
+    Landmarks: {'header': 1, 'nav': 1, 'main': 1, 'footer': 1}
+
+[FAIL] skip_nav_link
+    Issue: No "skip to content" link found
+
+[FAIL] color_contrast
+    Potential issues: 16
+
+[FAIL] focus_indicators
+    Issue: Found "outline: none" which removes focus indicators
+
+[PASS] lang_attribute
+
+[PASS] viewport_meta
+    Viewport config: width=device-width, initial-scale=1.0
+
+[FAIL] form_labels
+    Issue: 2 input(s) without labels
+    Total inputs: 2
+    Inputs without labels: 2
+
+[FAIL] link_text_quality
+    Issue: 13 link(s) with poor text
+    Total links: 13
+    Links with poor text: 13
+      - href='/' text='(empty)'
+      - href='/' text='(empty)'
+      - href='/browse/countries.html' text='(empty)'
+
+[FAIL] heading_hierarchy
+    Total headings: 52
+    Hierarchy sample: [(1, 'N/A'), (3, 'N/A'), (3, 'N/A'), (3, 'N/A'), (3, 'N/A')]
+    - Skipped from h1 to h3
+
+[FAIL] mobile_responsive
+    Issue: Fixed width CSS or missing viewport
+
+[PASS] page_load_concerns
+    File size: 446.58 KB
+    Render-blocking resources: 1
+      - https://www.googletagmanager.com/gtag/js?id=G-S9Z93KZ2Z2
+
+[FAIL] touch_targets
+    Issue: Potential small touch targets found
+
+[PASS] image_alt_text
+    Total images: 0
+    Missing alt text: 0
+
+ABOUT
+Path: /tmp/ai2030-repo/about.html
+File Size: 37.54 KB
+--------------------------------------------------------------------------------
+
+[PASS] file_size_check
+
+[PASS] aria_landmarks
+    Landmarks: {'header': 1, 'nav': 1, 'main': 1, 'footer': 1}
+
+[FAIL] skip_nav_link
+    Issue: No "skip to content" link found
+
+[FAIL] color_contrast
+    Potential issues: 6
+
+[FAIL] focus_indicators
+    Issue: Found "outline: none" which removes focus indicators
+
+[PASS] lang_attribute
+
+[PASS] viewport_meta
+    Viewport config: width=device-width, initial-scale=1.0
+
+[FAIL] form_labels
+    Issue: 1 input(s) without labels
+    Total inputs: 1
+    Inputs without labels: 1
+
+[FAIL] link_text_quality
+    Issue: 6 link(s) with poor text
+    Total links: 6
+    Links with poor text: 6
+      - href='/' text='(empty)'
+      - href='/' text='(empty)'
+      - href='/browse/countries.html' text='(empty)'
+
+[PASS] heading_hierarchy
+    Total headings: 8
+    Hierarchy sample: [(1, 'N/A'), (2, 'N/A'), (2, 'N/A'), (2, 'N/A'), (2, 'N/A')]
+
+[FAIL] mobile_responsive
+    Issue: Fixed width CSS or missing viewport
+
+[PASS] page_load_concerns
+    File size: 37.54 KB
+    Render-blocking resources: 1
+      - https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap
+
+[FAIL] touch_targets
+    Issue: Potential small touch targets found
+
+[PASS] image_alt_text
+    Total images: 0
+    Missing alt text: 0
+
+BROWSE_COMPANIES
+Path: /tmp/ai2030-repo/browse/companies.html
+File Size: 232.21 KB
+--------------------------------------------------------------------------------
+
+[PASS] file_size_check
+
+[PASS] aria_landmarks
+    Landmarks: {'header': 1, 'nav': 1, 'main': 1, 'footer': 1}
+
+[FAIL] skip_nav_link
+    Issue: No "skip to content" link found
+
+[FAIL] color_contrast
+    Potential issues: 20
+
+[FAIL] focus_indicators
+    Issue: Found "outline: none" which removes focus indicators
+
+[PASS] lang_attribute
+
+[PASS] viewport_meta
+    Viewport config: width=device-width, initial-scale=1.0
+
+[FAIL] form_labels
+    Issue: 1 input(s) without labels
+    Total inputs: 1
+    Inputs without labels: 1
+
+[FAIL] link_text_quality
+    Issue: 441 link(s) with poor text
+    Total links: 441
+    Links with poor text: 441
+      - href='/' text='(empty)'
+      - href='/' text='(empty)'
+      - href='/browse/countries.html' text='(empty)'
+
+[PASS] heading_hierarchy
+    Total headings: 451
+    Hierarchy sample: [(1, 'N/A'), (2, 'N/A'), (3, 'N/A'), (3, 'N/A'), (3, 'N/A')]
+
+[FAIL] mobile_responsive
+    Issue: Fixed width CSS or missing viewport
+
+[PASS] page_load_concerns
+    File size: 232.21 KB
+    Render-blocking resources: 1
+      - https://www.googletagmanager.com/gtag/js?id=G-S9Z93KZ2Z2
+
+[FAIL] touch_targets
+    Issue: Potential small touch targets found
+
+[PASS] image_alt_text
+    Total images: 0
+    Missing alt text: 0
+
+BROWSE_DATA
+Path: /tmp/ai2030-repo/browse/data.html
+File Size: 46.16 KB
+--------------------------------------------------------------------------------
+
+[PASS] file_size_check
+
+[PASS] aria_landmarks
+    Landmarks: {'header': 1, 'nav': 1, 'main': 1, 'footer': 1}
+
+[FAIL] skip_nav_link
+    Issue: No "skip to content" link found
+
+[FAIL] color_contrast
+    Potential issues: 19
+
+[FAIL] focus_indicators
+    Issue: Found "outline: none" which removes focus indicators
+
+[PASS] lang_attribute
+
+[PASS] viewport_meta
+    Viewport config: width=device-width, initial-scale=1.0
+
+[FAIL] form_labels
+    Issue: 1 input(s) without labels
+    Total inputs: 1
+    Inputs without labels: 1
+
+[FAIL] link_text_quality
+    Issue: 16 link(s) with poor text
+    Total links: 16
+    Links with poor text: 16
+      - href='/' text='(empty)'
+      - href='/' text='(empty)'
+      - href='/browse/countries.html' text='(empty)'
+
+[FAIL] heading_hierarchy
+    Total headings: 5
+    Hierarchy sample: [(1, 'N/A'), (3, 'N/A'), (3, 'N/A'), (3, 'N/A'), (3, 'N/A')]
+    - Skipped from h1 to h3
+
+[FAIL] mobile_responsive
+    Issue: Fixed width CSS or missing viewport
+
+[PASS] page_load_concerns
+    File size: 46.16 KB
+    Render-blocking resources: 1
+      - https://www.googletagmanager.com/gtag/js?id=G-S9Z93KZ2Z2
+
+[FAIL] touch_targets
+    Issue: Potential small touch targets found
+
+[PASS] image_alt_text
+    Total images: 0
+    Missing alt text: 0
+
+BROWSE_SECTORS
+Path: /tmp/ai2030-repo/browse/sectors.html
+File Size: 51.99 KB
+--------------------------------------------------------------------------------
+
+[PASS] file_size_check
+
+[PASS] aria_landmarks
+    Landmarks: {'header': 1, 'nav': 1, 'main': 1, 'footer': 1}
+
+[FAIL] skip_nav_link
+    Issue: No "skip to content" link found
+
+[FAIL] color_contrast
+    Potential issues: 19
+
+[FAIL] focus_indicators
+    Issue: Found "outline: none" which removes focus indicators
+
+[PASS] lang_attribute
+
+[PASS] viewport_meta
+    Viewport config: width=device-width, initial-scale=1.0
+
+[FAIL] form_labels
+    Issue: 1 input(s) without labels
+    Total inputs: 1
+    Inputs without labels: 1
+
+[FAIL] link_text_quality
+    Issue: 38 link(s) with poor text
+    Total links: 38
+    Links with poor text: 38
+      - href='/' text='(empty)'
+      - href='/' text='(empty)'
+      - href='/browse/countries.html' text='(empty)'
+
+[FAIL] heading_hierarchy
+    Total headings: 22
+    Hierarchy sample: [(1, 'N/A'), (3, 'N/A'), (3, 'N/A'), (3, 'N/A'), (3, 'N/A')]
+    - Skipped from h1 to h3
+
+[FAIL] mobile_responsive
+    Issue: Fixed width CSS or missing viewport
+
+[PASS] page_load_concerns
+    File size: 51.99 KB
+    Render-blocking resources: 1
+      - https://www.googletagmanager.com/gtag/js?id=G-S9Z93KZ2Z2
+
+[FAIL] touch_targets
+    Issue: Potential small touch targets found
+
+[PASS] image_alt_text
+    Total images: 0
+    Missing alt text: 0
+
+BRIEFS_INDEX
+Path: /tmp/ai2030-repo/briefs/index.html
+File Size: 106.72 KB
+--------------------------------------------------------------------------------
+
+[PASS] file_size_check
+
+[PASS] aria_landmarks
+    Landmarks: {'header': 1, 'footer': 1}
+    - Missing <nav> element
+    - Missing <main> element
+
+[FAIL] skip_nav_link
+    Issue: No "skip to content" link found
+
+[FAIL] color_contrast
+    Potential issues: 3
+
+[PASS] focus_indicators
+
+[PASS] lang_attribute
+
+[PASS] viewport_meta
+    Viewport config: width=device-width, initial-scale=1.0
+
+[PASS] form_labels
+    Total inputs: 0
+
+[FAIL] link_text_quality
+    Issue: 199 link(s) with poor text
+    Total links: 199
+    Links with poor text: 199
+      - href='/briefs/brief-argentina-argentina.pdf' text='(empty)'
+      - href='/briefs/brief-barbados-barbados.pdf' text='(empty)'
+      - href='/briefs/brief-bolivia-bolivia.pdf' text='(empty)'
+
+[PASS] heading_hierarchy
+    Total headings: 7
+    Hierarchy sample: [(1, 'N/A'), (2, 'N/A'), (3, 'N/A'), (3, 'N/A'), (3, 'N/A')]
+
+[FAIL] mobile_responsive
+    Issue: Fixed width CSS or missing viewport
+
+[PASS] page_load_concerns
+    File size: 106.72 KB
+
+[FAIL] touch_targets
+    Issue: Potential small touch targets found
+
+[PASS] image_alt_text
+    Total images: 0
+    Missing alt text: 0
+
+COUNTRY_1
+Path: /tmp/ai2030-repo/browse/countries/ireland.html
+File Size: 58.01 KB
+--------------------------------------------------------------------------------
+
+[PASS] file_size_check
+
+[PASS] aria_landmarks
+    Landmarks: {'header': 1, 'nav': 1, 'main': 1, 'footer': 1}
+
+[FAIL] skip_nav_link
+    Issue: No "skip to content" link found
+
+[FAIL] color_contrast
+    Potential issues: 19
+
+[FAIL] focus_indicators
+    Issue: Found "outline: none" which removes focus indicators
+
+[PASS] lang_attribute
+
+[PASS] viewport_meta
+    Viewport config: width=device-width, initial-scale=1.0
+
+[FAIL] form_labels
+    Issue: 1 input(s) without labels
+    Total inputs: 1
+    Inputs without labels: 1
+
+[FAIL] link_text_quality
+    Issue: 20 link(s) with poor text
+    Total links: 20
+    Links with poor text: 20
+      - href='/' text='(empty)'
+      - href='/' text='(empty)'
+      - href='/browse/countries.html' text='(empty)'
+
+[PASS] heading_hierarchy
+    Total headings: 24
+    Hierarchy sample: [(1, 'N/A'), (2, 'N/A'), (3, 'N/A'), (2, 'N/A'), (3, 'N/A')]
+
+[FAIL] mobile_responsive
+    Issue: Fixed width CSS or missing viewport
+
+[PASS] page_load_concerns
+    File size: 58.01 KB
+    Render-blocking resources: 1
+      - https://www.googletagmanager.com/gtag/js?id=G-S9Z93KZ2Z2
+
+[FAIL] touch_targets
+    Issue: Potential small touch targets found
+
+[PASS] image_alt_text
+    Total images: 0
+    Missing alt text: 0
+
+COUNTRY_2
+Path: /tmp/ai2030-repo/browse/countries/saudi-arabia.html
+File Size: 58.67 KB
+--------------------------------------------------------------------------------
+
+[PASS] file_size_check
+
+[PASS] aria_landmarks
+    Landmarks: {'header': 1, 'nav': 1, 'main': 1, 'footer': 1}
+
+[FAIL] skip_nav_link
+    Issue: No "skip to content" link found
+
+[FAIL] color_contrast
+    Potential issues: 19
+
+[FAIL] focus_indicators
+    Issue: Found "outline: none" which removes focus indicators
+
+[PASS] lang_attribute
+
+[PASS] viewport_meta
+    Viewport config: width=device-width, initial-scale=1.0
+
+[FAIL] form_labels
+    Issue: 1 input(s) without labels
+    Total inputs: 1
+    Inputs without labels: 1
+
+[FAIL] link_text_quality
+    Issue: 20 link(s) with poor text
+    Total links: 20
+    Links with poor text: 20
+      - href='/' text='(empty)'
+      - href='/' text='(empty)'
+      - href='/browse/countries.html' text='(empty)'
+
+[PASS] heading_hierarchy
+    Total headings: 24
+    Hierarchy sample: [(1, 'N/A'), (2, 'N/A'), (3, 'N/A'), (2, 'N/A'), (3, 'N/A')]
+
+[FAIL] mobile_responsive
+    Issue: Fixed width CSS or missing viewport
+
+[PASS] page_load_concerns
+    File size: 58.67 KB
+    Render-blocking resources: 1
+      - https://www.googletagmanager.com/gtag/js?id=G-S9Z93KZ2Z2
+
+[FAIL] touch_targets
+    Issue: Potential small touch targets found
+
+[PASS] image_alt_text
+    Total images: 0
+    Missing alt text: 0
+
+COUNTRY_3
+Path: /tmp/ai2030-repo/browse/countries/nigeria.html
+File Size: 58.35 KB
+--------------------------------------------------------------------------------
+
+[PASS] file_size_check
+
+[PASS] aria_landmarks
+    Landmarks: {'header': 1, 'nav': 1, 'main': 1, 'footer': 1}
+
+[FAIL] skip_nav_link
+    Issue: No "skip to content" link found
+
+[FAIL] color_contrast
+    Potential issues: 19
+
+[FAIL] focus_indicators
+    Issue: Found "outline: none" which removes focus indicators
+
+[PASS] lang_attribute
+
+[PASS] viewport_meta
+    Viewport config: width=device-width, initial-scale=1.0
+
+[FAIL] form_labels
+    Issue: 1 input(s) without labels
+    Total inputs: 1
+    Inputs without labels: 1
+
+[FAIL] link_text_quality
+    Issue: 20 link(s) with poor text
+    Total links: 20
+    Links with poor text: 20
+      - href='/' text='(empty)'
+      - href='/' text='(empty)'
+      - href='/browse/countries.html' text='(empty)'
+
+[PASS] heading_hierarchy
+    Total headings: 24
+    Hierarchy sample: [(1, 'N/A'), (2, 'N/A'), (3, 'N/A'), (2, 'N/A'), (3, 'N/A')]
+
+[FAIL] mobile_responsive
+    Issue: Fixed width CSS or missing viewport
+
+[PASS] page_load_concerns
+    File size: 58.35 KB
+    Render-blocking resources: 1
+      - https://www.googletagmanager.com/gtag/js?id=G-S9Z93KZ2Z2
+
+[FAIL] touch_targets
+    Issue: Potential small touch targets found
+
+[PASS] image_alt_text
+    Total images: 0
+    Missing alt text: 0
+
+COUNTRY_4
+Path: /tmp/ai2030-repo/browse/countries/senegal.html
+File Size: 17.18 KB
+--------------------------------------------------------------------------------
+
+[PASS] file_size_check
+
+[PASS] aria_landmarks
+    Landmarks: {'header': 1, 'nav': 1, 'main': 1, 'footer': 1}
+
+[FAIL] skip_nav_link
+    Issue: No "skip to content" link found
+
+[PASS] color_contrast
+
+[PASS] focus_indicators
+
+[PASS] lang_attribute
+
+[PASS] viewport_meta
+    Viewport config: width=device-width, initial-scale=1.0
+
+[PASS] form_labels
+    Total inputs: 0
+
+[FAIL] link_text_quality
+    Issue: 12 link(s) with poor text
+    Total links: 12
+    Links with poor text: 12
+      - href='/' text='(empty)'
+      - href='/' text='(empty)'
+      - href='/browse/countries.html' text='(empty)'
+
+[PASS] heading_hierarchy
+    Total headings: 23
+    Hierarchy sample: [(1, 'N/A'), (2, 'N/A'), (3, 'N/A'), (2, 'N/A'), (3, 'N/A')]
+
+[FAIL] mobile_responsive
+    Issue: Fixed width CSS or missing viewport
+
+[PASS] page_load_concerns
+    File size: 17.18 KB
+
+[FAIL] touch_targets
+    Issue: Potential small touch targets found
+
+[PASS] image_alt_text
+    Total images: 0
+    Missing alt text: 0
+
+COUNTRY_5
+Path: /tmp/ai2030-repo/browse/countries/chile.html
+File Size: 17.1 KB
+--------------------------------------------------------------------------------
+
+[PASS] file_size_check
+
+[PASS] aria_landmarks
+    Landmarks: {'header': 1, 'nav': 1, 'main': 1, 'footer': 1}
+
+[FAIL] skip_nav_link
+    Issue: No "skip to content" link found
+
+[PASS] color_contrast
+
+[PASS] focus_indicators
+
+[PASS] lang_attribute
+
+[PASS] viewport_meta
+    Viewport config: width=device-width, initial-scale=1.0
+
+[PASS] form_labels
+    Total inputs: 0
+
+[FAIL] link_text_quality
+    Issue: 12 link(s) with poor text
+    Total links: 12
+    Links with poor text: 12
+      - href='/' text='(empty)'
+      - href='/' text='(empty)'
+      - href='/browse/countries.html' text='(empty)'
+
+[PASS] heading_hierarchy
+    Total headings: 23
+    Hierarchy sample: [(1, 'N/A'), (2, 'N/A'), (3, 'N/A'), (2, 'N/A'), (3, 'N/A')]
+
+[FAIL] mobile_responsive
+    Issue: Fixed width CSS or missing viewport
+
+[PASS] page_load_concerns
+    File size: 17.1 KB
+
+[FAIL] touch_targets
+    Issue: Potential small touch targets found
+
+[PASS] image_alt_text
+    Total images: 0
+    Missing alt text: 0
+
+COUNTRY_6
+Path: /tmp/ai2030-repo/browse/countries/vietnam.html
+File Size: 58.31 KB
+--------------------------------------------------------------------------------
+
+[PASS] file_size_check
+
+[PASS] aria_landmarks
+    Landmarks: {'header': 1, 'nav': 1, 'main': 1, 'footer': 1}
+
+[FAIL] skip_nav_link
+    Issue: No "skip to content" link found
+
+[FAIL] color_contrast
+    Potential issues: 19
+
+[FAIL] focus_indicators
+    Issue: Found "outline: none" which removes focus indicators
+
+[PASS] lang_attribute
+
+[PASS] viewport_meta
+    Viewport config: width=device-width, initial-scale=1.0
+
+[FAIL] form_labels
+    Issue: 1 input(s) without labels
+    Total inputs: 1
+    Inputs without labels: 1
+
+[FAIL] link_text_quality
+    Issue: 20 link(s) with poor text
+    Total links: 20
+    Links with poor text: 20
+      - href='/' text='(empty)'
+      - href='/' text='(empty)'
+      - href='/browse/countries.html' text='(empty)'
+
+[PASS] heading_hierarchy
+    Total headings: 24
+    Hierarchy sample: [(1, 'N/A'), (2, 'N/A'), (3, 'N/A'), (2, 'N/A'), (3, 'N/A')]
+
+[FAIL] mobile_responsive
+    Issue: Fixed width CSS or missing viewport
+
+[PASS] page_load_concerns
+    File size: 58.31 KB
+    Render-blocking resources: 1
+      - https://www.googletagmanager.com/gtag/js?id=G-S9Z93KZ2Z2
+
+[FAIL] touch_targets
+    Issue: Potential small touch targets found
+
+[PASS] image_alt_text
+    Total images: 0
+    Missing alt text: 0
+
+COUNTRY_7
+Path: /tmp/ai2030-repo/browse/countries/syria.html
+File Size: 17.1 KB
+--------------------------------------------------------------------------------
+
+[PASS] file_size_check
+
+[PASS] aria_landmarks
+    Landmarks: {'header': 1, 'nav': 1, 'main': 1, 'footer': 1}
+
+[FAIL] skip_nav_link
+    Issue: No "skip to content" link found
+
+[PASS] color_contrast
+
+[PASS] focus_indicators
+
+[PASS] lang_attribute
+
+[PASS] viewport_meta
+    Viewport config: width=device-width, initial-scale=1.0
+
+[PASS] form_labels
+    Total inputs: 0
+
+[FAIL] link_text_quality
+    Issue: 12 link(s) with poor text
+    Total links: 12
+    Links with poor text: 12
+      - href='/' text='(empty)'
+      - href='/' text='(empty)'
+      - href='/browse/countries.html' text='(empty)'
+
+[PASS] heading_hierarchy
+    Total headings: 23
+    Hierarchy sample: [(1, 'N/A'), (2, 'N/A'), (3, 'N/A'), (2, 'N/A'), (3, 'N/A')]
+
+[FAIL] mobile_responsive
+    Issue: Fixed width CSS or missing viewport
+
+[PASS] page_load_concerns
+    File size: 17.1 KB
+
+[FAIL] touch_targets
+    Issue: Potential small touch targets found
+
+[PASS] image_alt_text
+    Total images: 0
+    Missing alt text: 0
+
+COUNTRY_8
+Path: /tmp/ai2030-repo/browse/countries/nepal.html
+File Size: 17.1 KB
+--------------------------------------------------------------------------------
+
+[PASS] file_size_check
+
+[PASS] aria_landmarks
+    Landmarks: {'header': 1, 'nav': 1, 'main': 1, 'footer': 1}
+
+[FAIL] skip_nav_link
+    Issue: No "skip to content" link found
+
+[PASS] color_contrast
+
+[PASS] focus_indicators
+
+[PASS] lang_attribute
+
+[PASS] viewport_meta
+    Viewport config: width=device-width, initial-scale=1.0
+
+[PASS] form_labels
+    Total inputs: 0
+
+[FAIL] link_text_quality
+    Issue: 12 link(s) with poor text
+    Total links: 12
+    Links with poor text: 12
+      - href='/' text='(empty)'
+      - href='/' text='(empty)'
+      - href='/browse/countries.html' text='(empty)'
+
+[PASS] heading_hierarchy
+    Total headings: 23
+    Hierarchy sample: [(1, 'N/A'), (2, 'N/A'), (3, 'N/A'), (2, 'N/A'), (3, 'N/A')]
+
+[FAIL] mobile_responsive
+    Issue: Fixed width CSS or missing viewport
+
+[PASS] page_load_concerns
+    File size: 17.1 KB
+
+[FAIL] touch_targets
+    Issue: Potential small touch targets found
+
+[PASS] image_alt_text
+    Total images: 0
+    Missing alt text: 0
+
+COUNTRY_9
+Path: /tmp/ai2030-repo/browse/countries/denmark.html
+File Size: 17.18 KB
+--------------------------------------------------------------------------------
+
+[PASS] file_size_check
+
+[PASS] aria_landmarks
+    Landmarks: {'header': 1, 'nav': 1, 'main': 1, 'footer': 1}
+
+[FAIL] skip_nav_link
+    Issue: No "skip to content" link found
+
+[PASS] color_contrast
+
+[PASS] focus_indicators
+
+[PASS] lang_attribute
+
+[PASS] viewport_meta
+    Viewport config: width=device-width, initial-scale=1.0
+
+[PASS] form_labels
+    Total inputs: 0
+
+[FAIL] link_text_quality
+    Issue: 12 link(s) with poor text
+    Total links: 12
+    Links with poor text: 12
+      - href='/' text='(empty)'
+      - href='/' text='(empty)'
+      - href='/browse/countries.html' text='(empty)'
+
+[PASS] heading_hierarchy
+    Total headings: 23
+    Hierarchy sample: [(1, 'N/A'), (2, 'N/A'), (3, 'N/A'), (2, 'N/A'), (3, 'N/A')]
+
+[FAIL] mobile_responsive
+    Issue: Fixed width CSS or missing viewport
+
+[PASS] page_load_concerns
+    File size: 17.18 KB
+
+[FAIL] touch_targets
+    Issue: Potential small touch targets found
+
+[PASS] image_alt_text
+    Total images: 0
+    Missing alt text: 0
+
+COUNTRY_10
+Path: /tmp/ai2030-repo/browse/countries/india.html
+File Size: 58.31 KB
+--------------------------------------------------------------------------------
+
+[PASS] file_size_check
+
+[PASS] aria_landmarks
+    Landmarks: {'header': 1, 'nav': 1, 'main': 1, 'footer': 1}
+
+[FAIL] skip_nav_link
+    Issue: No "skip to content" link found
+
+[FAIL] color_contrast
+    Potential issues: 19
+
+[FAIL] focus_indicators
+    Issue: Found "outline: none" which removes focus indicators
+
+[PASS] lang_attribute
+
+[PASS] viewport_meta
+    Viewport config: width=device-width, initial-scale=1.0
+
+[FAIL] form_labels
+    Issue: 1 input(s) without labels
+    Total inputs: 1
+    Inputs without labels: 1
+
+[FAIL] link_text_quality
+    Issue: 20 link(s) with poor text
+    Total links: 20
+    Links with poor text: 20
+      - href='/' text='(empty)'
+      - href='/' text='(empty)'
+      - href='/browse/countries.html' text='(empty)'
+
+[PASS] heading_hierarchy
+    Total headings: 24
+    Hierarchy sample: [(1, 'N/A'), (2, 'N/A'), (3, 'N/A'), (2, 'N/A'), (3, 'N/A')]
+
+[FAIL] mobile_responsive
+    Issue: Fixed width CSS or missing viewport
+
+[PASS] page_load_concerns
+    File size: 58.31 KB
+    Render-blocking resources: 1
+      - https://www.googletagmanager.com/gtag/js?id=G-S9Z93KZ2Z2
+
+[FAIL] touch_targets
+    Issue: Potential small touch targets found
+
+[PASS] image_alt_text
+    Total images: 0
+    Missing alt text: 0
+
+SECTOR_1
+Path: /tmp/ai2030-repo/browse/sectors/healthcare.html
+File Size: 51.04 KB
+--------------------------------------------------------------------------------
+
+[PASS] file_size_check
+
+[PASS] aria_landmarks
+    Landmarks: {'header': 1, 'nav': 1, 'main': 1, 'footer': 1}
+
+[FAIL] skip_nav_link
+    Issue: No "skip to content" link found
+
+[FAIL] color_contrast
+    Potential issues: 19
+
+[FAIL] focus_indicators
+    Issue: Found "outline: none" which removes focus indicators
+
+[PASS] lang_attribute
+
+[PASS] viewport_meta
+    Viewport config: width=device-width, initial-scale=1.0
+
+[FAIL] form_labels
+    Issue: 1 input(s) without labels
+    Total inputs: 1
+    Inputs without labels: 1
+
+[FAIL] link_text_quality
+    Issue: 20 link(s) with poor text
+    Total links: 20
+    Links with poor text: 20
+      - href='/' text='(empty)'
+      - href='/' text='(empty)'
+      - href='/browse/countries.html' text='(empty)'
+
+[PASS] heading_hierarchy
+    Total headings: 10
+    Hierarchy sample: [(1, 'N/A'), (2, 'N/A'), (3, 'N/A'), (2, 'N/A'), (3, 'N/A')]
+
+[FAIL] mobile_responsive
+    Issue: Fixed width CSS or missing viewport
+
+[PASS] page_load_concerns
+    File size: 51.04 KB
+    Render-blocking resources: 1
+      - https://www.googletagmanager.com/gtag/js?id=G-S9Z93KZ2Z2
+
+[FAIL] touch_targets
+    Issue: Potential small touch targets found
+
+[PASS] image_alt_text
+    Total images: 0
+    Missing alt text: 0
+
+SECTOR_2
+Path: /tmp/ai2030-repo/browse/sectors/technology.html
+File Size: 51.0 KB
+--------------------------------------------------------------------------------
+
+[PASS] file_size_check
+
+[PASS] aria_landmarks
+    Landmarks: {'header': 1, 'nav': 1, 'main': 1, 'footer': 1}
+
+[FAIL] skip_nav_link
+    Issue: No "skip to content" link found
+
+[FAIL] color_contrast
+    Potential issues: 19
+
+[FAIL] focus_indicators
+    Issue: Found "outline: none" which removes focus indicators
+
+[PASS] lang_attribute
+
+[PASS] viewport_meta
+    Viewport config: width=device-width, initial-scale=1.0
+
+[FAIL] form_labels
+    Issue: 1 input(s) without labels
+    Total inputs: 1
+    Inputs without labels: 1
+
+[FAIL] link_text_quality
+    Issue: 20 link(s) with poor text
+    Total links: 20
+    Links with poor text: 20
+      - href='/' text='(empty)'
+      - href='/' text='(empty)'
+      - href='/browse/countries.html' text='(empty)'
+
+[PASS] heading_hierarchy
+    Total headings: 10
+    Hierarchy sample: [(1, 'N/A'), (2, 'N/A'), (3, 'N/A'), (2, 'N/A'), (3, 'N/A')]
+
+[FAIL] mobile_responsive
+    Issue: Fixed width CSS or missing viewport
+
+[PASS] page_load_concerns
+    File size: 51.0 KB
+    Render-blocking resources: 1
+      - https://www.googletagmanager.com/gtag/js?id=G-S9Z93KZ2Z2
+
+[FAIL] touch_targets
+    Issue: Potential small touch targets found
+
+[PASS] image_alt_text
+    Total images: 0
+    Missing alt text: 0
+
+SECTOR_3
+Path: /tmp/ai2030-repo/browse/sectors/telecommunications.html
+File Size: 51.26 KB
+--------------------------------------------------------------------------------
+
+[PASS] file_size_check
+
+[PASS] aria_landmarks
+    Landmarks: {'header': 1, 'nav': 1, 'main': 1, 'footer': 1}
+
+[FAIL] skip_nav_link
+    Issue: No "skip to content" link found
+
+[FAIL] color_contrast
+    Potential issues: 19
+
+[FAIL] focus_indicators
+    Issue: Found "outline: none" which removes focus indicators
+
+[PASS] lang_attribute
+
+[PASS] viewport_meta
+    Viewport config: width=device-width, initial-scale=1.0
+
+[FAIL] form_labels
+    Issue: 1 input(s) without labels
+    Total inputs: 1
+    Inputs without labels: 1
+
+[FAIL] link_text_quality
+    Issue: 20 link(s) with poor text
+    Total links: 20
+    Links with poor text: 20
+      - href='/' text='(empty)'
+      - href='/' text='(empty)'
+      - href='/browse/countries.html' text='(empty)'
+
+[PASS] heading_hierarchy
+    Total headings: 10
+    Hierarchy sample: [(1, 'N/A'), (2, 'N/A'), (3, 'N/A'), (2, 'N/A'), (3, 'N/A')]
+
+[FAIL] mobile_responsive
+    Issue: Fixed width CSS or missing viewport
+
+[PASS] page_load_concerns
+    File size: 51.26 KB
+    Render-blocking resources: 1
+      - https://www.googletagmanager.com/gtag/js?id=G-S9Z93KZ2Z2
+
+[FAIL] touch_targets
+    Issue: Potential small touch targets found
+
+[PASS] image_alt_text
+    Total images: 0
+    Missing alt text: 0
+
+SECTOR_4
+Path: /tmp/ai2030-repo/browse/sectors/insurance.html
+File Size: 51.04 KB
+--------------------------------------------------------------------------------
+
+[PASS] file_size_check
+
+[PASS] aria_landmarks
+    Landmarks: {'header': 1, 'nav': 1, 'main': 1, 'footer': 1}
+
+[FAIL] skip_nav_link
+    Issue: No "skip to content" link found
+
+[FAIL] color_contrast
+    Potential issues: 19
+
+[FAIL] focus_indicators
+    Issue: Found "outline: none" which removes focus indicators
+
+[PASS] lang_attribute
+
+[PASS] viewport_meta
+    Viewport config: width=device-width, initial-scale=1.0
+
+[FAIL] form_labels
+    Issue: 1 input(s) without labels
+    Total inputs: 1
+    Inputs without labels: 1
+
+[FAIL] link_text_quality
+    Issue: 20 link(s) with poor text
+    Total links: 20
+    Links with poor text: 20
+      - href='/' text='(empty)'
+      - href='/' text='(empty)'
+      - href='/browse/countries.html' text='(empty)'
+
+[PASS] heading_hierarchy
+    Total headings: 10
+    Hierarchy sample: [(1, 'N/A'), (2, 'N/A'), (3, 'N/A'), (2, 'N/A'), (3, 'N/A')]
+
+[FAIL] mobile_responsive
+    Issue: Fixed width CSS or missing viewport
+
+[PASS] page_load_concerns
+    File size: 51.04 KB
+    Render-blocking resources: 1
+      - https://www.googletagmanager.com/gtag/js?id=G-S9Z93KZ2Z2
+
+[FAIL] touch_targets
+    Issue: Potential small touch targets found
+
+[PASS] image_alt_text
+    Total images: 0
+    Missing alt text: 0
+
+SECTOR_5
+Path: /tmp/ai2030-repo/browse/sectors/consumer-discretionary.html
+File Size: 50.84 KB
+--------------------------------------------------------------------------------
+
+[PASS] file_size_check
+
+[PASS] aria_landmarks
+    Landmarks: {'header': 1, 'nav': 1, 'main': 1, 'footer': 1}
+
+[FAIL] skip_nav_link
+    Issue: No "skip to content" link found
+
+[FAIL] color_contrast
+    Potential issues: 19
+
+[FAIL] focus_indicators
+    Issue: Found "outline: none" which removes focus indicators
+
+[PASS] lang_attribute
+
+[PASS] viewport_meta
+    Viewport config: width=device-width, initial-scale=1.0
+
+[FAIL] form_labels
+    Issue: 1 input(s) without labels
+    Total inputs: 1
+    Inputs without labels: 1
+
+[FAIL] link_text_quality
+    Issue: 20 link(s) with poor text
+    Total links: 20
+    Links with poor text: 20
+      - href='/' text='(empty)'
+      - href='/' text='(empty)'
+      - href='/browse/countries.html' text='(empty)'
+
+[PASS] heading_hierarchy
+    Total headings: 8
+    Hierarchy sample: [(1, 'N/A'), (2, 'N/A'), (3, 'N/A'), (2, 'N/A'), (3, 'N/A')]
+
+[FAIL] mobile_responsive
+    Issue: Fixed width CSS or missing viewport
+
+[PASS] page_load_concerns
+    File size: 50.84 KB
+    Render-blocking resources: 1
+      - https://www.googletagmanager.com/gtag/js?id=G-S9Z93KZ2Z2
+
+[FAIL] touch_targets
+    Issue: Potential small touch targets found
+
+[PASS] image_alt_text
+    Total images: 0
+    Missing alt text: 0
+
+SECTOR_6
+Path: /tmp/ai2030-repo/browse/sectors/banking.html
+File Size: 51.03 KB
+--------------------------------------------------------------------------------
+
+[PASS] file_size_check
+
+[PASS] aria_landmarks
+    Landmarks: {'header': 1, 'nav': 1, 'main': 1, 'footer': 1}
+
+[FAIL] skip_nav_link
+    Issue: No "skip to content" link found
+
+[FAIL] color_contrast
+    Potential issues: 19
+
+[FAIL] focus_indicators
+    Issue: Found "outline: none" which removes focus indicators
+
+[PASS] lang_attribute
+
+[PASS] viewport_meta
+    Viewport config: width=device-width, initial-scale=1.0
+
+[FAIL] form_labels
+    Issue: 1 input(s) without labels
+    Total inputs: 1
+    Inputs without labels: 1
+
+[FAIL] link_text_quality
+    Issue: 20 link(s) with poor text
+    Total links: 20
+    Links with poor text: 20
+      - href='/' text='(empty)'
+      - href='/' text='(empty)'
+      - href='/browse/countries.html' text='(empty)'
+
+[PASS] heading_hierarchy
+    Total headings: 10
+    Hierarchy sample: [(1, 'N/A'), (2, 'N/A'), (3, 'N/A'), (2, 'N/A'), (3, 'N/A')]
+
+[FAIL] mobile_responsive
+    Issue: Fixed width CSS or missing viewport
+
+[PASS] page_load_concerns
+    File size: 51.03 KB
+    Render-blocking resources: 1
+      - https://www.googletagmanager.com/gtag/js?id=G-S9Z93KZ2Z2
+
+[FAIL] touch_targets
+    Issue: Potential small touch targets found
+
+[PASS] image_alt_text
+    Total images: 0
+    Missing alt text: 0
+
+SECTOR_7
+Path: /tmp/ai2030-repo/browse/sectors/software.html
+File Size: 51.02 KB
+--------------------------------------------------------------------------------
+
+[PASS] file_size_check
+
+[PASS] aria_landmarks
+    Landmarks: {'header': 1, 'nav': 1, 'main': 1, 'footer': 1}
+
+[FAIL] skip_nav_link
+    Issue: No "skip to content" link found
+
+[FAIL] color_contrast
+    Potential issues: 19
+
+[FAIL] focus_indicators
+    Issue: Found "outline: none" which removes focus indicators
+
+[PASS] lang_attribute
+
+[PASS] viewport_meta
+    Viewport config: width=device-width, initial-scale=1.0
+
+[FAIL] form_labels
+    Issue: 1 input(s) without labels
+    Total inputs: 1
+    Inputs without labels: 1
+
+[FAIL] link_text_quality
+    Issue: 20 link(s) with poor text
+    Total links: 20
+    Links with poor text: 20
+      - href='/' text='(empty)'
+      - href='/' text='(empty)'
+      - href='/browse/countries.html' text='(empty)'
+
+[PASS] heading_hierarchy
+    Total headings: 10
+    Hierarchy sample: [(1, 'N/A'), (2, 'N/A'), (3, 'N/A'), (2, 'N/A'), (3, 'N/A')]
+
+[FAIL] mobile_responsive
+    Issue: Fixed width CSS or missing viewport
+
+[PASS] page_load_concerns
+    File size: 51.02 KB
+    Render-blocking resources: 1
+      - https://www.googletagmanager.com/gtag/js?id=G-S9Z93KZ2Z2
+
+[FAIL] touch_targets
+    Issue: Potential small touch targets found
+
+[PASS] image_alt_text
+    Total images: 0
+    Missing alt text: 0
+
+SECTOR_8
+Path: /tmp/ai2030-repo/browse/sectors/energy.html
+File Size: 50.97 KB
+--------------------------------------------------------------------------------
+
+[PASS] file_size_check
+
+[PASS] aria_landmarks
+    Landmarks: {'header': 1, 'nav': 1, 'main': 1, 'footer': 1}
+
+[FAIL] skip_nav_link
+    Issue: No "skip to content" link found
+
+[FAIL] color_contrast
+    Potential issues: 19
+
+[FAIL] focus_indicators
+    Issue: Found "outline: none" which removes focus indicators
+
+[PASS] lang_attribute
+
+[PASS] viewport_meta
+    Viewport config: width=device-width, initial-scale=1.0
+
+[FAIL] form_labels
+    Issue: 1 input(s) without labels
+    Total inputs: 1
+    Inputs without labels: 1
+
+[FAIL] link_text_quality
+    Issue: 20 link(s) with poor text
+    Total links: 20
+    Links with poor text: 20
+      - href='/' text='(empty)'
+      - href='/' text='(empty)'
+      - href='/browse/countries.html' text='(empty)'
+
+[PASS] heading_hierarchy
+    Total headings: 10
+    Hierarchy sample: [(1, 'N/A'), (2, 'N/A'), (3, 'N/A'), (2, 'N/A'), (3, 'N/A')]
+
+[FAIL] mobile_responsive
+    Issue: Fixed width CSS or missing viewport
+
+[PASS] page_load_concerns
+    File size: 50.97 KB
+    Render-blocking resources: 1
+      - https://www.googletagmanager.com/gtag/js?id=G-S9Z93KZ2Z2
+
+[FAIL] touch_targets
+    Issue: Potential small touch targets found
+
+[PASS] image_alt_text
+    Total images: 0
+    Missing alt text: 0
+
+SECTOR_9
+Path: /tmp/ai2030-repo/browse/sectors/semiconductors.html
+File Size: 51.14 KB
+--------------------------------------------------------------------------------
+
+[PASS] file_size_check
+
+[PASS] aria_landmarks
+    Landmarks: {'header': 1, 'nav': 1, 'main': 1, 'footer': 1}
+
+[FAIL] skip_nav_link
+    Issue: No "skip to content" link found
+
+[FAIL] color_contrast
+    Potential issues: 19
+
+[FAIL] focus_indicators
+    Issue: Found "outline: none" which removes focus indicators
+
+[PASS] lang_attribute
+
+[PASS] viewport_meta
+    Viewport config: width=device-width, initial-scale=1.0
+
+[FAIL] form_labels
+    Issue: 1 input(s) without labels
+    Total inputs: 1
+    Inputs without labels: 1
+
+[FAIL] link_text_quality
+    Issue: 20 link(s) with poor text
+    Total links: 20
+    Links with poor text: 20
+      - href='/' text='(empty)'
+      - href='/' text='(empty)'
+      - href='/browse/countries.html' text='(empty)'
+
+[PASS] heading_hierarchy
+    Total headings: 10
+    Hierarchy sample: [(1, 'N/A'), (2, 'N/A'), (3, 'N/A'), (2, 'N/A'), (3, 'N/A')]
+
+[FAIL] mobile_responsive
+    Issue: Fixed width CSS or missing viewport
+
+[PASS] page_load_concerns
+    File size: 51.14 KB
+    Render-blocking resources: 1
+      - https://www.googletagmanager.com/gtag/js?id=G-S9Z93KZ2Z2
+
+[FAIL] touch_targets
+    Issue: Potential small touch targets found
+
+[PASS] image_alt_text
+    Total images: 0
+    Missing alt text: 0
+
+SECTOR_10
+Path: /tmp/ai2030-repo/browse/sectors/retail.html
+File Size: 50.9 KB
+--------------------------------------------------------------------------------
+
+[PASS] file_size_check
+
+[PASS] aria_landmarks
+    Landmarks: {'header': 1, 'nav': 1, 'main': 1, 'footer': 1}
+
+[FAIL] skip_nav_link
+    Issue: No "skip to content" link found
+
+[FAIL] color_contrast
+    Potential issues: 19
+
+[FAIL] focus_indicators
+    Issue: Found "outline: none" which removes focus indicators
+
+[PASS] lang_attribute
+
+[PASS] viewport_meta
+    Viewport config: width=device-width, initial-scale=1.0
+
+[FAIL] form_labels
+    Issue: 1 input(s) without labels
+    Total inputs: 1
+    Inputs without labels: 1
+
+[FAIL] link_text_quality
+    Issue: 20 link(s) with poor text
+    Total links: 20
+    Links with poor text: 20
+      - href='/' text='(empty)'
+      - href='/' text='(empty)'
+      - href='/browse/countries.html' text='(empty)'
+
+[PASS] heading_hierarchy
+    Total headings: 10
+    Hierarchy sample: [(1, 'N/A'), (2, 'N/A'), (3, 'N/A'), (2, 'N/A'), (3, 'N/A')]
+
+[FAIL] mobile_responsive
+    Issue: Fixed width CSS or missing viewport
+
+[PASS] page_load_concerns
+    File size: 50.9 KB
+    Render-blocking resources: 1
+      - https://www.googletagmanager.com/gtag/js?id=G-S9Z93KZ2Z2
+
+[FAIL] touch_targets
+    Issue: Potential small touch targets found
+
+[PASS] image_alt_text
+    Total images: 0
+    Missing alt text: 0
+
+================================================================================
+CRITICAL ISSUES TO ADDRESS
+================================================================================
+
+about:
+  - skip_nav_link: No "skip to content" link found
+  - focus_indicators: Found "outline: none" which removes focus indicators
+  - form_labels: 1 input(s) without labels
+  - link_text_quality: 6 link(s) with poor text
+  - mobile_responsive: Fixed width CSS or missing viewport
+  - touch_targets: Potential small touch targets found
+
+briefs_index:
+  - skip_nav_link: No "skip to content" link found
+  - link_text_quality: 199 link(s) with poor text
+  - mobile_responsive: Fixed width CSS or missing viewport
+  - touch_targets: Potential small touch targets found
+
+browse_companies:
+  - skip_nav_link: No "skip to content" link found
+  - focus_indicators: Found "outline: none" which removes focus indicators
+  - form_labels: 1 input(s) without labels
+  - link_text_quality: 441 link(s) with poor text
+  - mobile_responsive: Fixed width CSS or missing viewport
+  - touch_targets: Potential small touch targets found
+
+browse_data:
+  - skip_nav_link: No "skip to content" link found
+  - focus_indicators: Found "outline: none" which removes focus indicators
+  - form_labels: 1 input(s) without labels
+  - link_text_quality: 16 link(s) with poor text
+  - mobile_responsive: Fixed width CSS or missing viewport
+  - touch_targets: Potential small touch targets found
+
+browse_sectors:
+  - skip_nav_link: No "skip to content" link found
+  - focus_indicators: Found "outline: none" which removes focus indicators
+  - form_labels: 1 input(s) without labels
+  - link_text_quality: 38 link(s) with poor text
+  - mobile_responsive: Fixed width CSS or missing viewport
+  - touch_targets: Potential small touch targets found
+
+country_1:
+  - skip_nav_link: No "skip to content" link found
+  - focus_indicators: Found "outline: none" which removes focus indicators
+  - form_labels: 1 input(s) without labels
+  - link_text_quality: 20 link(s) with poor text
+  - mobile_responsive: Fixed width CSS or missing viewport
+  - touch_targets: Potential small touch targets found
+
+country_10:
+  - skip_nav_link: No "skip to content" link found
+  - focus_indicators: Found "outline: none" which removes focus indicators
+  - form_labels: 1 input(s) without labels
+  - link_text_quality: 20 link(s) with poor text
+  - mobile_responsive: Fixed width CSS or missing viewport
+  - touch_targets: Potential small touch targets found
+
+country_2:
+  - skip_nav_link: No "skip to content" link found
+  - focus_indicators: Found "outline: none" which removes focus indicators
+  - form_labels: 1 input(s) without labels
+  - link_text_quality: 20 link(s) with poor text
+  - mobile_responsive: Fixed width CSS or missing viewport
+  - touch_targets: Potential small touch targets found
+
+country_3:
+  - skip_nav_link: No "skip to content" link found
+  - focus_indicators: Found "outline: none" which removes focus indicators
+  - form_labels: 1 input(s) without labels
+  - link_text_quality: 20 link(s) with poor text
+  - mobile_responsive: Fixed width CSS or missing viewport
+  - touch_targets: Potential small touch targets found
+
+country_4:
+  - skip_nav_link: No "skip to content" link found
+  - link_text_quality: 12 link(s) with poor text
+  - mobile_responsive: Fixed width CSS or missing viewport
+  - touch_targets: Potential small touch targets found
+
+country_5:
+  - skip_nav_link: No "skip to content" link found
+  - link_text_quality: 12 link(s) with poor text
+  - mobile_responsive: Fixed width CSS or missing viewport
+  - touch_targets: Potential small touch targets found
+
+country_6:
+  - skip_nav_link: No "skip to content" link found
+  - focus_indicators: Found "outline: none" which removes focus indicators
+  - form_labels: 1 input(s) without labels
+  - link_text_quality: 20 link(s) with poor text
+  - mobile_responsive: Fixed width CSS or missing viewport
+  - touch_targets: Potential small touch targets found
+
+country_7:
+  - skip_nav_link: No "skip to content" link found
+  - link_text_quality: 12 link(s) with poor text
+  - mobile_responsive: Fixed width CSS or missing viewport
+  - touch_targets: Potential small touch targets found
+
+country_8:
+  - skip_nav_link: No "skip to content" link found
+  - link_text_quality: 12 link(s) with poor text
+  - mobile_responsive: Fixed width CSS or missing viewport
+  - touch_targets: Potential small touch targets found
+
+country_9:
+  - skip_nav_link: No "skip to content" link found
+  - link_text_quality: 12 link(s) with poor text
+  - mobile_responsive: Fixed width CSS or missing viewport
+  - touch_targets: Potential small touch targets found
+
+homepage:
+  - skip_nav_link: No "skip to content" link found
+  - focus_indicators: Found "outline: none" which removes focus indicators
+  - form_labels: 2 input(s) without labels
+  - link_text_quality: 13 link(s) with poor text
+  - mobile_responsive: Fixed width CSS or missing viewport
+  - touch_targets: Potential small touch targets found
+
+sector_1:
+  - skip_nav_link: No "skip to content" link found
+  - focus_indicators: Found "outline: none" which removes focus indicators
+  - form_labels: 1 input(s) without labels
+  - link_text_quality: 20 link(s) with poor text
+  - mobile_responsive: Fixed width CSS or missing viewport
+  - touch_targets: Potential small touch targets found
+
+sector_10:
+  - skip_nav_link: No "skip to content" link found
+  - focus_indicators: Found "outline: none" which removes focus indicators
+  - form_labels: 1 input(s) without labels
+  - link_text_quality: 20 link(s) with poor text
+  - mobile_responsive: Fixed width CSS or missing viewport
+  - touch_targets: Potential small touch targets found
+
+sector_2:
+  - skip_nav_link: No "skip to content" link found
+  - focus_indicators: Found "outline: none" which removes focus indicators
+  - form_labels: 1 input(s) without labels
+  - link_text_quality: 20 link(s) with poor text
+  - mobile_responsive: Fixed width CSS or missing viewport
+  - touch_targets: Potential small touch targets found
+
+sector_3:
+  - skip_nav_link: No "skip to content" link found
+  - focus_indicators: Found "outline: none" which removes focus indicators
+  - form_labels: 1 input(s) without labels
+  - link_text_quality: 20 link(s) with poor text
+  - mobile_responsive: Fixed width CSS or missing viewport
+  - touch_targets: Potential small touch targets found
+
+sector_4:
+  - skip_nav_link: No "skip to content" link found
+  - focus_indicators: Found "outline: none" which removes focus indicators
+  - form_labels: 1 input(s) without labels
+  - link_text_quality: 20 link(s) with poor text
+  - mobile_responsive: Fixed width CSS or missing viewport
+  - touch_targets: Potential small touch targets found
+
+sector_5:
+  - skip_nav_link: No "skip to content" link found
+  - focus_indicators: Found "outline: none" which removes focus indicators
+  - form_labels: 1 input(s) without labels
+  - link_text_quality: 20 link(s) with poor text
+  - mobile_responsive: Fixed width CSS or missing viewport
+  - touch_targets: Potential small touch targets found
+
+sector_6:
+  - skip_nav_link: No "skip to content" link found
+  - focus_indicators: Found "outline: none" which removes focus indicators
+  - form_labels: 1 input(s) without labels
+  - link_text_quality: 20 link(s) with poor text
+  - mobile_responsive: Fixed width CSS or missing viewport
+  - touch_targets: Potential small touch targets found
+
+sector_7:
+  - skip_nav_link: No "skip to content" link found
+  - focus_indicators: Found "outline: none" which removes focus indicators
+  - form_labels: 1 input(s) without labels
+  - link_text_quality: 20 link(s) with poor text
+  - mobile_responsive: Fixed width CSS or missing viewport
+  - touch_targets: Potential small touch targets found
+
+sector_8:
+  - skip_nav_link: No "skip to content" link found
+  - focus_indicators: Found "outline: none" which removes focus indicators
+  - form_labels: 1 input(s) without labels
+  - link_text_quality: 20 link(s) with poor text
+  - mobile_responsive: Fixed width CSS or missing viewport
+  - touch_targets: Potential small touch targets found
+
+sector_9:
+  - skip_nav_link: No "skip to content" link found
+  - focus_indicators: Found "outline: none" which removes focus indicators
+  - form_labels: 1 input(s) without labels
+  - link_text_quality: 20 link(s) with poor text
+  - mobile_responsive: Fixed width CSS or missing viewport
+  - touch_targets: Potential small touch targets found
+
+================================================================================
+GOOGLE SEARCH CONSOLE RELEVANT FINDINGS
+================================================================================
+  [about] Not mobile-responsive
+  [briefs_index] Accessibility: Missing <main> element
+  [briefs_index] Accessibility: Missing <nav> element
+  [briefs_index] Not mobile-responsive
+  [browse_companies] Not mobile-responsive
+  [browse_data] Invalid heading hierarchy
+  [browse_data] Not mobile-responsive
+  [browse_sectors] Invalid heading hierarchy
+  [browse_sectors] Not mobile-responsive
+  [country_10] Not mobile-responsive
+  [country_1] Not mobile-responsive
+  [country_2] Not mobile-responsive
+  [country_3] Not mobile-responsive
+  [country_4] Not mobile-responsive
+  [country_5] Not mobile-responsive
+  [country_6] Not mobile-responsive
+  [country_7] Not mobile-responsive
+  [country_8] Not mobile-responsive
+  [country_9] Not mobile-responsive
+  [homepage] Invalid heading hierarchy
+  [homepage] Not mobile-responsive
+  [sector_10] Not mobile-responsive
+  [sector_1] Not mobile-responsive
+  [sector_2] Not mobile-responsive
+  [sector_3] Not mobile-responsive
+  [sector_4] Not mobile-responsive
+  [sector_5] Not mobile-responsive
+  [sector_6] Not mobile-responsive
+  [sector_7] Not mobile-responsive
+  [sector_8] Not mobile-responsive
+  [sector_9] Not mobile-responsive
+
+================================================================================
