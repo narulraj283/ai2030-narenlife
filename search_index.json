@@ -3151,5 +3151,197 @@
     "audience": "Edition 4",
     "country": "Serbia",
     "description": "Examination of major Serbian technology companies, energy sector dynamics, bioinformatics leadership, EU accession implications for technology development, and competitive positioning"
+  },
+  {
+    "title": "Costa Rica: AI & Tech Transformation \u2014 CEO Edition",
+    "url": "/articles/countries-costa-rica-costa-rica-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Investor",
+    "country": "Costa Rica",
+    "description": "Strategic assessment of Costa Rica as a high-tech FDI destination, examining GDP growth, free trade zones, medical device leadership, and investment climate for executive decision-making."
+  },
+  {
+    "title": "Costa Rica: Wages, Jobs & Nearshoring Boom \u2014 Employee Edition",
+    "url": "/articles/countries-costa-rica-costa-rica-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employees & Professionals",
+    "country": "Costa Rica",
+    "description": "Comprehensive guide for technology professionals evaluating Costa Rica as a career destination, covering salaries, major employers, cost of living, and growth opportunities in nearshoring."
+  },
+  {
+    "title": "Costa Rica: Strategic Development & Policy Framework \u2014 Government Edition",
+    "url": "/articles/countries-costa-rica-costa-rica-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policymakers",
+    "country": "Costa Rica",
+    "description": "Policy analysis for government officials and development agencies examining Costa Rica's tech ecosystem strategy, CINDE's role, free trade zones, university partnerships, and sustainable growth model."
+  },
+  {
+    "title": "Costa Rica: Small Business Opportunities in Tech Ecosystem \u2014 Small Business Owner Edition",
+    "url": "/articles/countries-costa-rica-costa-rica-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owners",
+    "country": "Costa Rica",
+    "description": "Guide for entrepreneurs and small business owners exploring opportunities in Costa Rica's tech ecosystem, covering free trade zones, nearshoring services, ecotourism-tech combination, and growth pathw"
+  },
+  {
+    "title": "Lithuania's Economic Foundation and IT Sector Growth: The Baltic Tech Powerhouse",
+    "url": "/articles/countries-lithuania-lithuania-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Business Leadership",
+    "country": "Lithuania",
+    "description": "Explore Lithuania's robust economic performance, IT sector expansion, and how it has become a regional leader in technology innovation with exceptional wage competitiveness for developers."
+  },
+  {
+    "title": "Vilnius Tech Hub and the Ecosystem: From Startup Incubation to Global Unicorns",
+    "url": "/articles/countries-lithuania-lithuania-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee & Workforce",
+    "country": "Lithuania",
+    "description": "Discover Vilnius's transformation into a major European tech hub, the role of Vilnius Tech Park, and how the city became a launchpad for billion-euro companies like Vinted, Tesonet, and emerging finte"
+  },
+  {
+    "title": "Kilo Health and TransferGo: Diverse Success Models in Health Tech and Fintech",
+    "url": "/articles/countries-lithuania-lithuania-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policy",
+    "country": "Lithuania",
+    "description": "Examine two of Lithuania's most innovative companies: Kilo Health's venture studio model transforming wellness globally and TransferGo's fintech revolution in cross-border payments."
+  },
+  {
+    "title": "AI Strategy and Future Outlook: Lithuania's Path to Becoming an AI Leader",
+    "url": "/articles/countries-lithuania-lithuania-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner",
+    "country": "Lithuania",
+    "description": "Investigate Lithuania's ambitious AI strategy, EU investments in the LitAI center, education initiatives, and how EU membership advantages position the country as a potential AI innovation leader."
+  },
+  {
+    "title": "Estonia's Digital Transformation: From e-Government Pioneer to Tech Superpower",
+    "url": "/articles/countries-estonia-estonia-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Business Leadership",
+    "country": "Estonia",
+    "description": "Estonia's Digital Transformation: From e-Government Pioneer to Tech Superpower"
+  },
+  {
+    "title": "The Estonian Tech Unicorn Era: Skype, Wise, Bolt, and the Next Generation of Startups",
+    "url": "/articles/countries-estonia-estonia-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee & Workforce",
+    "country": "Estonia",
+    "description": "The Estonian Tech Unicorn Era: Skype, Wise, Bolt, and the Next Generation of Startups"
+  },
+  {
+    "title": "Tallinn's Innovation Ecosystem: How a Capital of 400,000 Became Europe's 9th Largest Startup Hub",
+    "url": "/articles/countries-estonia-estonia-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policy",
+    "country": "Estonia",
+    "description": "Tallinn's Innovation Ecosystem: How a Capital of 400,000 Became Europe's 9th Largest Startup Hub"
+  },
+  {
+    "title": "AI, Cybersecurity, and Digital Sovereignty: Estonia's Strategic Tech Investments and Future Vision",
+    "url": "/articles/countries-estonia-estonia-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner",
+    "country": "Estonia",
+    "description": "AI, Cybersecurity, and Digital Sovereignty: Estonia's Strategic Tech Investments and Future Vision"
+  },
+  {
+    "title": "Latvia's Economic Landscape and Digital Transformation",
+    "url": "/articles/countries-latvia-latvia-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Business Leadership",
+    "country": "Latvia",
+    "description": "Examining Latvia's GDP, wage structure, and the role of technology in driving economic growth within the EU."
+  },
+  {
+    "title": "Riga's Tech Hub: Infrastructure, Companies, and Innovation Ecosystem",
+    "url": "/articles/countries-latvia-latvia-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee & Workforce",
+    "country": "Latvia",
+    "description": "Deep dive into Riga as the capital's transformation into a European technology center with major companies and startup acceleration."
+  },
+  {
+    "title": "Educational Excellence and Research: Universities Driving Innovation",
+    "url": "/articles/countries-latvia-latvia-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policy",
+    "country": "Latvia",
+    "description": "Analysis of University of Latvia and Riga Technical University's role in developing technical talent and advancing research."
+  },
+  {
+    "title": "Baltic Cooperation, EU Integration, and Global Technology Markets",
+    "url": "/articles/countries-latvia-latvia-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner",
+    "country": "Latvia",
+    "description": "Exploring Latvia's regional partnerships, EU membership advantages, and access to global markets for technology companies."
+  },
+  {
+    "title": "Costa Rica: AI & Tech Transformation \u2014 CEO Edition",
+    "url": "/articles/countries-costa-rica-costa-rica-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Investor",
+    "country": "Costa Rica",
+    "description": "Strategic assessment of Costa Rica as a high-tech FDI destination, examining GDP growth, free trade zones, medical device leadership, and investment climate for executive decision-making."
+  },
+  {
+    "title": "Costa Rica: Wages, Jobs & Nearshoring Boom \u2014 Employee Edition",
+    "url": "/articles/countries-costa-rica-costa-rica-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employees & Professionals",
+    "country": "Costa Rica",
+    "description": "Comprehensive guide for technology professionals evaluating Costa Rica as a career destination, covering salaries, major employers, cost of living, and growth opportunities in nearshoring."
+  },
+  {
+    "title": "Costa Rica: Strategic Development & Policy Framework \u2014 Government Edition",
+    "url": "/articles/countries-costa-rica-costa-rica-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policymakers",
+    "country": "Costa Rica",
+    "description": "Policy analysis for government officials and development agencies examining Costa Rica's tech ecosystem strategy, CINDE's role, free trade zones, university partnerships, and sustainable growth model."
+  },
+  {
+    "title": "Costa Rica: Small Business Opportunities in Tech Ecosystem \u2014 Small Business Owner Edition",
+    "url": "/articles/countries-costa-rica-costa-rica-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owners",
+    "country": "Costa Rica",
+    "description": "Guide for entrepreneurs and small business owners exploring opportunities in Costa Rica's tech ecosystem, covering free trade zones, nearshoring services, ecotourism-tech combination, and growth pathw"
+  },
+  {
+    "title": "Uruguay AI & Tech Strategy: Market Insights for CEOs",
+    "url": "/articles/countries-uruguay-uruguay-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO Edition",
+    "country": "Uruguay",
+    "description": "Strategic analysis of Uruguay's technology sector, economic positioning, and investment climate for executive decision-makers. Covers dLocal unicorn, Globant operations, technology exports, AI strateg"
+  },
+  {
+    "title": "Technology Careers in Uruguay: Salaries, Skills & Opportunities",
+    "url": "/articles/countries-uruguay-uruguay-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee Edition",
+    "country": "Uruguay",
+    "description": "Comprehensive guide to employment opportunities in Uruguay's fastest-growing technology sector. Covers wages in UYU/USD, skill demand, career pathways, education options, and quality of life factors f"
+  },
+  {
+    "title": "Uruguay's Digital Governance & AI Strategy: Government Leaders' Roadmap",
+    "url": "/articles/countries-uruguay-uruguay-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government Edition",
+    "country": "Uruguay",
+    "description": "Policy and governance analysis covering Uruguay's democratic institutions, digital transformation achievements, Plan Ceibal education program, national AI strategy, and regional leadership positioning"
+  },
+  {
+    "title": "Starting & Growing a Tech Business in Uruguay: Small Business Guide",
+    "url": "/articles/countries-uruguay-uruguay-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner Edition",
+    "country": "Uruguay",
+    "description": "Practical guide for entrepreneurs launching and scaling technology ventures in Uruguay. Covers business setup, financing options, operational costs, market access, export opportunities, and growth str"
   }
 ]
