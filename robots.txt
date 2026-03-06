@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /admin.html
+Disallow: /admin/
 
 Sitemap: https://ai2030report.com/sitemap.xml
