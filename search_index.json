@@ -1967,5 +1967,165 @@
     "audience": "Small Business Owner",
     "country": "Israel",
     "description": "AI guide for Israeli SMEs. Five tools with shekel ROI, Israeli-built platforms, Innovation Authority grants, and practical steps."
+  },
+  {
+    "title": "Sweden AI 2030: CEO Brief",
+    "url": "/articles/countries-sweden-sweden-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Business Leadership",
+    "country": "Sweden",
+    "description": "How AI is reshaping Europe's innovation powerhouse. Ericsson AI Factory, Klarna's 700 FTE replacement, Spotify, IKEA, and the Nordic model advantage."
+  },
+  {
+    "title": "Sweden AI 2030: Employee Brief",
+    "url": "/articles/countries-sweden-sweden-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee & Workforce",
+    "country": "Sweden",
+    "description": "Your career in Europe's AI capital. Nordic model protections, SEK-denominated reskilling, Sana Labs free AI, and the Klarna workforce transformation."
+  },
+  {
+    "title": "Sweden AI 2030: Government Brief",
+    "url": "/articles/countries-sweden-sweden-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policy",
+    "country": "Sweden",
+    "description": "Policy brief for Swedish policymakers. National AI strategy assessment, Nordic model sustainability, green AI hub positioning, and six recommendations."
+  },
+  {
+    "title": "Sweden AI 2030: Small Business Owner Brief",
+    "url": "/articles/countries-sweden-sweden-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner",
+    "country": "Sweden",
+    "description": "AI guide for Swedish SMEs. Five tools with SEK ROI, Fortnox AI accounting, Vinnova grants, and practical steps for Sweden's highest-cost labor market."
+  },
+  {
+    "title": "Norway AI 2030: CEO Brief",
+    "url": "/articles/countries-norway-norway-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Business Leadership",
+    "country": "Norway",
+    "description": "How AI is transforming energy, maritime, and finance. Equinor, Kongsberg, NBIM, and Norway&rsquo;s pivot from oil wealth to AI infrastructure leadership in a NOK 2.1T economy."
+  },
+  {
+    "title": "Norway AI 2030: Employee Brief",
+    "url": "/articles/countries-norway-norway-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee & Workforce",
+    "country": "Norway",
+    "description": "Your career in the Nordic AI economy. Sector risk map, three real transitions in Norwegian energy and maritime, NOK-denominated reskilling options and salaries."
+  },
+  {
+    "title": "Norway AI 2030: Government Brief",
+    "url": "/articles/countries-norway-norway-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policy",
+    "country": "Norway",
+    "description": "Policy brief for Norwegian policymakers. Energy transition acceleration, maritime AI leadership, sovereign wealth AI integration, and seven recommendations for 5.4M Norwegians."
+  },
+  {
+    "title": "Norway AI 2030: Small Business Owner Brief",
+    "url": "/articles/countries-norway-norway-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner",
+    "country": "Norway",
+    "description": "AI guide for Norwegian SMEs. Five tools with NOK ROI, maritime and manufacturing applications, sovereign cloud compliance, and practical implementation steps."
+  },
+  {
+    "title": "Ireland AI 2030: CEO Brief",
+    "url": "/articles/countries-ireland-ireland-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Business Leadership",
+    "country": "Ireland",
+    "description": "How AI is reshaping Ireland's \u20ac1.4T economy. FDI hub advantage, energy constraints, and the \u20ac250B opportunity. Pharma, fintech, and agritech transformation."
+  },
+  {
+    "title": "Ireland AI 2030: Employee Brief",
+    "url": "/articles/countries-ireland-ireland-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee & Workforce",
+    "country": "Ireland",
+    "description": "Your career in Europe's AI hub. Sector risk map, real career transitions from Dublin pharma to Galway agritech, and reskilling options."
+  },
+  {
+    "title": "Ireland AI 2030: Government Brief",
+    "url": "/articles/countries-ireland-ireland-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policy",
+    "country": "Ireland",
+    "description": "Policy brief for Irish policymakers. FDI deployment advantage, workforce impact, energy constraints, and six policy recommendations for the \u20ac250B opportunity."
+  },
+  {
+    "title": "Ireland AI 2030: Small Business Owner Brief",
+    "url": "/articles/countries-ireland-ireland-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner",
+    "country": "Ireland",
+    "description": "AI guide for Irish small businesses. Five tools with ROI math, practical steps by industry, funding options, and how to compete against multinationals."
+  },
+  {
+    "title": "Argentina AI 2030: CEO Brief",
+    "url": "/articles/countries-argentina-argentina-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Business Leadership",
+    "country": "Argentina",
+    "description": "How AI is reshaping Latin America's second-largest economy. Globant, Mercado Libre, Ual\u00e1, and the crisis-tested tech ecosystem transforming Argentina's $483B economy."
+  },
+  {
+    "title": "Argentina AI 2030: Employee Brief",
+    "url": "/articles/countries-argentina-argentina-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee & Workforce",
+    "country": "Argentina",
+    "description": "Your career in Latin America's AI boom. Sector risk map, real transitions in Buenos Aires fintech and C\u00f3rdoba tech, peso/dollar salary negotiation guide."
+  },
+  {
+    "title": "Argentina AI 2030: Government Brief",
+    "url": "/articles/countries-argentina-argentina-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policy",
+    "country": "Argentina",
+    "description": "Policy brief for Argentine policymakers. Tech talent retention, precision agriculture AI strategy, and six recommendations for stabilizing a 47M-person economy through technology."
+  },
+  {
+    "title": "Argentina AI 2030: Small Business Owner Brief",
+    "url": "/articles/countries-argentina-argentina-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner",
+    "country": "Argentina",
+    "description": "AI guide for Argentine small businesses. Five tools with peso/dollar ROI, WhatsApp automation, inflation hedging, and practical steps for peso-denominated enterprises."
+  },
+  {
+    "title": "Colombia AI 2030: CEO Brief",
+    "url": "/articles/countries-colombia-colombia-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Business Leadership",
+    "country": "Colombia",
+    "description": "How AI is transforming Latin America's fourth-largest economy. Rappi, Bancolombia, Ecopetrol, and the nearshoring-fintech revolution in Colombia's $343B economy."
+  },
+  {
+    "title": "Colombia AI 2030: Employee Brief",
+    "url": "/articles/countries-colombia-colombia-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee & Workforce",
+    "country": "Colombia",
+    "description": "Your career in Latin America's AI boom. Sector risk map, real transitions in Medell\u00edn fintech and coffee cooperatives, peso-denominated reskilling options."
+  },
+  {
+    "title": "Colombia AI 2030: Government Brief",
+    "url": "/articles/countries-colombia-colombia-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policy",
+    "country": "Colombia",
+    "description": "Policy brief for Colombian policymakers. Nearshoring strategy, peace dividend AI, rural infrastructure, and six recommendations for 52M Colombians."
+  },
+  {
+    "title": "Colombia AI 2030: Small Business Owner Brief",
+    "url": "/articles/countries-colombia-colombia-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner",
+    "country": "Colombia",
+    "description": "AI guide for Colombian small businesses. Five tools with peso ROI, WhatsApp automation, nearshoring opportunities, and practical steps for exporters and service businesses."
   }
 ]
