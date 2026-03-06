@@ -81,9 +81,20 @@ html.light-theme .site-header{background:rgba(245,245,247,0.95)!important}
 @media(max-width:768px){.article-header h1{font-size:1.75rem}.article-content{font-size:1rem}.nav-links{display:none!important;position:fixed!important;top:0!important;right:0!important;width:280px!important;height:100vh!important;background:var(--bg-secondary)!important;flex-direction:column!important;padding:5rem 2rem 2rem!important;z-index:999!important;box-shadow:-5px 0 15px rgba(0,0,0,0.3)!important;border-left:1px solid var(--border)!important}.nav-links.active{display:flex!important}.nav-toggle{display:flex!important;flex-direction:column;gap:5px;z-index:1001;padding:0.5rem}.nav-toggle span{display:block;width:24px;height:2px;background:var(--text-primary)}.mobile-overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);z-index:998}.mobile-overlay.active{display:block}body.nav-open{overflow:hidden!important}.email-capture-form{flex-direction:column}.share-btn{padding:0.6rem 1rem;font-size:0.85rem}.sibling-pill{padding:0.5rem 1rem;font-size:0.85rem}}
 
 .skip-link:focus { position: fixed !important; left: 16px !important; top: 16px !important; width: auto !important; height: auto !important; overflow: visible !important; }
+
+.brief-download-btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.65rem 1.25rem;background:linear-gradient(135deg,#3b82f6,#6d28d9);color:#fff;border-radius:0.5rem;font-weight:600;font-size:0.9rem;text-decoration:none;transition:transform 0.2s,box-shadow 0.2s;box-shadow:0 2px 8px rgba(59,130,246,0.3)}
+.brief-download-btn:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(59,130,246,0.4);color:#fff}
+.brief-download-btn svg{width:18px;height:18px;fill:currentColor}
+.brief-download-bar{display:flex;align-items:center;gap:1rem;padding:1rem 1.5rem;margin:1rem auto 1.5rem;max-width:900px;background:rgba(59,130,246,0.08);border:1px solid rgba(59,130,246,0.2);border-radius:0.75rem;flex-wrap:wrap}
+.brief-download-bar p{margin:0;color:var(--text-secondary,#9494a8);font-size:0.9rem;flex:1}
+.brief-download-bar p svg{width:18px;height:18px;fill:currentColor;vertical-align:middle}
+.brief-inline-link{display:inline-flex;align-items:center;gap:0.3rem;color:#3b82f6;font-weight:500;font-size:0.85rem;text-decoration:none}
+.brief-inline-link:hover{text-decoration:underline}
+
 </style>
 </head>
 <body>
+<div class="reading-progress" id="readingProgress"></div>
 <header class="site-header"><div class="header-inner">
 <a href="/" class="site-logo">The 2030 Intelligence Report</a>
 <nav><ul class="nav-links">
@@ -217,11 +228,7 @@ html.light-theme .site-header{background:rgba(245,245,247,0.95)!important}
 <footer class="site-footer"><p>&copy; 2025-2026 The 2030 Intelligence Report. Data-driven AI disruption forecasts.</p><p style="margin-top:0.5rem;font-size:0.85rem;text-align:center;color:#999"><a href="/contact.html" style="color:#60a5fa;text-decoration:none">Contact</a> &bull; <a href="/privacy.html" style="color:#60a5fa;text-decoration:none">Privacy</a> &bull; <a href="/terms.html" style="color:#60a5fa;text-decoration:none">Terms</a></p>
 </footer>
 <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8593;</button>
-<script>
-window.addEventListener('scroll',function(){var h=document.documentElement,b=document.body;var pct=(h.scrollTop||b.scrollTop)/((h.scrollHeight||b.scrollHeight)-h.clientHeight)*100;document.getElementById('readingProgress').style.width=pct+'%';document.getElementById('scrollTop').style.display=pct>20?'flex':'none'});
-(function(){var t=document.getElementById('themeToggle');if(localStorage.getItem('theme')==='light')document.documentElement.classList.add('light-theme');t.addEventListener('click',function(){document.documentElement.classList.toggle('light-theme');localStorage.setItem('theme',document.documentElement.classList.contains('light-theme')?'light':'dark')});})();
-(function(){var tog=document.querySelector('.nav-toggle'),nav=document.querySelector('.nav-links'),ov=document.getElementById('mobileOverlay');if(tog)tog.addEventListener('click',function(){nav.classList.toggle('active');ov.classList.toggle('active');document.body.classList.toggle('nav-open')});if(ov)ov.addEventListener('click',function(){nav.classList.remove('active');ov.classList.remove('active');document.body.classList.remove('nav-open')});})();
-</script>
+
 
 <script>
 document.addEventListener('click', function(e) {
