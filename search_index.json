@@ -2287,5 +2287,165 @@
     "audience": "Small Business Owner",
     "country": "Portugal",
     "description": "AI guide for Portuguese small businesses. Five tools with euro ROI, restaurant/manufacturing/wine case studies, IAPMEI grants, practical steps for competitive advantage."
+  },
+  {
+    "title": "Egypt AI 2030: CEO Brief",
+    "url": "/articles/countries-egypt-egypt-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Business Leadership",
+    "country": "Egypt",
+    "description": "How AI is reshaping the Nile Valley and MENA. Suez Canal modernization, fintech revolution, $42.7B unlocked value by 2030, MNT-Halan, Fawry, and Egypt as Africa&rsquo;s #1 AI leader."
+  },
+  {
+    "title": "Egypt AI 2030: Employee Brief",
+    "url": "/articles/countries-egypt-egypt-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee & Workforce",
+    "country": "Egypt",
+    "description": "Your career in Egypt&rsquo;s AI revolution. Sector risk map, Cairo fintech opportunities, Alexandria precision agriculture, EGP-denominated reskilling options."
+  },
+  {
+    "title": "Egypt AI 2030: Government Brief",
+    "url": "/articles/countries-egypt-egypt-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policy",
+    "country": "Egypt",
+    "description": "Policy brief for Egyptian policymakers. Suez Canal AI modernization, precision agriculture for 118M population, fintech-driven financial inclusion, and six strategic recommendations."
+  },
+  {
+    "title": "Egypt AI 2030: Small Business Owner Brief",
+    "url": "/articles/countries-egypt-egypt-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner",
+    "country": "Egypt",
+    "description": "AI guide for Egyptian small business owners. Five tools with EGP ROI, WhatsApp automation, Paymob integration, fintech access, and practical steps for Cairo, Alexandria, Port Said."
+  },
+  {
+    "title": "Kenya AI 2030: CEO Brief",
+    "url": "/articles/countries-kenya-kenya-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Business Leadership",
+    "country": "Kenya",
+    "description": "M-Pesa disruption and Konza opportunity. How Silicon Savannah companies leapfrog with AI. Safaricom, Equity, and the Konza Technopolis advantage."
+  },
+  {
+    "title": "Kenya AI 2030: Employee Brief",
+    "url": "/articles/countries-kenya-kenya-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee & Workforce",
+    "country": "Kenya",
+    "description": "Your career in Kenya's Silicon Savannah. Tech salary premiums (KES 2.5M/year), remote work arbitrage, diaspora equation, and reskilling pathways."
+  },
+  {
+    "title": "Kenya AI 2030: Government Brief",
+    "url": "/articles/countries-kenya-kenya-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policy",
+    "country": "Kenya",
+    "description": "Policy brief for Kenya policymakers. M-Pesa fintech regulation, Konza Technopolis strategy, agricultural AI, and six recommendations for 58M Kenyans."
+  },
+  {
+    "title": "Kenya AI 2030: Small Business Owner Brief",
+    "url": "/articles/countries-kenya-kenya-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner",
+    "country": "Kenya",
+    "description": "AI guide for Kenyan small businesses. Five tools with KES ROI, M-Pesa integration, WhatsApp automation, and practical steps for Silicon Savannah spillover."
+  },
+  {
+    "title": "Chile AI 2030: CEO Brief",
+    "url": "/articles/countries-chile-chile-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Business Leadership",
+    "country": "Chile",
+    "description": "Mining automation, food-tech unicorns, and the Atacama observatory economy. Copper/lithium AI strategies, NotCo/Betterfly models, and CORFO co-funding up to $7M."
+  },
+  {
+    "title": "Chile AI 2030: Employee Brief",
+    "url": "/articles/countries-chile-chile-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee & Workforce",
+    "country": "Chile",
+    "description": "AI careers in Santiago startups and mining automation. Salary analysis, NotCo/Betterfly hiring, sector risk map, and reskilling pathways for Chilean tech workers."
+  },
+  {
+    "title": "Chile AI 2030: Government Brief",
+    "url": "/articles/countries-chile-chile-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policy",
+    "country": "Chile",
+    "description": "Policy framework for mining automation, startup ecosystem, and regional AI hubs. Infrastructure, reskilling, Atacama observatory leverage, and indigenous AI governance."
+  },
+  {
+    "title": "Chile AI 2030: Small Business Owner Brief",
+    "url": "/articles/countries-chile-chile-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner",
+    "country": "Chile",
+    "description": "AI tools for Chilean SMEs with CLP ROI analysis. CORFO funding strategies, wine/mining/food sector applications, and five practical implementation steps."
+  },
+  {
+    "title": "Taiwan AI 2030: CEO Brief",
+    "url": "/articles/countries-taiwan-taiwan-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Business Leadership",
+    "country": "Taiwan",
+    "description": "Taiwan's AI hardware monopoly: TSMC 71% foundry share, Foxconn/Quanta AI servers, geopolitical reckoning, and existential strategy."
+  },
+  {
+    "title": "Taiwan AI 2030: Employee Brief",
+    "url": "/articles/countries-taiwan-taiwan-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee & Workforce",
+    "country": "Taiwan",
+    "description": "Career guide for Taiwan AI engineers: TSMC/Foxconn salary ranges, brain drain vs. domestic opportunities, and how staying in Taiwan builds unique credentials."
+  },
+  {
+    "title": "Taiwan AI 2030: Government Brief",
+    "url": "/articles/countries-taiwan-taiwan-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policy",
+    "country": "Taiwan",
+    "description": "Policy brief for Taiwan policymakers: semiconductor concentration risk, geopolitical vulnerability, resilience recommendations, and AI ecosystem strategy."
+  },
+  {
+    "title": "Taiwan AI 2030: Small Business Owner Brief",
+    "url": "/articles/countries-taiwan-taiwan-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner",
+    "country": "Taiwan",
+    "description": "How Taiwan's small business owners capture the semiconductor boom: 5 supply chain opportunities, startup path to global scale, and practical next steps."
+  },
+  {
+    "title": "Austria AI 2030: CEO Brief",
+    "url": "/articles/countries-austria-austria-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Business Leadership",
+    "country": "Austria",
+    "description": "How AI is reshaping Europe&rsquo;s precision economy. Mittelstand competitive advantage, Tricentis and Vienna unicorns, EU AI Act positioning, \u20ac1.5B AI investment strategy."
+  },
+  {
+    "title": "Austria AI 2030: Employee Brief",
+    "url": "/articles/countries-austria-austria-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee & Workforce",
+    "country": "Austria",
+    "description": "Your career in Austria&rsquo;s tech transformation. Sector disruption map, manufacturing to finance, salary premiums for AI skills (\u20ac92,500/year), reskilling pathways."
+  },
+  {
+    "title": "Austria AI 2030: Government Brief",
+    "url": "/articles/countries-austria-austria-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policy",
+    "country": "Austria",
+    "description": "Policy brief for Austrian policymakers. HPC infrastructure gaps, Mittelstand adoption, talent pipeline shortage, six recommendations for \u20ac521.64B economy."
+  },
+  {
+    "title": "Austria AI 2030: Small Business Owner Brief",
+    "url": "/articles/countries-austria-austria-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner",
+    "country": "Austria",
+    "description": "AI guide for Austrian Mittelstand. Five tools with euro ROI, manufacturing automation, tourism optimization, EU AI Act compliance, government subsidies."
   }
 ]
