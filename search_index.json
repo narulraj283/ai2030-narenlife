@@ -2127,5 +2127,165 @@
     "audience": "Small Business Owner",
     "country": "Colombia",
     "description": "AI guide for Colombian small businesses. Five tools with peso ROI, WhatsApp automation, nearshoring opportunities, and practical steps for exporters and service businesses."
+  },
+  {
+    "title": "Vietnam AI 2030: CEO Brief",
+    "url": "/articles/countries-vietnam-vietnam-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Business Leadership",
+    "country": "Vietnam",
+    "description": "How AI is transforming Southeast Asia's semiconductor and fintech hub. FPT Software, VinAI, Viettel, and VNG leading Vietnam's AI transformation in a $514B economy."
+  },
+  {
+    "title": "Vietnam AI 2030: Employee Brief",
+    "url": "/articles/countries-vietnam-vietnam-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee & Workforce",
+    "country": "Vietnam",
+    "description": "Your career in Vietnam's AI boom. Sector risk map, real transitions in Ho Chi Minh City manufacturing and Hanoi tech, VND-denominated reskilling options."
+  },
+  {
+    "title": "Vietnam AI 2030: Government Brief",
+    "url": "/articles/countries-vietnam-vietnam-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policy",
+    "country": "Vietnam",
+    "description": "Policy brief for Vietnamese policymakers. AI Law implementation, semiconductor strategy, agricultural AI opportunity, and six recommendations for 101.6M Vietnamese."
+  },
+  {
+    "title": "Vietnam AI 2030: Small Business Owner Brief",
+    "url": "/articles/countries-vietnam-vietnam-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner",
+    "country": "Vietnam",
+    "description": "AI guide for Vietnamese small business owners. Five tools with VND ROI, Viettel quality systems, VNG chatbots, and practical steps for manufacturing, e-commerce, and hospitality."
+  },
+  {
+    "title": "Philippines AI 2030: CEO Brief",
+    "url": "/articles/countries-philippines-philippines-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Business Leadership",
+    "country": "Philippines",
+    "description": "BPO disruption, fintech opportunity, ASEAN hub positioning. GCash/Maya IPOs, 1.8M jobs at risk, transformation playbook for Philippines CEOs."
+  },
+  {
+    "title": "Philippines AI 2030: Employee Brief",
+    "url": "/articles/countries-philippines-philippines-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee & Workforce",
+    "country": "Philippines",
+    "description": "From BPO to fintech, healthcare AI, salary transformation. Career transitions in Cebu, Metro Manila, Makati, reskilling options, remote work path."
+  },
+  {
+    "title": "Philippines AI 2030: Government Brief",
+    "url": "/articles/countries-philippines-philippines-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policy",
+    "country": "Philippines",
+    "description": "Policy brief for Philippine government. BPO disruption, 500K-800K jobs at risk, ASEAN Chair opportunity, fintech IPO support, strategic recommendations."
+  },
+  {
+    "title": "Philippines AI 2030: Small Business Owner Brief",
+    "url": "/articles/countries-philippines-philippines-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner",
+    "country": "Philippines",
+    "description": "AI guide for Philippine SMBs. GCash analytics, WhatsApp automation, fintech microloans, peso ROI, practical steps for sari-sari to import-export businesses."
+  },
+  {
+    "title": "Malaysia AI 2030: CEO Brief",
+    "url": "/articles/countries-malaysia-malaysia-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Business Leadership",
+    "country": "Malaysia",
+    "description": "How AI data centers and infrastructure are transforming Malaysia's economy. Microsoft $2.2B, Oracle $6.5B, NVIDIA-YTL $2.36B, and the 475% capacity expansion creating 40,000 jobs."
+  },
+  {
+    "title": "Malaysia AI 2030: Employee Brief",
+    "url": "/articles/countries-malaysia-malaysia-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee & Workforce",
+    "country": "Malaysia",
+    "description": "Your career in Malaysia's AI boom. 2.9% unemployment, 40,000 unfilled AI positions, RM151K salaries for engineers, and how to navigate the fastest-growing tech market in Southeast Asia."
+  },
+  {
+    "title": "Malaysia AI 2030: Government Brief",
+    "url": "/articles/countries-malaysia-malaysia-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policy",
+    "country": "Malaysia",
+    "description": "Policy brief for Malaysian policymakers. Infrastructure investment assessment, MyDIGITAL Blueprint evaluation, competition with Singapore, and six recommendations for 2027-2030."
+  },
+  {
+    "title": "Malaysia AI 2030: Small Business Owner Brief",
+    "url": "/articles/countries-malaysia-malaysia-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner",
+    "country": "Malaysia",
+    "description": "AI guide for Malaysian SMEs. Five tools with RM ROI, ChatGPT automation, Islamic finance AI, MDEC grants, and practical steps for palm oil, retail, manufacturing, and hospitality businesses."
+  },
+  {
+    "title": "New Zealand AI 2030: CEO Brief",
+    "url": "/articles/countries-new-zealand-new-zealand-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Business Leadership",
+    "country": "New Zealand",
+    "description": "How AI is reshaping Aotearoa's NZD 280B economy. Xero, Rocket Lab, Halter AgriTech, earthquake prediction, and the uniquely Kiwi approach to AI governance."
+  },
+  {
+    "title": "New Zealand AI 2030: Employee Brief",
+    "url": "/articles/countries-new-zealand-new-zealand-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee & Workforce",
+    "country": "New Zealand",
+    "description": "Your career in Aotearoa's AI revolution. Sector risk map, real transitions across professional services and AgriTech, NZD-denominated reskilling options, remote work opportunities."
+  },
+  {
+    "title": "New Zealand AI 2030: Government Brief",
+    "url": "/articles/countries-new-zealand-new-zealand-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policy",
+    "country": "New Zealand",
+    "description": "Policy brief for NZ policymakers. AI productivity paradox, sector-specific impacts, Algorithm Charter implementation, Te Ao M&amacr;ori integration, and recommendations for 5.2M population."
+  },
+  {
+    "title": "New Zealand AI 2030: Small Business Owner Brief",
+    "url": "/articles/countries-new-zealand-new-zealand-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner",
+    "country": "New Zealand",
+    "description": "AI guide for Kiwi small businesses. Five tools with NZD ROI calculations, automation by business type, Xero integration, Canva AI, and practical steps for competing against larger automated competitor"
+  },
+  {
+    "title": "Portugal AI 2030: CEO Brief",
+    "url": "/articles/countries-portugal-portugal-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Business Leadership",
+    "country": "Portugal",
+    "description": "How Portugal became Europe's hidden AI superpower. Seven unicorns, \u20ac80B valuation, enterprise AI strategy, and what every European CEO must learn from Portugal's playbook."
+  },
+  {
+    "title": "Portugal AI 2030: Employee Brief",
+    "url": "/articles/countries-portugal-portugal-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee & Workforce",
+    "country": "Portugal",
+    "description": "Your AI career in Europe's most attractive tech hub. \u20ac70K-\u20ac130K salaries, Tech Talent Visa, NHR tax exemption, and why Portugal is retaining global AI talent."
+  },
+  {
+    "title": "Portugal AI 2030: Government Brief",
+    "url": "/articles/countries-portugal-portugal-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policy",
+    "country": "Portugal",
+    "description": "Policy brief for Portuguese policymakers. Unicorn factory strategy, visa innovation, data center expansion, and six recommendations to scale Portugal's AI superpower."
+  },
+  {
+    "title": "Portugal AI 2030: Small Business Owner Brief",
+    "url": "/articles/countries-portugal-portugal-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner",
+    "country": "Portugal",
+    "description": "AI guide for Portuguese small businesses. Five tools with euro ROI, restaurant/manufacturing/wine case studies, IAPMEI grants, practical steps for competitive advantage."
   }
 ]
