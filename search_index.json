@@ -1775,5 +1775,37 @@
     "audience": "Small Business Owner",
     "country": "Italy",
     "description": "AI operations guide for Italy's 4.4 million SMEs. Five AI tools with ROI in euros, PNRR digital vouchers, practical steps."
+  },
+  {
+    "title": "Spain AI 2030: CEO Brief",
+    "url": "/articles/countries-spain-spain-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Business Leadership",
+    "country": "Spain",
+    "description": "How AI will transform Spain. MareNostrum 5, Santander AI, tourism disruption, and strategic actions for Spanish CEOs."
+  },
+  {
+    "title": "Spain AI 2030: Employee Brief",
+    "url": "/articles/countries-spain-spain-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee & Workforce",
+    "country": "Spain",
+    "description": "Career guide for Spanish workers. Sector risk map, transition stories from Santander and Inditex, reskilling pathways."
+  },
+  {
+    "title": "Spain AI 2030: Government Brief",
+    "url": "/articles/countries-spain-spain-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policy",
+    "country": "Spain",
+    "description": "Policy brief for Spanish policymakers. Tourism AI, ENIA assessment, workforce impact, six policy recommendations."
+  },
+  {
+    "title": "Spain AI 2030: Small Business Owner Brief",
+    "url": "/articles/countries-spain-spain-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner",
+    "country": "Spain",
+    "description": "AI guide for Spain 2.9M pymes. Five tools with ROI, Kit Digital subsidies, practical steps."
   }
 ]
