@@ -2447,5 +2447,165 @@
     "audience": "Small Business Owner",
     "country": "Austria",
     "description": "AI guide for Austrian Mittelstand. Five tools with euro ROI, manufacturing automation, tourism optimization, EU AI Act compliance, government subsidies."
+  },
+  {
+    "title": "Denmark AI 2030: CEO Brief",
+    "url": "/articles/countries-denmark-denmark-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Business Leadership",
+    "country": "Denmark",
+    "description": "How AI is reshaping Europe's most equitable economy. Vestas wind energy AI, Novo Nordisk 2,500+ use cases, Maersk logistics, and why 42% Danish adoption is Europe's highest."
+  },
+  {
+    "title": "Denmark AI 2030: Employee Brief",
+    "url": "/articles/countries-denmark-denmark-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee & Workforce",
+    "country": "Denmark",
+    "description": "Your career in the Nordic AI transition. Engineer shortage 13,500, retraining programs, Copenhagen startups, and how to navigate Europe's tightest job market."
+  },
+  {
+    "title": "Denmark AI 2030: Government Brief",
+    "url": "/articles/countries-denmark-denmark-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policy",
+    "country": "Denmark",
+    "description": "Policy brief for Danish policymakers. 42% adoption paradox, engineer shortage, pharma/wind/logistics exposure, and six policy recommendations for maintaining Nordic equitable growth."
+  },
+  {
+    "title": "Denmark AI 2030: Small Business Owner Brief",
+    "url": "/articles/countries-denmark-denmark-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner",
+    "country": "Denmark",
+    "description": "AI guide for Danish SMBs. Five tools with DKK ROI, hygge-compatible deployment, high-wage economy AI tactics, and practical steps for manufacturing, design, and services businesses."
+  },
+  {
+    "title": "Finland AI 2030: CEO Brief",
+    "url": "/articles/countries-finland-finland-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Business Leadership",
+    "country": "Finland",
+    "description": "Why Finland punches above its weight in AI. LUMI supercomputer, Elements of AI, Nokia comeback, Supercell, Wolt, and the quiet superpower reshaping European AI."
+  },
+  {
+    "title": "Finland AI 2030: Employee Brief",
+    "url": "/articles/countries-finland-finland-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee & Workforce",
+    "country": "Finland",
+    "description": "Your career in the Nordic AI hub. Elements of AI mastery, forest automation specialists, Nokia RAN engineers, gaming AI designers, salary benchmarks, and Nordic reskilling options."
+  },
+  {
+    "title": "Finland AI 2030: Government Brief",
+    "url": "/articles/countries-finland-finland-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policy",
+    "country": "Finland",
+    "description": "Policy brief for Finnish policymakers. Brain drain prevention, SME AI adoption, forest AI innovation, LUMI expansion, FCAI extension, and six recommendations for 5.62M Finns."
+  },
+  {
+    "title": "Finland AI 2030: Small Business Owner Brief",
+    "url": "/articles/countries-finland-finland-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner",
+    "country": "Finland",
+    "description": "AI guide for Finnish small business owners. High labor cost arbitrage, EUR ROI calculations, forestry automation, healthcare startups, consulting AI, practical implementation steps."
+  },
+  {
+    "title": "Belgium AI 2030: CEO Brief",
+    "url": "/articles/countries-belgium-belgium-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Business Leadership",
+    "country": "Belgium",
+    "description": "Europe's AI capital meets semiconductor research. Collibra unicorn, IMEC NanoIC pilot line, EU AI Office regulation advantage, and the Port of Antwerp's autonomous revolution in Belgium's \u20ac661.5B econ"
+  },
+  {
+    "title": "Belgium AI 2030: Employee Brief",
+    "url": "/articles/countries-belgium-belgium-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee & Workforce",
+    "country": "Belgium",
+    "description": "Your career in regulated AI economy. Brussels regulator hub demand, pharma AI transitions, IMEC semiconductor careers, and multilingual AI specialization opportunities."
+  },
+  {
+    "title": "Belgium AI 2030: Government Brief",
+    "url": "/articles/countries-belgium-belgium-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policy",
+    "country": "Belgium",
+    "description": "Policy brief for Belgian policymakers. EU AI Act enforcement hub strategy, pharma-biotech AI support, multilingual AI as export advantage, and \u20ac430M investment roadmap for 20:1 return."
+  },
+  {
+    "title": "Belgium AI 2030: Small Business Owner Brief",
+    "url": "/articles/countries-belgium-belgium-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner",
+    "country": "Belgium",
+    "description": "AI guide for Belgian SMEs. Teamleader automation, multilingual AI ROI, \u20ac85K-\u20ac150K annual savings, VLAIO/Innoviris funding, and practical steps for chocolate makers to chip research startups."
+  },
+  {
+    "title": "Czech Republic AI 2030: CEO Brief",
+    "url": "/articles/countries-czech-republic-czech-republic-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Business Leadership",
+    "country": "Czech Republic",
+    "description": "How AI is reshaping manufacturing, automotive, and Prague's tech scene. Skoda EV transition, Prusa's manufacturing AI, Gen Digital's $3.94B revenue, and Central Europe's AI leaders."
+  },
+  {
+    "title": "Czech Republic AI 2030: Employee Brief",
+    "url": "/articles/countries-czech-republic-czech-republic-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee & Workforce",
+    "country": "Czech Republic",
+    "description": "Your career in Central Europe's AI boom. Sector risk map, real transitions in Prague startups and Brno manufacturing, CZK-denominated reskilling options, and Prague's $3+ million AI salaries."
+  },
+  {
+    "title": "Czech Republic AI 2030: Government Brief",
+    "url": "/articles/countries-czech-republic-czech-republic-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policy",
+    "country": "Czech Republic",
+    "description": "Policy brief for Czech policymakers. Manufacturing disruption, EV transition impact, workforce displacement, and six policy recommendations for 10.53 million Czechs."
+  },
+  {
+    "title": "Czech Republic AI 2030: Small Business Owner Brief",
+    "url": "/articles/countries-czech-republic-czech-republic-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner",
+    "country": "Czech Republic",
+    "description": "AI guide for Czech small business owners. Five tools with CZK ROI, manufacturing and hospitality AI, EU funding access, and practical steps for the maker economy."
+  },
+  {
+    "title": "Greece AI 2030: CEO Brief",
+    "url": "/articles/countries-greece-greece-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Business Leadership",
+    "country": "Greece",
+    "description": "How AI is reshaping Greece's post-crisis economy. Shipping dominance, Microsoft and Google infrastructure, diaspora returns, and \u20ac1.853B AI market by 2030."
+  },
+  {
+    "title": "Greece AI 2030: Employee Brief",
+    "url": "/articles/countries-greece-greece-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee & Workforce",
+    "country": "Greece",
+    "description": "Your career in Greece's AI renaissance. Wage revival, diaspora opportunity, sector risk map, and 7.5% unemployment (lowest since 2008)."
+  },
+  {
+    "title": "Greece AI 2030: Government Brief",
+    "url": "/articles/countries-greece-greece-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policy",
+    "country": "Greece",
+    "description": "Policy brief for Greek policymakers. Infrastructure advantage, diaspora returns, AI skills pipeline, and six strategic recommendations for 10.2M Greeks."
+  },
+  {
+    "title": "Greece AI 2030: Small Business Owner Brief",
+    "url": "/articles/countries-greece-greece-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner",
+    "country": "Greece",
+    "description": "AI guide for Greek small businesses. Greece 2.0 grants, sector-specific AI applications, EUR-denominated ROI, and post-crisis competitive advantages."
   }
 ]
