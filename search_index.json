@@ -1,5 +1,33 @@
 [
   {
+    "title": "AI 2030: Argentina \u2014 CEO & Business Leadership",
+    "url": "/articles/countries-argentina-argentina-ceo-edition.html",
+    "type": "Country Report",
+    "country": "Argentina",
+    "audience": "CEO & Business Leadership"
+  },
+  {
+    "title": "AI 2030: Argentina \u2014 Employee & Workforce",
+    "url": "/articles/countries-argentina-argentina-employee-edition.html",
+    "type": "Country Report",
+    "country": "Argentina",
+    "audience": "Employee & Workforce"
+  },
+  {
+    "title": "AI 2030: Argentina \u2014 Government & Policy",
+    "url": "/articles/countries-argentina-argentina-government-edition.html",
+    "type": "Country Report",
+    "country": "Argentina",
+    "audience": "Government & Policy"
+  },
+  {
+    "title": "AI 2030: Argentina \u2014 Small Business Owner",
+    "url": "/articles/countries-argentina-argentina-small-business-owner-edition.html",
+    "type": "Country Report",
+    "country": "Argentina",
+    "audience": "Small Business Owner"
+  },
+  {
     "title": "AI 2030: Australia \u2014 CEO & Business Leadership",
     "url": "/articles/countries-australia-australia-ceo-edition.html",
     "type": "Country Report",
@@ -25,6 +53,90 @@
     "url": "/articles/countries-australia-australia-small-business-owner-edition.html",
     "type": "Country Report",
     "country": "Australia",
+    "audience": "Small Business Owner"
+  },
+  {
+    "title": "AI 2030: Austria \u2014 CEO & Business Leadership",
+    "url": "/articles/countries-austria-austria-ceo-edition.html",
+    "type": "Country Report",
+    "country": "Austria",
+    "audience": "CEO & Business Leadership"
+  },
+  {
+    "title": "AI 2030: Austria \u2014 Employee & Workforce",
+    "url": "/articles/countries-austria-austria-employee-edition.html",
+    "type": "Country Report",
+    "country": "Austria",
+    "audience": "Employee & Workforce"
+  },
+  {
+    "title": "AI 2030: Austria \u2014 Government & Policy",
+    "url": "/articles/countries-austria-austria-government-edition.html",
+    "type": "Country Report",
+    "country": "Austria",
+    "audience": "Government & Policy"
+  },
+  {
+    "title": "AI 2030: Austria \u2014 Small Business Owner",
+    "url": "/articles/countries-austria-austria-small-business-owner-edition.html",
+    "type": "Country Report",
+    "country": "Austria",
+    "audience": "Small Business Owner"
+  },
+  {
+    "title": "AI 2030: Bangladesh \u2014 CEO & Business Leadership",
+    "url": "/articles/countries-bangladesh-bangladesh-ceo-edition.html",
+    "type": "Country Report",
+    "country": "Bangladesh",
+    "audience": "CEO & Business Leadership"
+  },
+  {
+    "title": "AI 2030: Bangladesh \u2014 Employee & Workforce",
+    "url": "/articles/countries-bangladesh-bangladesh-employee-edition.html",
+    "type": "Country Report",
+    "country": "Bangladesh",
+    "audience": "Employee & Workforce"
+  },
+  {
+    "title": "AI 2030: Bangladesh \u2014 Government & Policy",
+    "url": "/articles/countries-bangladesh-bangladesh-government-edition.html",
+    "type": "Country Report",
+    "country": "Bangladesh",
+    "audience": "Government & Policy"
+  },
+  {
+    "title": "AI 2030: Bangladesh \u2014 Small Business Owner",
+    "url": "/articles/countries-bangladesh-bangladesh-small-business-owner-edition.html",
+    "type": "Country Report",
+    "country": "Bangladesh",
+    "audience": "Small Business Owner"
+  },
+  {
+    "title": "AI 2030: Belgium \u2014 CEO & Business Leadership",
+    "url": "/articles/countries-belgium-belgium-ceo-edition.html",
+    "type": "Country Report",
+    "country": "Belgium",
+    "audience": "CEO & Business Leadership"
+  },
+  {
+    "title": "AI 2030: Belgium \u2014 Employee & Workforce",
+    "url": "/articles/countries-belgium-belgium-employee-edition.html",
+    "type": "Country Report",
+    "country": "Belgium",
+    "audience": "Employee & Workforce"
+  },
+  {
+    "title": "AI 2030: Belgium \u2014 Government & Policy",
+    "url": "/articles/countries-belgium-belgium-government-edition.html",
+    "type": "Country Report",
+    "country": "Belgium",
+    "audience": "Government & Policy"
+  },
+  {
+    "title": "AI 2030: Belgium \u2014 Small Business Owner",
+    "url": "/articles/countries-belgium-belgium-small-business-owner-edition.html",
+    "type": "Country Report",
+    "country": "Belgium",
     "audience": "Small Business Owner"
   },
   {
@@ -84,6 +196,34 @@
     "audience": "Small Business Owner"
   },
   {
+    "title": "AI 2030: Chile \u2014 CEO & Business Leadership",
+    "url": "/articles/countries-chile-chile-ceo-edition.html",
+    "type": "Country Report",
+    "country": "Chile",
+    "audience": "CEO & Business Leadership"
+  },
+  {
+    "title": "AI 2030: Chile \u2014 Employee & Workforce",
+    "url": "/articles/countries-chile-chile-employee-edition.html",
+    "type": "Country Report",
+    "country": "Chile",
+    "audience": "Employee & Workforce"
+  },
+  {
+    "title": "AI 2030: Chile \u2014 Government & Policy",
+    "url": "/articles/countries-chile-chile-government-edition.html",
+    "type": "Country Report",
+    "country": "Chile",
+    "audience": "Government & Policy"
+  },
+  {
+    "title": "AI 2030: Chile \u2014 Small Business Owner",
+    "url": "/articles/countries-chile-chile-small-business-owner-edition.html",
+    "type": "Country Report",
+    "country": "Chile",
+    "audience": "Small Business Owner"
+  },
+  {
     "title": "AI 2030: China \u2014 CEO & Business Leadership",
     "url": "/articles/countries-china-china-ceo-edition.html",
     "type": "Country Report",
@@ -112,6 +252,90 @@
     "audience": "Small Business Owner"
   },
   {
+    "title": "AI 2030: Colombia \u2014 CEO & Business Leadership",
+    "url": "/articles/countries-colombia-colombia-ceo-edition.html",
+    "type": "Country Report",
+    "country": "Colombia",
+    "audience": "CEO & Business Leadership"
+  },
+  {
+    "title": "AI 2030: Colombia \u2014 Employee & Workforce",
+    "url": "/articles/countries-colombia-colombia-employee-edition.html",
+    "type": "Country Report",
+    "country": "Colombia",
+    "audience": "Employee & Workforce"
+  },
+  {
+    "title": "AI 2030: Colombia \u2014 Government & Policy",
+    "url": "/articles/countries-colombia-colombia-government-edition.html",
+    "type": "Country Report",
+    "country": "Colombia",
+    "audience": "Government & Policy"
+  },
+  {
+    "title": "AI 2030: Colombia \u2014 Small Business Owner",
+    "url": "/articles/countries-colombia-colombia-small-business-owner-edition.html",
+    "type": "Country Report",
+    "country": "Colombia",
+    "audience": "Small Business Owner"
+  },
+  {
+    "title": "AI 2030: Czech Republic \u2014 CEO & Business Leadership",
+    "url": "/articles/countries-czech_republic-czech_republic-ceo-edition.html",
+    "type": "Country Report",
+    "country": "Czech Republic",
+    "audience": "CEO & Business Leadership"
+  },
+  {
+    "title": "AI 2030: Czech Republic \u2014 Employee & Workforce",
+    "url": "/articles/countries-czech_republic-czech_republic-employee-edition.html",
+    "type": "Country Report",
+    "country": "Czech Republic",
+    "audience": "Employee & Workforce"
+  },
+  {
+    "title": "AI 2030: Czech Republic \u2014 Government & Policy",
+    "url": "/articles/countries-czech_republic-czech_republic-government-edition.html",
+    "type": "Country Report",
+    "country": "Czech Republic",
+    "audience": "Government & Policy"
+  },
+  {
+    "title": "AI 2030: Czech Republic \u2014 Small Business Owner",
+    "url": "/articles/countries-czech_republic-czech_republic-small-business-owner-edition.html",
+    "type": "Country Report",
+    "country": "Czech Republic",
+    "audience": "Small Business Owner"
+  },
+  {
+    "title": "AI 2030: Denmark \u2014 CEO & Business Leadership",
+    "url": "/articles/countries-denmark-denmark-ceo-edition.html",
+    "type": "Country Report",
+    "country": "Denmark",
+    "audience": "CEO & Business Leadership"
+  },
+  {
+    "title": "AI 2030: Denmark \u2014 Employee & Workforce",
+    "url": "/articles/countries-denmark-denmark-employee-edition.html",
+    "type": "Country Report",
+    "country": "Denmark",
+    "audience": "Employee & Workforce"
+  },
+  {
+    "title": "AI 2030: Denmark \u2014 Government & Policy",
+    "url": "/articles/countries-denmark-denmark-government-edition.html",
+    "type": "Country Report",
+    "country": "Denmark",
+    "audience": "Government & Policy"
+  },
+  {
+    "title": "AI 2030: Denmark \u2014 Small Business Owner",
+    "url": "/articles/countries-denmark-denmark-small-business-owner-edition.html",
+    "type": "Country Report",
+    "country": "Denmark",
+    "audience": "Small Business Owner"
+  },
+  {
     "title": "AI 2030: Egypt \u2014 CEO & Business Leadership",
     "url": "/articles/countries-egypt-egypt-ceo-edition.html",
     "type": "Country Report",
@@ -137,6 +361,34 @@
     "url": "/articles/countries-egypt-egypt-small-business-owner-edition.html",
     "type": "Country Report",
     "country": "Egypt",
+    "audience": "Small Business Owner"
+  },
+  {
+    "title": "AI 2030: Finland \u2014 CEO & Business Leadership",
+    "url": "/articles/countries-finland-finland-ceo-edition.html",
+    "type": "Country Report",
+    "country": "Finland",
+    "audience": "CEO & Business Leadership"
+  },
+  {
+    "title": "AI 2030: Finland \u2014 Employee & Workforce",
+    "url": "/articles/countries-finland-finland-employee-edition.html",
+    "type": "Country Report",
+    "country": "Finland",
+    "audience": "Employee & Workforce"
+  },
+  {
+    "title": "AI 2030: Finland \u2014 Government & Policy",
+    "url": "/articles/countries-finland-finland-government-edition.html",
+    "type": "Country Report",
+    "country": "Finland",
+    "audience": "Government & Policy"
+  },
+  {
+    "title": "AI 2030: Finland \u2014 Small Business Owner",
+    "url": "/articles/countries-finland-finland-small-business-owner-edition.html",
+    "type": "Country Report",
+    "country": "Finland",
     "audience": "Small Business Owner"
   },
   {
@@ -193,6 +445,62 @@
     "url": "/articles/countries-germany-germany-small-business-owner-edition.html",
     "type": "Country Report",
     "country": "Germany",
+    "audience": "Small Business Owner"
+  },
+  {
+    "title": "AI 2030: Ghana \u2014 CEO & Business Leadership",
+    "url": "/articles/countries-ghana-ghana-ceo-edition.html",
+    "type": "Country Report",
+    "country": "Ghana",
+    "audience": "CEO & Business Leadership"
+  },
+  {
+    "title": "AI 2030: Ghana \u2014 Employee & Workforce",
+    "url": "/articles/countries-ghana-ghana-employee-edition.html",
+    "type": "Country Report",
+    "country": "Ghana",
+    "audience": "Employee & Workforce"
+  },
+  {
+    "title": "AI 2030: Ghana \u2014 Government & Policy",
+    "url": "/articles/countries-ghana-ghana-government-edition.html",
+    "type": "Country Report",
+    "country": "Ghana",
+    "audience": "Government & Policy"
+  },
+  {
+    "title": "AI 2030: Ghana \u2014 Small Business Owner",
+    "url": "/articles/countries-ghana-ghana-small-business-owner-edition.html",
+    "type": "Country Report",
+    "country": "Ghana",
+    "audience": "Small Business Owner"
+  },
+  {
+    "title": "AI 2030: Greece \u2014 CEO & Business Leadership",
+    "url": "/articles/countries-greece-greece-ceo-edition.html",
+    "type": "Country Report",
+    "country": "Greece",
+    "audience": "CEO & Business Leadership"
+  },
+  {
+    "title": "AI 2030: Greece \u2014 Employee & Workforce",
+    "url": "/articles/countries-greece-greece-employee-edition.html",
+    "type": "Country Report",
+    "country": "Greece",
+    "audience": "Employee & Workforce"
+  },
+  {
+    "title": "AI 2030: Greece \u2014 Government & Policy",
+    "url": "/articles/countries-greece-greece-government-edition.html",
+    "type": "Country Report",
+    "country": "Greece",
+    "audience": "Government & Policy"
+  },
+  {
+    "title": "AI 2030: Greece \u2014 Small Business Owner",
+    "url": "/articles/countries-greece-greece-small-business-owner-edition.html",
+    "type": "Country Report",
+    "country": "Greece",
     "audience": "Small Business Owner"
   },
   {
@@ -336,6 +644,34 @@
     "audience": "Small Business Owner"
   },
   {
+    "title": "AI 2030: Kenya \u2014 CEO & Business Leadership",
+    "url": "/articles/countries-kenya-kenya-ceo-edition.html",
+    "type": "Country Report",
+    "country": "Kenya",
+    "audience": "CEO & Business Leadership"
+  },
+  {
+    "title": "AI 2030: Kenya \u2014 Employee & Workforce",
+    "url": "/articles/countries-kenya-kenya-employee-edition.html",
+    "type": "Country Report",
+    "country": "Kenya",
+    "audience": "Employee & Workforce"
+  },
+  {
+    "title": "AI 2030: Kenya \u2014 Government & Policy",
+    "url": "/articles/countries-kenya-kenya-government-edition.html",
+    "type": "Country Report",
+    "country": "Kenya",
+    "audience": "Government & Policy"
+  },
+  {
+    "title": "AI 2030: Kenya \u2014 Small Business Owner",
+    "url": "/articles/countries-kenya-kenya-small-business-owner-edition.html",
+    "type": "Country Report",
+    "country": "Kenya",
+    "audience": "Small Business Owner"
+  },
+  {
     "title": "AI 2030: Malaysia \u2014 CEO & Business Leadership",
     "url": "/articles/countries-malaysia-malaysia-ceo-edition.html",
     "type": "Country Report",
@@ -392,6 +728,34 @@
     "audience": "Small Business Owner"
   },
   {
+    "title": "AI 2030: Morocco \u2014 CEO & Business Leadership",
+    "url": "/articles/countries-morocco-morocco-ceo-edition.html",
+    "type": "Country Report",
+    "country": "Morocco",
+    "audience": "CEO & Business Leadership"
+  },
+  {
+    "title": "AI 2030: Morocco \u2014 Employee & Workforce",
+    "url": "/articles/countries-morocco-morocco-employee-edition.html",
+    "type": "Country Report",
+    "country": "Morocco",
+    "audience": "Employee & Workforce"
+  },
+  {
+    "title": "AI 2030: Morocco \u2014 Government & Policy",
+    "url": "/articles/countries-morocco-morocco-government-edition.html",
+    "type": "Country Report",
+    "country": "Morocco",
+    "audience": "Government & Policy"
+  },
+  {
+    "title": "AI 2030: Morocco \u2014 Small Business Owner",
+    "url": "/articles/countries-morocco-morocco-small-business-owner-edition.html",
+    "type": "Country Report",
+    "country": "Morocco",
+    "audience": "Small Business Owner"
+  },
+  {
     "title": "AI 2030: Netherlands \u2014 CEO & Business Leadership",
     "url": "/articles/countries-netherlands-netherlands-ceo-edition.html",
     "type": "Country Report",
@@ -417,6 +781,34 @@
     "url": "/articles/countries-netherlands-netherlands-small-business-owner-edition.html",
     "type": "Country Report",
     "country": "Netherlands",
+    "audience": "Small Business Owner"
+  },
+  {
+    "title": "AI 2030: New Zealand \u2014 CEO & Business Leadership",
+    "url": "/articles/countries-new_zealand-new_zealand-ceo-edition.html",
+    "type": "Country Report",
+    "country": "New Zealand",
+    "audience": "CEO & Business Leadership"
+  },
+  {
+    "title": "AI 2030: New Zealand \u2014 Employee & Workforce",
+    "url": "/articles/countries-new_zealand-new_zealand-employee-edition.html",
+    "type": "Country Report",
+    "country": "New Zealand",
+    "audience": "Employee & Workforce"
+  },
+  {
+    "title": "AI 2030: New Zealand \u2014 Government & Policy",
+    "url": "/articles/countries-new_zealand-new_zealand-government-edition.html",
+    "type": "Country Report",
+    "country": "New Zealand",
+    "audience": "Government & Policy"
+  },
+  {
+    "title": "AI 2030: New Zealand \u2014 Small Business Owner",
+    "url": "/articles/countries-new_zealand-new_zealand-small-business-owner-edition.html",
+    "type": "Country Report",
+    "country": "New Zealand",
     "audience": "Small Business Owner"
   },
   {
@@ -476,6 +868,62 @@
     "audience": "Small Business Owner"
   },
   {
+    "title": "AI 2030: Pakistan \u2014 CEO & Business Leadership",
+    "url": "/articles/countries-pakistan-pakistan-ceo-edition.html",
+    "type": "Country Report",
+    "country": "Pakistan",
+    "audience": "CEO & Business Leadership"
+  },
+  {
+    "title": "AI 2030: Pakistan \u2014 Employee & Workforce",
+    "url": "/articles/countries-pakistan-pakistan-employee-edition.html",
+    "type": "Country Report",
+    "country": "Pakistan",
+    "audience": "Employee & Workforce"
+  },
+  {
+    "title": "AI 2030: Pakistan \u2014 Government & Policy",
+    "url": "/articles/countries-pakistan-pakistan-government-edition.html",
+    "type": "Country Report",
+    "country": "Pakistan",
+    "audience": "Government & Policy"
+  },
+  {
+    "title": "AI 2030: Pakistan \u2014 Small Business Owner",
+    "url": "/articles/countries-pakistan-pakistan-small-business-owner-edition.html",
+    "type": "Country Report",
+    "country": "Pakistan",
+    "audience": "Small Business Owner"
+  },
+  {
+    "title": "AI 2030: Peru \u2014 CEO & Business Leadership",
+    "url": "/articles/countries-peru-peru-ceo-edition.html",
+    "type": "Country Report",
+    "country": "Peru",
+    "audience": "CEO & Business Leadership"
+  },
+  {
+    "title": "AI 2030: Peru \u2014 Employee & Workforce",
+    "url": "/articles/countries-peru-peru-employee-edition.html",
+    "type": "Country Report",
+    "country": "Peru",
+    "audience": "Employee & Workforce"
+  },
+  {
+    "title": "AI 2030: Peru \u2014 Government & Policy",
+    "url": "/articles/countries-peru-peru-government-edition.html",
+    "type": "Country Report",
+    "country": "Peru",
+    "audience": "Government & Policy"
+  },
+  {
+    "title": "AI 2030: Peru \u2014 Small Business Owner",
+    "url": "/articles/countries-peru-peru-small-business-owner-edition.html",
+    "type": "Country Report",
+    "country": "Peru",
+    "audience": "Small Business Owner"
+  },
+  {
     "title": "AI 2030: Philippines \u2014 CEO & Business Leadership",
     "url": "/articles/countries-philippines-philippines-ceo-edition.html",
     "type": "Country Report",
@@ -529,6 +977,90 @@
     "url": "/articles/countries-poland-poland-small-business-owner-edition.html",
     "type": "Country Report",
     "country": "Poland",
+    "audience": "Small Business Owner"
+  },
+  {
+    "title": "AI 2030: Portugal \u2014 CEO & Business Leadership",
+    "url": "/articles/countries-portugal-portugal-ceo-edition.html",
+    "type": "Country Report",
+    "country": "Portugal",
+    "audience": "CEO & Business Leadership"
+  },
+  {
+    "title": "AI 2030: Portugal \u2014 Employee & Workforce",
+    "url": "/articles/countries-portugal-portugal-employee-edition.html",
+    "type": "Country Report",
+    "country": "Portugal",
+    "audience": "Employee & Workforce"
+  },
+  {
+    "title": "AI 2030: Portugal \u2014 Government & Policy",
+    "url": "/articles/countries-portugal-portugal-government-edition.html",
+    "type": "Country Report",
+    "country": "Portugal",
+    "audience": "Government & Policy"
+  },
+  {
+    "title": "AI 2030: Portugal \u2014 Small Business Owner",
+    "url": "/articles/countries-portugal-portugal-small-business-owner-edition.html",
+    "type": "Country Report",
+    "country": "Portugal",
+    "audience": "Small Business Owner"
+  },
+  {
+    "title": "AI 2030: Qatar \u2014 CEO & Business Leadership",
+    "url": "/articles/countries-qatar-qatar-ceo-edition.html",
+    "type": "Country Report",
+    "country": "Qatar",
+    "audience": "CEO & Business Leadership"
+  },
+  {
+    "title": "AI 2030: Qatar \u2014 Employee & Workforce",
+    "url": "/articles/countries-qatar-qatar-employee-edition.html",
+    "type": "Country Report",
+    "country": "Qatar",
+    "audience": "Employee & Workforce"
+  },
+  {
+    "title": "AI 2030: Qatar \u2014 Government & Policy",
+    "url": "/articles/countries-qatar-qatar-government-edition.html",
+    "type": "Country Report",
+    "country": "Qatar",
+    "audience": "Government & Policy"
+  },
+  {
+    "title": "AI 2030: Qatar \u2014 Small Business Owner",
+    "url": "/articles/countries-qatar-qatar-small-business-owner-edition.html",
+    "type": "Country Report",
+    "country": "Qatar",
+    "audience": "Small Business Owner"
+  },
+  {
+    "title": "AI 2030: Romania \u2014 CEO & Business Leadership",
+    "url": "/articles/countries-romania-romania-ceo-edition.html",
+    "type": "Country Report",
+    "country": "Romania",
+    "audience": "CEO & Business Leadership"
+  },
+  {
+    "title": "AI 2030: Romania \u2014 Employee & Workforce",
+    "url": "/articles/countries-romania-romania-employee-edition.html",
+    "type": "Country Report",
+    "country": "Romania",
+    "audience": "Employee & Workforce"
+  },
+  {
+    "title": "AI 2030: Romania \u2014 Government & Policy",
+    "url": "/articles/countries-romania-romania-government-edition.html",
+    "type": "Country Report",
+    "country": "Romania",
+    "audience": "Government & Policy"
+  },
+  {
+    "title": "AI 2030: Romania \u2014 Small Business Owner",
+    "url": "/articles/countries-romania-romania-small-business-owner-edition.html",
+    "type": "Country Report",
+    "country": "Romania",
     "audience": "Small Business Owner"
   },
   {
@@ -644,6 +1176,34 @@
     "audience": "Small Business Owner"
   },
   {
+    "title": "AI 2030: Sri Lanka \u2014 CEO & Business Leadership",
+    "url": "/articles/countries-sri_lanka-sri_lanka-ceo-edition.html",
+    "type": "Country Report",
+    "country": "Sri Lanka",
+    "audience": "CEO & Business Leadership"
+  },
+  {
+    "title": "AI 2030: Sri Lanka \u2014 Employee & Workforce",
+    "url": "/articles/countries-sri_lanka-sri_lanka-employee-edition.html",
+    "type": "Country Report",
+    "country": "Sri Lanka",
+    "audience": "Employee & Workforce"
+  },
+  {
+    "title": "AI 2030: Sri Lanka \u2014 Government & Policy",
+    "url": "/articles/countries-sri_lanka-sri_lanka-government-edition.html",
+    "type": "Country Report",
+    "country": "Sri Lanka",
+    "audience": "Government & Policy"
+  },
+  {
+    "title": "AI 2030: Sri Lanka \u2014 Small Business Owner",
+    "url": "/articles/countries-sri_lanka-sri_lanka-small-business-owner-edition.html",
+    "type": "Country Report",
+    "country": "Sri Lanka",
+    "audience": "Small Business Owner"
+  },
+  {
     "title": "AI 2030: Sweden \u2014 CEO & Business Leadership",
     "url": "/articles/countries-sweden-sweden-ceo-edition.html",
     "type": "Country Report",
@@ -700,6 +1260,34 @@
     "audience": "Small Business Owner"
   },
   {
+    "title": "AI 2030: Taiwan \u2014 CEO & Business Leadership",
+    "url": "/articles/countries-taiwan-taiwan-ceo-edition.html",
+    "type": "Country Report",
+    "country": "Taiwan",
+    "audience": "CEO & Business Leadership"
+  },
+  {
+    "title": "AI 2030: Taiwan \u2014 Employee & Workforce",
+    "url": "/articles/countries-taiwan-taiwan-employee-edition.html",
+    "type": "Country Report",
+    "country": "Taiwan",
+    "audience": "Employee & Workforce"
+  },
+  {
+    "title": "AI 2030: Taiwan \u2014 Government & Policy",
+    "url": "/articles/countries-taiwan-taiwan-government-edition.html",
+    "type": "Country Report",
+    "country": "Taiwan",
+    "audience": "Government & Policy"
+  },
+  {
+    "title": "AI 2030: Taiwan \u2014 Small Business Owner",
+    "url": "/articles/countries-taiwan-taiwan-small-business-owner-edition.html",
+    "type": "Country Report",
+    "country": "Taiwan",
+    "audience": "Small Business Owner"
+  },
+  {
     "title": "AI 2030: Thailand \u2014 CEO & Business Leadership",
     "url": "/articles/countries-thailand-thailand-ceo-edition.html",
     "type": "Country Report",
@@ -753,6 +1341,34 @@
     "url": "/articles/countries-turkey-turkey-small-business-owner-edition.html",
     "type": "Country Report",
     "country": "Turkey",
+    "audience": "Small Business Owner"
+  },
+  {
+    "title": "AI 2030: United Arab Emirates \u2014 CEO & Business Leadership",
+    "url": "/articles/countries-uae-uae-ceo-edition.html",
+    "type": "Country Report",
+    "country": "United Arab Emirates",
+    "audience": "CEO & Business Leadership"
+  },
+  {
+    "title": "AI 2030: United Arab Emirates \u2014 Employee & Workforce",
+    "url": "/articles/countries-uae-uae-employee-edition.html",
+    "type": "Country Report",
+    "country": "United Arab Emirates",
+    "audience": "Employee & Workforce"
+  },
+  {
+    "title": "AI 2030: United Arab Emirates \u2014 Government & Policy",
+    "url": "/articles/countries-uae-uae-government-edition.html",
+    "type": "Country Report",
+    "country": "United Arab Emirates",
+    "audience": "Government & Policy"
+  },
+  {
+    "title": "AI 2030: United Arab Emirates \u2014 Small Business Owner",
+    "url": "/articles/countries-uae-uae-small-business-owner-edition.html",
+    "type": "Country Report",
+    "country": "United Arab Emirates",
     "audience": "Small Business Owner"
   },
   {
