@@ -1807,5 +1807,165 @@
     "audience": "Small Business Owner",
     "country": "Spain",
     "description": "AI guide for Spain 2.9M pymes. Five tools with ROI, Kit Digital subsidies, practical steps."
+  },
+  {
+    "title": "Russia AI 2030: CEO Brief",
+    "url": "/articles/countries-russia-russia-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Business Leadership",
+    "country": "Russia",
+    "description": "How AI is reshaping Russia's $2.17T economy under sanctions. Yandex, Sber, semiconductor constraints, and strategic scenarios for Russian business leaders."
+  },
+  {
+    "title": "Russia AI 2030: Employee Brief",
+    "url": "/articles/countries-russia-russia-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee & Workforce",
+    "country": "Russia",
+    "description": "Your career in Russia's sanctions-era AI economy. Sector risk map, real transitions at Sber and Rusagro, ruble-denominated reskilling options."
+  },
+  {
+    "title": "Russia AI 2030: Government Brief",
+    "url": "/articles/countries-russia-russia-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policy",
+    "country": "Russia",
+    "description": "Policy brief for Russian policymakers. Semiconductor constraints, brain drain analysis, agricultural AI strengths, and six policy recommendations."
+  },
+  {
+    "title": "Russia AI 2030: Small Business Owner Brief",
+    "url": "/articles/countries-russia-russia-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner",
+    "country": "Russia",
+    "description": "AI guide for Russian small businesses. Five domestic AI tools with ruble ROI, labor shortage solutions, practical steps for the Russian entrepreneur."
+  },
+  {
+    "title": "Nigeria AI 2030: CEO Brief",
+    "url": "/articles/countries-nigeria-nigeria-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Business Leadership",
+    "country": "Nigeria",
+    "description": "How AI is reshaping Africa's largest economy. Flutterwave, Moniepoint, Kobo360, and the fintech-first AI revolution in Nigeria's $472B economy."
+  },
+  {
+    "title": "Nigeria AI 2030: Employee Brief",
+    "url": "/articles/countries-nigeria-nigeria-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee & Workforce",
+    "country": "Nigeria",
+    "description": "Your career in Africa's AI revolution. Sector risk map, real transitions in Lagos fintech and Kano commerce, naira-denominated reskilling options."
+  },
+  {
+    "title": "Nigeria AI 2030: Government Brief",
+    "url": "/articles/countries-nigeria-nigeria-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policy",
+    "country": "Nigeria",
+    "description": "Policy brief for Nigerian policymakers. Infrastructure gaps, fintech regulation, agricultural AI strategy, and six recommendations for 230M Nigerians."
+  },
+  {
+    "title": "Nigeria AI 2030: Small Business Owner Brief",
+    "url": "/articles/countries-nigeria-nigeria-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner",
+    "country": "Nigeria",
+    "description": "AI guide for Nigerian small businesses. Five tools with naira ROI, WhatsApp automation, power solutions, and practical steps for the hustle economy."
+  },
+  {
+    "title": "South Africa AI 2030: CEO Brief",
+    "url": "/articles/countries-south-africa-south-africa-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Business Leadership",
+    "country": "South Africa",
+    "description": "How AI is reshaping Africa's most advanced economy. Naspers, Discovery, Anglo American, and the inequality paradox in South Africa's $377B economy."
+  },
+  {
+    "title": "South Africa AI 2030: Employee Brief",
+    "url": "/articles/countries-south-africa-south-africa-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee & Workforce",
+    "country": "South Africa",
+    "description": "Your career in South Africa's AI era. Sector risk map, real transitions at Capitec and Anglo American, SETA-accredited reskilling options."
+  },
+  {
+    "title": "South Africa AI 2030: Government Brief",
+    "url": "/articles/countries-south-africa-south-africa-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policy",
+    "country": "South Africa",
+    "description": "Policy brief for South African policymakers. Inequality risks, mining AI transition, Cassava/NVIDIA AI Factory, and six recommendations."
+  },
+  {
+    "title": "South Africa AI 2030: Small Business Owner Brief",
+    "url": "/articles/countries-south-africa-south-africa-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner",
+    "country": "South Africa",
+    "description": "AI guide for South African SMEs. Five tools with rand ROI, load shedding solutions, Aerobotics, and practical steps for SA businesses."
+  },
+  {
+    "title": "UAE AI 2030: CEO Brief",
+    "url": "/articles/countries-uae-uae-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Business Leadership",
+    "country": "UAE",
+    "description": "How AI is reshaping the world's most ambitious AI nation. MGX $100B fund, G42, Falcon LLM, and strategic scenarios for UAE business leaders."
+  },
+  {
+    "title": "UAE AI 2030: Employee Brief",
+    "url": "/articles/countries-uae-uae-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee & Workforce",
+    "country": "UAE",
+    "description": "Your career in the world's most ambitious AI economy. Emiratisation dynamics, visa considerations, and dirham-denominated reskilling options."
+  },
+  {
+    "title": "UAE AI 2030: Government Brief",
+    "url": "/articles/countries-uae-uae-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policy",
+    "country": "UAE",
+    "description": "Policy brief for UAE policymakers. Sovereign AI strategy assessment, Emiratisation-AI alignment, and six recommendations for sustained leadership."
+  },
+  {
+    "title": "UAE AI 2030: Small Business Owner Brief",
+    "url": "/articles/countries-uae-uae-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner",
+    "country": "UAE",
+    "description": "AI guide for UAE small businesses. Five tools with dirham ROI, bilingual deployment, free zone programs, and practical steps for UAE entrepreneurs."
+  },
+  {
+    "title": "Israel AI 2030: CEO Brief",
+    "url": "/articles/countries-israel-israel-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Business Leadership",
+    "country": "Israel",
+    "description": "How AI is reshaping the Startup Nation. Wiz $32B, Mobileye, Unit 8200 pipeline, 342 AI startups, and strategic scenarios for Israeli business leaders."
+  },
+  {
+    "title": "Israel AI 2030: Employee Brief",
+    "url": "/articles/countries-israel-israel-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee & Workforce",
+    "country": "Israel",
+    "description": "Your career in the Startup Nation's AI era. Sector risk map, military pipeline dynamics, shekel-denominated reskilling at Technion and Hebrew U."
+  },
+  {
+    "title": "Israel AI 2030: Government Brief",
+    "url": "/articles/countries-israel-israel-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policy",
+    "country": "Israel",
+    "description": "Policy brief for Israeli policymakers. R&D sustainability, Haredi/Arab-Israeli inclusion, military pipeline protection, and six recommendations."
+  },
+  {
+    "title": "Israel AI 2030: Small Business Owner Brief",
+    "url": "/articles/countries-israel-israel-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner",
+    "country": "Israel",
+    "description": "AI guide for Israeli SMEs. Five tools with shekel ROI, Israeli-built platforms, Innovation Authority grants, and practical steps."
   }
 ]
