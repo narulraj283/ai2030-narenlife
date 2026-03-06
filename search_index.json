@@ -2607,5 +2607,165 @@
     "audience": "Small Business Owner",
     "country": "Greece",
     "description": "AI guide for Greek small businesses. Greece 2.0 grants, sector-specific AI applications, EUR-denominated ROI, and post-crisis competitive advantages."
+  },
+  {
+    "title": "AI and the Future of Work in Pakistan: CEO Strategic Briefing",
+    "url": "/articles/countries-pakistan-pakistan-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO Edition",
+    "country": "Pakistan",
+    "description": "Strategic analysis of Pakistan's AI market opportunity for executive leaders, including market sizing, competitive advantages, bull and bear cases, and actionable recommendations for capturing regiona"
+  },
+  {
+    "title": "AI and the Future of Work in Pakistan: Employee Edition",
+    "url": "/articles/countries-pakistan-pakistan-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee Edition",
+    "country": "Pakistan",
+    "description": "Career guide for professionals in Pakistan covering salary benchmarks, AI/ML compensation premiums, upskilling paths through government programs and universities, freelancing opportunities, and multi-"
+  },
+  {
+    "title": "AI and the Future of Work in Pakistan: Government Policy Brief",
+    "url": "/articles/countries-pakistan-pakistan-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government Edition",
+    "country": "Pakistan",
+    "description": "Comprehensive policy framework covering economic opportunity modeling, workforce development strategy, infrastructure requirements, brain drain mitigation, public-private partnerships, and detailed 20"
+  },
+  {
+    "title": "AI and the Future of Work in Pakistan: Small Business Owner Edition",
+    "url": "/articles/countries-pakistan-pakistan-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner Edition",
+    "country": "Pakistan",
+    "description": "Practical operations guide for SME owners showing cost comparisons (AI tools vs. hiring), software stack recommendations, Pakistani freelancer sourcing, automation in finance/customer service/sales, s"
+  },
+  {
+    "title": "The RMG Automation Crisis: Bangladesh at a Crossroads",
+    "url": "/articles/countries-bangladesh-bangladesh-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Business Leadership",
+    "country": "Bangladesh",
+    "description": "CEOs and business leaders"
+  },
+  {
+    "title": "From Garment Worker to Tech Professional: Your Career Transition Playbook",
+    "url": "/articles/countries-bangladesh-bangladesh-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee & Workforce",
+    "country": "Bangladesh",
+    "description": "RMG workers considering career transition"
+  },
+  {
+    "title": "Smart Bangladesh 2041: Building a Resilient Workforce in the Age of Automation",
+    "url": "/articles/countries-bangladesh-bangladesh-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policy",
+    "country": "Bangladesh",
+    "description": "Government policymakers and administrators"
+  },
+  {
+    "title": "Survival and Growth: How RMG Small Businesses Adapt to Automation",
+    "url": "/articles/countries-bangladesh-bangladesh-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner",
+    "country": "Bangladesh",
+    "description": "Small RMG business owners"
+  },
+  {
+    "title": "Romania's AI Revolution: Positioning Eastern Europe as a Global Innovation Hub",
+    "url": "/articles/countries-romania-romania-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Business Leadership",
+    "country": "Romania",
+    "description": "Romania's AI Revolution: Positioning Eastern Europe as a Global Innovation Hub"
+  },
+  {
+    "title": "AI Career Guide for Romanian Tech Professionals: Salary, Growth & Market Opportunity",
+    "url": "/articles/countries-romania-romania-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee & Workforce",
+    "country": "Romania",
+    "description": "AI Career Guide for Romanian Tech Professionals: Salary, Growth & Market Opportunity"
+  },
+  {
+    "title": "Romania's National AI Strategy: Compliance Challenges and Workforce Transition Imperatives",
+    "url": "/articles/countries-romania-romania-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policy",
+    "country": "Romania",
+    "description": "Romania's National AI Strategy: Compliance Challenges and Workforce Transition Imperatives"
+  },
+  {
+    "title": "AI for Romanian Small Business: ROI Calculations, Hiring, and EU Compliance",
+    "url": "/articles/countries-romania-romania-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner",
+    "country": "Romania",
+    "description": "AI for Romanian Small Business: ROI Calculations, Hiring, and EU Compliance"
+  },
+  {
+    "title": "Leading Hungary's Automotive Revolution: How CEOs Can Harness AI for Competitive Advantage",
+    "url": "/articles/countries-hungary-hungary-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Business Leadership",
+    "country": "Hungary",
+    "description": "Leading Hungary's Automotive Revolution: How CEOs Can Harness AI for Competitive Advantage"
+  },
+  {
+    "title": "From Assembly Line to AI Lab: Building Your Career in Hungary's Intelligent Manufacturing Future",
+    "url": "/articles/countries-hungary-hungary-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee & Workforce",
+    "country": "Hungary",
+    "description": "From Assembly Line to AI Lab: Building Your Career in Hungary's Intelligent Manufacturing Future"
+  },
+  {
+    "title": "Executing Hungary's AI Transformation: Government Strategy for Workforce, Innovation, and Manufacturing Competitiveness",
+    "url": "/articles/countries-hungary-hungary-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policy",
+    "country": "Hungary",
+    "description": "Executing Hungary's AI Transformation: Government Strategy for Workforce, Innovation, and Manufacturing Competitiveness"
+  },
+  {
+    "title": "From Budapest to Global: Small Business and Startup Opportunities in Hungary's AI Revolution",
+    "url": "/articles/countries-hungary-hungary-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner",
+    "country": "Hungary",
+    "description": "From Budapest to Global: Small Business and Startup Opportunities in Hungary's AI Revolution"
+  },
+  {
+    "title": "Ukraine's Tech Sector: From Wartime Resilience to Global Leadership in AI Outsourcing",
+    "url": "/articles/countries-ukraine-ukraine-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Business Leadership",
+    "country": "Ukraine",
+    "description": "Ukraine's Tech Sector: From Wartime Resilience to Global Leadership in AI Outsourcing"
+  },
+  {
+    "title": "Building a Tech Career in Wartime Ukraine: Salaries, Paths, and Remote Opportunities",
+    "url": "/articles/countries-ukraine-ukraine-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee & Workforce",
+    "country": "Ukraine",
+    "description": "Building a Tech Career in Wartime Ukraine: Salaries, Paths, and Remote Opportunities"
+  },
+  {
+    "title": "Diia, Defense Innovation, and Reconstruction: Ukraine's State-Level AI and Digital Transformation Strategy",
+    "url": "/articles/countries-ukraine-ukraine-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policy",
+    "country": "Ukraine",
+    "description": "Diia, Defense Innovation, and Reconstruction: Ukraine's State-Level AI and Digital Transformation Strategy"
+  },
+  {
+    "title": "From Startup to Scale: How Small Tech Businesses Access Global Markets Through Ukraine's Defense Tech and Outsourcing Ecosystem",
+    "url": "/articles/countries-ukraine-ukraine-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner",
+    "country": "Ukraine",
+    "description": "From Startup to Scale: How Small Tech Businesses Access Global Markets Through Ukraine's Defense Tech and Outsourcing Ecosystem"
   }
 ]
