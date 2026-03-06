@@ -1743,5 +1743,37 @@
     "title": "Utilities AI 2030: CEO Brief | AI2030",
     "url": "/articles/sectors-utilities-utilities-incumbent-ceos.html",
     "type": "Report"
+  },
+  {
+    "title": "Italy AI 2030: CEO Brief",
+    "url": "/articles/countries-italy-italy-ceo-edition.html",
+    "category": "Country Report",
+    "audience": "CEO & Business Leadership",
+    "country": "Italy",
+    "description": "How AI will reshape Italy's \u20ac2.19T economy by 2030. Motor Valley, Milan fashion, and strategic scenarios for Italian business leaders."
+  },
+  {
+    "title": "Italy AI 2030: Employee Brief",
+    "url": "/articles/countries-italy-italy-employee-edition.html",
+    "category": "Country Report",
+    "audience": "Employee & Workforce",
+    "country": "Italy",
+    "description": "Your career in Italy's AI age. Sector risk map, reskilling pathways calibrated to Italian salaries, and real transition stories."
+  },
+  {
+    "title": "Italy AI 2030: Government Brief",
+    "url": "/articles/countries-italy-italy-government-edition.html",
+    "category": "Country Report",
+    "audience": "Government & Policy",
+    "country": "Italy",
+    "description": "Policy brief for Italian policymakers. Economic exposure, workforce impact, peer comparisons, and six policy recommendations."
+  },
+  {
+    "title": "Italy AI 2030: Small Business Owner Brief",
+    "url": "/articles/countries-italy-italy-small-business-owner-edition.html",
+    "category": "Country Report",
+    "audience": "Small Business Owner",
+    "country": "Italy",
+    "description": "AI operations guide for Italy's 4.4 million SMEs. Five AI tools with ROI in euros, PNRR digital vouchers, practical steps."
   }
 ]
