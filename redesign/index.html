@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 2030 Intelligence Report | Redesign Preview</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+:root {
+    --white: #ffffff;
+    --bg: #f9fafb;
+    --bg-section: #f0f4f3;
+    --card-bg: #ffffff;
+    --border: #e2e8f0;
+    --border-light: #eef2f1;
+    --teal-900: #0f4c3a;
+    --teal-800: #155e4a;
+    --teal-700: #1a7a5e;
+    --teal-600: #1f9d76;
+    --teal-100: #e6f5f0;
+    --teal-50: #f0faf6;
+    --coral: #e8734a;
+    --coral-dark: #d4623b;
+    --coral-light: #fef0eb;
+    --text-dark: #1a202c;
+    --text-body: #4a5568;
+    --text-muted: #718096;
+    --text-light: #a0aec0;
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --radius: 12px;
+    --radius-lg: 16px;
+    --radius-full: 9999px;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
+    --shadow-lg: 0 8px 32px rgba(0,0,0,0.1);
+    --max-width: 1200px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-body); background: var(--white); color: var(--text-body); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+
+.site-header { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.96); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 0 2rem; }
+.header-inner { max-width: var(--max-width); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 68px; }
+.site-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text-dark); }
+.logo-icon { width: 36px; height: 36px; background: var(--teal-800); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 14px; color: white; font-weight: 800; }
+.logo-text { font-weight: 700; font-size: 1.2rem; color: var(--text-dark); }
+.logo-text span { color: var(--teal-700); }
+.nav-links { display: flex; gap: 4px; list-style: none; align-items: center; }
+.nav-links a { color: var(--text-body); text-decoration: none; padding: 8px 16px; border-radius: var(--radius-full); font-size: 0.9rem; font-weight: 500; transition: all 0.2s; }
+.nav-links a:hover { color: var(--teal-800); background: var(--teal-50); }
+.nav-cta { color: var(--coral) !important; font-weight: 600 !important; }
+.nav-cta:hover { background: var(--coral-light) !important; color: var(--coral-dark) !important; }
+.nav-toggle { display: none; background: none; border: none; color: var(--text-dark); font-size: 1.5rem; cursor: pointer; padding: 8px; }
+
+.hero { padding: 5rem 2rem 4rem; text-align: center; background: linear-gradient(180deg, var(--teal-50) 0%, var(--white) 100%); }
+.hero h1 { font-family: var(--font-display); font-size: clamp(2.2rem, 5vw, 3.8rem); font-weight: 800; color: var(--text-dark); line-height: 1.2; margin-bottom: 1rem; letter-spacing: -1px; }
+.hero h1 em { font-style: normal; color: var(--teal-700); }
+.hero .subtitle { font-size: 1.15rem; color: var(--text-muted); max-width: 640px; margin: 0 auto 2.5rem; line-height: 1.7; }
+
+.search-bar { max-width: 580px; margin: 0 auto 2.5rem; display: flex; background: var(--white); border: 1.5px solid var(--border); border-radius: var(--radius-full); overflow: hidden; box-shadow: var(--shadow-sm); transition: all 0.2s; }
+.search-bar:focus-within { border-color: var(--teal-600); box-shadow: 0 0 0 3px rgba(26,122,94,0.1); }
+.search-bar input { flex: 1; border: none; padding: 16px 24px; font-size: 1rem; font-family: var(--font-body); color: var(--text-dark); outline: none; background: transparent; }
+.search-bar input::placeholder { color: var(--text-light); }
+.search-bar button { padding: 12px 28px; margin: 6px; background: var(--teal-800); color: white; border: none; border-radius: var(--radius-full); font-size: 0.95rem; font-weight: 600; cursor: pointer; transition: background 0.2s; white-space: nowrap; font-family: var(--font-body); }
+.search-bar button:hover { background: var(--teal-900); }
+
+.hero-stats { display: flex; gap: 2.5rem; justify-content: center; flex-wrap: wrap; }
+.hero-stat { display: flex; align-items: center; gap: 6px; font-size: 0.95rem; color: var(--text-muted); }
+.hero-stat strong { color: var(--teal-800); font-weight: 700; font-size: 1.1rem; }
+.hero-stat .check { color: var(--teal-600); font-size: 1.1rem; }
+
+.section { padding: 5rem 2rem; max-width: var(--max-width); margin: 0 auto; }
+.section-alt { background: var(--bg-section); }
+.section-alt .section-inner { max-width: var(--max-width); margin: 0 auto; padding: 5rem 2rem; }
+.section-title { font-family: var(--font-display); font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 800; color: var(--text-dark); text-align: center; margin-bottom: 0.5rem; letter-spacing: -0.5px; }
+.section-subtitle { text-align: center; color: var(--text-muted); font-size: 1rem; margin-bottom: 3rem; }
+
+.pillars-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+.pillar-card { background: var(--card-bg); border: 1.5px solid var(--border-light); border-radius: var(--radius-lg); padding: 2.5rem 2rem; text-align: center; transition: all 0.3s ease; text-decoration: none; color: inherit; display: block; }
+.pillar-card:hover { border-color: var(--teal-600); box-shadow: var(--shadow-md); transform: translateY(-3px); }
+.pillar-icon { font-size: 2.5rem; margin-bottom: 1rem; display: block; }
+.pillar-card h3 { font-size: 1.2rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.75rem; }
+.pillar-card p { font-size: 0.92rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.25rem; }
+.pillar-badge { display: inline-block; padding: 6px 16px; background: var(--teal-100); color: var(--teal-800); border-radius: var(--radius-full); font-size: 0.82rem; font-weight: 600; }
+
+.articles-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+.article-card { background: var(--card-bg); border: 1.5px solid var(--border-light); border-radius: var(--radius-lg); padding: 1.75rem; text-decoration: none; color: inherit; display: flex; flex-direction: column; transition: all 0.3s ease; }
+.article-card:hover { border-color: var(--teal-600); box-shadow: var(--shadow-md); transform: translateY(-2px); }
+.article-tag { display: inline-block; padding: 4px 12px; background: var(--teal-100); color: var(--teal-800); border-radius: var(--radius-full); font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 1rem; align-self: flex-start; }
+.article-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--text-dark); line-height: 1.4; margin-bottom: 0.5rem; }
+.article-card p { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; flex: 1; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.article-card .read-more { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-light); font-size: 0.85rem; font-weight: 600; color: var(--teal-700); }
+
+.cta-banner { background: var(--coral); padding: 4rem 2rem; text-align: center; color: white; }
+.cta-banner h2 { font-family: var(--font-display); font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 800; margin-bottom: 0.75rem; }
+.cta-banner p { font-size: 1rem; opacity: 0.9; max-width: 500px; margin: 0 auto 2rem; }
+.cta-btn { display: inline-block; padding: 14px 36px; background: var(--white); color: var(--coral-dark); border-radius: var(--radius-full); font-size: 1rem; font-weight: 700; text-decoration: none; transition: all 0.2s; border: none; cursor: pointer; }
+.cta-btn:hover { box-shadow: var(--shadow-lg); transform: translateY(-1px); }
+
+.categories-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; }
+.category-chip { display: flex; align-items: center; gap: 8px; padding: 14px 16px; background: var(--card-bg); border: 1.5px solid var(--border-light); border-radius: var(--radius); text-decoration: none; color: var(--text-dark); font-size: 0.9rem; font-weight: 500; transition: all 0.2s; }
+.category-chip:hover { border-color: var(--teal-600); background: var(--teal-50); color: var(--teal-800); }
+.category-chip .emoji { font-size: 1.2rem; }
+
+.teal-cta { background: var(--teal-800); padding: 4rem 2rem; text-align: center; color: white; }
+.teal-cta h2 { font-family: var(--font-display); font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 800; margin-bottom: 0.75rem; }
+.teal-cta p { font-size: 1rem; opacity: 0.85; max-width: 500px; margin: 0 auto 2rem; }
+.teal-cta .cta-btn { color: var(--teal-900); }
+
+.site-footer { background: #1a2332; color: #a0aec0; padding: 4rem 2rem 2rem; }
+.footer-inner { max-width: var(--max-width); margin: 0 auto; display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+.footer-brand { display: flex; flex-direction: column; gap: 1rem; }
+.footer-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.footer-logo .logo-icon { background: var(--teal-700); }
+.footer-logo .logo-text { color: white; }
+.footer-logo .logo-text span { color: var(--teal-600); }
+.footer-brand p { font-size: 0.9rem; line-height: 1.7; color: #718096; }
+.footer-col h4 { font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: white; margin-bottom: 1.25rem; }
+.footer-col a { display: block; color: #718096; text-decoration: none; font-size: 0.9rem; padding: 4px 0; transition: color 0.2s; }
+.footer-col a:hover { color: white; }
+.footer-bottom { max-width: var(--max-width); margin: 0 auto; padding-top: 2rem; border-top: 1px solid #2d3748; text-align: center; }
+.footer-newsletter { max-width: 480px; margin: 0 auto 2rem; text-align: center; }
+.footer-newsletter h4 { font-size: 1rem; font-weight: 700; color: white; margin-bottom: 0.5rem; }
+.footer-newsletter p { font-size: 0.85rem; color: #718096; margin-bottom: 1rem; }
+.newsletter-form { display: flex; gap: 8px; }
+.newsletter-form input { flex: 1; padding: 12px 16px; background: #2d3748; border: 1px solid #4a5568; border-radius: var(--radius-full); color: white; font-size: 0.9rem; font-family: var(--font-body); outline: none; }
+.newsletter-form input::placeholder { color: #718096; }
+.newsletter-form button { padding: 12px 24px; background: var(--coral); color: white; border: none; border-radius: var(--radius-full); font-weight: 600; font-size: 0.9rem; cursor: pointer; transition: background 0.2s; font-family: var(--font-body); }
+.newsletter-form button:hover { background: var(--coral-dark); }
+.footer-legal { font-size: 0.8rem; color: #4a5568; line-height: 1.7; }
+.footer-legal a { color: #718096; text-decoration: none; }
+.footer-legal a:hover { color: white; }
+
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .nav-toggle { display: block; }
+    .hero { padding: 3rem 1.5rem 2.5rem; }
+    .hero h1 { font-size: 1.9rem; }
+    .hero .subtitle { font-size: 1rem; }
+    .search-bar { flex-direction: column; border-radius: var(--radius); }
+    .search-bar input { padding: 14px 16px; }
+    .search-bar button { margin: 0 6px 6px; }
+    .section, .section-alt .section-inner { padding: 3rem 1.5rem; }
+    .pillars-grid { grid-template-columns: 1fr; }
+    .articles-grid { grid-template-columns: 1fr; }
+    .categories-grid { grid-template-columns: 1fr 1fr; }
+    .footer-inner { grid-template-columns: 1fr 1fr; gap: 2rem; }
+    .footer-brand { grid-column: 1 / -1; }
+    .newsletter-form { flex-direction: column; }
+}
+@media (max-width: 480px) {
+    .hero h1 { font-size: 1.6rem; }
+    .hero-stats { flex-direction: column; gap: 0.5rem; align-items: center; }
+    .categories-grid { grid-template-columns: 1fr; }
+    .footer-inner { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <a href="#" class="site-logo">
+            <div class="logo-icon">AI</div>
+            <div class="logo-text">AI<span>2030</span></div>
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Countries</a></li>
+                <li><a href="#">Companies</a></li>
+                <li><a href="#">Sectors</a></li>
+                <li><a href="#">Methodology</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#" class="nav-cta">Browse All &#8595;</a></li>
+            </ul>
+        </nav>
+        <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+    </div>
+</header>
+
+<section class="hero">
+    <h1>Your Trusted<br><em>AI Disruption Encyclopedia</em></h1>
+    <p class="subtitle">Research-backed intelligence covering 70 countries, 142 companies, and 20 sectors. Understand how AI will reshape your economy by 2030.</p>
+    <div class="search-bar">
+        <input type="text" placeholder="Search countries, companies, sectors...">
+        <button>Search</button>
+    </div>
+    <div class="hero-stats">
+        <div class="hero-stat"><strong>517+</strong> Articles</div>
+        <div class="hero-stat"><strong>70</strong> Countries</div>
+        <div class="hero-stat"><span class="check">&#9745;</span> Research-Backed</div>
+        <div class="hero-stat"><strong>4</strong> Audience Editions</div>
+    </div>
+</section>
+
+<section class="section">
+    <h2 class="section-title">Three Lenses on AI Disruption</h2>
+    <p class="section-subtitle">Comprehensive coverage across every dimension of the AI economy</p>
+    <div class="pillars-grid">
+        <a href="#" class="pillar-card">
+            <span class="pillar-icon">&#127758;</span>
+            <h3>Country Intelligence</h3>
+            <p>GDP impact, workforce disruption, policy readiness, and tech ecosystem analysis for 70 nations &#8212; with local companies, local currencies, and real data.</p>
+            <span class="pillar-badge">280 articles</span>
+        </a>
+        <a href="#" class="pillar-card">
+            <span class="pillar-icon">&#127970;</span>
+            <h3>Company Briefs</h3>
+            <p>How AI reshapes competitive dynamics for 142 of the world's largest companies &#8212; strategic dilemmas, disruption risk, and transformation roadmaps.</p>
+            <span class="pillar-badge">142 articles</span>
+        </a>
+        <a href="#" class="pillar-card">
+            <span class="pillar-icon">&#128200;</span>
+            <h3>Sector Analysis</h3>
+            <p>AI disruption maps for the 20 largest sectors by market cap &#8212; from Healthcare to Semiconductors, Banking to Retail, Energy to Software.</p>
+            <span class="pillar-badge">95 articles</span>
+        </a>
+    </div>
+</section>
+
+<div class="section-alt">
+    <div class="section-inner">
+        <h2 class="section-title">Featured Articles</h2>
+        <p class="section-subtitle">Latest research-backed AI disruption intelligence</p>
+        <div class="articles-grid">
+            <a href="#" class="article-card">
+                <span class="article-tag">United States</span>
+                <h3>How AI Will Reshape the $28T American Economy by 2030</h3>
+                <p>Strategic intelligence for CEOs navigating workforce automation, market disruption, and the new competitive landscape across every major US industry...</p>
+                <div class="read-more">Read full article &#8594;</div>
+            </a>
+            <a href="#" class="article-card">
+                <span class="article-tag">Germany</span>
+                <h3>Germany's Mittelstand and the AI Transformation Challenge</h3>
+                <p>How Germany's 3.5 million SMEs must adapt to AI-driven manufacturing, Industry 4.0 acceleration, and shifting global supply chains...</p>
+                <div class="read-more">Read full article &#8594;</div>
+            </a>
+            <a href="#" class="article-card">
+                <span class="article-tag">India</span>
+                <h3>India's $5T AI Opportunity: From IT Services to AI Powerhouse</h3>
+                <p>How India's massive IT workforce, startup ecosystem, and digital infrastructure position it as a global AI leader &#8212; and the risks if it falls behind...</p>
+                <div class="read-more">Read full article &#8594;</div>
+            </a>
+            <a href="#" class="article-card">
+                <span class="article-tag">Japan</span>
+                <h3>Japan's Demographic Crisis Meets AI: Automation as Survival Strategy</h3>
+                <p>With a shrinking workforce and aging population, Japan's embrace of robotics and AI isn't optional &#8212; it's existential...</p>
+                <div class="read-more">Read full article &#8594;</div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<section class="cta-banner">
+    <h2>Find Your Country's AI Readiness Brief</h2>
+    <p>Personalized intelligence for CEOs, employees, governments, and small business owners in 70 countries.</p>
+    <a href="#" class="cta-btn">Explore All Countries &#8594;</a>
+</section>
+
+<section class="section">
+    <h2 class="section-title">Browse by Category</h2>
+    <p class="section-subtitle">Explore our encyclopedia by topic</p>
+    <div class="categories-grid">
+        <a href="#" class="category-chip"><span class="emoji">&#127758;</span> North America</a>
+        <a href="#" class="category-chip"><span class="emoji">&#127466;&#127482;</span> Europe</a>
+        <a href="#" class="category-chip"><span class="emoji">&#127470;&#127475;</span> Asia Pacific</a>
+        <a href="#" class="category-chip"><span class="emoji">&#127463;&#127479;</span> Latin America</a>
+        <a href="#" class="category-chip"><span class="emoji">&#127475;&#127468;</span> Africa</a>
+        <a href="#" class="category-chip"><span class="emoji">&#127462;&#127466;</span> Middle East</a>
+        <a href="#" class="category-chip"><span class="emoji">&#128188;</span> CEO Edition</a>
+        <a href="#" class="category-chip"><span class="emoji">&#128187;</span> Employee Edition</a>
+        <a href="#" class="category-chip"><span class="emoji">&#127963;</span> Government Edition</a>
+        <a href="#" class="category-chip"><span class="emoji">&#128176;</span> Small Business</a>
+        <a href="#" class="category-chip"><span class="emoji">&#128202;</span> Sector Reports</a>
+        <a href="#" class="category-chip"><span class="emoji">&#127970;</span> Company Briefs</a>
+    </div>
+</section>
+
+<section class="teal-cta">
+    <h2>Explore the Full Company Database</h2>
+    <p>AI disruption analysis for 142 of the world's most important companies across 12 countries.</p>
+    <a href="#" class="cta-btn">Browse Companies &#8594;</a>
+</section>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <a href="#" class="footer-logo">
+                <div class="logo-icon">AI</div>
+                <div class="logo-text">AI<span>2030</span></div>
+            </a>
+            <p>Your trusted source for AI disruption intelligence. Covering 70 countries, 142 companies, and 20 sectors with research-backed analysis.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Coverage</h4>
+            <a href="#">Country Reports</a>
+            <a href="#">Company Briefs</a>
+            <a href="#">Sector Analysis</a>
+            <a href="#">Browse All</a>
+        </div>
+        <div class="footer-col">
+            <h4>Resources</h4>
+            <a href="#">Methodology</a>
+            <a href="#">Search</a>
+            <a href="#">Updates</a>
+            <a href="#">Press</a>
+        </div>
+        <div class="footer-col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-newsletter">
+            <h4>Stay Updated</h4>
+            <p>Get the latest AI disruption intelligence delivered to your inbox.</p>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Your email address">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <p class="footer-legal">&#169; 2025-2026 AI2030 Intelligence Report &#8212; All rights reserved.<br>Forward-looking analysis for informational purposes only. Not financial advice.<br><a href="#">Privacy</a> &#8226; <a href="#">Terms</a> &#8226; <a href="#">Contact</a></p>
+    </div>
+</footer>
+</body>
+</html>
