@@ -228,6 +228,36 @@ h3 { font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; col
 .entity-pill, .edition-pill { display: inline-block; padding: 0.4rem 0.9rem; border: 1px solid var(--border); border-radius: var(--radius-full); font-size: 0.8rem; font-weight: 500; color: var(--text-body); text-decoration: none; transition: all 0.2s; margin: 0.25rem; }
 .entity-pill:hover, .edition-pill:hover { border-color: var(--teal-700); color: var(--teal-700); background: var(--teal-50); text-decoration: none; }
 
+
+/* Companies page styles */
+.tagline { font-size: 1.05rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+.view-toggles { display: flex; gap: 0.5rem; margin: 2rem 0 1.5rem; flex-wrap: wrap; }
+.view-toggle { padding: 0.6rem 1.2rem; background: var(--white); border: 1.5px solid var(--border-light); border-radius: var(--radius-full); color: var(--text-body); cursor: pointer; font-weight: 500; font-size: 0.9rem; font-family: var(--font-body); transition: all 0.2s ease; }
+.view-toggle:hover { border-color: var(--teal-700); background: var(--teal-50); color: var(--teal-800); }
+.view-toggle.active { background: var(--teal-700); border-color: var(--teal-700); color: white; }
+.group-section { margin-bottom: 2rem; }
+.group-heading { font-family: var(--font-display); font-size: 1.3rem; font-weight: 800; color: var(--teal-800); padding-bottom: 0.5rem; border-bottom: 2px solid var(--teal-600); margin-bottom: 1rem; margin-top: 1.5rem; }
+.group-count { font-weight: 400; color: var(--text-muted); font-size: 0.9rem; }
+.entity-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; }
+.entity-card { cursor: pointer; padding: 1.25rem; }
+.entity-card .entity-icon { font-size: 1.5rem; margin-bottom: 0.4rem; }
+.entity-card h3 { font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; color: var(--text-dark); margin: 0 0 0.2rem; }
+.entity-card p { font-size: 0.82rem; color: var(--text-muted); margin: 0 0 0.5rem; }
+.entity-meta-tag { display: inline-block; font-size: 0.75rem; color: var(--text-light); margin-bottom: 0.5rem; }
+.entity-card a { font-size: 0.85rem; font-weight: 600; color: var(--teal-700); }
+.entity-card a:hover { color: var(--teal-800); text-decoration: underline; }
+.email-capture { background: var(--bg-section); border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 2rem; margin-top: 2rem; text-align: center; }
+.email-capture h3 { font-family: var(--font-display); color: var(--text-dark); margin-bottom: 0.5rem; }
+.email-capture p { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem; }
+.email-capture-form { display: flex; gap: 0.5rem; max-width: 400px; margin: 0 auto; }
+.email-capture-form input { flex: 1; padding: 0.7rem 1rem; border: 1px solid var(--border-light); border-radius: var(--radius); font-family: var(--font-body); }
+.email-capture-form button { padding: 0.7rem 1.5rem; background: var(--coral); color: white; border: none; border-radius: var(--radius); font-weight: 600; cursor: pointer; font-family: var(--font-body); }
+.email-capture-form button:hover { background: var(--coral-dark); }
+.email-capture-success { display: none; color: var(--teal-700); font-weight: 600; }
+.back-to-top { position: fixed; bottom: 2rem; right: 2rem; width: 40px; height: 40px; border-radius: 50%; background: var(--teal-700); color: white; border: none; font-size: 1.2rem; cursor: pointer; display: none; z-index: 50; box-shadow: var(--shadow-md); }
+.back-to-top.visible { display: block; }
+@media (max-width: 768px) { .entity-grid { grid-template-columns: 1fr; } .email-capture-form { flex-direction: column; } }
+
 </style>
     <!-- GA4 Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-S9Z93KZ2Z2"></script>
@@ -295,8 +325,7 @@ h3 { font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; col
                 <li><a href="/browse/countries.html">Countries</a></li>
                 <li><a href="/browse/companies.html">Companies</a></li>
                 <li><a href="/browse/sectors.html">Sectors</a></li>
-                <li><a href="/methodology.html">Methodology</a></li>
-                <li><a href="/about.html">About</a></li>
+<li><a href="/about.html">About</a></li>
                 <li><a href="/browse/data.html" class="nav-cta">Browse All &#8595;</a></li>
             </ul>
         </nav>
@@ -309,11 +338,13 @@ h3 { font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; col
 <div class="page-container">
     <main id="main-content">
         <section class="hero">
-            <h1>Companies</h1><div class="share-bar" style="display:flex;gap:0.75rem;margin:1rem 0 2rem;flex-wrap:wrap">
-<a href="https://www.linkedin.com/sharing/share-offsite/?url=https://leadtheshift.org/browse/companies.html" target="_blank" rel="noopener noreferrer" class="share-btn" style="padding:0.5rem 1rem;background:rgba(59,130,246,0.15);color:var(--accent-blue,#3b82f6);border-radius:6px;font-size:0.85rem;font-weight:500;text-decoration:none">Share on LinkedIn</a>
-<a href="https://twitter.com/intent/tweet?url=https://leadtheshift.org/browse/companies.html&text=Check%20out%20this%20report%3A%20Companies" target="_blank" rel="noopener noreferrer" class="share-btn" style="padding:0.5rem 1rem;background:rgba(139,92,246,0.15);color:var(--accent-purple,#8b5cf6);border-radius:6px;font-size:0.85rem;font-weight:500;text-decoration:none">Share on X</a>
-<button onclick="navigator.clipboard.writeText('https://leadtheshift.org/browse/companies.html');this.textContent='Copied!'" class="share-btn" style="padding:0.5rem 1rem;background:rgba(107,107,128,0.1);color:var(--text-secondary,#a8a8bc);border:1px solid var(--border,#2a2a3a);border-radius:6px;font-size:0.85rem;cursor:pointer">Copy Link</button>
-</div>
+            <h1>Companies</h1>
+        <div class="share-bar">
+            <span class="share-bar-label">Share</span>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://leadtheshift.org/browse/companies.html" target="_blank" rel="noopener noreferrer" class="share-btn">LinkedIn</a>
+            <a href="https://twitter.com/intent/tweet?url=https://leadtheshift.org/browse/companies.html&text=AI%20disruption%20forecasts%20for%20142%20companies" target="_blank" rel="noopener noreferrer" class="share-btn">X / Twitter</a>
+            <button onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!';setTimeout(()=>this.textContent='Copy Link',2000)" class="share-btn">Copy Link</button>
+        </div>
             <p class="tagline">Explore AI disruption forecasts for 142 companies across 20 sectors and 6 countries</p>
         </section>
 <div class="view-toggles">
@@ -2897,8 +2928,7 @@ h3 { font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; col
         </div>
         <div class="footer-col">
             <h4>Resources</h4>
-            <a href="/methodology.html">Methodology</a>
-            <a href="/browse/data.html">Search</a>
+<a href="/browse/data.html">Search</a>
             <a href="/updates.html">Updates</a>
             <a href="/press.html">Press</a>
         </div>
@@ -2999,36 +3029,6 @@ h3 { font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; col
             if (nav && nav.classList.contains('active')) { toggleNav(); }
         });
     });
-
-    // Dark/Light Mode Toggle
-    (function() {
-        var saved = localStorage.getItem('theme');
-        if (saved === 'light') document.documentElement.classList.add('light-theme');
-
-        // Insert toggle button in header
-        var headerInner = document.querySelector('.header-inner');
-        if (headerInner) {
-            var btn = document.createElement('button');
-            btn.className = 'theme-toggle';
-            btn.id = 'themeToggle';
-            btn.innerHTML = document.documentElement.classList.contains('light-theme') ? '🌙' : '☀️';
-            btn.title = 'Toggle light/dark mode';
-            btn.setAttribute('aria-label', 'Toggle light/dark mode');
-            btn.onclick = function() {
-                document.documentElement.classList.toggle('light-theme');
-                var isLight = document.documentElement.classList.contains('light-theme');
-                localStorage.setItem('theme', isLight ? 'light' : 'dark');
-                btn.innerHTML = isLight ? '🌙' : '☀️';
-            };
-            // Insert before nav-toggle button or at end
-            var navToggle = headerInner.querySelector('.nav-toggle');
-            if (navToggle) {
-                headerInner.insertBefore(btn, navToggle);
-            } else {
-                headerInner.appendChild(btn);
-            }
-        }
-    })();
 
 </script>
 </body>
