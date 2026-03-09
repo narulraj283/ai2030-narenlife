@@ -545,20 +545,27 @@ svg { max-width: 100%; height: auto; }
 <body>
     <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:999;padding:8px 16px;background:#0066cc;color:#fff;font-weight:600;text-decoration:none;">Skip to content</a>
     <div class="reading-progress" id="readingProgress"></div>
-<div class="article-page-container">
-
-
-    <div class="header-nav">
-        <div class="nav-brand">Lead the Shift</div>
-        <ul class="nav-links">
-            <li><a href="https://leadtheshift.org/">Home</a></li>
-            <li><a href="/browse/countries.html">Countries</a></li>
-            <li><a href="/browse/companies.html">Companies</a></li>
-            <li><a href="/browse/sectors.html">Sectors</a></li>
-            <li><a href="/contact.html">About</a></li>
-        </ul>
+    <header class="site-header">
+    <div class="header-inner">
+        <a href="/" class="site-logo">
+            <div class="logo-icon">LTS</div>
+            <div class="logo-text">Lead the <span>Shift</span></div>
+        </a>
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/browse/countries.html">Countries</a></li>
+                <li><a href="/browse/companies.html">Companies</a></li>
+                <li><a href="/browse/sectors.html">Sectors</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/browse/data.html" class="nav-cta">Browse All &#8595;</a></li>
+            </ul>
+        </nav>
+        <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navLinks').classList.toggle('active')">&#9776;</button>
     </div>
-    <div class="breadcrumb">
+</header>
+
+<div class="article-page-container">
+<div class="breadcrumb">
         <a href="https://leadtheshift.org/">Home</a> &gt;
         <a href="/browse/sectors.html">Sectors</a> &gt;
         <span>HEALTHCARE</span>
@@ -681,7 +688,7 @@ svg { max-width: 100%; height: auto; }
 
     
 </div>
-<footer class="site-footer">
+    <footer class="site-footer">
     <div class="footer-inner">
         <div class="footer-brand">
             <a href="/" class="footer-logo">
@@ -700,7 +707,7 @@ svg { max-width: 100%; height: auto; }
         </div>
         <div class="footer-col">
             <h4>Resources</h4>
-<a href="/browse/data.html">Search</a>
+            <a href="/browse/data.html">Search</a>
             <a href="/updates.html">Updates</a>
             <a href="/press.html">Press</a>
         </div>
@@ -721,7 +728,7 @@ svg { max-width: 100%; height: auto; }
                 <button>Subscribe</button>
             </div>
         </div>
-        <p class="footer-legal">&copy; Lead the Shift. All rights reserved.<br>Lead the Shift intelligence memos are strategic foresight documents — scenario planning designed to help leaders think through AI disruption and act decisively. They are not predictions, financial advice, or statements of fact. All data points are illustrative projections for thought-experiment purposes only.<br><a href="/privacy.html">Privacy</a> &bull; <a href="/terms.html">Terms</a> &bull; <a href="/contact.html">Contact</a></p>
+        <p class="footer-legal">&copy; Lead the Shift. All rights reserved.<br>Strategic foresight for informational purposes only. Not financial advice.<br><a href="/privacy.html">Privacy</a> &bull; <a href="/terms.html">Terms</a> &bull; <a href="/contact.html">Contact</a></p>
     </div>
 </footer>
 
