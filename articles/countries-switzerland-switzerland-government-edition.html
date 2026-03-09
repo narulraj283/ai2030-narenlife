@@ -26,7 +26,8 @@
 </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-S9Z93KZ2Z2"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-S9Z93KZ2Z2');</script>
-<style>:root {
+<style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800;900&display=swap');
+:root {
     --white: #ffffff;
     --bg: #f9fafb;
     --bg-section: #f0f4f3;
@@ -174,6 +175,292 @@ nav ul { list-style: none; }
 .search-box { width: 100%; padding: 1rem; background: var(--white); border: 1.5px solid var(--border-light); border-radius: var(--radius); color: var(--text-dark); font-size: 1rem; margin-bottom: 1.5rem; font-family: var(--font-body); }
 .search-box:focus { outline: none; border-color: var(--teal-700); box-shadow: 0 0 0 3px rgba(26, 122, 94, 0.1); }
 .search-box::placeholder { color: var(--text-light); }
+
+
+.article-page-container {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 2rem 2.5rem 3rem;
+}
+
+@media (max-width: 768px) {
+    .article-page-container {
+        padding: 1.5rem 1.25rem 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .article-page-container {
+        padding: 1rem 1rem 1.5rem;
+    }
+}
+
+.article-container, .main-content, main {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.article-content {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.article-content p {
+    margin-bottom: 1.5rem;
+    line-height: 1.85;
+}
+
+.article-content h2 {
+    margin-top: 3rem;
+    margin-bottom: 1.25rem;
+    font-size: 1.75rem;
+}
+
+.article-content h3 {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.35rem;
+}
+
+.article-content ul, .article-content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.article-content li {
+    margin-bottom: 0.75rem;
+    line-height: 1.75;
+}
+
+.article-content blockquote {
+    border-left: 4px solid var(--teal-600);
+    padding: 1rem 1.5rem;
+    margin: 2rem 0;
+    background: var(--teal-50, #f0faf6);
+    border-radius: 0 var(--radius, 12px) var(--radius, 12px) 0;
+    font-style: italic;
+    color: var(--text-dark);
+}
+
+.sibling-editions {
+    margin-bottom: 2rem;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--border-light, #eef2f1);
+}
+
+.sibling-editions h3 {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+    font-family: var(--font-body);
+}
+
+.sibling-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.sibling-pill {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border, #e2e8f0);
+    border-radius: var(--radius-full, 9999px);
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-body);
+    transition: all 0.2s;
+    text-decoration: none;
+}
+
+.sibling-pill:hover {
+    border-color: var(--teal-700);
+    color: var(--teal-700);
+    background: var(--teal-50);
+    text-decoration: none;
+}
+
+.sibling-pill.active {
+    background: var(--teal-800);
+    color: white;
+    border-color: var(--teal-800);
+}
+
+.article-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.meta-badge {
+    display: inline-block;
+    padding: 0.35rem 0.85rem;
+    border-radius: var(--radius-full, 9999px);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.badge-country {
+    background: var(--teal-100, #e6f5f0);
+    color: var(--teal-800, #155e4a);
+}
+
+.badge-audience {
+    background: var(--coral-light, #fef0eb);
+    color: var(--coral-dark, #d4623b);
+}
+
+.badge-date {
+    background: var(--bg-section, #f0f4f3);
+    color: var(--text-muted, #718096);
+}
+
+.email-capture {
+    background: var(--teal-50, #f0faf6);
+    border: 1px solid var(--border-light, #eef2f1);
+    border-radius: var(--radius-lg, 16px);
+    padding: 2rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.email-capture h3 {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    color: var(--text-dark);
+    margin-bottom: 0.75rem;
+}
+
+.email-capture p {
+    color: var(--text-muted);
+    margin-bottom: 1.25rem;
+    font-size: 0.95rem;
+}
+
+.email-capture-form {
+    display: flex;
+    gap: 0.75rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.email-capture-form input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 0.95rem;
+}
+
+.email-capture-form button {
+    padding: 0.75rem 1.5rem;
+    background: var(--teal-700);
+    color: white;
+    border: none;
+    border-radius: var(--radius);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.email-capture-form button:hover {
+    background: var(--teal-800);
+}
+
+.feedback-bar {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    border-top: 1px solid var(--border-light);
+}
+
+.feedback-bar a {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-full);
+    transition: all 0.2s;
+}
+
+.feedback-bar a:hover {
+    color: var(--teal-700);
+    background: var(--teal-50);
+}
+
+.references-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--border);
+}
+
+.references-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.references-section ol {
+    padding-left: 1.5rem;
+}
+
+.references-section li {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+
+.references-section a {
+    word-break: break-all;
+}
+
+.table-of-contents {
+    background: var(--bg-section, #f0f4f3);
+    border-radius: var(--radius-lg, 16px);
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.table-of-contents h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.table-of-contents ol {
+    padding-left: 1.25rem;
+}
+
+.table-of-contents li {
+    margin-bottom: 0.6rem;
+}
+
+.table-of-contents a {
+    color: var(--teal-700);
+    font-size: 0.95rem;
+    text-decoration: none;
+}
+
+.table-of-contents a:hover {
+    color: var(--teal-800);
+    text-decoration: underline;
+}
+
+.content-section {
+    margin-bottom: 2.5rem;
+}
+
+.content-section h2 {
+    font-family: var(--font-display);
+}
+
 @media (max-width: 768px) {
     .nav-links { display: none; position: fixed; top: 68px; left: 0; right: 0; background: white; flex-direction: column; padding: 1rem; border-bottom: 1px solid var(--border); box-shadow: var(--shadow-md); z-index: 99; }
     .nav-links.active { display: flex; }
@@ -200,11 +487,6 @@ nav ul { list-style: none; }
     .article-content table th, .article-content table td { padding: 0.75rem; }
 }
 
-.brief-download-bar { display: flex; align-items: center; gap: 1rem; padding: 1.5rem; background: var(--teal-50, #f0faf6); border: 1px solid var(--border-light, #eef2f1); border-radius: var(--radius, 12px); margin-bottom: 2rem; flex-wrap: wrap; }
-.brief-download-bar svg { width: 24px; height: 24px; min-width: 24px; flex-shrink: 0; }
-.brief-download-btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.7rem 1.4rem; background: var(--teal-700, #1a7a5e); color: white; border-radius: var(--radius, 12px); font-weight: 600; font-size: 0.95rem; text-decoration: none; white-space: nowrap; transition: all 0.2s; }
-.brief-download-btn:hover { background: var(--teal-800, #155e4a); color: white; text-decoration: none; }
-.brief-download-btn svg { width: 18px; height: 18px; min-width: 18px; fill: currentColor; }
 .article-content svg, .article-body svg, .content-body svg { max-width: 48px; max-height: 48px; }
 svg:not([width]):not([class]) { max-width: 24px; max-height: 24px; }
 
@@ -235,9 +517,10 @@ svg { max-width: 100%; height: auto; }
 </header>
 
 <div class="mobile-overlay" id="mobileOverlay"></div>
+<div class="article-page-container">
+
 <nav class="breadcrumb"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/browse/countries.html">Countries</a> <span>&rsaquo;</span> <a href="#">Switzerland</a> <span>&rsaquo;</span> <span>Government &amp; Policy</span></nav>
 <div class="article-header"><div class="article-meta"><span class="meta-badge badge-country">Switzerland</span><span class="meta-badge badge-audience">Government &amp; Policy</span><span class="meta-badge badge-date">Updated March 2026</span></div></div>
-<div class="brief-download-bar"><p><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 16l-5-5h3V4h4v7h3l-5 5zm-7 2h14v2H5v-2z"/></svg> <strong>Download the Switzerland AI Disruption Brief</strong></p><a href="/briefs/brief-switzerland-switzerland.pdf" target="_blank" rel="noopener noreferrer" class="brief-download-btn" data-country="switzerland" data-source="government-article"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 16l-5-5h3V4h4v7h3l-5 5zm-7 2h14v2H5v-2z"/></svg> Download PDF</a></div>
 <div class="sibling-editions"><h3>View other perspectives:</h3><div class="sibling-pills"><a href="/articles/countries-switzerland-switzerland-ceo-edition.html" class="sibling-pill ">CEO</a><a href="/articles/countries-switzerland-switzerland-employee-edition.html" class="sibling-pill ">Employee</a><a href="/articles/countries-switzerland-switzerland-government-edition.html" class="sibling-pill active">Government</a><a href="/articles/countries-switzerland-switzerland-small-business-owner-edition.html" class="sibling-pill ">Small Business Owner</a></div></div>
 <article class="article-content" id="main-content"><h1>Artificial Intelligence and Switzerland's Global Competitiveness: Innovation, Regulation, and Workforce Transformation by 2030</h1><p class="subtitle">A Policy Brief for Swiss Federal Government Policymakers and State Secretariat Leaders</p><div class="metadata"><p><strong>Publication Date:</strong> March 2026</p><p><strong>Research Period:</strong> 2025-2026</p><p><strong>Prepared for:</strong> State Secretariat for Education, Research and Innovation (SERI), Federal Department of Foreign Affairs (FDFA), Cantonal Governments, Innosuisse</p><p><strong>Classification:</strong> Government Policy Brief for Swiss Federal Administration</p></div><div class="toc"><h3>Contents</h3><ol><li><a href="#executive-summary">Executive Summary</a></li><li><a href="#economic-exposure">Economic Exposure Assessment</a></li><li><a href="#workforce-impact">Workforce Impact and Labour Market Transformation</a></li><li><a href="#policy-options">Policy Options: Regulatory Frameworks and International Comparisons</a></li><li><a href="#budget-implications">Budget Implications and Federal Investment Framework</a></li><li><a href="#policy-recommendations">Six Strategic Policy Recommendations</a></li><li><a href="#comparative-scorecard">Comparative Scorecard: Switzerland vs Global AI Leaders</a></li><li><a href="#references">References</a></li></ol></div><!-- EXECUTIVE SUMMARY --><h2 id="executive-summary">Executive Summary</h2><p>Switzerland stands at a critical juncture in artificial intelligence development and deployment. As of March 2026, the nation has consolidated its position as the world's leading AI innovation hub—ranking 1st globally in the Global Innovation Index for 15 consecutive years with a score of 66.0—while simultaneously navigating complex regulatory choices that will determine competitive advantage through 2030 and beyond. This policy brief assesses the economic and workforce implications of Switzerland's AI trajectory and proposes coordinated federal, cantonal, and sectoral interventions to maximize innovation gains while protecting fundamental rights and sustaining the cross-border workforce collaboration that underpins prosperity.</p><div class="key-finding"><strong>Strategic Finding:</strong> Switzerland's sector-specific regulatory approach (approved February 12, 2025, by the Federal Council) positions the nation uniquely to lead in regulated AI applications—particularly pharmaceutical drug discovery, precision medicine, and financial risk assessment—whilst maintaining the innovation flexibility that attracts leading global AI research centers. However, acute labour market skills shortages, with 58% of businesses reporting workforce constraints hindering AI adoption, present the primary constraint on economic value capture by 2030.
 </div><h3>Key Statistics at a Glance</h3><div class="data-box"><p><span class="stat-figure">CHF 897 billion</span><span class="stat-label">Swiss nominal GDP (2024), service sector contributing 71.9% ($2.1 billion from cloud AI alone)</span></p><p style="margin-top: 15px;"><span class="stat-figure">46%</span><span class="stat-label">Business AI adoption rate (above European average of 42%), growing 48% year-on-year</span></p><p style="margin-top: 15px;"><span class="stat-figure">82%</span><span class="stat-label">Swiss knowledge workers actively using generative AI at work (7 percentage points above global average)</span></p><p style="margin-top: 15px;"><span class="stat-figure">CHF 300 million</span><span class="stat-label">Annual Innosuisse funding for innovation projects, 2024-2028, supporting AI-in-Life-Sciences flagship initiative</span></p><p style="margin-top: 15px;"><span class="stat-figure">CHF 29.2 billion</span><span class="stat-label">Approved federal research funding (2025-2028) guaranteed through European Research Programme dispatch</span></p><p style="margin-top: 15px;"><span class="stat-figure">34%</span><span class="stat-label">SME AI adoption rate (2025), up from 22% in 2024—55% acceleration driven by translation and process automation</span></p><p style="margin-top: 15px;"><span class="stat-figure">2.9%</span><span class="stat-label">Unemployment rate (among world's lowest), yet 58% of employers report workforce skills shortage hindering innovation deployment</span></p><p style="margin-top: 15px;"><span class="stat-figure">200,000+</span><span class="stat-label">Cross-border workers (7% of total employment) providing critical AI specialist talent, with small but measurable wage pressure on Swiss highly-skilled cohorts</span></p></div><!-- ECONOMIC EXPOSURE ASSESSMENT --><h2 id="economic-exposure">Economic Exposure Assessment</h2><h3>Current Economic and Sectoral Context</h3><p>Switzerland's economy entered 2026 from a position of considerable structural strength but faces headwinds from geopolitical uncertainty and currency pressures. GDP growth reached 0.9% in 2024 and is forecast at 1.4% for 2025 and 1.8% for 2026, supported by continued strength in pharmaceuticals, finance, and insurance sectors which together generate CHF 69 billion in value added and employ 218,000 FTE in financial services alone. The pharmaceutical cluster centred in Basel—home to Novartis, Roche, and leading biotech enterprises—represents a global hub for drug development and the primary economic driver. Manufacturing contributes 18% of GDP, with industrial robotics leader ABB (Zurich headquarters, 200,000 robots installed globally) anchoring the precision engineering ecosystem.</p><p>Against this macroeconomic backdrop, AI adoption has accelerated dramatically. Business AI adoption stands at 46%, representing growth of 48% year-on-year and positioning Switzerland above the European average. Importantly, 93% of Swiss businesses deploying AI report revenue increases, with average gains of 35% documented across adopters. This productivity uplift occurs against low unemployment (2.9%) and world-leading wages (CHF 8,759 monthly gross average earnings, 2.56 times the EU27 average).</p><h3>AI Economic Impact and Productivity Gains</h3><p>The economic contribution of AI to Swiss GDP currently registers at USD 2.1 billion from cloud AI infrastructure alone (2023), with modelling suggesting AI-driven productivity improvements could contribute up to 11% of incremental GDP by 2030 under baseline adoption scenarios. The daily time savings from generative AI adoption—averaging 30 minutes per knowledge worker—translates to approximately 15 billion hours of annual capacity liberation across the knowledge economy. Critically, 82% of companies report transformation or significant productivity gains, and employers report improved efficiency in 57% of deployments (compared to 46% in 2024), indicating acceleration in organizational learning.</p><div class="sidebar-stat"><div class="stat-figure">11%</div><div class="stat-label">Potential AI productivity contribution to Swiss GDP by 2030 under baseline adoption scenarios</div></div><p>However, this macroeconomic opportunity is distributed unevenly across sectors and firm sizes. Large enterprises with dedicated AI/data science functions capture disproportionate value, whilst 75% of small and medium-sized enterprises lack formal AI strategy. This "strategy gap" means that productivity gains remain episodic rather than embedded in sustainable competitive advantage. The top SME AI applications—translation (52% adoption), correspondence (47%), process automation (34%), and data analysis (32%)—represent tactical automation rather than transformational business model innovation.</p><h3>Sectoral Concentration and Regulated Industries Advantage</h3><p>Switzerland's regulated industries—pharmaceuticals, life sciences, financial services, and insurance—demonstrate particular suitability for AI deployment under the February 2025 sector-specific regulatory framework. Novartis has invested USD 37.5 million upfront plus USD 1.2 billion in milestone funding to Isomorphic Labs for AI-driven drug discovery, leveraging computational twins for clinical trial optimization. Roche has signed 8+ AI deals since 2019 and invests USD 3 billion annually in digital infrastructure modernization. UBS appointed its first Chief AI Officer in January 2025 (Daniele Magazzeni, former JPMorgan analytics chief) and deployed 300+ AI use cases, including a proprietary M&A deal identification tool analyzing 300,000+ companies in under 30 seconds.</p><p>Zurich Insurance launched its AI Lab in 2025 with partnerships including ETH Zurich and the University of St. Gallen, focusing on industry transformation. Swiss Re employs AI primarily for augmentation rather than process replacement, reflecting the insurance sector's emphasis on regulatory compliance and customer trust. This concentration of AI adoption in regulated sectors creates a strategic advantage: Switzerland's light-touch regulatory framework—integrated into existing sectoral rules rather than imposing a comprehensive AI act—enables faster innovation in pharmaceuticals, finance, and insurance whilst external regulatory pressure for responsible AI governance is satisfied through existing data protection (FADP), non-discrimination, and transparency requirements.</p><h3>Economic Exposure Risk: SME Capacity and Skills Constraints</h3><p>The primary economic exposure risk emerges not from excessive AI disruption, but from insufficient diffusion of AI capabilities to the broader business ecosystem. Only 34% of SMEs have adopted AI (though this represents 55% growth from 2024), and 75% lack strategic AI implementation plans. The skills shortage—cited by 30% of companies as the top ROI challenge and 27% noting difficulty identifying viable use cases—creates a constraint that prevents broader productivity capture. Without targeted intervention, by 2030 the Swiss economy risks a two-tier structure: innovative large firms and multinational R&D centres extracting disproportionate AI value, whilst SMEs and regional businesses remain primarily dependent on manual processes.</p><!-- WORKFORCE IMPACT BY SECTOR --><h2 id="workforce-impact">Workforce Impact and Labour Market Transformation</h2><h3>Labour Market Baseline and Skills Dynamics</h3><p>Switzerland's labour market is characterized as "frictional" rather than depressed: unemployment at 2.9% is amongst the world's lowest, yet employers struggle to fill specialized roles in healthcare, software development, data science, IT specialization, skilled trades, and specialized teaching. The labour market is not slack—rather, there is a mismatch between job requirements and available talent, exacerbated by rapid AI adoption acceleration. Median gross earnings for knowledge workers reach CHF 8,759 monthly (EUR equivalent: EUR 8,759), with net equivalent compensation of EUR 7,132—2.56 times the EU27 average of EUR 3,417 gross or EUR 2,351 net. This wage premium drives both attraction of global talent and wage pressures on domestic hiring.</p><p>Cross-border worker dynamics require particular attention. Approximately 300,000 cross-border workers (7% of total employment) support the Swiss economy, concentrated heavily in technology, finance, healthcare, and construction. Research indicates small but statistically significant negative wage effects on highly-skilled Swiss workers due to cross-border competition, yet no significant aggregate employment effects. This dynamic will intensify as AI-related specialist demand grows: the Swiss talent pool cannot absorb all incremental AI specialist demand, necessitating either cross-border worker policy flexibility or relocation of AI R&D functions to jurisdictions with larger domestic talent pools.</p><h3>AI Adoption Impact on Employment: Minimal Displacement, Significant Role Transformation</h3><p>Reassuringly, current evidence indicates minimal job displacement attributable directly to AI. Only 2% of companies report reducing staff due to AI, whilst 10% are creating new positions. The dominant pattern is role transformation rather than wholesale displacement—AI redefining occupational responsibilities rather than eliminating positions. Knowledge workers save an average of 30 minutes daily through AI tools, enabling reallocation to higher-value activities including strategic planning, innovation, and client engagement. However, this reallocation requires significant change management, skills development, and organizational learning investment.</p><div class="key-finding"><strong>Labour Market Structural Shift:</strong> 80% of the Swiss workforce reports exhaustion from rapid automation deployment pace, revealing a capacity gap between deployment velocity and organizational adoption capacity. This phenomenon, termed the "execution-capacity gap," represents the primary labour market risk by 2030: not displacement, but burnout and skill fragmentation across the workforce if deployment pace outpaces organizational support.
@@ -249,6 +532,8 @@ svg { max-width: 100%; height: auto; }
 <div class="email-capture"><h3>Join leaders from 100+ countries reading the AI 2030 Brief</h3><p>Weekly insights on how AI is reshaping industries, economies, and careers by 2030.</p><form class="email-capture-form" onsubmit="event.preventDefault();this.innerHTML='<p style=color:var(--accent-green)>Thank you!</p>'"><input type="email" placeholder="Your email" required><button type="submit">Subscribe</button></form></div>
 <div class="feedback-bar"><a href="mailto:feedback@leadtheshift.org?subject=Feedback:Switzerland+Government &amp; Policy">Send Feedback</a><a href="https://twitter.com/intent/tweet?text=AI+analysis+of+Switzerland+https://leadtheshift.org/articles/countries-switzerland-switzerland-government-edition.html" target="_blank" rel="noopener noreferrer">Discuss</a></div>
 </article>
+
+</div>
 <footer class="site-footer">
     <div class="footer-inner">
         <div class="footer-brand">
@@ -290,7 +575,7 @@ svg { max-width: 100%; height: auto; }
                 <button>Subscribe</button>
             </div>
         </div>
-        <p class="footer-legal">&copy; Lead the Shift. All rights reserved.<br>Strategic foresight for informational purposes only. Not financial advice.<br><a href="/privacy.html">Privacy</a> &bull; <a href="/terms.html">Terms</a> &bull; <a href="/contact.html">Contact</a></p>
+        <p class="footer-legal">&copy; Lead the Shift. All rights reserved.<br>Lead the Shift intelligence memos are strategic foresight documents — scenario planning designed to help leaders think through AI disruption and act decisively. They are not predictions, financial advice, or statements of fact. All data points are illustrative projections for thought-experiment purposes only.<br><a href="/privacy.html">Privacy</a> &bull; <a href="/terms.html">Terms</a> &bull; <a href="/contact.html">Contact</a></p>
     </div>
 </footer>
 
@@ -299,8 +584,7 @@ svg { max-width: 100%; height: auto; }
 
 <script>
 document.addEventListener('click', function(e) {
-  var link = e.target.closest('.brief-download-btn, .brief-download-link');
-  if (link) {
+    if (link) {
     var country = link.getAttribute('data-country') || 'unknown';
     var source = link.getAttribute('data-source') || 'unknown';
     if (typeof gtag === 'function') {
@@ -323,8 +607,7 @@ window.addEventListener('scroll',function(){var h=document.documentElement,b=doc
 </script>
 <script>
 document.addEventListener('click', function(e) {
-  var link = e.target.closest('.brief-download-btn, .brief-download-link');
-  if (link) {
+    if (link) {
     var country = link.getAttribute('data-country') || 'unknown';
     var source = link.getAttribute('data-source') || 'unknown';
     if (typeof gtag === 'function') {

@@ -26,7 +26,8 @@
 </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-S9Z93KZ2Z2"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-S9Z93KZ2Z2');</script>
-<style>:root {
+<style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800;900&display=swap');
+:root {
     --white: #ffffff;
     --bg: #f9fafb;
     --bg-section: #f0f4f3;
@@ -174,6 +175,292 @@ nav ul { list-style: none; }
 .search-box { width: 100%; padding: 1rem; background: var(--white); border: 1.5px solid var(--border-light); border-radius: var(--radius); color: var(--text-dark); font-size: 1rem; margin-bottom: 1.5rem; font-family: var(--font-body); }
 .search-box:focus { outline: none; border-color: var(--teal-700); box-shadow: 0 0 0 3px rgba(26, 122, 94, 0.1); }
 .search-box::placeholder { color: var(--text-light); }
+
+
+.article-page-container {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 2rem 2.5rem 3rem;
+}
+
+@media (max-width: 768px) {
+    .article-page-container {
+        padding: 1.5rem 1.25rem 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .article-page-container {
+        padding: 1rem 1rem 1.5rem;
+    }
+}
+
+.article-container, .main-content, main {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.article-content {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.article-content p {
+    margin-bottom: 1.5rem;
+    line-height: 1.85;
+}
+
+.article-content h2 {
+    margin-top: 3rem;
+    margin-bottom: 1.25rem;
+    font-size: 1.75rem;
+}
+
+.article-content h3 {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.35rem;
+}
+
+.article-content ul, .article-content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.article-content li {
+    margin-bottom: 0.75rem;
+    line-height: 1.75;
+}
+
+.article-content blockquote {
+    border-left: 4px solid var(--teal-600);
+    padding: 1rem 1.5rem;
+    margin: 2rem 0;
+    background: var(--teal-50, #f0faf6);
+    border-radius: 0 var(--radius, 12px) var(--radius, 12px) 0;
+    font-style: italic;
+    color: var(--text-dark);
+}
+
+.sibling-editions {
+    margin-bottom: 2rem;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--border-light, #eef2f1);
+}
+
+.sibling-editions h3 {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+    font-family: var(--font-body);
+}
+
+.sibling-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.sibling-pill {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border, #e2e8f0);
+    border-radius: var(--radius-full, 9999px);
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-body);
+    transition: all 0.2s;
+    text-decoration: none;
+}
+
+.sibling-pill:hover {
+    border-color: var(--teal-700);
+    color: var(--teal-700);
+    background: var(--teal-50);
+    text-decoration: none;
+}
+
+.sibling-pill.active {
+    background: var(--teal-800);
+    color: white;
+    border-color: var(--teal-800);
+}
+
+.article-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.meta-badge {
+    display: inline-block;
+    padding: 0.35rem 0.85rem;
+    border-radius: var(--radius-full, 9999px);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.badge-country {
+    background: var(--teal-100, #e6f5f0);
+    color: var(--teal-800, #155e4a);
+}
+
+.badge-audience {
+    background: var(--coral-light, #fef0eb);
+    color: var(--coral-dark, #d4623b);
+}
+
+.badge-date {
+    background: var(--bg-section, #f0f4f3);
+    color: var(--text-muted, #718096);
+}
+
+.email-capture {
+    background: var(--teal-50, #f0faf6);
+    border: 1px solid var(--border-light, #eef2f1);
+    border-radius: var(--radius-lg, 16px);
+    padding: 2rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.email-capture h3 {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    color: var(--text-dark);
+    margin-bottom: 0.75rem;
+}
+
+.email-capture p {
+    color: var(--text-muted);
+    margin-bottom: 1.25rem;
+    font-size: 0.95rem;
+}
+
+.email-capture-form {
+    display: flex;
+    gap: 0.75rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.email-capture-form input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 0.95rem;
+}
+
+.email-capture-form button {
+    padding: 0.75rem 1.5rem;
+    background: var(--teal-700);
+    color: white;
+    border: none;
+    border-radius: var(--radius);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.email-capture-form button:hover {
+    background: var(--teal-800);
+}
+
+.feedback-bar {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    border-top: 1px solid var(--border-light);
+}
+
+.feedback-bar a {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-full);
+    transition: all 0.2s;
+}
+
+.feedback-bar a:hover {
+    color: var(--teal-700);
+    background: var(--teal-50);
+}
+
+.references-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--border);
+}
+
+.references-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.references-section ol {
+    padding-left: 1.5rem;
+}
+
+.references-section li {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+
+.references-section a {
+    word-break: break-all;
+}
+
+.table-of-contents {
+    background: var(--bg-section, #f0f4f3);
+    border-radius: var(--radius-lg, 16px);
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.table-of-contents h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.table-of-contents ol {
+    padding-left: 1.25rem;
+}
+
+.table-of-contents li {
+    margin-bottom: 0.6rem;
+}
+
+.table-of-contents a {
+    color: var(--teal-700);
+    font-size: 0.95rem;
+    text-decoration: none;
+}
+
+.table-of-contents a:hover {
+    color: var(--teal-800);
+    text-decoration: underline;
+}
+
+.content-section {
+    margin-bottom: 2.5rem;
+}
+
+.content-section h2 {
+    font-family: var(--font-display);
+}
+
 @media (max-width: 768px) {
     .nav-links { display: none; position: fixed; top: 68px; left: 0; right: 0; background: white; flex-direction: column; padding: 1rem; border-bottom: 1px solid var(--border); box-shadow: var(--shadow-md); z-index: 99; }
     .nav-links.active { display: flex; }
@@ -204,19 +491,9 @@ svg { max-width: 100%; height: auto; }
 </style>
 
 <style>
-.brief-download-btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.65rem 1.25rem;background:linear-gradient(135deg,#3b82f6,#6d28d9);color:#fff;border-radius:0.5rem;font-weight:600;font-size:0.9rem;text-decoration:none;transition:transform 0.2s,box-shadow 0.2s;box-shadow:0 2px 8px rgba(59,130,246,0.3)}
-.brief-download-btn:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(59,130,246,0.4);color:#fff}
-.brief-download-btn svg{width:18px;height:18px;fill:currentColor}
-.brief-download-bar{display:flex;align-items:center;gap:1rem;padding:1rem 1.5rem;margin:1rem auto 1.5rem;max-width:900px;background:rgba(59,130,246,0.08);border:1px solid rgba(59,130,246,0.2);border-radius:0.75rem;flex-wrap:wrap}
-.brief-download-bar p{margin:0;color:var(--text-secondary,#9494a8);font-size:0.9rem;flex:1}
 .brief-inline-link{display:inline-flex;align-items:center;gap:0.3rem;color:#3b82f6;font-weight:500;font-size:0.85rem;text-decoration:none}
 .brief-inline-link:hover{text-decoration:underline}
 
-.brief-download-bar { display: flex; align-items: center; gap: 1rem; padding: 1.5rem; background: var(--teal-50, #f0faf6); border: 1px solid var(--border-light, #eef2f1); border-radius: var(--radius, 12px); margin-bottom: 2rem; flex-wrap: wrap; }
-.brief-download-bar svg { width: 24px; height: 24px; min-width: 24px; flex-shrink: 0; }
-.brief-download-btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.7rem 1.4rem; background: var(--teal-700, #1a7a5e); color: white; border-radius: var(--radius, 12px); font-weight: 600; font-size: 0.95rem; text-decoration: none; white-space: nowrap; transition: all 0.2s; }
-.brief-download-btn:hover { background: var(--teal-800, #155e4a); color: white; text-decoration: none; }
-.brief-download-btn svg { width: 18px; height: 18px; min-width: 18px; fill: currentColor; }
 .article-content svg, .article-body svg, .content-body svg { max-width: 48px; max-height: 48px; }
 svg:not([width]):not([class]) { max-width: 24px; max-height: 24px; }
 </style>
@@ -246,16 +523,14 @@ svg:not([width]):not([class]) { max-width: 24px; max-height: 24px; }
 </header>
 
 <div class="mobile-overlay" id="mobileOverlay"></div>
+<div class="article-page-container">
+
 <nav class="breadcrumb"><a href="/">Home</a> <span>&rsaquo;</span> <a href="/browse/countries.html">Countries</a> <span>&rsaquo;</span> <a href="#">Colombia</a> <span>&rsaquo;</span> <span>CEO &amp; Business Leadership</span></nav>
 <div class="article-header"><div class="article-meta">
 <span class="meta-badge badge-country">Colombia</span>
 <span class="meta-badge badge-audience">CEO &amp; Business Leadership</span>
 <span class="meta-badge badge-date">Updated March 2026</span>
 </div></div>
-<div class="brief-download-bar">
-<p><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 16l-5-5h3V4h4v7h3l-5 5zm-7 2h14v2H5v-2z"/></svg> <strong>Download the Colombia AI Disruption Brief</strong> — a 4-page executive summary you can share with your board.</p>
-<a href="/briefs/brief-colombia-colombia.pdf" target="_blank" rel="noopener noreferrer" class="brief-download-btn" data-country="colombia" data-source="ceo-article"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 16l-5-5h3V4h4v7h3l-5 5zm-7 2h14v2H5v-2z"/></svg> Download PDF</a>
-</div>
 <div class="sibling-editions"><h3>View other perspectives:</h3><div class="sibling-pills">
 <a href="/articles/countries-colombia-colombia-ceo-edition.html" class="sibling-pill active">CEO</a>
 <a href="/articles/countries-colombia-colombia-employee-edition.html" class="sibling-pill">Employee</a>
@@ -400,6 +675,8 @@ svg:not([width]):not([class]) { max-width: 24px; max-height: 24px; }
 <a href="mailto:feedback@leadtheshift.org?subject=Feedback:Colombia+CEO &amp; Business Leadership">Send Feedback</a>
 <a href="https://twitter.com/intent/tweet?text=AI+analysis+of+Colombia+https://leadtheshift.org/articles/countries-colombia-colombia-ceo-edition.html" target="_blank" rel="noopener noreferrer">Discuss</a>
 </div></article>
+
+</div>
 <footer class="site-footer">
     <div class="footer-inner">
         <div class="footer-brand">
@@ -441,7 +718,7 @@ svg:not([width]):not([class]) { max-width: 24px; max-height: 24px; }
                 <button>Subscribe</button>
             </div>
         </div>
-        <p class="footer-legal">&copy; Lead the Shift. All rights reserved.<br>Strategic foresight for informational purposes only. Not financial advice.<br><a href="/privacy.html">Privacy</a> &bull; <a href="/terms.html">Terms</a> &bull; <a href="/contact.html">Contact</a></p>
+        <p class="footer-legal">&copy; Lead the Shift. All rights reserved.<br>Lead the Shift intelligence memos are strategic foresight documents — scenario planning designed to help leaders think through AI disruption and act decisively. They are not predictions, financial advice, or statements of fact. All data points are illustrative projections for thought-experiment purposes only.<br><a href="/privacy.html">Privacy</a> &bull; <a href="/terms.html">Terms</a> &bull; <a href="/contact.html">Contact</a></p>
     </div>
 </footer>
 
@@ -454,8 +731,7 @@ window.addEventListener('scroll',function(){var h=document.documentElement,b=doc
 
 <script>
 document.addEventListener('click', function(e) {
-  var link = e.target.closest('.brief-download-btn, .brief-download-link');
-  if (link) {
+    if (link) {
     var country = link.getAttribute('data-country') || 'unknown';
     var source = link.getAttribute('data-source') || 'unknown';
     if (typeof gtag === 'function') {
