@@ -230,6 +230,34 @@
 svg:not([width]):not([class]) { max-width: 24px; max-height: 24px; }
 
 svg { max-width: 100%; height: auto; }
+
+
+
+.page-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2.5rem 2.5rem 3rem;
+}
+
+@media (max-width: 768px) {
+    .page-container {
+        padding: 1.5rem 1.25rem 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-container {
+        padding: 1rem 1rem 1.5rem;
+    }
+}
+
+
+
+
+h1 { font-family: var(--font-display); font-size: clamp(1.8rem, 5vw, 2.5rem); font-weight: 900; color: var(--text-dark); margin-bottom: 1.5rem; }
+h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; color: var(--text-dark); margin-top: 2rem; margin-bottom: 1rem; }
+h3 { font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; color: var(--teal-800); margin-top: 1.5rem; margin-bottom: 0.75rem; }
+
 </style>
 <link rel="canonical" href="https://leadtheshift.org/briefs/index.html">
 <meta property="og:title" content="AI 2030 Briefs - Download Center">
@@ -262,6 +290,8 @@ svg { max-width: 100%; height: auto; }
     </div>
 </header>
 
+
+<div class="page-container">
         <!-- COUNTRIES SECTION -->
         <div class="section">
             <h2 class="section-title">Countries (122)</h2>
@@ -959,6 +989,8 @@ svg { max-width: 100%; height: auto; }
                 </div>
             </div>
         </div>
+</div>
+
 
         <footer>
             <p>Lead the Shift | leadtheshift.org</p>

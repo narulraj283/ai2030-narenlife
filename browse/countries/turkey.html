@@ -192,6 +192,43 @@ nav ul { list-style: none; }
 svg:not([width]):not([class]) { max-width: 24px; max-height: 24px; }
 
 svg { max-width: 100%; height: auto; }
+
+
+
+.page-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2.5rem 2.5rem 3rem;
+}
+
+@media (max-width: 768px) {
+    .page-container {
+        padding: 1.5rem 1.25rem 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-container {
+        padding: 1rem 1rem 1.5rem;
+    }
+}
+
+
+
+
+h1 { font-family: var(--font-display); font-size: clamp(1.8rem, 5vw, 2.5rem); font-weight: 900; color: var(--text-dark); margin-bottom: 1.5rem; }
+h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; color: var(--text-dark); margin-top: 2rem; margin-bottom: 1rem; }
+h3 { font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; color: var(--teal-800); margin-top: 1.5rem; margin-bottom: 0.75rem; }
+
+
+
+
+.entity-card, .article-card { background: var(--white); border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 1.5rem; margin-bottom: 1rem; transition: all 0.2s; }
+.entity-card:hover, .article-card:hover { border-color: var(--teal-500); box-shadow: var(--shadow-md); }
+.entity-card a, .article-card a { text-decoration: none; }
+.entity-pill, .edition-pill { display: inline-block; padding: 0.4rem 0.9rem; border: 1px solid var(--border); border-radius: var(--radius-full); font-size: 0.8rem; font-weight: 500; color: var(--text-body); text-decoration: none; transition: all 0.2s; margin: 0.25rem; }
+.entity-pill:hover, .edition-pill:hover { border-color: var(--teal-700); color: var(--teal-700); background: var(--teal-50); text-decoration: none; }
+
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
 <link rel="canonical" href="https://leadtheshift.org/browse/countries/turkey.html">
@@ -224,6 +261,8 @@ svg { max-width: 100%; height: auto; }
 </header>
 
 
+
+<div class="page-container">
     <main class="entity-landing" id="main-content">
         <div style="display: flex; gap: 0.5rem; margin: 2rem 0 0 0; font-size: 0.9rem; color: var(--text-secondary);">
             <a href="/">Home</a> / <a href="/browse/countries.html">Countries</a> / <span>Turkey</span>
@@ -304,6 +343,8 @@ svg { max-width: 100%; height: auto; }
                 
                 </section>
     </main>
+</div>
+
 
     <footer class="site-footer">
     <div class="footer-inner">
@@ -340,7 +381,7 @@ svg { max-width: 100%; height: auto; }
     <div class="footer-bottom">
         <div class="footer-newsletter">
             <h4>Stay Updated</h4>
-            <p>Join leaders from 124 countries navigating the AI transition with Lead the Shift.</p>
+            <p>Join leaders from 70 countries navigating the AI transition with Lead the Shift.</p>
             <div class="newsletter-form">
                 <input type="email" placeholder="Your email address">
                 <button>Subscribe</button>

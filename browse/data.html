@@ -191,6 +191,34 @@ nav ul { list-style: none; }
 svg:not([width]):not([class]) { max-width: 24px; max-height: 24px; }
 
 svg { max-width: 100%; height: auto; }
+
+
+
+.page-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2.5rem 2.5rem 3rem;
+}
+
+@media (max-width: 768px) {
+    .page-container {
+        padding: 1.5rem 1.25rem 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-container {
+        padding: 1rem 1rem 1.5rem;
+    }
+}
+
+
+
+
+h1 { font-family: var(--font-display); font-size: clamp(1.8rem, 5vw, 2.5rem); font-weight: 900; color: var(--text-dark); margin-bottom: 1.5rem; }
+h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; color: var(--text-dark); margin-top: 2rem; margin-bottom: 1rem; }
+h3 { font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; color: var(--teal-800); margin-top: 1.5rem; margin-bottom: 0.75rem; }
+
 </style>
     <!-- GA4 Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-S9Z93KZ2Z2"></script>
@@ -268,20 +296,14 @@ svg { max-width: 100%; height: auto; }
 </header>
 
 
+
+<div class="page-container">
     <main id="main-content">
         <section class="hero">
             <h1>Data and Rankings</h1>
             <p class="tagline">Explore AI disruption forecasts</p>
         </section>
-            <div class="browse-share-bar" id="browseShareBar">
-                <a class="linkedin" href="#" onclick="event.preventDefault(); window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(window.location.href), '_blank')">in LinkedIn</a>
-                <a class="twitter" href="#" onclick="event.preventDefault(); window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(window.location.href) + '&text=' + encodeURIComponent(document.title), '_blank')">𝕏 Post</a>
-                <a class="whatsapp" href="#" onclick="event.preventDefault(); window.open('https://wa.me/?text=' + encodeURIComponent(document.title + ' ' + window.location.href), '_blank')">WhatsApp</a>
-                <a class="copy-link" href="#" onclick="event.preventDefault(); navigator.clipboard.writeText(window.location.href); this.textContent='Copied!'; setTimeout(()=>this.textContent='🔗 Copy Link', 2000)">🔗 Copy Link</a>
-            </div>
-
-
-        <div class="article-grid">
+<div class="article-grid">
             
             <div class="article-card" onclick="window.location.href='/articles/dataandrankings-ai-readiness-scorecard-template.html'">
                 <div class="card-meta">
@@ -324,7 +346,7 @@ svg { max-width: 100%; height: auto; }
 
     
     <div class="email-capture" id="emailCapture">
-        <h3>Join executives from 20 countries getting the AI Lead the Shift Brief</h3>
+        <h3>Join executives from 70 countries getting the AI Lead the Shift Brief</h3>
         <p>Weekly insights on AI disruption across countries, companies &amp; sectors — delivered to your inbox.</p>
         <form class="email-capture-form" id="emailCaptureForm" onsubmit="handleEmailCapture(event)">
             <input type="email" placeholder="your@email.com" required id="captureEmail">
@@ -332,6 +354,8 @@ svg { max-width: 100%; height: auto; }
         </form>
         <div class="email-capture-success" id="captureSuccess">You're in! Check your inbox.</div>
     </div>
+</div>
+
 
     <footer class="site-footer">
     <div class="footer-inner">
@@ -368,7 +392,7 @@ svg { max-width: 100%; height: auto; }
     <div class="footer-bottom">
         <div class="footer-newsletter">
             <h4>Stay Updated</h4>
-            <p>Join leaders from 124 countries navigating the AI transition with Lead the Shift.</p>
+            <p>Join leaders from 70 countries navigating the AI transition with Lead the Shift.</p>
             <div class="newsletter-form">
                 <input type="email" placeholder="Your email address">
                 <button>Subscribe</button>

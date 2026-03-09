@@ -80,6 +80,41 @@ body { font-family: var(--font-body); background: var(--white); color: var(--tex
 svg:not([width]):not([class]) { max-width: 24px; max-height: 24px; }
 
 svg { max-width: 100%; height: auto; }
+
+
+
+.page-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2.5rem 2.5rem 3rem;
+}
+
+@media (max-width: 768px) {
+    .page-container {
+        padding: 1.5rem 1.25rem 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-container {
+        padding: 1rem 1rem 1.5rem;
+    }
+}
+
+
+
+
+h1 { font-family: var(--font-display); font-size: clamp(1.8rem, 5vw, 2.5rem); font-weight: 900; color: var(--text-dark); margin-bottom: 1.5rem; }
+h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; color: var(--text-dark); margin-top: 2rem; margin-bottom: 1rem; }
+h3 { font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; color: var(--teal-800); margin-top: 1.5rem; margin-bottom: 0.75rem; }
+
+
+
+
+.share-bar { display: flex; gap: 0.75rem; align-items: center; margin-bottom: 1.5rem; padding: 1rem 1.25rem; background: var(--bg-section); border-radius: var(--radius); flex-wrap: wrap; }
+.share-bar a, .share-bar button { display: inline-flex; align-items: center; padding: 0.5rem 1rem; background: var(--white); border: 1px solid var(--border-light); border-radius: var(--radius-full); font-size: 0.85rem; font-weight: 500; color: var(--text-body); cursor: pointer; transition: all 0.2s; text-decoration: none; }
+.share-bar a:hover, .share-bar button:hover { border-color: var(--teal-700); color: var(--teal-700); background: var(--teal-50); text-decoration: none; }
+
 </style>
 <link rel="canonical" href="https://leadtheshift.org/browse/guides.html">
 <meta name="description" content="Lead the Shift - Organizational Guides - Lead the Shift. Free AI navigation platform for knowledge workers.">
@@ -111,20 +146,14 @@ svg { max-width: 100%; height: auto; }
     </div>
 </header>
 
+
+<div class="page-container">
 <main id="main-content">
         <section class="hero">
             <h1>Organizational Guides</h1>
             <p class="tagline">Explore AI disruption forecasts</p>
         </section>
-            <div class="browse-share-bar" id="browseShareBar">
-                <a class="linkedin" href="#" onclick="event.preventDefault(); window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(window.location.href), '_blank')">in LinkedIn</a>
-                <a class="twitter" href="#" onclick="event.preventDefault(); window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(window.location.href) + '&text=' + encodeURIComponent(document.title), '_blank')">𝕏 Post</a>
-                <a class="whatsapp" href="#" onclick="event.preventDefault(); window.open('https://wa.me/?text=' + encodeURIComponent(document.title + ' ' + window.location.href), '_blank')">WhatsApp</a>
-                <a class="copy-link" href="#" onclick="event.preventDefault(); navigator.clipboard.writeText(window.location.href); this.textContent='Copied!'; setTimeout(()=>this.textContent='🔗 Copy Link', 2000)">🔗 Copy Link</a>
-            </div>
-
-
-        <div class="article-grid">
+<div class="article-grid">
             
             <div class="article-card" onclick="window.location.href='/articles/organizationalguides-board-ai-readiness-checklist.html'">
                 <div class="card-meta">
@@ -179,7 +208,7 @@ svg { max-width: 100%; height: auto; }
 
     
     <div class="email-capture" id="emailCapture">
-        <h3>Join executives from 20 countries getting the AI Lead the Shift Brief</h3>
+        <h3>Join executives from 70 countries getting the AI Lead the Shift Brief</h3>
         <p>Weekly insights on AI disruption across countries, companies &amp; sectors — delivered to your inbox.</p>
         <form class="email-capture-form" id="emailCaptureForm" onsubmit="handleEmailCapture(event)">
             <input type="email" placeholder="your@email.com" required id="captureEmail">
@@ -187,6 +216,8 @@ svg { max-width: 100%; height: auto; }
         </form>
         <div class="email-capture-success" id="captureSuccess">You're in! Check your inbox.</div>
     </div>
+</div>
+
 
 <footer class="site-footer">
     <div class="footer-inner">
