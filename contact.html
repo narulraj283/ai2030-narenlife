@@ -1,114 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <title>Contact Us | Lead the Shift</title>
-    <meta name="description" content="Contact Lead the Shift. Reach out for inquiries, partnerships, or press inquiries.">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Contact Us | Lead the Shift">
-    <meta property="og:description" content="Contact Lead the Shift. Reach out for inquiries, partnerships, or press inquiries.">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://leadtheshift.org/contact.html">
-    <meta property="og:site_name" content="Lead the Shift">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Contact Us | Lead the Shift">
-    <meta name="twitter:description" content="Contact Lead the Shift. Reach out for inquiries, partnerships, or press inquiries.">
-    <link rel="canonical" href="https://leadtheshift.org/contact.html">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S9Z93KZ2Z2"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-S9Z93KZ2Z2");</script>
+<title>Contact Us | Lead the Shift</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+
 :root {
-    --bg-primary: #0a0a0f;
-    --bg-secondary: #111118;
-    --bg-card: #16161f;
-    --border: #2a2a3a;
-    --text-primary: #e4e4ef;
-    --text-secondary: #a8a8bc;
-    --text-muted: #8585a0;
-    --accent-blue: #3b82f6;
-    --accent-green: #10b981;
-    --radius: 12px;
-    --radius-sm: 8px;
-    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    --max-width: 1400px;
+    --white: #ffffff; --bg: #f9fafb; --bg-section: #f0f4f3; --card-bg: #ffffff;
+    --border: #e2e8f0; --border-light: #eef2f1;
+    --teal-900: #0f4c3a; --teal-800: #155e4a; --teal-700: #1a7a5e; --teal-600: #1f9d76; --teal-100: #e6f5f0; --teal-50: #f0faf6;
+    --coral: #e8734a; --coral-dark: #d4623b; --coral-light: #fef0eb;
+    --text-dark: #1a202c; --text-body: #4a5568; --text-muted: #718096; --text-light: #a0aec0;
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --radius: 12px; --radius-lg: 16px; --radius-full: 9999px;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.06); --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
+    --max-width: 1200px;
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { font-family: var(--font-sans); background: var(--bg-primary); color: var(--text-primary); line-height: 1.7; min-height: 100vh; }
-.site-header { position: sticky; top: 0; z-index: 100; background: rgba(10,10,15,0.92); border-bottom: 1px solid var(--border); padding: 0 2rem; }
-.header-inner { max-width: var(--max-width); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; }
-.site-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--text-primary); }
-.logo-mark { width: 36px; height: 36px; background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 18px; color: white; }
-.logo-text { font-weight: 700; font-size: 1.1rem; letter-spacing: -0.5px; }
-.logo-text span { color: var(--accent-blue); }
-.nav-links { display: flex; gap: 8px; list-style: none; }
-.nav-links a { color: var(--text-secondary); text-decoration: none; padding: 8px 16px; border-radius: var(--radius-sm); font-size: 0.875rem; font-weight: 500; }
-.nav-links a:hover { color: var(--text-primary); background: var(--bg-card); }
-.nav-toggle { display: none; background: none; border: none; color: var(--text-primary); font-size: 1.5rem; cursor: pointer; }
-.article-page { max-width: 800px; margin: 0 auto; padding: 2rem; }
-.article-content { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 3rem; }
-.article-content h1 { font-size: 1.8rem; font-weight: 800; letter-spacing: -1px; margin-bottom: 0.5rem; }
-.article-content h2 { font-size: 1.35rem; font-weight: 700; margin: 2.5rem 0 1rem; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
-.article-content h3 { font-size: 1.1rem; font-weight: 600; margin: 1.8rem 0 0.8rem; }
-.article-content p { margin-bottom: 1.2rem; color: var(--text-secondary); }
-.article-content a { color: var(--accent-blue); text-decoration: none; }
-.contact-form { background: var(--bg-primary); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 2rem; margin: 2rem 0; }
-.form-group { margin-bottom: 1.5rem; }
-.form-group label { display: block; margin-bottom: 0.5rem; font-weight: 500; color: var(--text-primary); }
-.form-group input, .form-group textarea { width: 100%; padding: 0.75rem 1rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-sm); color: var(--text-primary); font-family: var(--font-sans); font-size: 0.95rem; }
-.form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--accent-blue); box-shadow: 0 0 0 3px rgba(59,130,246,0.15); }
-.form-group textarea { resize: vertical; min-height: 150px; }
-.contact-form button { background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%); color: white; padding: 0.75rem 2rem; border: none; border-radius: var(--radius-sm); font-weight: 600; font-size: 0.95rem; cursor: pointer; }
-.contact-form button:hover { opacity: 0.9; }
-.contact-info { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin: 2rem 0; }
-.info-block { background: var(--bg-primary); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 1.5rem; }
-.info-block h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--accent-blue); }
-.social-links { display: flex; gap: 1rem; margin-top: 2rem; justify-content: center; }
-.social-links a { width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-sm); color: var(--accent-blue); text-decoration: none; font-size: 1.25rem; }
-.social-links a:hover { background: var(--accent-blue); color: white; border-color: var(--accent-blue); }
-.site-footer { border-top: 1px solid var(--border); padding: 3rem 2rem; text-align: center; color: var(--text-muted); font-size: 0.85rem; }
-.site-footer a { color: var(--accent-blue); text-decoration: none; }
+body { font-family: var(--font-body); background: var(--white); color: var(--text-body); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+
+.site-header { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.96); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 0 2rem; }
+.header-inner { max-width: var(--max-width); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 68px; }
+.site-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text-dark); }
+.logo-icon { width: 36px; height: 36px; background: var(--teal-800); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 11px; color: white; font-weight: 800; }
+.logo-text { font-weight: 700; font-size: 1.15rem; color: var(--text-dark); line-height: 1.2; }
+.logo-text span { color: var(--teal-700); }
+.nav-links { display: flex; gap: 4px; list-style: none; align-items: center; }
+.nav-links a { color: var(--text-body); text-decoration: none; padding: 8px 16px; border-radius: var(--radius-full); font-size: 0.9rem; font-weight: 500; transition: all 0.2s; }
+.nav-links a:hover { color: var(--teal-800); background: var(--teal-50); }
+.nav-cta { color: var(--coral) !important; font-weight: 600 !important; }
+.nav-toggle { display: none; background: none; border: none; color: var(--text-dark); font-size: 1.5rem; cursor: pointer; padding: 8px; }
+
+.page-hero { padding: 4rem 2rem 3rem; text-align: center; background: linear-gradient(180deg, var(--teal-50) 0%, var(--white) 100%); }
+.page-hero h1 { font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3rem); font-weight: 900; color: var(--text-dark); margin-bottom: 1rem; }
+.page-hero .lead { font-size: 1.15rem; color: var(--text-muted); max-width: 700px; margin: 0 auto; }
+
+.content { max-width: 800px; margin: 0 auto; padding: 3rem 2rem 5rem; }
+.content h2 { font-family: var(--font-display); font-size: 1.6rem; font-weight: 800; color: var(--text-dark); margin: 2.5rem 0 1rem; }
+.content h2:first-of-type { margin-top: 0; }
+.content p { margin-bottom: 1.25rem; font-size: 1.05rem; line-height: 1.8; }
+.content .highlight { background: var(--teal-50); border-left: 4px solid var(--teal-700); padding: 1.5rem 2rem; border-radius: 0 var(--radius) var(--radius) 0; margin: 2rem 0; font-size: 1.05rem; color: var(--text-dark); }
+
+.stats-bar { display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; padding: 2rem; background: var(--bg-section); border-radius: var(--radius-lg); margin: 2rem 0; }
+.stat { text-align: center; }
+.stat strong { display: block; font-size: 1.8rem; color: var(--teal-800); font-weight: 800; }
+.stat span { font-size: 0.85rem; color: var(--text-muted); }
+
+.site-footer { background: #1a2332; color: #a0aec0; padding: 3rem 2rem 2rem; }
+.footer-inner { max-width: var(--max-width); margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+.footer-legal { font-size: 0.8rem; color: #4a5568; }
+.footer-legal a { color: #718096; text-decoration: none; }
+.footer-legal a:hover { color: white; }
+
 @media (max-width: 768px) {
-    .nav-links { display: none; }
+    .nav-links { display: none; position: fixed; top: 68px; left: 0; right: 0; background: white; flex-direction: column; padding: 1rem; border-bottom: 1px solid var(--border); z-index: 99; }
+    .nav-links.active { display: flex; }
     .nav-toggle { display: block; }
-    .article-content { padding: 1.5rem; }
+    .content { padding: 2rem 1.5rem 3rem; }
+    .stats-bar { flex-direction: column; gap: 1rem; }
 }
-html.light-theme { --bg-primary: #f5f5f7; --bg-card: #ffffff; --border: #d1d5db; --text-primary: #1a1a2e; }
-.skip-link:focus { position: fixed !important; left: 16px !important; top: 16px !important; width: auto !important; }
-    </style>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S9Z93KZ2Z2"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-S9Z93KZ2Z2');
-    </script>
+
+</style>
 </head>
 <body>
-    <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;">Skip to content</a>
-    <header class="site-header">
+
+<header class="site-header">
     <div class="header-inner">
         <a href="/" class="site-logo">
-            <div class="logo-mark" style="background:#155e4a;color:white;border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:11px;width:36px;height:36px">LTS</div>
-            <div class="logo-text">The 2030 <span>Report</span></div>
+            <div class="logo-icon">LTS</div>
+            <div class="logo-text">Lead the <span>Shift</span></div>
         </a>
         <nav>
             <ul class="nav-links" id="navLinks">
-                <li><a href="/">Home</a></li>
                 <li><a href="/browse/countries.html">Countries</a></li>
                 <li><a href="/browse/companies.html">Companies</a></li>
                 <li><a href="/browse/sectors.html">Sectors</a></li>
-                <li><a href="/contact.html">About</a></li>
+                <li><a href="/methodology.html">Methodology</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/browse/data.html" class="nav-cta">Browse All &#8595;</a></li>
             </ul>
         </nav>
-        <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.getElementById('navLinks').classList.toggle('open')">&#9776;</button>
+        <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navLinks').classList.toggle('active')">&#9776;</button>
     </div>
-    </header>
-    <main class="article-page">
-        <article class="article-content" style="margin-top:2rem;" id="main-content">
+</header>
+
+<article class="article-content">
             <h1>Contact Us</h1>
             <p>We'd love to hear from you. Whether you have questions, partnership opportunities, or press inquiries, please reach out.</p>
             <h2>Contact Information</h2>
@@ -152,21 +138,16 @@ html.light-theme { --bg-primary: #f5f5f7; --bg-card: #ffffff; --border: #d1d5db;
                 <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
             </div>
         </article>
-    </main>
-    <footer class="site-footer">
-    <p>&copy; 2026 AI2030. This is speculative analysis exploring probable futures.</p>
-    <p><a href="https://leadtheshift.org">Home</a> &bull; <a href="/contact.html">About</a> &bull; <a href="/contact.html">Contact</a> &bull; <a href="/privacy.html">Privacy</a> &bull; <a href="/terms.html">Terms</a></p>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none">
+            <div style="width:32px;height:32px;background:#1a7a5e;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:10px;color:white;font-weight:800">LTS</div>
+            <span style="color:white;font-weight:700;font-size:1.1rem">Lead the <span style="color:#1f9d76">Shift</span></span>
+        </a>
+        <p class="footer-legal">&copy; Lead the Shift. All rights reserved. | <a href="/privacy.html">Privacy</a> &bull; <a href="/terms.html">Terms</a> &bull; <a href="/contact.html">Contact</a></p>
+    </div>
 </footer>
-    <script>
-    function handleContactSubmit(e) {
-        e.preventDefault();
-        document.querySelector('.contact-form').style.display = 'none';
-        document.getElementById('success').style.display = 'block';
-    }
-    (function() {
-        var saved = localStorage.getItem('theme');
-        if (saved === 'light') document.documentElement.classList.add('light-theme');
-    })();
-    </script>
+
 </body>
 </html>

@@ -1,14 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <title>Mexico - Countries - Lead the Shift</title>
-    <meta name="description" content="AI disruption forecasts for Mexico from countries perspective">
-    <style>:root {
+#!/usr/bin/env python3
+"""
+Lead the Shift Theme Redesign Script
+Converts all dark-themed article and browse pages to match the light theme homepage.
+
+Usage: python3 redesign_all.py
+"""
+
+import os
+import re
+from pathlib import Path
+from typing import List, Tuple
+
+# Configuration
+ROOT_DIR = Path("/tmp/ai2030-repo")
+ARTICLES_DIR = ROOT_DIR / "articles"
+BROWSE_COMPANIES_DIR = ROOT_DIR / "browse" / "companies"
+BROWSE_COUNTRIES_DIR = ROOT_DIR / "browse" / "countries"
+BROWSE_SECTORS_DIR = ROOT_DIR / "browse" / "sectors"
+BROWSE_LISTING_FILES = [
+    ROOT_DIR / "browse" / "companies.html",
+    ROOT_DIR / "browse" / "countries.html",
+    ROOT_DIR / "browse" / "sectors.html",
+    ROOT_DIR / "browse" / "data.html",
+]
+
+# Files to skip (already have correct theme)
+SKIP_FILES = {
+    "index.html",
+    "about.html",
+    "methodology.html",
+    "contact.html",
+    "privacy.html",
+    "terms.html",
+    "press.html",
+    "updates.html",
+    "government.html",
+    "search.html",
+    "404.html",
+    "admin.html",
+}
+
+# Light theme CSS - same as before but now as constant
+LIGHT_THEME_CSS = """:root {
     --white: #ffffff;
     --bg: #f9fafb;
     --bg-section: #f0f4f3;
@@ -181,69 +214,10 @@ nav ul { list-style: none; }
     .article-content table { font-size: 0.85rem; }
     .article-content table th, .article-content table td { padding: 0.75rem; }
 }
-</style>
-    <!-- GA4 Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S9Z93KZ2Z2"></script>
-    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-S9Z93KZ2Z2');</script>
-    <link rel="canonical" href="https://leadtheshift.org/browse/countries/mexico.html">
-    <meta property="og:title" content="Mexico - Countries - Lead the Shift">
-    <meta property="og:description" content="AI disruption forecasts for Mexico from countries perspective">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://leadtheshift.org/browse/countries/mexico.html">
-    <meta property="og:image" content="https://leadtheshift.org/og/browse-countries-mexico.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:site_name" content="Lead the Shift">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Mexico - Countries - Lead the Shift">
-    <meta name="twitter:description" content="AI disruption forecasts for Mexico from countries perspective">
-    <meta name="twitter:image" content="https://leadtheshift.org/og/browse-countries-mexico.png">
-    <meta name="robots" content="index, follow">
-    <script type="application/ld+json">
-    {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Mexico - Countries - Lead the Shift",
-    "description": "AI disruption forecasts for Mexico from countries perspective",
-    "url": "https://leadtheshift.org/browse/countries/mexico.html",
-    "isPartOf": {
-        "@type": "WebSite",
-        "name": "Lead the Shift",
-        "url": "https://leadtheshift.org"
-    }
-}
-    </script>
-    <script type="application/ld+json">
-    {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-        {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://leadtheshift.org"
-        },
-        {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Countries",
-            "item": "https://leadtheshift.org/browse/countries.html"
-        },
-        {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Mexico",
-            "item": "https://leadtheshift.org/browse/countries/mexico.html"
-        }
-    ]
-}
-    </script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:999;padding:8px 16px;background:#0066cc;color:#fff;font-weight:600;text-decoration:none;">Skip to content</a>
-    <header class="site-header">
+"""
+
+# Header HTML template
+HEADER_HTML = """<header class="site-header">
     <div class="header-inner">
         <a href="/" class="site-logo">
             <div class="logo-icon">LTS</div>
@@ -262,145 +236,10 @@ nav ul { list-style: none; }
         <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navLinks').classList.toggle('active')">&#9776;</button>
     </div>
 </header>
+"""
 
-
-    <main class="entity-landing" id="main-content">
-        <div class="breadcrumb" style="margin-top: 2rem; margin-bottom: 2rem;">
-            <a href="/">Home</a>
-            <span>/</span>
-            <a href="/browse/countries.html">Countries</a>
-            <span>/</span>
-            <span>Mexico</span>
-        </div>
-
-        <section class="entity-hero-section">
-            <div class="entity-hero-content">
-                <div class="entity-hero-icon">🌍</div>
-                <div>
-                    <h1 class="entity-hero-title">Mexico</h1>
-<p style="color:var(--text-secondary,#a8a8bc);font-size:1.05rem;line-height:1.6;margin:1rem 0 2rem;max-width:800px">Explore AI disruption forecasts for Mexico across multiple perspectives — from CEOs and employees to government officials and consumers. See bear case and bull case scenarios for how AI will reshape Mexico's economy by 2030.</p>
-<div class="share-bar" style="display:flex;gap:0.75rem;margin:1rem 0 2rem;flex-wrap:wrap">
-<a href="https://www.linkedin.com/sharing/share-offsite/?url=https://leadtheshift.org/browse/countries/mexico.html" target="_blank" rel="noopener noreferrer" class="share-btn" style="padding:0.5rem 1rem;background:rgba(59,130,246,0.15);color:var(--accent-blue,#3b82f6);border-radius:6px;font-size:0.85rem;font-weight:500;text-decoration:none">Share on LinkedIn</a>
-<a href="https://twitter.com/intent/tweet?url=https://leadtheshift.org/browse/countries/mexico.html&text=Check%20out%20this%20report%3A%20Mexico%20-%20Countries" target="_blank" rel="noopener noreferrer" class="share-btn" style="padding:0.5rem 1rem;background:rgba(139,92,246,0.15);color:var(--accent-purple,#8b5cf6);border-radius:6px;font-size:0.85rem;font-weight:500;text-decoration:none">Share on X</a>
-<button onclick="navigator.clipboard.writeText('https://leadtheshift.org/browse/countries/mexico.html');this.textContent='Copied!'" class="share-btn" style="padding:0.5rem 1rem;background:rgba(107,107,128,0.1);color:var(--text-secondary,#a8a8bc);border:1px solid var(--border,#2a2a3a);border-radius:6px;font-size:0.85rem;cursor:pointer">Copy Link</button>
-</div>
-                    <p>All perspectives on AI disruption for Mexico</p>
-                </div>
-            </div>
-        </section>
-            
-            <p class="browse-summary" style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7; margin-top: 1rem; max-width: 800px;">Mexico's manufacturing and automotive sectors face AI-driven transformation alongside nearshoring opportunities.</p>
-<div class="browse-share-bar" id="browseShareBar">
-                <a class="linkedin" href="#" onclick="event.preventDefault(); window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(window.location.href), '_blank')">in LinkedIn</a>
-                <a class="twitter" href="#" onclick="event.preventDefault(); window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(window.location.href) + '&text=' + encodeURIComponent(document.title), '_blank')">𝕏 Post</a>
-                <a class="whatsapp" href="#" onclick="event.preventDefault(); window.open('https://wa.me/?text=' + encodeURIComponent(document.title + ' ' + window.location.href), '_blank')">WhatsApp</a>
-                <a class="copy-link" href="#" onclick="event.preventDefault(); navigator.clipboard.writeText(window.location.href); this.textContent='Copied!'; setTimeout(()=>this.textContent='🔗 Copy Link', 2000)">🔗 Copy Link</a>
-            </div>
-
-
-        
-            <section style="margin-bottom: 3rem;">
-                <h2 style="margin-bottom: 1.5rem; color: var(--text-primary);">CEO Perspective</h2>
-                <div class="article-grid" style="max-width: none; margin: 0; padding: 0;">
-                    
-                <div class="article-card" onclick="window.location.href='/articles/countries-mexico-mexico-ceo.html'">
-                    <div class="card-meta">
-                        <span class="card-badge badge-countries">🌍 Countries</span>
-                        <span class="card-audience">👤 CEO</span>
-                    </div>
-                    <h3 class="card-title">Mexico — CEO</h3>
-                    <p class="card-excerpt">---</p>
-                    <div class="card-footer">
-                        <span class="read-time">⏱️ 21 min read</span>
-                    </div>
-                </div>
-                
-                </div>
-            </section>
-            
-            
-            
-            
-            
-            <section style="margin-bottom: 3rem;">
-                <h2 style="margin-bottom: 1.5rem; color: var(--text-primary);">Employee Perspective</h2>
-                <div class="article-grid" style="max-width: none; margin: 0; padding: 0;">
-                    
-                <div class="article-card" onclick="window.location.href='/articles/countries-mexico-mexico-employee-edition.html'">
-                    <div class="card-meta">
-                        <span class="card-badge badge-countries">🌍 Countries</span>
-                        <span class="card-audience">👤 Employee</span>
-                    </div>
-                    <h3 class="card-title">Mexico — Employee</h3>
-                    <p class="card-excerpt">Date: June 30, 2030</p>
-                    <div class="card-footer">
-                        <span class="read-time">⏱️ 9 min read</span>
-                    </div>
-                </div>
-                
-                </div>
-            </section>
-            
-            <section style="margin-bottom: 3rem;">
-                <h2 style="margin-bottom: 1.5rem; color: var(--text-primary);">Government Perspective</h2>
-                <div class="article-grid" style="max-width: none; margin: 0; padding: 0;">
-                    
-                <div class="article-card" onclick="window.location.href="/articles/countries-mexico-mexico-government-edition.html"">
-                    <div class="card-meta">
-                        <span class="card-badge badge-countries">🌍 Countries</span>
-                        <span class="card-audience">👤 Government</span>
-                    </div>
-                    <h3 class="card-title">Mexico — Government</h3>
-                    <p class="card-excerpt">FROM: The 2030 Report, Political Economy Division</p>
-                    <div class="card-footer">
-                        <span class="read-time">⏱️ 20 min read</span>
-                    </div>
-                </div>
-                
-                </div>
-            </section>
-            
-            
-            
-            
-            
-            
-            
-            <section style="margin-bottom: 3rem;">
-                <h2 style="margin-bottom: 1.5rem; color: var(--text-primary);">Small Business Owner Perspective</h2>
-                <div class="article-grid" style="max-width: none; margin: 0; padding: 0;">
-                    
-                <div class="article-card" onclick="window.location.href='/articles/countries-mexico-mexico-small-business-owner-edition.html'">
-                    <div class="card-meta">
-                        <span class="card-badge badge-countries">🌍 Countries</span>
-                        <span class="card-audience">👤 Small Business Owner</span>
-                    </div>
-                    <h3 class="card-title">Mexico — Small Business Owner</h3>
-                    <p class="card-excerpt">Date: June 30, 2030</p>
-                    <div class="card-footer">
-                        <span class="read-time">⏱️ 8 min read</span>
-                    </div>
-                </div>
-                
-                </div>
-            </section>
-            
-            
-            
-    </main>
-
-    
-    <div class="email-capture" id="emailCapture">
-        <h3>Join executives from 34 countries getting the AI Lead the Shift Brief</h3>
-        <p>Weekly insights on AI disruption across countries, companies &amp; sectors — delivered to your inbox.</p>
-        <form class="email-capture-form" id="emailCaptureForm" onsubmit="handleEmailCapture(event)">
-            <input type="email" placeholder="your@email.com" required id="captureEmail">
-            <button type="submit">Subscribe Free</button>
-        </form>
-        <div class="email-capture-success" id="captureSuccess">You're in! Check your inbox.</div>
-    </div>
-
-    <footer class="site-footer">
+# Footer HTML template
+FOOTER_HTML = """<footer class="site-footer">
     <div class="footer-inner">
         <div class="footer-brand">
             <a href="/" class="footer-logo">
@@ -444,127 +283,220 @@ nav ul { list-style: none; }
         <p class="footer-legal">&copy; Lead the Shift. All rights reserved.<br>Strategic foresight for informational purposes only. Not financial advice.<br><a href="/privacy.html">Privacy</a> &bull; <a href="/terms.html">Terms</a> &bull; <a href="/contact.html">Contact</a></p>
     </div>
 </footer>
+"""
 
 
-    <button class="back-to-top" aria-label="Back to top" onclick="scrollToTop()" title="Back to top">↑</button>
+def get_all_files_to_process() -> List[Path]:
+    """Get all HTML files that need to be processed."""
+    files = []
 
-    <script>
-        function toggleNav() {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('active');
-        }
-        // Highlight active nav item
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            const href = link.getAttribute('href');
-            const path = window.location.pathname;
-            if (href === '/' && path === '/') link.classList.add('nav-active');
-            else if (href !== '/' && path.startsWith(href.replace('.html', ''))) link.classList.add('nav-active');
-        });
+    # Articles
+    if ARTICLES_DIR.exists():
+        files.extend(ARTICLES_DIR.glob("*.html"))
 
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
+    # Browse entity pages
+    if BROWSE_COMPANIES_DIR.exists():
+        files.extend(BROWSE_COMPANIES_DIR.glob("*.html"))
+    if BROWSE_COUNTRIES_DIR.exists():
+        files.extend(BROWSE_COUNTRIES_DIR.glob("*.html"))
+    if BROWSE_SECTORS_DIR.exists():
+        files.extend(BROWSE_SECTORS_DIR.glob("*.html"))
 
-        window.addEventListener('scroll', () => {
-            const backToTop = document.querySelector('.back-to-top');
-            if (window.scrollY > 300) {
-                backToTop.classList.add('visible');
-            } else {
-                backToTop.classList.remove('visible');
-            }
-        });
-    </script>
+    # Browse listing pages
+    for listing_file in BROWSE_LISTING_FILES:
+        if listing_file.exists():
+            files.append(listing_file)
 
-    <script>
-    function handleEmailCapture(e) {
-        e.preventDefault();
-        var email = document.getElementById('captureEmail').value;
-        if (!email) return;
-        // Store subscriber (sends to Google Sheets via Apps Script)
-        var API_URL = 'https://script.google.com/macros/s/AKfycbx8HEMtoBG4lLeNMYB92kXUhMBx7n9YQ-67QJ6TtDrJnvIx08Q_Xx3FBkjOd0MXsuaFmQ/exec';
-        fetch(API_URL, {
-            method: 'POST',
-            headers: {'Content-Type': 'text/plain'},
-            body: JSON.stringify({action: 'subscribe', email: email, page: window.location.pathname})
-        }).catch(function(){});
-        // Show success regardless (don't block on API)
-        document.getElementById('emailCaptureForm').style.display = 'none';
-        document.getElementById('captureSuccess').style.display = 'block';
-        // Also store in localStorage to not show again
-        try { localStorage.setItem('ai2030_subscribed', '1'); } catch(e) {}
-    }
-    // Hide capture if already subscribed
-    try {
-        if (localStorage.getItem('ai2030_subscribed')) {
-            var cap = document.getElementById('emailCapture');
-            if (cap) cap.style.display = 'none';
-        }
-    } catch(e) {}
+    return sorted(files)
 
-    
-    // === UX Overhaul v1 ===
 
-    // Improved Mobile Nav Toggle
-    function toggleNav() {
-        var nav = document.querySelector('.nav-links');
-        var overlay = document.getElementById('mobileOverlay');
-        if (!overlay) {
-            overlay = document.createElement('div');
-            overlay.className = 'mobile-overlay';
-            overlay.id = 'mobileOverlay';
-            overlay.addEventListener('click', function(e) { e.preventDefault(); toggleNav(); });
-            overlay.addEventListener('touchend', function(e) { e.preventDefault(); toggleNav(); });
-            document.body.appendChild(overlay);
-        }
-        var isOpen = nav.classList.contains('active');
-        if (isOpen) {
-            nav.classList.remove('active');
-            overlay.classList.remove('active');
-            document.body.classList.remove('nav-open');
-        } else {
-            nav.classList.add('active');
-            overlay.classList.add('active');
-            document.body.classList.add('nav-open');
-        }
-    }
-    // Close mobile nav when clicking any nav link
-    document.querySelectorAll('.nav-links a').forEach(function(link) {
-        link.addEventListener('click', function() {
-            var nav = document.querySelector('.nav-links');
-            if (nav && nav.classList.contains('active')) { toggleNav(); }
-        });
-    });
+def should_process_file(file_path: Path) -> bool:
+    """Check if file should be processed."""
+    if file_path.name in SKIP_FILES:
+        return False
+    return True
 
-    // Dark/Light Mode Toggle
-    (function() {
-        var saved = localStorage.getItem('theme');
-        if (saved === 'light') document.documentElement.classList.add('light-theme');
 
-        // Insert toggle button in header
-        var headerInner = document.querySelector('.header-inner');
-        if (headerInner) {
-            var btn = document.createElement('button');
-            btn.className = 'theme-toggle';
-            btn.id = 'themeToggle';
-            btn.innerHTML = document.documentElement.classList.contains('light-theme') ? '🌙' : '☀️';
-            btn.title = 'Toggle light/dark mode';
-            btn.setAttribute('aria-label', 'Toggle light/dark mode');
-            btn.onclick = function() {
-                document.documentElement.classList.toggle('light-theme');
-                var isLight = document.documentElement.classList.contains('light-theme');
-                localStorage.setItem('theme', isLight ? 'light' : 'dark');
-                btn.innerHTML = isLight ? '🌙' : '☀️';
-            };
-            // Insert before nav-toggle button or at end
-            var navToggle = headerInner.querySelector('.nav-toggle');
-            if (navToggle) {
-                headerInner.insertBefore(btn, navToggle);
-            } else {
-                headerInner.appendChild(btn);
-            }
-        }
-    })();
+def fix_title(content: str) -> str:
+    """Fix AI2030 references in title and meta."""
+    # Fix title tags
+    content = re.sub(
+        r'\| AI2030',
+        '| Lead the Shift',
+        content,
+        flags=re.IGNORECASE
+    )
+    content = re.sub(
+        r'AI2030 Report',
+        'Lead the Shift',
+        content,
+        flags=re.IGNORECASE
+    )
 
-</script>
-</body>
-</html>
+    # Fix meta descriptions
+    content = re.sub(
+        r'ai2030report\.com',
+        'leadtheshift.org',
+        content,
+        flags=re.IGNORECASE
+    )
+
+    return content
+
+
+def remove_theme_toggle(content: str) -> str:
+    """Remove theme toggle button and related JavaScript."""
+    # Remove theme toggle button with ID
+    content = re.sub(
+        r'<button[^>]*id=["\']?themeToggle["\']?[^>]*>.*?</button>',
+        '',
+        content,
+        flags=re.DOTALL | re.IGNORECASE
+    )
+
+    return content
+
+
+def process_file(file_path: Path) -> Tuple[bool, str]:
+    """Process a single HTML file. Returns (success, message)."""
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+
+        # Fix title references first
+        content = fix_title(content)
+
+        # Remove theme toggle
+        content = remove_theme_toggle(content)
+
+        # Replace old style tag with new one using regex (non-greedy match)
+        style_pattern = r'<style[^>]*>[\s\S]*?</style>'
+        content = re.sub(
+            style_pattern,
+            f'<style>{LIGHT_THEME_CSS}</style>',
+            content,
+            count=1,
+            flags=re.IGNORECASE
+        )
+
+        # Add Google Fonts if missing
+        if 'fonts.googleapis.com' not in content:
+            fonts_link = '<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">'
+            # Insert before closing </head>
+            content = re.sub(
+                r'</head>',
+                fonts_link + '\n</head>',
+                content,
+                count=1,
+                flags=re.IGNORECASE
+            )
+
+        # Add Google Analytics if missing
+        if 'googletagmanager.com' not in content:
+            analytics = '''<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S9Z93KZ2Z2"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-S9Z93KZ2Z2");</script>'''
+            content = re.sub(
+                r'</head>',
+                analytics + '\n</head>',
+                content,
+                count=1,
+                flags=re.IGNORECASE
+            )
+
+        # Add canonical URL if missing
+        if 'rel="canonical"' not in content:
+            relative_path = file_path.relative_to(ROOT_DIR)
+            canonical_url = f"https://leadtheshift.org/{relative_path.as_posix()}"
+            canonical = f'<link rel="canonical" href="{canonical_url}">'
+            content = re.sub(
+                r'</head>',
+                canonical + '\n</head>',
+                content,
+                count=1,
+                flags=re.IGNORECASE
+            )
+
+        # Replace header (be very careful to only replace the old header, not body content)
+        old_header_pattern = r'<header[^>]*>[\s\S]*?</header>'
+        content = re.sub(
+            old_header_pattern,
+            HEADER_HTML,
+            content,
+            count=1,
+            flags=re.IGNORECASE
+        )
+
+        # Replace footer (be very careful to only replace the old footer)
+        old_footer_pattern = r'<footer[^>]*>[\s\S]*?</footer>'
+        content = re.sub(
+            old_footer_pattern,
+            FOOTER_HTML,
+            content,
+            count=1,
+            flags=re.IGNORECASE
+        )
+
+        # Write back
+        with open(file_path, 'w', encoding='utf-8') as f:
+            f.write(content)
+
+        return True, f"✓ {file_path.relative_to(ROOT_DIR)}"
+
+    except Exception as e:
+        return False, f"✗ {file_path.relative_to(ROOT_DIR)}: {str(e)}"
+
+
+def main():
+    """Main function."""
+    print("=" * 80)
+    print("Lead the Shift Theme Redesign Script")
+    print("=" * 80)
+    print()
+
+    # Get all files
+    files = get_all_files_to_process()
+    files_to_process = [f for f in files if should_process_file(f)]
+
+    print(f"Found {len(files_to_process)} files to process")
+    print()
+
+    # Process files
+    successes = 0
+    failures = 0
+    failed_files = []
+
+    for i, file_path in enumerate(files_to_process, 1):
+        success, message = process_file(file_path)
+
+        if success:
+            successes += 1
+        else:
+            failures += 1
+            failed_files.append(message)
+
+        # Progress indicator
+        if i % 50 == 0:
+            print(f"Progress: {i}/{len(files_to_process)}")
+
+    print()
+    print("=" * 80)
+    print("Results")
+    print("=" * 80)
+    print(f"Successfully processed: {successes} files")
+    print(f"Failed: {failures} files")
+    print()
+
+    if failed_files:
+        print("Failed files:")
+        for msg in failed_files:
+            print(f"  {msg}")
+    else:
+        print("All files processed successfully!")
+
+    print()
+    print("Redesign complete!")
+
+
+if __name__ == "__main__":
+    main()
